@@ -2,11 +2,8 @@
 TDD tests for file_reader.py.
 """
 
-import pytest
-
 from vista_fm_browser.data_dictionary import DataDictionary
 from vista_fm_browser.file_reader import FileReader, _strip_root
-
 
 # ------------------------------------------------------------------
 # _strip_root
@@ -122,3 +119,34 @@ def test_count_entries_no_data(fake_dd_conn):
     dd = DataDictionary(fake_dd_conn)
     reader = FileReader(fake_dd_conn, dd)
     assert reader.count_entries(2) == 0
+
+
+def test_get_entry_unknown_file(fake_patient_conn):
+    """get_entry with unknown file number returns None (file_def is None branch)."""
+    dd = DataDictionary(fake_patient_conn)
+    reader = FileReader(fake_patient_conn, dd)
+    assert reader.get_entry(999, "1") is None
+
+
+def test_count_entries_unknown_file(fake_patient_conn):
+    """count_entries with unknown file number returns 0 (file_def is None branch)."""
+    dd = DataDictionary(fake_patient_conn)
+    reader = FileReader(fake_patient_conn, dd)
+    assert reader.count_entries(999) == 0
+
+
+def test_iter_entries_skips_cross_ref_iens(fake_cross_ref_conn):
+    """iter_entries skips IENs that start with '"' (cross-reference nodes)."""
+    dd = DataDictionary(fake_cross_ref_conn)
+    reader = FileReader(fake_cross_ref_conn, dd)
+    entries = list(reader.iter_entries(2))
+    iens = {e.ien for e in entries}
+    assert '"B"' not in iens
+    assert "1" in iens
+
+
+def test_count_entries_skips_cross_ref_iens(fake_cross_ref_conn):
+    """count_entries skips IENs that start with '"'."""
+    dd = DataDictionary(fake_cross_ref_conn)
+    reader = FileReader(fake_cross_ref_conn, dd)
+    assert reader.count_entries(2) == 1

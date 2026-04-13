@@ -45,7 +45,7 @@ class YdbFake:
         nodes = self._data.get(global_name, {})
         seen: set[str] = set()
         for key in sorted(nodes.keys()):
-            if len(key) == len(prefix) + 1 and key[: len(prefix)] == prefix:
+            if len(key) > len(prefix) and key[: len(prefix)] == prefix:
                 sub = key[len(prefix)]
                 if sub not in seen:
                     seen.add(sub)
@@ -110,3 +110,18 @@ def fake_dd_conn() -> YdbFake:
 def fake_patient_conn() -> YdbFake:
     """YdbFake with both DD and PATIENT data."""
     return make_combined_fake()
+
+
+@pytest.fixture
+def fake_cross_ref_conn() -> YdbFake:
+    """YdbFake with DD + one patient entry and a B cross-reference node.
+
+    Used to test that iter_entries / count_entries skips IENs starting with '"'.
+    """
+    data: dict = {}
+    data.update(FAKE_DD)
+    data["^DPT"] = {
+        ("1", "0"): "TESTPATIENT,ONE^M^2450101^",
+        ('"B"', "TESTPATIENT,ONE", "1"): "1",  # cross-reference node — must be skipped
+    }
+    return YdbFake(data)

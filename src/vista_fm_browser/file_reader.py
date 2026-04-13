@@ -19,6 +19,7 @@ and maps field values using the data dictionary.
 """
 
 import logging
+from collections.abc import Iterator
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -32,10 +33,10 @@ log = logging.getLogger(__name__)
 class FileEntry:
     """A single entry (row) from a FileMan file."""
 
-    ien: str                                     # internal entry number (string)
+    ien: str  # internal entry number (string)
     file_number: float
-    raw_nodes: dict[str, str] = field(default_factory=dict)   # node → raw string
-    fields: dict[float, Any] = field(default_factory=dict)    # field# → decoded value
+    raw_nodes: dict[str, str] = field(default_factory=dict)  # node → raw string
+    fields: dict[float, Any] = field(default_factory=dict)  # field# → decoded value
 
 
 class FileReader:
@@ -60,7 +61,7 @@ class FileReader:
 
     def iter_entries(
         self, file_number: float, limit: int | None = None
-    ) -> "Iterator[FileEntry]":
+    ) -> Iterator["FileEntry"]:
         """Yield FileEntry objects for every entry in the file.
 
         Parameters
@@ -70,7 +71,6 @@ class FileReader:
         limit:
             If set, stop after this many entries.
         """
-        from collections.abc import Iterator  # noqa: PLC0415
 
         file_def = self._dd.get_file(file_number)
         if file_def is None:
@@ -159,9 +159,9 @@ class FileReader:
 def _strip_root(global_root: str) -> str:
     """Convert FileMan global root to a bare caret-name for yottadb calls.
 
-    e.g. "^DPT(" → "^DPT"   "^PS(50," → "^PS"
+    e.g. "^DPT(" → "^DPT"   "^PS(50," → "^PS"   "DPT" → "^DPT"
     """
-    root = global_root.rstrip("(").rstrip(",")
+    root = global_root.split("(")[0]
     if not root.startswith("^"):
         root = "^" + root
     return root

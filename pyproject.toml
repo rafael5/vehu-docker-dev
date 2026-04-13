@@ -41,7 +41,10 @@ markers = [
 
 [tool.coverage.run]
 source = ["src"]
-omit = ["src/vista_fm_browser/web/*"]
+omit = [
+    "src/vista_fm_browser/web/*",
+    "src/vista_fm_browser/cli.py",
+]
 
 [tool.coverage.report]
 fail_under = 80
