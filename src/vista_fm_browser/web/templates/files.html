@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}FileMan Files{% endblock %}
+{% block content %}
+<h2>FileMan Files</h2>
+<div class="meta">
+  <form method="get" action="/files">
+    <input type="text" name="q" value="{{ query }}" placeholder="Search file name…" autofocus>
+    <button type="submit">Search</button>
+    {% if query %}<a href="/files">Clear</a>{% endif %}
+  </form>
+  &nbsp; {{ files|length }} file{% if files|length != 1 %}s{% endif %} found
+</div>
+<table>
+  <thead>
+    <tr><th>File #</th><th>Label</th></tr>
+  </thead>
+  <tbody>
+    {% for file_num, label in files %}
+    <tr>
+      <td><a href="/files/{{ file_num }}">{{ file_num }}</a></td>
+      <td><a href="/files/{{ file_num }}">{{ label }}</a></td>
+    </tr>
+    {% else %}
+    <tr><td colspan="2" style="color:#808080">No files found.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,21 @@
+services:
+  vehu:
+    # VEHU: VistA Electronic Health Universe — OSEHRA demo VistA on YottaDB
+    # Image source: https://github.com/WorldVistA/docker-vista
+    # Pull: docker pull worldvista/vehu-interim
+    image: worldvista/vehu-interim
+    container_name: vehu
+    hostname: vehu
+    ports:
+      - "9430:9430"   # VistA RPC Broker
+      - "8001:8001"   # VistA HTTP server
+      - "5000:5000"   # fm-browser Flask web UI (forwarded from container)
+    volumes:
+      # Mount the project into the container so code changes are live
+      - .:/opt/vista-fm-browser
+    environment:
+      - TERM=xterm-256color
+    stdin_open: true
+    tty: true
+    # Keep the container alive for VSCode attachment
+    restart: unless-stopped

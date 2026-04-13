@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vista-fm-browser"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.0",        # CLI framework
+    "rich>=13.0",        # Terminal tables / pretty output
+    "flask>=3.0",        # Web browser UI
+    "pandas>=2.0",       # DataFrame export to CSV/JSON
+    "tabulate>=0.9",     # ASCII table formatting
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov",
+    "pytest-watch",
+    "pytest-randomly",
+    "ruff",
+    "mypy",
+    "pre-commit",
+]
+
+[project.scripts]
+fm-browser = "vista_fm_browser.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short -x"
+markers = [
+    "integration: requires live YottaDB connection inside the VEHU container",
+    "unit: runs on the host with no external dependencies",
+]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["src/vista_fm_browser/web/*"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = false
+ignore_missing_imports = true

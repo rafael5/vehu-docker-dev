@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}File {{ file_def.file_number }}: {{ file_def.label }}{% endblock %}
+{% block content %}
+<h2>File {{ file_def.file_number }}: {{ file_def.label }}</h2>
+<div class="meta">
+  Global: <code>{{ file_def.global_root }}</code> &nbsp;|&nbsp;
+  {{ file_def.field_count }} field{% if file_def.field_count != 1 %}s{% endif %}
+  &nbsp;|&nbsp;
+  <a href="/files/{{ file_def.file_number }}/data">Browse data</a>
+  &nbsp;|&nbsp;
+  <a href="/api/files/{{ file_def.file_number }}">JSON schema</a>
+</div>
+<table>
+  <thead>
+    <tr><th>Field #</th><th>Label</th><th>Type</th><th>Title / Details</th></tr>
+  </thead>
+  <tbody>
+    {% for fld in fields %}
+    <tr>
+      <td>{{ fld.field_number }}</td>
+      <td><strong>{{ fld.label }}</strong></td>
+      <td>
+        <span class="badge type-{{ fld.datatype_code }}">{{ fld.datatype_name }}</span>
+        {% if fld.pointer_file %}→ {{ fld.pointer_file }}{% endif %}
+      </td>
+      <td>
+        {{ fld.title }}
+        {% if fld.set_values %}
+          <br><span class="raw">
+          {% for code, lbl in fld.set_values.items() %}{{ code }}={{ lbl }}{% if not loop.last %}, {% endif %}{% endfor %}
+          </span>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

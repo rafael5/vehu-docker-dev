@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Data: File {{ file_def.file_number }} {{ file_def.label }}{% endblock %}
+{% block content %}
+<h2>Data: File {{ file_def.file_number }} — {{ file_def.label }}</h2>
+<div class="meta">
+  <a href="/files/{{ file_def.file_number }}">← Schema</a>
+  &nbsp;|&nbsp; Showing {{ entries|length }} entries
+  &nbsp;|&nbsp;
+  <a href="?limit=200">200</a> /
+  <a href="?limit=500">500</a>
+  &nbsp;|&nbsp;
+  <a href="/api/files/{{ file_def.file_number }}/data?limit={{ limit }}">JSON</a>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>IEN</th>
+      <th>Zero-node (raw)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for entry in entries %}
+    <tr>
+      <td>{{ entry.ien }}</td>
+      <td class="raw">{{ entry.raw_nodes.get("0", "") }}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="2" style="color:#808080">No entries found.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

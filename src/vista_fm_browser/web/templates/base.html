@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}FileMan Browser{% endblock %}</title>
+  <style>
+    body { font-family: monospace; background: #1a1a1a; color: #d4d4d4; margin: 0; padding: 0; }
+    header { background: #2d2d2d; padding: 0.75rem 1.5rem; border-bottom: 1px solid #444; display: flex; align-items: center; gap: 1rem; }
+    header h1 { margin: 0; font-size: 1.1rem; color: #4ec9b0; }
+    header a { color: #9cdcfe; text-decoration: none; }
+    header a:hover { text-decoration: underline; }
+    main { padding: 1.5rem; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+    th { background: #2d2d2d; color: #4ec9b0; text-align: left; padding: 0.4rem 0.75rem; border-bottom: 1px solid #444; }
+    td { padding: 0.35rem 0.75rem; border-bottom: 1px solid #333; vertical-align: top; }
+    tr:hover td { background: #252525; }
+    a { color: #9cdcfe; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge { display: inline-block; padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.78rem; }
+    .type-F { background: #264f78; color: #9cdcfe; }
+    .type-N { background: #1e4d2b; color: #b5cea8; }
+    .type-D { background: #5a3300; color: #ce9178; }
+    .type-P { background: #4a1f6e; color: #c586c0; }
+    .type-S { background: #3c3000; color: #dcdcaa; }
+    .type-M { background: #1a3a4a; color: #569cd6; }
+    .type-W { background: #2a2a2a; color: #808080; }
+    form { display: inline-flex; gap: 0.5rem; }
+    input[type=text] { background: #3c3c3c; border: 1px solid #555; color: #d4d4d4; padding: 0.3rem 0.6rem; border-radius: 3px; font-family: monospace; }
+    button { background: #0e639c; color: white; border: none; padding: 0.3rem 0.8rem; border-radius: 3px; cursor: pointer; font-family: monospace; }
+    button:hover { background: #1177bb; }
+    h2 { color: #4ec9b0; margin-top: 0; font-size: 1rem; }
+    .meta { color: #808080; font-size: 0.85rem; margin-bottom: 1rem; }
+    .raw { font-size: 0.8rem; color: #808080; word-break: break-all; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>⚕ FileMan Browser</h1>
+    <a href="/files">Files</a>
+    <a href="/api/files">API</a>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
