@@ -4,16 +4,11 @@ TDD tests for data_dictionary.py.
 All tests use YdbFake — no YottaDB connection required.
 """
 
-import pytest
-
 from vista_fm_browser.data_dictionary import (
     DataDictionary,
-    FileDef,
-    FieldDef,
     _fmt_file_num,
     _parse_field_zero,
 )
-
 
 # ------------------------------------------------------------------
 # _fmt_file_num

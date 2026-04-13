@@ -15,8 +15,6 @@ import logging
 from pathlib import Path
 from typing import Any
 
-import pandas as pd
-
 from .data_dictionary import DataDictionary, FieldDef, FileDef
 from .file_reader import FileEntry, FileReader
 

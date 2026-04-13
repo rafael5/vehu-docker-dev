@@ -61,7 +61,9 @@ class FieldDef:
     datatype_code: str
     datatype_name: str
     title: str = ""
-    set_values: dict[str, str] = field(default_factory=dict)  # code → label (for S type)
+    set_values: dict[str, str] = field(
+        default_factory=dict
+    )  # code → label (for S type)
     pointer_file: float | None = None  # for P type
 
 
@@ -155,9 +157,7 @@ class DataDictionary:
     # Internal helpers
     # ------------------------------------------------------------------
 
-    def _read_fields(
-        self, fn_str: str, file_number: float
-    ) -> dict[float, FieldDef]:
+    def _read_fields(self, fn_str: str, file_number: float) -> dict[float, FieldDef]:
         fields: dict[float, FieldDef] = {}
         for raw_fld in self._conn.subscripts("^DD", [fn_str, ""]):
             try:

@@ -73,7 +73,9 @@ def cmd_fields(file_number: float) -> None:
         console.print(f"[red]File {file_number} not found[/red]")
         sys.exit(1)
 
-    table = Table(title=f"File {file_number}: {file_def.label}  ({file_def.global_root})")
+    table = Table(
+        title=f"File {file_number}: {file_def.label}  ({file_def.global_root})"
+    )
     table.add_column("Field #", style="cyan", justify="right")
     table.add_column("Label", style="white")
     table.add_column("Type", style="yellow")
@@ -92,7 +94,9 @@ def cmd_fields(file_number: float) -> None:
 
 @main.command("data")
 @click.argument("file_number", type=float)
-@click.option("--limit", "-n", default=20, show_default=True, help="Max entries to show")
+@click.option(
+    "--limit", "-n", default=20, show_default=True, help="Max entries to show"
+)
 def cmd_data(file_number: float, limit: int) -> None:
     """Show data entries from a FileMan file."""
     conn, dd, reader = _get_conn_dd_reader()
@@ -103,7 +107,9 @@ def cmd_data(file_number: float, limit: int) -> None:
             sys.exit(1)
         entries = list(reader.iter_entries(file_number, limit=limit))
 
-    table = Table(title=f"File {file_number}: {file_def.label}  (first {limit} entries)")
+    table = Table(
+        title=f"File {file_number}: {file_def.label}  (first {limit} entries)"
+    )
     table.add_column("IEN", style="cyan", justify="right")
     table.add_column("Zero-node (raw)", style="white", no_wrap=False, max_width=80)
 
@@ -115,7 +121,8 @@ def cmd_data(file_number: float, limit: int) -> None:
 
 @main.command("export-dd")
 @click.option(
-    "--output", "-o",
+    "--output",
+    "-o",
     default=str(DEFAULT_OUTPUT),
     show_default=True,
     help="Output directory",
@@ -133,15 +140,20 @@ def cmd_export_dd(output: str) -> None:
 
 @main.command("export-file")
 @click.argument("file_number", type=float)
-@click.option("--limit", "-n", default=None, type=int, help="Max entries (default: all)")
 @click.option(
-    "--output", "-o",
+    "--limit", "-n", default=None, type=int, help="Max entries (default: all)"
+)
+@click.option(
+    "--output",
+    "-o",
     default=str(DEFAULT_OUTPUT),
     show_default=True,
     help="Output directory",
 )
 @click.option("--json", "as_json", is_flag=True, help="Output JSON instead of CSV")
-def cmd_export_file(file_number: float, limit: int | None, output: str, as_json: bool) -> None:
+def cmd_export_file(
+    file_number: float, limit: int | None, output: str, as_json: bool
+) -> None:
     """Export all data from a FileMan file to CSV or JSON."""
     conn, dd, reader = _get_conn_dd_reader()
     out_dir = Path(output)
