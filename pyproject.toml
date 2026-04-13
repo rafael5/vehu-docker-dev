@@ -10,7 +10,7 @@ dependencies = [
     "click>=8.0",        # CLI framework
     "rich>=13.0",        # Terminal tables / pretty output
     "flask>=3.0",        # Web browser UI
-    "pandas>=2.0",       # DataFrame export to CSV/JSON
+    "pandas>=3.0.2",       # DataFrame export to CSV/JSON
     "tabulate>=0.9",     # ASCII table formatting
 ]
 
