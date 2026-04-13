@@ -2,6 +2,7 @@
 Command-line interface for the FileMan browser.
 
 Commands:
+    fm-browser inventory          File + package inventory from ^DIC
     fm-browser files              List all FileMan files
     fm-browser fields <file#>     Show fields for a file
     fm-browser data <file#>       Show entries from a file
@@ -22,6 +23,7 @@ from .connection import YdbConnection
 from .data_dictionary import DataDictionary
 from .exporter import DEFAULT_OUTPUT, Exporter
 from .file_reader import FileReader
+from .inventory import FileInventory
 
 console = Console()
 log = logging.getLogger(__name__)
@@ -164,6 +166,96 @@ def cmd_export_file(
         else:
             out = exp.export_file(file_number, limit=limit)
     console.print(f"[green]Exported to {out}[/green]")
+
+
+@main.command("inventory")
+@click.option(
+    "--output",
+    "-o",
+    default=str(DEFAULT_OUTPUT),
+    show_default=True,
+    help="Output directory for inventory.json",
+)
+@click.option("--json", "as_json", is_flag=True, help="Also write inventory.json")
+@click.option(
+    "--package",
+    "-p",
+    default="",
+    help="Filter display to one package prefix (e.g. LR, PS, DG)",
+)
+def cmd_inventory(output: str, as_json: bool, package: str) -> None:
+    """Show a file + package inventory from ^DIC.
+
+    Lists every FileMan file grouped by VistA package, with field counts.
+    Use --json to write the full inventory to inventory.json for offline analysis.
+    """
+    conn = YdbConnection.connect()
+    with conn:
+        fi = FileInventory(conn)
+        fi.load()
+
+    s = fi.summary()
+    console.print(
+        f"\n[bold]FileMan Inventory[/bold]  "
+        f"[cyan]{s['total_files']}[/cyan] files  "
+        f"[cyan]{s['total_packages']}[/cyan] packages  "
+        f"[dim]({s['unpackaged_files']} unpackaged)[/dim]\n"
+    )
+
+    # Package summary table
+    pkg_table = Table(title="Top Packages by File Count", show_lines=False)
+    pkg_table.add_column("Package", style="white")
+    pkg_table.add_column("Prefix", style="cyan", justify="center")
+    pkg_table.add_column("Files", style="yellow", justify="right")
+    for row in s["top_packages_by_file_count"][:30]:
+        pkg_table.add_row(row["name"], "", str(row["file_count"]))
+
+    # Rebuild table with prefix column (prefix not in summary dict)
+    pkg_by_name = {p.name: p for p in fi.list_packages()}
+    pkg_table = Table(title="Top Packages by File Count", show_lines=False)
+    pkg_table.add_column("Package", style="white")
+    pkg_table.add_column("Prefix", style="cyan", justify="center")
+    pkg_table.add_column("Files", style="yellow", justify="right")
+    for row in s["top_packages_by_file_count"][:30]:
+        pkg = pkg_by_name.get(row["name"])
+        prefix = pkg.prefix if pkg else ""
+        pkg_table.add_row(row["name"], prefix, str(row["file_count"]))
+    console.print(pkg_table)
+
+    # Optional: detailed file list filtered by package prefix
+    if package:
+        grouped = fi.files_by_package()
+        matched = {
+            name: files
+            for name, files in grouped.items()
+            if any(
+                p.prefix.upper() == package.upper()
+                for p in fi.list_packages()
+                if p.name == name
+            )
+        }
+        if not matched:
+            console.print(f"[red]No package with prefix '{package}' found[/red]")
+        else:
+            for pkg_name, files in matched.items():
+                title = f"{pkg_name} ({package.upper()}) — {len(files)} files"
+                file_table = Table(title=title)
+                file_table.add_column("File #", style="cyan", justify="right")
+                file_table.add_column("Label", style="white")
+                file_table.add_column("Global", style="dim")
+                file_table.add_column("Fields", style="yellow", justify="right")
+                for fr in files:
+                    file_table.add_row(
+                        str(fr.file_number),
+                        fr.label,
+                        fr.global_root,
+                        str(fr.field_count),
+                    )
+                console.print(file_table)
+
+    if as_json:
+        out = fi.export_json(Path(output))
+        console.print(f"[green]Inventory written to {out}[/green]")
 
 
 @main.command("serve")
