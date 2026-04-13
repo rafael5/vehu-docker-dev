@@ -1,15 +1,22 @@
 {
   // Attach VSCode to the running VEHU container.
-  // Prerequisites:
-  //   1. docker-compose up -d
-  //   2. bash scripts/setup-container.sh
-  //   3. Open this folder in VSCode → "Reopen in Container"
+  //
+  // Prerequisites (first time only):
+  //   docker-compose up -d --build     ← builds the image + starts the container
+  //   (no setup-container.sh needed — the Dockerfile handles everything)
+  //
+  // Then: Open this folder in VSCode → "Reopen in Container"
   "name": "VEHU FileMan Browser",
 
   // Attach to the already-running container (not build a new one)
   "dockerComposeFile": "../docker-compose.yml",
   "service": "vehu",
   "workspaceFolder": "/opt/vista-fm-browser",
+
+  // Install the project package (editable) from the bind-mounted source.
+  // All deps are already in /opt/venv from the Dockerfile — this just
+  // registers the fm-browser entry point in the venv.
+  "postAttachCommand": "/opt/venv/bin/pip install -e '/opt/vista-fm-browser[dev]' -q",
 
   // VSCode extensions to install inside the container
   "customizations": {
@@ -24,7 +31,8 @@
         "eamodio.gitlens"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "/opt/vista-fm-browser/.venv/bin/python",
+        // Point VSCode at the pre-built venv in /opt/venv (not .venv/)
+        "python.defaultInterpreterPath": "/opt/venv/bin/python",
         "editor.formatOnSave": true,
         "[python]": {
           "editor.defaultFormatter": "charliermarsh.ruff",
@@ -34,12 +42,9 @@
           }
         },
         "python.testing.pytestEnabled": true,
-        "python.testing.pytestArgs": ["-v", "--tb=short"],
+        "python.testing.pytestArgs": ["-v", "--tb=short", "-m", "not integration"],
         "terminal.integrated.defaultProfile.linux": "bash"
       }
     }
-  },
-
-  // Run after VSCode attaches — install Python deps if not already done
-  "postAttachCommand": "cd /opt/vista-fm-browser && pip install -e '.[dev]' -q"
+  }
 }

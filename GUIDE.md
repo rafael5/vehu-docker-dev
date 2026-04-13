@@ -3,7 +3,8 @@
 ## What it does
 
 `vista-fm-browser` lets you explore all FileMan data in a VistA server instance.
-It connects to the VEHU Docker container (the WorldVistA Electronic Health Universe demo),
+It connects to the VEHU Docker container (`yottadb/octo-vehu` — built nightly by
+YottaDB Inc. with the latest YottaDB, Octo, and synthetic patient data),
 reads the YottaDB globals directly, and gives you a browsable view of:
 
 - **The data dictionary** — every FileMan file (table) and its fields
@@ -12,42 +13,31 @@ reads the YottaDB globals directly, and gives you a browsable view of:
 
 ## Quick start
 
-### 1. Start the VEHU container
+### 1. Build and start the VEHU container
 
 ```bash
 cd ~/projects/vista-fm-browser
-docker-compose up -d
+docker-compose up -d --build
 ```
 
-This starts a VistA/YottaDB server on your machine. First pull is large (~2 GB).
+First run pulls the VEHU base image (~2 GB) and builds the dev image with Python 3.12,
+all project dependencies, and the YottaDB connector pre-installed. Subsequent starts
+use the cached image — no `--build` needed.
 
-### 2. Set up the container (first time only)
+> **No manual setup step.** The Dockerfile handles everything that
+> `setup-container.sh` used to do.
 
-```bash
-bash scripts/setup-container.sh
-```
+### 2. Open in VSCode dev container
 
-Installs Python, the yottadb connector, and project dependencies inside the container.
-Safe to run again — it's idempotent.
-
-### 3. Open in VSCode dev container
-
-1. Open `~/projects/vista-fm-browser` in VSCode
+1. Open this folder in VSCode
 2. Command palette → **"Reopen in Container"**
-3. VSCode attaches to the running `vehu` container
+3. VSCode attaches to the running `vehu` container and runs
+   `pip install -e .` to register the `fm-browser` entry point
 
-### 4. Activate YottaDB environment
+> The YottaDB environment is auto-sourced in every container shell session —
+> no manual `source /etc/yottadb/env` needed.
 
-Inside the container terminal:
-
-```bash
-source /etc/yottadb/env
-```
-
-This sets the required environment variables (`ydb_gbldir`, `ydb_routines`, etc.)
-that tell the YottaDB connector where the VistA data lives.
-
-### 5. Use the CLI
+### 3. Use the CLI
 
 ```bash
 # List all FileMan files
@@ -176,17 +166,50 @@ src/vista_fm_browser/
     data_dictionary.py  DataDictionary — reads ^DD global; FileDef, FieldDef
     file_reader.py      FileReader — reads record data from data globals
     exporter.py         Exporter — exports to CSV/JSON
+    rpc_broker.py       VistARpcBroker — TCP RPC Broker client (XWB NS mode)
     cli.py              fm-browser CLI (Click)
     web/app.py          Flask web UI
 
 tests/
     conftest.py         YdbFake + fixture data (FAKE_DD, FAKE_PATIENT_GLOBAL)
-    test_*.py           one file per source module
+    test_*.py           one file per source module (unit tests only)
+                        integration tests inside each file, @pytest.mark.integration
 
-docker-compose.yml      VEHU container definition
-scripts/setup-container.sh  idempotent container setup
+Dockerfile              Custom dev image (extends worldvista/vehu-interim)
+docker-compose.yml      VEHU container definition (uses Dockerfile build)
 .devcontainer/          VSCode dev container config
+scripts/setup-container.sh  Legacy — superseded by Dockerfile
 ```
+
+---
+
+## Using the RPC Broker
+
+The RPC Broker client (`VistARpcBroker`) connects to VistA via TCP (port 9430) and
+executes VistA Remote Procedure Calls. This is an alternative to direct YottaDB
+global access and is the standard way CPRS and other VistA clients communicate.
+
+```python
+from vista_fm_browser.rpc_broker import VistARpcBroker
+
+with VistARpcBroker(host="localhost", port=9430) as broker:
+    broker.connect(app="FM BROWSER", uci="VAH")
+    broker.call("XUS SIGNON SETUP")                    # get intro text
+    duz = broker.authenticate("fakedoc1", "1Doc!@#$")  # returns DUZ
+    print(f"Authenticated as DUZ={duz}")
+
+    # Get PATIENT file entry IEN=1, field .01 (NAME)
+    data = broker.gets_entry_data(file_number=2, ien="1", fields=".01")
+    print(data)
+
+    # Call any VistA RPC with literal string parameters
+    result = broker.call("XWB GET VARIABLE VALUE", "$ZV")
+    print(result)  # YottaDB version string
+```
+
+The RPC Broker is available from:
+- **Inside the container**: `localhost:9430`
+- **From the host**: `localhost:9430` (mapped in docker-compose.yml)
 
 ---
 
@@ -197,12 +220,38 @@ Expected on the host. The yottadb connector only works inside the VEHU container
 where the YottaDB C library is installed. Run inside the container.
 
 ### `ydb_gbldir not set` or similar YDB errors
-Run `source /etc/yottadb/env` inside the container before using fm-browser.
+The YottaDB env is auto-sourced in bash sessions (via `/etc/bash.bashrc`).
+If running a non-interactive script, source the env manually:
+```bash
+# yottadb/octo-vehu image:
+source /usr/local/etc/ydb_env_set
+# or: source $ydb_dist/ydb_env_set
+# older worldvista/* images:
+source /etc/yottadb/env
+```
 
 ### Container won't start
 ```bash
 docker-compose logs vehu
-docker-compose down && docker-compose up -d
+docker-compose down && docker-compose up -d --build
+```
+
+### Python deps missing inside container
+The Dockerfile installs deps into `/opt/venv` which is on `PATH`.
+If `fm-browser` command is not found, the editable install step may not
+have run yet:
+```bash
+# Inside container:
+/opt/venv/bin/pip install -e '/opt/vista-fm-browser[dev]' -q
+# Or: make container-install
+```
+
+### RPC Broker connection refused
+Ensure the VEHU container is started and the broker has had time to initialize
+(may take ~10s after container start):
+```bash
+docker-compose ps           # verify container is running
+nc -zv localhost 9430       # test TCP port from host
 ```
 
 ### Port 5000 already in use

@@ -33,7 +33,7 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-v --tb=short -x"
+addopts = "-v --tb=short -x -m 'not integration'"
 markers = [
     "integration: requires live YottaDB connection inside the VEHU container",
     "unit: runs on the host with no external dependencies",

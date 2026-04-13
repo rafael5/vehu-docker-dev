@@ -2,7 +2,7 @@
 
 ## What this project is
 A FileMan browser for inspecting and analyzing all FileMan data in a VistA server instance.
-Connects to the VEHU Docker container (worldvista/vehu-interim) running YottaDB.
+Connects to the VEHU Docker container (yottadb/octo-vehu — built nightly by YottaDB Inc.) running YottaDB.
 Provides both a CLI (`fm-browser`) and a web UI (Flask) for browsing the FileMan data dictionary
 and record data. Exports to JSON/CSV. Entry point for VA VistA data analysis.
 

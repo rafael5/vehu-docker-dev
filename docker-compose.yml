@@ -1,21 +1,33 @@
 services:
   vehu:
-    # VEHU: VistA Electronic Health Universe — OSEHRA demo VistA on YottaDB
-    # Image source: https://github.com/WorldVistA/docker-vista
-    # Pull: docker pull worldvista/vehu-interim
-    image: worldvista/vehu-interim
+    # Build our custom dev image on top of yottadb/octo-vehu.
+    # Base image is built nightly by YottaDB Inc. with the latest YottaDB,
+    # Octo, and VEHU (VistA + synthetic patients).
+    #
+    # First run: `docker-compose up -d --build` pulls the base and builds.
+    # Subsequent starts use the cached image layer.
+    #
+    # To force a full rebuild (e.g. after changing pyproject.toml):
+    #   docker-compose up -d --build
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vista-fm-browser-dev   # local tag for the built image
     container_name: vehu
     hostname: vehu
     ports:
       - "9430:9430"   # VistA RPC Broker
+      - "1338:1338"   # Rocto — Octo's PostgreSQL-protocol SQL interface
       - "8001:8001"   # VistA HTTP server
-      - "5000:5000"   # fm-browser Flask web UI (forwarded from container)
+      - "8080:8080"   # YottaDB GUI
+      - "2222:22"     # SSH into container (ssh -p 2222 yottadb@localhost)
+      - "5000:5000"   # fm-browser Flask web UI
     volumes:
-      # Mount the project into the container so code changes are live
+      # Source code bind-mount: edits on the host are immediately visible inside.
+      # /opt/venv lives at a SEPARATE path in the image and is NOT shadowed here.
       - .:/opt/vista-fm-browser
     environment:
       - TERM=xterm-256color
     stdin_open: true
     tty: true
-    # Keep the container alive for VSCode attachment
     restart: unless-stopped

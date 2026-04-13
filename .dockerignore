@@ -1,0 +1,35 @@
+# Python build artifacts
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Editor / OS artifacts
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Git
+.git/
+.gitignore
+
+# Data directories (large, not needed in image)
+data/
+
+# Docs (not needed in image)
+*.md
+GUIDE.md
