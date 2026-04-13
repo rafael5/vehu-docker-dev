@@ -1,5 +1,47 @@
 # FileMan Data Dictionary Analysis Guide
 
+## Table of Contents
+
+- [Purpose and Strategy](#purpose-and-strategy)
+- [Background: FileMan at a Glance](#background-fileman-at-a-glance)
+- [Setup](#setup)
+- [Phase 1 — Scope Survey (15 minutes)](#phase-1--scope-survey-15-minutes)
+  - [1.0 File #1 — the file registry itself](#10-file-1--the-file-registry-itself)
+  - [1.1 Package and file counts](#11-package-and-file-counts)
+  - [1.2 Total field count](#12-total-field-count)
+  - [1.3 Field type distribution — the variety picture](#13-field-type-distribution--the-variety-picture)
+  - [1.4 Export the inventory for offline reference](#14-export-the-inventory-for-offline-reference)
+- [Phase 2 — Volume Survey (30 minutes)](#phase-2--volume-survey-30-minutes)
+  - [2.1 Entry counts for all files with data](#21-entry-counts-for-all-files-with-data)
+  - [2.2 Volume tiers](#22-volume-tiers--classify-files-by-magnitude)
+  - [2.3 Data density](#23-data-density--bytes-per-entry-estimate)
+- [Phase 3 — Structural Topology (1–2 hours)](#phase-3--structural-topology-12-hours)
+  - [3.1 Build the full schema (one pass)](#31-build-the-full-schema-one-pass)
+  - [3.2 Pointer graph — hub file identification](#32-pointer-graph--hub-file-identification)
+  - [3.3 Pointer graph — outbound density per file](#33-pointer-graph--outbound-density-per-file)
+  - [3.4 Export the pointer graph](#34-export-the-pointer-graph)
+  - [3.5 Variable pointer files (polymorphic FKs)](#35-variable-pointer-files-polymorphic-fks)
+  - [3.6 Multiple (sub-file) depth map](#36-multiple-sub-file-depth-map)
+- [Phase 4 — Data Variety and Naming Analysis (1–2 hours)](#phase-4--data-variety-and-naming-analysis-12-hours)
+  - [4.1 SET-OF-CODES inventory](#41-set-of-codes-inventory--all-enumerated-value-sets)
+  - [4.2 Boolean equivalents](#42-boolean-equivalents--yesno-patterns)
+  - [4.3 Label frequency](#43-label-frequency--what-concepts-appear-across-all-packages)
+  - [4.4 Label-type consistency](#44-label-type-consistency--same-label-different-types)
+  - [4.5 Canonical field positions](#45-canonical-field-positions)
+- [Phase 5 — Schema Deep Dive (per file or package)](#phase-5--schema-deep-dive-per-file-or-package)
+  - [5.1 Full field attributes for one file](#51-full-field-attributes-for-one-file)
+  - [5.2 Storage layout — zero-node density](#52-storage-layout--zero-node-density)
+  - [5.3 Cross-reference inventory](#53-cross-reference-inventory)
+  - [5.4 Per-package schema batch export](#54-per-package-schema-batch-export)
+- [Phase 6 — Data Coverage Analysis](#phase-6--data-coverage-analysis)
+- [Phase 7 — Normalization Candidate Identification](#phase-7--normalization-candidate-identification)
+- [Phase 8 — Normalization Report](#phase-8--normalization-report)
+- [Analysis Output Reference](#analysis-output-reference)
+- [Next Steps](#next-steps)
+- [Quick Reference: Common Analysis Queries](#quick-reference-common-analysis-queries)
+
+---
+
 ## Purpose and Strategy
 
 This guide provides a systematic approach to comprehensive FileMan data dictionary
@@ -60,18 +102,20 @@ M Runtime
 | Pointer | FK storing an IEN from another file |
 | Variable Pointer | Polymorphic FK that can reference any of a set of files |
 
-Key hub files referenced by almost every clinical package:
+Key files — meta-files and clinical hub files:
 
-| File # | Name | Global | Owner package |
-|---|---|---|---|
-| 2 | PATIENT | `^DPT` | Registration (DG) |
-| 200 | NEW PERSON | `^VA(200,` | Kernel (XU) |
-| 4 | INSTITUTION | `^DIC(4,` | Kernel (XU) |
-| 19 | OPTION | `^DIC(19,` | Kernel (XU) |
-| 50 | DRUG | `^PSDRUG(` | Pharmacy (PS) |
-| 63 | LAB DATA | `^LR(` | Laboratory (LR) |
-| 100 | ORDER | `^OR(100,` | CPRS (OE/RR) |
-| 101 | PROTOCOL | `^ORD(101,` | Kernel (XU) |
+| File # | Name | Global | Owner package | Role |
+|---|---|---|---|---|
+| **1** | **FILE** | **`^DIC`** | **Kernel (XU)** | **File registry — every file has an entry here** |
+| **9.4** | **PACKAGE** | **`^DIC(9.4,`** | **Kernel (XU)** | **Package registry — owns File #1's FILE MULTIPLE** |
+| 2 | PATIENT | `^DPT` | Registration (DG) | Clinical hub — referenced by 80+ files |
+| 200 | NEW PERSON | `^VA(200,` | Kernel (XU) | Provider/user hub — referenced by 70+ files |
+| 4 | INSTITUTION | `^DIC(4,` | Kernel (XU) | Site/facility hub |
+| 19 | OPTION | `^DIC(19,` | Kernel (XU) | Menu system hub |
+| 50 | DRUG | `^PSDRUG(` | Pharmacy (PS) | Drug catalog hub |
+| 63 | LAB DATA | `^LR(` | Laboratory (LR) | Primary lab record store |
+| 100 | ORDER | `^OR(100,` | CPRS (OE/RR) | CPRS order hub |
+| 101 | PROTOCOL | `^ORD(101,` | Kernel (XU) | Menu/protocol hub |
 
 ---
 
@@ -115,6 +159,79 @@ import json, csv, collections
 ## Phase 1 — Scope Survey (15 minutes)
 
 **Goal:** Know the total size of the problem in five numbers before touching any field.
+
+### 1.0 File #1 — the file registry itself
+
+Before using `FileInventory`, understand what you are reading.  **File #1** is the
+FILE file — the FileMan meta-file that registers every other FileMan file.  Its global
+root is `^DIC`.  Every call to `FileInventory.load()` reads `^DIC(file#, 0)` — it is
+reading File #1.
+
+File #1 has its own data dictionary in `^DD(1, ...)`, with fields that describe the
+structure of every file entry:
+
+| Field # | Label | Type | Notes |
+|---|---|---|---|
+| `.01` | NAME | FREE TEXT | File label (the primary name/identifier) |
+| `1` | GLOBAL NAME | FREE TEXT | Root global name, e.g. `DPT(` or `PS(50,` |
+| `2` | ACCESS | FREE TEXT | FileMan access string |
+| `3` | DATE LAST EDITED | DATE | FM date of last schema change |
+| `4` | PACKAGE | POINTER (#9.4) | Owning VistA package |
+| `5` | NUMBER | NUMERIC | The file number (same as the subscript in `^DIC`) |
+
+Inspect File #1's schema via `DataDictionary`:
+
+```python
+with YdbConnection.connect() as conn:
+    dd = DataDictionary(conn)
+
+    fd1 = dd.get_file(1)
+    print(f"File 1: {fd1.label}  global=^DIC  fields={fd1.field_count}")
+    print()
+    for field_num, fld in sorted(fd1.fields.items()):
+        ptr = f" → File #{fld.pointer_file}" if fld.pointer_file else ""
+        print(f"  {field_num:7.4f}  {fld.label:30s}  {fld.datatype_name}{ptr}")
+```
+
+Read File #1 entries directly through `FileReader` (same data `FileInventory` reads,
+accessed via the standard FileMan interface):
+
+```python
+with YdbConnection.connect() as conn:
+    dd = DataDictionary(conn)
+    reader = FileReader(conn, dd)
+
+    # Total count of registered files
+    total = reader.count_entries(1)
+    print(f"File #1 has {total} entries (registered FileMan files)")
+
+    # Sample the first 20 entries
+    print("\nFirst 20 files in the registry:")
+    for entry in reader.iter_entries(1, limit=20):
+        name      = entry.fields.get(0.01, "").strip()
+        gl_name   = entry.fields.get(1,    "").strip()
+        pkg_ien   = entry.fields.get(4,    "").strip()
+        print(f"  IEN {entry.ien:>6s}  {name:40s}  ^{gl_name}  pkg_ien={pkg_ien}")
+```
+
+Cross-references on File #1 (the `"B"` index and others) are how FileMan resolves a
+file name string to a file number.  `^DIC("B", name, file#)` is the classic lookup
+that the FileMan `FIND^DIC` API uses internally:
+
+```python
+with YdbConnection.connect() as conn:
+    dd = DataDictionary(conn)
+    xrefs = dd.list_cross_refs(1)
+    print(f"File #1 cross-references ({len(xrefs)} total):")
+    for xref in xrefs:
+        print(f"  '{xref.name}'  ({xref.xref_type})  — {xref.description[:60]}")
+```
+
+> **Why this matters for analysis:** The entry count from `reader.count_entries(1)`
+> is the authoritative total file count for the VistA instance — the same number
+> `FileInventory` produces.  If they differ, the `^DIC` global has entries without
+> a zero-node (orphan entries) that `FileInventory` silently skips.  Comparing
+> the two counts is a quick data-quality check on the file registry itself.
 
 ### 1.1 Package and file counts
 
