@@ -392,6 +392,27 @@ print(f"Chart saved to {out_dir / 'phase1_scope.png'}")
 - A large `C` / `K` slice signals executable-code-heavy files that cannot be exported
   to SQL without M runtime support.
 
+**Interactive D3 alternative — zoomable treemap:**
+`to_treemap.py` converts the inventory JSON to a click-to-drill D3 treemap where packages
+are the top tier, files the second tier, and file size encodes field count. Domain color
+families make the clinical footprint visible at a glance.
+
+```bash
+# Export inventory first
+python3 -c "
+from vista_fm_browser.connection import YdbConnection
+from vista_fm_browser.inventory import FileInventory
+with YdbConnection.connect() as conn:
+    fi = FileInventory(conn); fi.load()
+    fi.export_json('~/data/vista-fm-browser/output/inventory.json')
+"
+python scripts/to_treemap.py --mode inventory \
+    --input ~/data/vista-fm-browser/output/inventory.json \
+    --output ~/data/vista-fm-browser/output/phase1_treemap.html
+```
+
+Open `phase1_treemap.html` in a browser — click any package tile to zoom into its files.
+
 **Terminal alternative (no matplotlib):** The `rich` table already produced in 1.1
 and 1.3 is the terminal equivalent — use `rich.table.Table` with color columns:
 
@@ -584,6 +605,28 @@ print(f"Volume CSV: {out_dir / 'file_volume.csv'}")
   files are safe to skip in schema analysis.
 - Outliers with unexpectedly high counts (e.g. a configuration file with 500K entries)
   indicate audit logs or temporary data masquerading as configuration.
+
+**Interactive D3 alternative — volume treemap:**
+The `volume` mode sizes each file tile by its entry count (log-scale), making the
+massive-tier files impossible to miss.
+
+```bash
+# Assumes file_volume.csv produced in Phase 2 pandas block
+python scripts/to_treemap.py --mode volume \
+    --input ~/data/vista-fm-browser/output/file_volume.csv \
+    --output ~/data/vista-fm-browser/output/phase2_volume_treemap.html
+```
+
+**Cross-package flow — Sankey:**
+After exporting `all_fields.json` (schema phase), `viz_library.py sankey` renders a
+package-to-package pointer flow diagram showing which domains depend on which.
+
+```bash
+python scripts/viz_library.py sankey \
+    --input ~/data/vista-fm-browser/output/all_fields.json \
+    --inv    ~/data/vista-fm-browser/output/inventory.json \
+    --output ~/data/vista-fm-browser/output/phase2_sankey.html
+```
 
 ---
 
@@ -870,6 +913,33 @@ print("DOT file written — render with: dot -Tsvg phase3_pointer_graph.dot -o g
 - Islands (nodes with no paths to hub files) are standalone utility files — lowest
   integration priority.
 
+**Interactive D3 alternatives:**
+
+*Hierarchical edge bundling* — renders files arranged by package around a circle with
+curved pointer edges. The bundle tension (`beta=0.85`) routes co-package edges close to
+the circumference, making cross-package dependencies visually obvious. Click any node to
+highlight its connections.
+
+```bash
+python scripts/viz_library.py bundle \
+    --input ~/data/vista-fm-browser/output/all_fields.json \
+    --inv    ~/data/vista-fm-browser/output/inventory.json \
+    --output ~/data/vista-fm-browser/output/phase3_bundle.html \
+    --max-files 200
+```
+
+*Sankey (cross-package flow)* — same command as Phase 2; re-run after Phase 3 to see
+whether inter-package pointer counts match your hub-file findings.
+
+*Package heatmap* — renders the package × package dependency matrix as a D3 heatmap
+more readable than the matplotlib version at large package counts.
+
+```bash
+python scripts/viz_library.py heatmap \
+    --input ~/data/vista-fm-browser/output/all_fields.json \
+    --output ~/data/vista-fm-browser/output/phase3_pkg_heatmap.html
+```
+
 ---
 
 ## Phase 4 — Data Variety and Naming Analysis (1–2 hours)
@@ -1116,6 +1186,28 @@ print(f"SET similarity matrix saved.")
 - SET value pairs with Jaccard > 0.8 but different labels are synonyms — candidates for
   a single shared enumeration.
 
+**Interactive D3 alternatives:**
+
+*Word cloud* — renders all field labels as a D3 word cloud where word size encodes
+frequency and color encodes the dominant datatype. Immediately surfaces the shared
+vocabulary of the schema.
+
+```bash
+python scripts/viz_library.py wordcloud \
+    --input ~/data/vista-fm-browser/output/all_fields.json \
+    --output ~/data/vista-fm-browser/output/phase4_wordcloud.html \
+    --top-n 200
+```
+
+*Field-type heatmap* — renders the package × field-type matrix (each cell = count of
+fields of that type in that package). Hover for exact counts; per-type color scaling.
+
+```bash
+python scripts/viz_library.py heatmap \
+    --input ~/data/vista-fm-browser/output/all_fields.json \
+    --output ~/data/vista-fm-browser/output/phase4_type_heatmap.html
+```
+
 ---
 
 ## Phase 5 — Schema Deep Dive (per file or package)
@@ -1310,6 +1402,26 @@ console.print(t)
 - Node 0 holding 10+ fields means reads from that file are very efficient (single global
   get); fields spread across many nodes require multiple gets per entry.
 
+**Interactive D3 alternative — package dendrogram:**
+`viz_library.py dendrogram` renders a radial cluster where packages are the inner ring
+and files are the outer leaves. Node size encodes field count. Zoom and pan to explore
+a specific package's file cluster.
+
+```bash
+python scripts/viz_library.py dendrogram \
+    --input ~/data/vista-fm-browser/output/inventory.json \
+    --output ~/data/vista-fm-browser/output/phase5_dendrogram.html \
+    --max-files 300
+```
+
+The `schema` treemap mode gives a per-file view of field counts nested inside packages:
+
+```bash
+python scripts/to_treemap.py --mode schema \
+    --input ~/data/vista-fm-browser/output/all_fields.json \
+    --output ~/data/vista-fm-browser/output/phase5_schema_treemap.html
+```
+
 ---
 
 ## Phase 6 — Data Coverage Analysis
@@ -1444,6 +1556,18 @@ df_cov.to_csv(out_dir / "phase6_coverage_multi.csv", index=False)
   values are prime type-normalization targets.
 - If the `.01` (NAME) field has <100% coverage, the file has orphan or header-only
   entries that may indicate data quality issues in the source system.
+
+**Interactive D3 alternative — coverage treemap:**
+`to_treemap.py --mode coverage` colors each file tile by its average field population
+rate (green = well-populated, red = sparse). Drill down from package → file to see
+which clinical areas have the most complete data.
+
+```bash
+# Requires phase6_coverage_multi.csv produced by the pandas block above
+python scripts/to_treemap.py --mode coverage \
+    --input ~/data/vista-fm-browser/output/phase6_coverage_multi.csv \
+    --output ~/data/vista-fm-browser/output/phase6_coverage_treemap.html
+```
 
 ---
 
@@ -1621,6 +1745,16 @@ console.print(t)
 - If `pointer_to_empty_file` is large, many FK relationships are theoretically defined
   but point to unused reference tables — safe to drop in an export schema.
 
+**Interactive D3 alternative — candidates treemap:**
+`to_treemap.py --mode candidates` renders each candidate as a tile, grouped by rule type
+at the top level and by package at the second level.  Tile size encodes priority score.
+
+```bash
+python scripts/to_treemap.py --mode candidates \
+    --input ~/data/vista-fm-browser/output/normalization_candidates.json \
+    --output ~/data/vista-fm-browser/output/phase7_candidates_treemap.html
+```
+
 ---
 
 ## Phase 8 — Normalization Report
@@ -1782,6 +1916,20 @@ style interpolation.  Flask is already a project dependency.
 - The ratio `files_with_data / total_files` tells you how much of the defined schema is
   actually in active use.  In VEHU (demo system), expect ~60%.  In production, expect
   >85%.
+
+**Interactive D3 alternative — cross-phase correlogram:**
+After all phases complete, `viz_library.py correlogram` renders a scatter matrix of
+per-file metrics (field_count, pointer_count, set_count, multiple_count, entry_count).
+Off-diagonal cells show scatter plots with Pearson r; diagonals show histograms. Color
+by clinical domain. This is the highest-level interactive summary of the full analysis.
+
+```bash
+python scripts/viz_library.py correlogram \
+    --input  ~/data/vista-fm-browser/output/inventory.json \
+    --schema ~/data/vista-fm-browser/output/all_fields.json \
+    --volume ~/data/vista-fm-browser/output/file_volume.csv \
+    --output ~/data/vista-fm-browser/output/phase8_correlogram.html
+```
 
 ---
 
