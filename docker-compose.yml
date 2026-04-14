@@ -22,6 +22,7 @@ services:
       - "8080:8080"   # YottaDB GUI
       - "2222:22"     # SSH into container (ssh -p 2222 yottadb@localhost)
       - "5000:5000"   # fm-browser Flask web UI
+      - "8888:8888"   # JupyterLab
     volumes:
       # Source code bind-mount: edits on the host are immediately visible inside.
       # /opt/venv lives at a SEPARATE path in the image and is NOT shadowed here.

@@ -24,6 +24,13 @@ dev = [
     "mypy",
     "pre-commit",
 ]
+analysis = [
+    "jupyterlab>=4.0",
+    "matplotlib>=3.8",
+    "networkx>=3.2",
+    "numpy>=1.26",
+    "ipywidgets>=8.0",
+]
 
 [project.scripts]
 fm-browser = "vista_fm_browser.cli:main"
@@ -52,6 +59,7 @@ show_missing = true
 
 [tool.ruff]
 line-length = 88
+exclude = ["notebooks/"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I"]
