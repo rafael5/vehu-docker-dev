@@ -5,21 +5,6 @@
 - [Purpose and Strategy](#purpose-and-strategy)
 - [Background: FileMan at a Glance](#background-fileman-at-a-glance)
 - [Setup](#setup)
-- [Visualization Toolkit](#visualization-toolkit)
-  - [Shared design principles](#shared-design-principles)
-  - [to_treemap.py — Zoomable Treemap](#to_treemappy--zoomable-treemap)
-    - [inventory mode](#inventory-mode)
-    - [volume mode](#volume-mode)
-    - [schema mode](#schema-mode)
-    - [coverage mode](#coverage-mode)
-    - [candidates mode](#candidates-mode)
-  - [viz_library.py — Visualization Library](#viz_librarypy--visualization-library)
-    - [heatmap — package × field-type matrix](#heatmap--package--field-type-matrix)
-    - [correlogram — file attribute scatter matrix](#correlogram--file-attribute-scatter-matrix)
-    - [wordcloud — field label frequency cloud](#wordcloud--field-label-frequency-cloud)
-    - [dendrogram — package → file radial tree](#dendrogram--package--file-radial-tree)
-    - [sankey — cross-package pointer flow](#sankey--cross-package-pointer-flow)
-    - [bundle — hierarchical edge bundling](#bundle--hierarchical-edge-bundling)
 - [Phase 1 — Scope Survey (15 minutes)](#phase-1--scope-survey-15-minutes)
   - [1.0 File #1 — the file registry itself](#10-file-1--the-file-registry-itself)
   - [1.1 Package and file counts](#11-package-and-file-counts)
@@ -54,6 +39,21 @@
 - [Analysis Output Reference](#analysis-output-reference)
 - [Next Steps](#next-steps)
 - [Quick Reference: Common Analysis Queries](#quick-reference-common-analysis-queries)
+- [Appendix — Visualization Toolkit](#appendix--visualization-toolkit)
+  - [Shared design principles](#shared-design-principles)
+  - [to_treemap.py — Zoomable Treemap](#to_treemappy--zoomable-treemap)
+    - [inventory mode](#inventory-mode)
+    - [volume mode](#volume-mode)
+    - [schema mode](#schema-mode)
+    - [coverage mode](#coverage-mode)
+    - [candidates mode](#candidates-mode)
+  - [viz_library.py — Visualization Library](#viz_librarypy--visualization-library)
+    - [heatmap — package × field-type matrix](#heatmap--package--field-type-matrix)
+    - [correlogram — file attribute scatter matrix](#correlogram--file-attribute-scatter-matrix)
+    - [wordcloud — field label frequency cloud](#wordcloud--field-label-frequency-cloud)
+    - [dendrogram — package → file radial tree](#dendrogram--package--file-radial-tree)
+    - [sankey — cross-package pointer flow](#sankey--cross-package-pointer-flow)
+    - [bundle — hierarchical edge bundling](#bundle--hierarchical-edge-bundling)
 
 ---
 
@@ -168,490 +168,6 @@ from vista_fm_browser.file_reader import FileReader
 from pathlib import Path
 import json, csv, collections
 ```
-
----
-
-## Visualization Toolkit
-
-Two standalone Python scripts generate interactive browser-based visualizations from the
-JSON and CSV files produced at each analysis phase.  Both scripts require only the Python
-standard library — no matplotlib, pandas, or extra packages.  D3 v7 is loaded from CDN
-at view time, so the generated HTML files require internet access when opened.
-
-```
-scripts/to_treemap.py   — 5 modes, all zoomable treemap output
-scripts/viz_library.py  — 6 subcommands, each a distinct visualization type
-```
-
-### Shared design principles
-
-**Domain color coding** — both tools map VistA package namespaces to 14 clinical
-domains and assign a consistent hex color to each domain across all visualizations.
-Packages not matched by a known prefix are colored "Other" (slate grey).
-
-| Domain | Color | Key namespaces |
-|---|---|---|
-| Registration/ADT | steel blue `#4e79a7` | DG, DPT, ADT, MAS, PX |
-| Scheduling | sky blue `#76b7d4` | SD, SC, SDAM |
-| Laboratory | amber `#f28e2b` | LR, LA, CH, MI |
-| Radiology | peach `#ffbe7d` | RA, MAG |
-| Pharmacy | forest green `#59a14f` | PS, PSO, PSJ, PSH, PSD, PSRX |
-| Nutrition | lime `#8cd17d` | FH, PRSP |
-| Orders/CPRS | tomato `#e15759` | OR, OE, GMRC, GMTS, TIU, CPRS |
-| Mental Health | mauve `#b07aa1` | YS |
-| Nursing | lavender `#d4a6c8` | GMRY, NUR |
-| Surgery | rose `#ff9da7` | SR |
-| Billing/Finance | gold `#f1ce63` | IB, FB, DRG |
-| Kernel/System | walnut `#9c755f` | XU, XQ, XT, XWB, DI, DD |
-| Infrastructure | silver `#bab0ac` | HL, XDR, VDEF |
-| Other | slate `#79706e` | everything else |
-
-**Field type colors** (used in heatmap and wordcloud):
-
-| Type | Color | Meaning |
-|---|---|---|
-| F | blue | Free text |
-| P | red | Pointer to another file |
-| S | green | Set of codes (enum) |
-| D | orange | Date/time |
-| N | sky blue | Numeric |
-| M | purple | Multiple (sub-file) |
-| W | brown | Word processing |
-| C | gold | Computed |
-| K | rose | MUMPS executable |
-| V | lime | Variable pointer (polymorphic FK) |
-
-**Self-contained HTML output** — every file is a single `.html` that embeds the data
-as an inline JSON object and loads D3 from CDN.  Copy the file anywhere; no server needed.
-
-**CDN dependencies** (internet required at view time):
-
-```
-D3 v7:      https://d3js.org/d3.v7.min.js
-d3-cloud:   https://cdn.jsdelivr.net/npm/d3-cloud@1.2.7/build/d3.layout.cloud.min.js
-d3-sankey:  https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js
-```
-
----
-
-### to_treemap.py — Zoomable Treemap
-
-A click-to-drill D3 treemap.  Each rectangular tile is a node; tile area encodes a
-metric (field count, entry count, priority score, etc.).  Click any parent tile to zoom
-into its children.  A breadcrumb at the top shows the current drill path; click any
-crumb to navigate back up.  Tiles too small to label hide their text automatically.
-
-**Common flags:**
-
-| Flag | Default | Description |
-|---|---|---|
-| `--mode` | required | One of: `inventory`, `volume`, `schema`, `coverage`, `candidates` |
-| `--input` | required | Primary data file (JSON or CSV depending on mode) |
-| `--inventory` | none | `inventory.json` — adds package grouping in volume mode |
-| `--output` | required | Output `.html` path |
-
----
-
-#### inventory mode
-
-**Question:** How is the schema organized by package, and which packages are largest?
-
-**Input:** `inventory.json` (from `FileInventory.export_json()`)
-
-**Hierarchy:** clinical domain → package → file
-
-**Tile size:** field count per file
-
-**Color:** clinical domain
-
-**Key interactions:**
-- Click a domain tile → zoom into its packages
-- Click a package tile → see all its files with field counts
-- Breadcrumb → navigate back up any level
-- Hover → tooltip shows file number, label, package, field count
-
-**Best used at:** Phase 1 (scope survey) — the first interactive view of the whole schema
-
-```bash
-python scripts/to_treemap.py \
-    --mode inventory \
-    --input ~/data/vista-fm-browser/output/inventory.json \
-    --output ~/data/vista-fm-browser/output/treemap_inventory.html
-```
-
----
-
-#### volume mode
-
-**Question:** Which files hold the most data, and where does the empty schema live?
-
-**Input:** `file_volume.json` (entry counts per file, produced in Phase 2)
-
-**Hierarchy:** volume tier (Massive / Large / Medium / Small / Tiny / Empty) → package → file
-
-**Tile size:** entry count (log-scaled so small files remain visible)
-
-**Color:** clinical domain (requires `--inventory`; falls back to tier color if omitted)
-
-**Key interactions:**
-- Drill from tier → package → individual file
-- Hover → entry count, file number, package name, volume tier
-- The Massive tier (red) is visible instantly even at top level
-
-```bash
-python scripts/to_treemap.py \
-    --mode volume \
-    --input     ~/data/vista-fm-browser/output/file_volume.json \
-    --inventory ~/data/vista-fm-browser/output/inventory.json \
-    --output    ~/data/vista-fm-browser/output/treemap_volume.html
-```
-
----
-
-#### schema mode
-
-**Question:** What is the full field-type composition of every file, grouped by package?
-
-**Input:** `all_fields.json` (flat list of field records from Phase 3 full schema build)
-
-**Hierarchy:** package → file → field-type bucket (F / P / S / D / N / M / W / C / K / V)
-
-**Tile size:** number of fields of each type within the file
-
-**Color:** clinical domain (package level), field-type color (leaf level)
-
-**Key interactions:**
-- Drill package → file → see the type breakdown of individual files
-- The leaf level color matches the field-type color table above
-- Hover → package, file, type code, count
-
-**Best used at:** Phase 4 (variety analysis) — shows where FREE TEXT and POINTER
-fields concentrate across the schema
-
-```bash
-python scripts/to_treemap.py \
-    --mode schema \
-    --input ~/data/vista-fm-browser/output/all_fields.json \
-    --output ~/data/vista-fm-browser/output/treemap_schema.html
-```
-
----
-
-#### coverage mode
-
-**Question:** Which files and fields are actually populated vs. dormant schema?
-
-**Input:** `phase6_coverage_multi.csv` (columns: `file`, `field`, `field_num`, `pct`)
-produced by the pandas coverage block in Phase 6
-
-**Hierarchy:** file → coverage tier (High ≥80% / Medium 20–80% / Low <20%) → field
-
-**Tile size:** uniform (1 per field) — area encodes field count by tier, not magnitude
-
-**Color:**
-- High ≥ 80% → green `#2ca02c`
-- Medium 20–80% → orange `#ff7f0e`
-- Low < 20% → red `#d62728`
-
-**Key interactions:**
-- Drill file → see what fraction of its fields are well-populated
-- Red-heavy files are candidates for schema pruning
-- Hover → field label, coverage %, tier
-
-```bash
-python scripts/to_treemap.py \
-    --mode coverage \
-    --input ~/data/vista-fm-browser/output/phase6_coverage_multi.csv \
-    --output ~/data/vista-fm-browser/output/treemap_coverage.html
-```
-
----
-
-#### candidates mode
-
-**Question:** Which normalization issues are most urgent, and which packages contain them?
-
-**Input:** `normalization_candidates.json` (from Phase 7 rule application)
-
-**Hierarchy:** rule type → package → candidate field/label
-
-**Tile size:** priority score of each candidate
-
-**Color:** rule type (each rule gets a distinct color):
-- `label_type_conflict` → red
-- `hub_file_reference` → orange
-- `date_as_free_text` → purple
-- `pointer_to_empty_file` → blue
-
-**Key interactions:**
-- Drill rule → package → see individual candidates with priority score
-- Large tiles = high priority; small tiles = low priority
-- Hover → label, rule, priority score, detail (type breakdown, inbound count, etc.)
-
-```bash
-python scripts/to_treemap.py \
-    --mode candidates \
-    --input ~/data/vista-fm-browser/output/normalization_candidates.json \
-    --output ~/data/vista-fm-browser/output/treemap_candidates.html
-```
-
----
-
-### viz_library.py — Visualization Library
-
-Six D3 visualizations, each answering a different question about the FileMan database.
-All subcommands write a single self-contained HTML file.
-
-**Common pattern:**
-
-```bash
-python scripts/viz_library.py <subcommand> [flags] --output path/to/out.html
-firefox path/to/out.html &
-```
-
----
-
-#### heatmap — package × field-type matrix
-
-**Question:** Which clinical domains rely most heavily on each field type?
-
-**Input:** `all_fields.json`
-
-**Layout:** rows = packages (top N by field count), columns = field type codes
-(F P S D N M W C K V DC).  Each cell shows the count of fields of that type in
-that package.  Per-column color scaling so rare types (K, V) are still legible.
-Row and column totals appear on the margins.
-
-**Interactions:**
-- Hover → package name, type code, exact count
-- Cell label hidden when the cell is too small (configurable via `--top-n`)
-
-**Key flags:**
-
-| Flag | Default | Description |
-|---|---|---|
-| `--input` | required | `all_fields.json` |
-| `--output` | required | Output HTML path |
-| `--top-n` | 30 | Number of packages to include (sorted by total field count) |
-
-```bash
-python scripts/viz_library.py heatmap \
-    --input  ~/data/vista-fm-browser/output/all_fields.json \
-    --output ~/data/vista-fm-browser/output/viz_heatmap.html \
-    --top-n  40
-```
-
-**What to look for:** A column of high-intensity cells under `P` (Pointer) across
-multiple packages identifies the central hub-centric packages.  A package with a
-near-empty row but a large `M` (Multiple) cell is heavily sub-file oriented.
-
----
-
-#### correlogram — file attribute scatter matrix
-
-**Question:** Do files with more fields also have more pointers?  Do large files have
-higher multiple counts?  Are there unexpected clusters?
-
-**Input:** `inventory.json` (primary), optionally `all_fields.json` and
-`file_volume.json` / `file_volume.csv` to enrich with schema and volume data
-
-**Layout:** 5 × 5 scatter matrix of five per-file numeric variables:
-`field_count`, `pointer_count`, `set_count`, `multiple_count`, `entry_count`.
-Diagonal cells show histograms.  Off-diagonal cells show scatter plots with
-Pearson r in the corner.  Points are colored by clinical domain.
-
-**Interactions:**
-- Hover over a point → file label, package, domain, values for both axes
-- Points color-coded by domain; legend in corner
-
-**Key flags:**
-
-| Flag | Default | Description |
-|---|---|---|
-| `--input` | required | `inventory.json` |
-| `--schema` | none | `all_fields.json` — adds pointer/set/multiple counts |
-| `--volume` | none | `file_volume.json` or `.csv` — adds entry_count |
-| `--output` | required | Output HTML path |
-
-```bash
-python scripts/viz_library.py correlogram \
-    --input  ~/data/vista-fm-browser/output/inventory.json \
-    --schema ~/data/vista-fm-browser/output/all_fields.json \
-    --volume ~/data/vista-fm-browser/output/file_volume.csv \
-    --output ~/data/vista-fm-browser/output/viz_correlogram.html
-```
-
-**What to look for:** A tight positive correlation between `field_count` and
-`pointer_count` means the schema is densely relational — normalization is FK-heavy.
-Outlier points (high `entry_count`, low `field_count`) are narrow high-volume files —
-event logs or audit tables.
-
----
-
-#### wordcloud — field label frequency cloud
-
-**Question:** What concepts dominate the VistA vocabulary, and what types are they?
-
-**Input:** `all_fields.json`
-
-**Layout:** Standard word cloud where word size encodes the number of fields across
-all files that share that label.  Word color encodes the dominant datatype for that
-label (using the field-type color table).  Font weight varies with frequency.
-Uses `d3-cloud` for collision-free placement.
-
-**Interactions:**
-- Hover → label text, total occurrence count, dominant type name, number of distinct
-  types the label appears under (type consistency indicator)
-
-**Key flags:**
-
-| Flag | Default | Description |
-|---|---|---|
-| `--input` | required | `all_fields.json` |
-| `--output` | required | Output HTML path |
-| `--top-n` | 200 | Maximum number of labels to render |
-
-```bash
-python scripts/viz_library.py wordcloud \
-    --input  ~/data/vista-fm-browser/output/all_fields.json \
-    --output ~/data/vista-fm-browser/output/viz_wordcloud.html \
-    --top-n  300
-```
-
-**What to look for:** Labels shown in mixed colors (multiple hues in hover tooltip
-saying "mixed (N types)") are label-type conflicts — the same label used with
-different datatypes across packages.  Dominant large words reveal the shared vocabulary
-candidates for canonical enum or reference table definitions.
-
----
-
-#### dendrogram — package → file radial tree
-
-**Question:** How many files does each package contain, and how deep is the hierarchy?
-
-**Input:** `inventory.json`
-
-**Layout:** Radial cluster tree (d3.cluster).  The center root fans out to package
-nodes at the inner ring, then to individual file nodes at the outer ring.  Node
-radius is proportional to sqrt(field_count), so schema-heavy files are immediately
-visible.  Package nodes are labeled; file nodes are labeled only if they have
-above-average field counts (to reduce clutter).  Zoom and pan enabled.
-
-**Interactions:**
-- Scroll → zoom in/out
-- Drag → pan around the circle
-- Hover package node → package name, domain, file count
-- Hover file node → file number, label, package, field count
-
-**Key flags:**
-
-| Flag | Default | Description |
-|---|---|---|
-| `--input` | required | `inventory.json` |
-| `--output` | required | Output HTML path |
-| `--max-files` | 300 | Cap on file nodes rendered (keeps largest by field count) |
-
-```bash
-python scripts/viz_library.py dendrogram \
-    --input     ~/data/vista-fm-browser/output/inventory.json \
-    --output    ~/data/vista-fm-browser/output/viz_dendrogram.html \
-    --max-files 400
-```
-
-**What to look for:** A package arm with many small outer nodes is a utility package
-(lots of small reference files).  A package arm with a few very large outer circles is
-a clinical record package (few but heavy files).  Isolated arms that barely extend
-outward are near-empty packages (defined but unpopulated in this VistA instance).
-
----
-
-#### sankey — cross-package pointer flow
-
-**Question:** Which packages are central hubs that everything else points at?  Which
-packages are pure consumers with no outbound pointers?
-
-**Input:** `all_fields.json` (required), `inventory.json` (optional, for domain color)
-
-**Layout:** Sankey diagram (d3-sankey).  Nodes = packages.  Links = cross-package
-pointer fields (intra-package pointers are excluded — they would be self-loops).
-Link width encodes the count of pointer fields flowing from source package to target
-package.  Node color by clinical domain.  Nodes are vertically draggable to reduce
-visual overlap.
-
-**Interactions:**
-- Drag nodes vertically → rearrange layout to untangle crossings
-- Hover link → source package, target package, pointer field count
-- Hover node → package name, domain, total flow (sum of all pointer fields touching it)
-
-**Key flags:**
-
-| Flag | Default | Description |
-|---|---|---|
-| `--input` | required | `all_fields.json` |
-| `--inv` | none | `inventory.json` — enriches domain colors |
-| `--output` | required | Output HTML path |
-| `--min-flow` | 1 | Minimum pointer count to include a link (filter noise) |
-| `--top-n-pkgs` | 30 | Cap on number of packages shown |
-
-```bash
-python scripts/viz_library.py sankey \
-    --input      ~/data/vista-fm-browser/output/all_fields.json \
-    --inv        ~/data/vista-fm-browser/output/inventory.json \
-    --output     ~/data/vista-fm-browser/output/viz_sankey.html \
-    --min-flow   3 \
-    --top-n-pkgs 25
-```
-
-**What to look for:** Nodes with many thick incoming links are hub packages (Kernel,
-Registration, Lab).  Nodes with only outgoing links are domain-specific consumers
-(Pharmacy, Surgery).  A link so thick it dwarfs others indicates a tight structural
-coupling — those two packages must be migrated together.
-
----
-
-#### bundle — hierarchical edge bundling
-
-**Question:** Which files share many pointer relationships, and does coupling follow
-package boundaries or cross them?
-
-**Input:** `all_fields.json` (required), `inventory.json` (optional)
-
-**Layout:** Files are arranged as leaves around a circle, grouped into package arc
-bands at the outer rim.  Pointer relationships between files are drawn as curved
-edges routed through the center (Bézier bundle with tension 0.85, via
-`d3.curveBundle`).  Intra-package edges hug the circumference; cross-package edges
-cut toward the center, making coupling clusters immediately visible.
-Zoom and pan enabled.  Labels are shown only for files with ≥ 3 connections.
-
-**Interactions:**
-- Click a file node → highlight all edges connected to that file (colored by domain);
-  all other edges dim.  Click again to clear.
-- Hover file node → file label, package, domain, outgoing and incoming pointer counts
-- Hover package arc → package name, domain, file count
-- Scroll → zoom; drag → pan
-
-**Key flags:**
-
-| Flag | Default | Description |
-|---|---|---|
-| `--input` | required | `all_fields.json` |
-| `--inv` | none | `inventory.json` — enriches package grouping |
-| `--output` | required | Output HTML path |
-| `--max-files` | 150 | Cap on file nodes; keeps highest-degree files to avoid density overload |
-
-```bash
-python scripts/viz_library.py bundle \
-    --input     ~/data/vista-fm-browser/output/all_fields.json \
-    --inv       ~/data/vista-fm-browser/output/inventory.json \
-    --output    ~/data/vista-fm-browser/output/viz_bundle.html \
-    --max-files 200
-```
-
-**What to look for:** A cluster of files on one arc where edges mostly stay near the
-rim indicates a self-contained package — safe to extract as an isolated schema unit.
-A file node where clicking reveals edges shooting across the circle to many different
-package arcs is a cross-cutting concern that cannot be extracted without pulling along
-many dependencies.
 
 ---
 
@@ -2598,3 +2114,487 @@ matches = [r for r in schema
 # (requires extended attribute read)
 zero_node_fields = [r for r in extended if r["storage"].startswith("0;")]
 ```
+
+---
+
+## Appendix — Visualization Toolkit
+
+Two standalone Python scripts generate interactive browser-based visualizations from the
+JSON and CSV files produced at each analysis phase.  Both scripts require only the Python
+standard library — no matplotlib, pandas, or extra packages.  D3 v7 is loaded from CDN
+at view time, so the generated HTML files require internet access when opened.
+
+```
+scripts/to_treemap.py   — 5 modes, all zoomable treemap output
+scripts/viz_library.py  — 6 subcommands, each a distinct visualization type
+```
+
+### Shared design principles
+
+**Domain color coding** — both tools map VistA package namespaces to 14 clinical
+domains and assign a consistent hex color to each domain across all visualizations.
+Packages not matched by a known prefix are colored "Other" (slate grey).
+
+| Domain | Color | Key namespaces |
+|---|---|---|
+| Registration/ADT | steel blue `#4e79a7` | DG, DPT, ADT, MAS, PX |
+| Scheduling | sky blue `#76b7d4` | SD, SC, SDAM |
+| Laboratory | amber `#f28e2b` | LR, LA, CH, MI |
+| Radiology | peach `#ffbe7d` | RA, MAG |
+| Pharmacy | forest green `#59a14f` | PS, PSO, PSJ, PSH, PSD, PSRX |
+| Nutrition | lime `#8cd17d` | FH, PRSP |
+| Orders/CPRS | tomato `#e15759` | OR, OE, GMRC, GMTS, TIU, CPRS |
+| Mental Health | mauve `#b07aa1` | YS |
+| Nursing | lavender `#d4a6c8` | GMRY, NUR |
+| Surgery | rose `#ff9da7` | SR |
+| Billing/Finance | gold `#f1ce63` | IB, FB, DRG |
+| Kernel/System | walnut `#9c755f` | XU, XQ, XT, XWB, DI, DD |
+| Infrastructure | silver `#bab0ac` | HL, XDR, VDEF |
+| Other | slate `#79706e` | everything else |
+
+**Field type colors** (used in heatmap and wordcloud):
+
+| Type | Color | Meaning |
+|---|---|---|
+| F | blue | Free text |
+| P | red | Pointer to another file |
+| S | green | Set of codes (enum) |
+| D | orange | Date/time |
+| N | sky blue | Numeric |
+| M | purple | Multiple (sub-file) |
+| W | brown | Word processing |
+| C | gold | Computed |
+| K | rose | MUMPS executable |
+| V | lime | Variable pointer (polymorphic FK) |
+
+**Self-contained HTML output** — every file is a single `.html` that embeds the data
+as an inline JSON object and loads D3 from CDN.  Copy the file anywhere; no server needed.
+
+**CDN dependencies** (internet required at view time):
+
+```
+D3 v7:      https://d3js.org/d3.v7.min.js
+d3-cloud:   https://cdn.jsdelivr.net/npm/d3-cloud@1.2.7/build/d3.layout.cloud.min.js
+d3-sankey:  https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js
+```
+
+---
+
+### to_treemap.py — Zoomable Treemap
+
+A click-to-drill D3 treemap.  Each rectangular tile is a node; tile area encodes a
+metric (field count, entry count, priority score, etc.).  Click any parent tile to zoom
+into its children.  A breadcrumb at the top shows the current drill path; click any
+crumb to navigate back up.  Tiles too small to label hide their text automatically.
+
+**Common flags:**
+
+| Flag | Default | Description |
+|---|---|---|
+| `--mode` | required | One of: `inventory`, `volume`, `schema`, `coverage`, `candidates` |
+| `--input` | required | Primary data file (JSON or CSV depending on mode) |
+| `--inventory` | none | `inventory.json` — adds package grouping in volume mode |
+| `--output` | required | Output `.html` path |
+
+---
+
+#### inventory mode
+
+**Question:** How is the schema organized by package, and which packages are largest?
+
+**Input:** `inventory.json` (from `FileInventory.export_json()`)
+
+**Hierarchy:** clinical domain → package → file
+
+**Tile size:** field count per file
+
+**Color:** clinical domain
+
+**Key interactions:**
+- Click a domain tile → zoom into its packages
+- Click a package tile → see all its files with field counts
+- Breadcrumb → navigate back up any level
+- Hover → tooltip shows file number, label, package, field count
+
+**Best used at:** Phase 1 (scope survey) — the first interactive view of the whole schema
+
+```bash
+python scripts/to_treemap.py \
+    --mode inventory \
+    --input ~/data/vista-fm-browser/output/inventory.json \
+    --output ~/data/vista-fm-browser/output/treemap_inventory.html
+```
+
+---
+
+#### volume mode
+
+**Question:** Which files hold the most data, and where does the empty schema live?
+
+**Input:** `file_volume.json` (entry counts per file, produced in Phase 2)
+
+**Hierarchy:** volume tier (Massive / Large / Medium / Small / Tiny / Empty) → package → file
+
+**Tile size:** entry count (log-scaled so small files remain visible)
+
+**Color:** clinical domain (requires `--inventory`; falls back to tier color if omitted)
+
+**Key interactions:**
+- Drill from tier → package → individual file
+- Hover → entry count, file number, package name, volume tier
+- The Massive tier (red) is visible instantly even at top level
+
+```bash
+python scripts/to_treemap.py \
+    --mode volume \
+    --input     ~/data/vista-fm-browser/output/file_volume.json \
+    --inventory ~/data/vista-fm-browser/output/inventory.json \
+    --output    ~/data/vista-fm-browser/output/treemap_volume.html
+```
+
+---
+
+#### schema mode
+
+**Question:** What is the full field-type composition of every file, grouped by package?
+
+**Input:** `all_fields.json` (flat list of field records from Phase 3 full schema build)
+
+**Hierarchy:** package → file → field-type bucket (F / P / S / D / N / M / W / C / K / V)
+
+**Tile size:** number of fields of each type within the file
+
+**Color:** clinical domain (package level), field-type color (leaf level)
+
+**Key interactions:**
+- Drill package → file → see the type breakdown of individual files
+- The leaf level color matches the field-type color table above
+- Hover → package, file, type code, count
+
+**Best used at:** Phase 4 (variety analysis) — shows where FREE TEXT and POINTER
+fields concentrate across the schema
+
+```bash
+python scripts/to_treemap.py \
+    --mode schema \
+    --input ~/data/vista-fm-browser/output/all_fields.json \
+    --output ~/data/vista-fm-browser/output/treemap_schema.html
+```
+
+---
+
+#### coverage mode
+
+**Question:** Which files and fields are actually populated vs. dormant schema?
+
+**Input:** `phase6_coverage_multi.csv` (columns: `file`, `field`, `field_num`, `pct`)
+produced by the pandas coverage block in Phase 6
+
+**Hierarchy:** file → coverage tier (High ≥80% / Medium 20–80% / Low <20%) → field
+
+**Tile size:** uniform (1 per field) — area encodes field count by tier, not magnitude
+
+**Color:**
+- High ≥ 80% → green `#2ca02c`
+- Medium 20–80% → orange `#ff7f0e`
+- Low < 20% → red `#d62728`
+
+**Key interactions:**
+- Drill file → see what fraction of its fields are well-populated
+- Red-heavy files are candidates for schema pruning
+- Hover → field label, coverage %, tier
+
+```bash
+python scripts/to_treemap.py \
+    --mode coverage \
+    --input ~/data/vista-fm-browser/output/phase6_coverage_multi.csv \
+    --output ~/data/vista-fm-browser/output/treemap_coverage.html
+```
+
+---
+
+#### candidates mode
+
+**Question:** Which normalization issues are most urgent, and which packages contain them?
+
+**Input:** `normalization_candidates.json` (from Phase 7 rule application)
+
+**Hierarchy:** rule type → package → candidate field/label
+
+**Tile size:** priority score of each candidate
+
+**Color:** rule type (each rule gets a distinct color):
+- `label_type_conflict` → red
+- `hub_file_reference` → orange
+- `date_as_free_text` → purple
+- `pointer_to_empty_file` → blue
+
+**Key interactions:**
+- Drill rule → package → see individual candidates with priority score
+- Large tiles = high priority; small tiles = low priority
+- Hover → label, rule, priority score, detail (type breakdown, inbound count, etc.)
+
+```bash
+python scripts/to_treemap.py \
+    --mode candidates \
+    --input ~/data/vista-fm-browser/output/normalization_candidates.json \
+    --output ~/data/vista-fm-browser/output/treemap_candidates.html
+```
+
+---
+
+### viz_library.py — Visualization Library
+
+Six D3 visualizations, each answering a different question about the FileMan database.
+All subcommands write a single self-contained HTML file.
+
+**Common pattern:**
+
+```bash
+python scripts/viz_library.py <subcommand> [flags] --output path/to/out.html
+firefox path/to/out.html &
+```
+
+---
+
+#### heatmap — package × field-type matrix
+
+**Question:** Which clinical domains rely most heavily on each field type?
+
+**Input:** `all_fields.json`
+
+**Layout:** rows = packages (top N by field count), columns = field type codes
+(F P S D N M W C K V DC).  Each cell shows the count of fields of that type in
+that package.  Per-column color scaling so rare types (K, V) are still legible.
+Row and column totals appear on the margins.
+
+**Interactions:**
+- Hover → package name, type code, exact count
+- Cell label hidden when the cell is too small (configurable via `--top-n`)
+
+**Key flags:**
+
+| Flag | Default | Description |
+|---|---|---|
+| `--input` | required | `all_fields.json` |
+| `--output` | required | Output HTML path |
+| `--top-n` | 30 | Number of packages to include (sorted by total field count) |
+
+```bash
+python scripts/viz_library.py heatmap \
+    --input  ~/data/vista-fm-browser/output/all_fields.json \
+    --output ~/data/vista-fm-browser/output/viz_heatmap.html \
+    --top-n  40
+```
+
+**What to look for:** A column of high-intensity cells under `P` (Pointer) across
+multiple packages identifies the central hub-centric packages.  A package with a
+near-empty row but a large `M` (Multiple) cell is heavily sub-file oriented.
+
+---
+
+#### correlogram — file attribute scatter matrix
+
+**Question:** Do files with more fields also have more pointers?  Do large files have
+higher multiple counts?  Are there unexpected clusters?
+
+**Input:** `inventory.json` (primary), optionally `all_fields.json` and
+`file_volume.json` / `file_volume.csv` to enrich with schema and volume data
+
+**Layout:** 5 × 5 scatter matrix of five per-file numeric variables:
+`field_count`, `pointer_count`, `set_count`, `multiple_count`, `entry_count`.
+Diagonal cells show histograms.  Off-diagonal cells show scatter plots with
+Pearson r in the corner.  Points are colored by clinical domain.
+
+**Interactions:**
+- Hover over a point → file label, package, domain, values for both axes
+- Points color-coded by domain; legend in corner
+
+**Key flags:**
+
+| Flag | Default | Description |
+|---|---|---|
+| `--input` | required | `inventory.json` |
+| `--schema` | none | `all_fields.json` — adds pointer/set/multiple counts |
+| `--volume` | none | `file_volume.json` or `.csv` — adds entry_count |
+| `--output` | required | Output HTML path |
+
+```bash
+python scripts/viz_library.py correlogram \
+    --input  ~/data/vista-fm-browser/output/inventory.json \
+    --schema ~/data/vista-fm-browser/output/all_fields.json \
+    --volume ~/data/vista-fm-browser/output/file_volume.csv \
+    --output ~/data/vista-fm-browser/output/viz_correlogram.html
+```
+
+**What to look for:** A tight positive correlation between `field_count` and
+`pointer_count` means the schema is densely relational — normalization is FK-heavy.
+Outlier points (high `entry_count`, low `field_count`) are narrow high-volume files —
+event logs or audit tables.
+
+---
+
+#### wordcloud — field label frequency cloud
+
+**Question:** What concepts dominate the VistA vocabulary, and what types are they?
+
+**Input:** `all_fields.json`
+
+**Layout:** Standard word cloud where word size encodes the number of fields across
+all files that share that label.  Word color encodes the dominant datatype for that
+label (using the field-type color table).  Font weight varies with frequency.
+Uses `d3-cloud` for collision-free placement.
+
+**Interactions:**
+- Hover → label text, total occurrence count, dominant type name, number of distinct
+  types the label appears under (type consistency indicator)
+
+**Key flags:**
+
+| Flag | Default | Description |
+|---|---|---|
+| `--input` | required | `all_fields.json` |
+| `--output` | required | Output HTML path |
+| `--top-n` | 200 | Maximum number of labels to render |
+
+```bash
+python scripts/viz_library.py wordcloud \
+    --input  ~/data/vista-fm-browser/output/all_fields.json \
+    --output ~/data/vista-fm-browser/output/viz_wordcloud.html \
+    --top-n  300
+```
+
+**What to look for:** Labels shown in mixed colors (multiple hues in hover tooltip
+saying "mixed (N types)") are label-type conflicts — the same label used with
+different datatypes across packages.  Dominant large words reveal the shared vocabulary
+candidates for canonical enum or reference table definitions.
+
+---
+
+#### dendrogram — package → file radial tree
+
+**Question:** How many files does each package contain, and how deep is the hierarchy?
+
+**Input:** `inventory.json`
+
+**Layout:** Radial cluster tree (d3.cluster).  The center root fans out to package
+nodes at the inner ring, then to individual file nodes at the outer ring.  Node
+radius is proportional to sqrt(field_count), so schema-heavy files are immediately
+visible.  Package nodes are labeled; file nodes are labeled only if they have
+above-average field counts (to reduce clutter).  Zoom and pan enabled.
+
+**Interactions:**
+- Scroll → zoom in/out
+- Drag → pan around the circle
+- Hover package node → package name, domain, file count
+- Hover file node → file number, label, package, field count
+
+**Key flags:**
+
+| Flag | Default | Description |
+|---|---|---|
+| `--input` | required | `inventory.json` |
+| `--output` | required | Output HTML path |
+| `--max-files` | 300 | Cap on file nodes rendered (keeps largest by field count) |
+
+```bash
+python scripts/viz_library.py dendrogram \
+    --input     ~/data/vista-fm-browser/output/inventory.json \
+    --output    ~/data/vista-fm-browser/output/viz_dendrogram.html \
+    --max-files 400
+```
+
+**What to look for:** A package arm with many small outer nodes is a utility package
+(lots of small reference files).  A package arm with a few very large outer circles is
+a clinical record package (few but heavy files).  Isolated arms that barely extend
+outward are near-empty packages (defined but unpopulated in this VistA instance).
+
+---
+
+#### sankey — cross-package pointer flow
+
+**Question:** Which packages are central hubs that everything else points at?  Which
+packages are pure consumers with no outbound pointers?
+
+**Input:** `all_fields.json` (required), `inventory.json` (optional, for domain color)
+
+**Layout:** Sankey diagram (d3-sankey).  Nodes = packages.  Links = cross-package
+pointer fields (intra-package pointers are excluded — they would be self-loops).
+Link width encodes the count of pointer fields flowing from source package to target
+package.  Node color by clinical domain.  Nodes are vertically draggable to reduce
+visual overlap.
+
+**Interactions:**
+- Drag nodes vertically → rearrange layout to untangle crossings
+- Hover link → source package, target package, pointer field count
+- Hover node → package name, domain, total flow (sum of all pointer fields touching it)
+
+**Key flags:**
+
+| Flag | Default | Description |
+|---|---|---|
+| `--input` | required | `all_fields.json` |
+| `--inv` | none | `inventory.json` — enriches domain colors |
+| `--output` | required | Output HTML path |
+| `--min-flow` | 1 | Minimum pointer count to include a link (filter noise) |
+| `--top-n-pkgs` | 30 | Cap on number of packages shown |
+
+```bash
+python scripts/viz_library.py sankey \
+    --input      ~/data/vista-fm-browser/output/all_fields.json \
+    --inv        ~/data/vista-fm-browser/output/inventory.json \
+    --output     ~/data/vista-fm-browser/output/viz_sankey.html \
+    --min-flow   3 \
+    --top-n-pkgs 25
+```
+
+**What to look for:** Nodes with many thick incoming links are hub packages (Kernel,
+Registration, Lab).  Nodes with only outgoing links are domain-specific consumers
+(Pharmacy, Surgery).  A link so thick it dwarfs others indicates a tight structural
+coupling — those two packages must be migrated together.
+
+---
+
+#### bundle — hierarchical edge bundling
+
+**Question:** Which files share many pointer relationships, and does coupling follow
+package boundaries or cross them?
+
+**Input:** `all_fields.json` (required), `inventory.json` (optional)
+
+**Layout:** Files are arranged as leaves around a circle, grouped into package arc
+bands at the outer rim.  Pointer relationships between files are drawn as curved
+edges routed through the center (Bézier bundle with tension 0.85, via
+`d3.curveBundle`).  Intra-package edges hug the circumference; cross-package edges
+cut toward the center, making coupling clusters immediately visible.
+Zoom and pan enabled.  Labels are shown only for files with ≥ 3 connections.
+
+**Interactions:**
+- Click a file node → highlight all edges connected to that file (colored by domain);
+  all other edges dim.  Click again to clear.
+- Hover file node → file label, package, domain, outgoing and incoming pointer counts
+- Hover package arc → package name, domain, file count
+- Scroll → zoom; drag → pan
+
+**Key flags:**
+
+| Flag | Default | Description |
+|---|---|---|
+| `--input` | required | `all_fields.json` |
+| `--inv` | none | `inventory.json` — enriches package grouping |
+| `--output` | required | Output HTML path |
+| `--max-files` | 150 | Cap on file nodes; keeps highest-degree files to avoid density overload |
+
+```bash
+python scripts/viz_library.py bundle \
+    --input     ~/data/vista-fm-browser/output/all_fields.json \
+    --inv       ~/data/vista-fm-browser/output/inventory.json \
+    --output    ~/data/vista-fm-browser/output/viz_bundle.html \
+    --max-files 200
+```
+
+**What to look for:** A cluster of files on one arc where edges mostly stay near the
+rim indicates a self-contained package — safe to extract as an isolated schema unit.
+A file node where clicking reveals edges shooting across the circle to many different
+package arcs is a cross-cutting concern that cannot be extracted without pulling along
+many dependencies.
