@@ -36,6 +36,8 @@ RUN dnf install -y --nodocs \
         git \
         vim-minimal \
         less \
+        ranger \
+        micro \
     && dnf clean all
 
 # ---------------------------------------------------------------------------
