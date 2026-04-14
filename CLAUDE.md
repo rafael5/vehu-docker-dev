@@ -26,8 +26,9 @@ and record data. Exports to JSON/CSV. Entry point for VA VistA data analysis.
 - All unit tests must pass here
 
 ### VEHU container (integration tests + live usage)
-- YottaDB C library present; `source /etc/yottadb/env` activates env vars
-- Run: `source /etc/yottadb/env && pytest tests/ -m integration`
+- YottaDB C library present; `source /etc/bashrc` activates full env
+- VEHU database: `/home/vehu/g/vehu.gld` — must be the active `ydb_gbldir`
+- Run: `source /etc/bashrc && pytest tests/ -m integration`
 - CLI: `fm-browser files`, `fm-browser serve`
 - Container name: `vehu`, project mounted at `/opt/vista-fm-browser`
 
@@ -46,14 +47,21 @@ make pull       # git pull origin main
 
 Container dev:
 ```bash
-docker-compose up -d                     # start VEHU container
-bash scripts/setup-container.sh          # install deps in container (once)
-# Open in VSCode → "Reopen in Container"
-source /etc/yottadb/env                  # inside container
-fm-browser files                         # CLI
+docker compose up -d                     # start VEHU container
+docker compose exec vehu bash            # open shell inside container
+source /etc/bashrc                       # activate YDB + VEHU env (if not auto-sourced)
+uv pip install -e '/opt/vista-fm-browser[dev,analysis]' -q  # install project
+fm-browser files                         # CLI smoke test
 fm-browser serve                         # web UI at http://localhost:5000
 pytest tests/ -m integration             # integration tests
 ```
+
+YottaDB env note:
+- `source /etc/bashrc` sets all three required steps:
+  1. `ydb_env_set` — YDB library paths (LD_LIBRARY_PATH, ydb_dist)
+  2. `/home/vehu/etc/env` — VEHU database paths (gtmgbldir)
+  3. `export ydb_gbldir=/home/vehu/g/vehu.gld` — Python connector points to VEHU data
+- **Never** use `source /usr/local/etc/ydb_env_set` alone — it points to an empty database.
 
 ## Project structure
 ```
@@ -112,8 +120,8 @@ Datatype codes: F=Free text, N=Numeric, D=Date, P=Pointer, S=Set of codes,
 - `yottadb.get(varname, subsarray)` — get a node value
 - `yottadb.subscript_next(varname, subsarray)` — iterate subscripts
 - `yottadb.data(varname, subsarray)` — 0=none, 1=value, 10=children, 11=both
-- Required env vars (set by `source /etc/yottadb/env`):
-  `ydb_gbldir`, `ydb_routines`, `ydb_dir`, `ydb_dist`
+- Required env vars (set by `source /etc/bashrc`):
+  `ydb_gbldir=/home/vehu/g/vehu.gld`, `ydb_dist`, `LD_LIBRARY_PATH`, `gtmgbldir`
 - `YdbConnection.connect()` raises `ImportError` on host (expected, not a bug)
 
 ## Environment

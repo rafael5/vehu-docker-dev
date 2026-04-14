@@ -62,29 +62,42 @@ class YdbConnection:
 
         Returns empty string if the node has no value (but may have children).
         Raises KeyError if the node does not exist at all.
+
+        Note: the yottadb Python connector (v2.x) returns bytes; this method
+        always decodes to str so callers never see raw bytes.
         """
         subs = [str(s) for s in subscripts]
         try:
-            return self._ydb.get(global_name, subs) or ""
+            result = self._ydb.get(global_name, subs)
+            if result is None:
+                return ""
+            if isinstance(result, bytes):
+                return result.decode("utf-8", errors="replace")
+            return result or ""
         except self._ydb.YDBNodeEnd:
             return ""
 
     def subscripts(
         self, global_name: str, subscripts: list[str | int]
     ) -> Iterator[str]:
-        """Yield all subscripts at the given level.
+        """Yield all subscripts at the given level as strings.
 
         Example — iterate all FileMan file numbers::
 
             for file_num in conn.subscripts("^DD", [""]):
                 ...
+
+        Note: the yottadb Python connector (v2.x) returns bytes from
+        subscript_next; this method decodes them to str before yielding
+        so callers always receive plain strings.
         """
         subs = [str(s) for s in subscripts]
         try:
             sub = self._ydb.subscript_next(global_name, subs)
             while sub:
-                yield sub
-                subs[-1] = sub
+                decoded = sub.decode("utf-8", errors="replace") if isinstance(sub, bytes) else sub
+                yield decoded
+                subs[-1] = decoded  # use decoded string for next API call
                 sub = self._ydb.subscript_next(global_name, subs)
         except self._ydb.YDBNodeEnd:
             return
@@ -92,4 +105,7 @@ class YdbConnection:
     def node_exists(self, global_name: str, subscripts: list[str | int]) -> bool:
         """Return True if the node (or its children) exist."""
         subs = [str(s) for s in subscripts]
-        return self._ydb.data(global_name, subs) > 0
+        try:
+            return self._ydb.data(global_name, subs) > 0
+        except Exception:
+            return False

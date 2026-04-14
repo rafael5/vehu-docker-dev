@@ -101,10 +101,18 @@ RUN uv pip install --quiet \
 # YottaDB env is at /usr/local/etc/ydb_env_set in the yottadb/* images.
 # ---------------------------------------------------------------------------
 RUN printf '\n# --- vista-fm-browser dev environment ---\n' >> /etc/bashrc \
+    && printf '# Step 1: YottaDB libraries + default env vars (ydb_dist, LD_LIBRARY_PATH)\n' >> /etc/bashrc \
     && printf 'if [ -f /usr/local/etc/ydb_env_set ]; then\n' >> /etc/bashrc \
     && printf '  source /usr/local/etc/ydb_env_set\n' >> /etc/bashrc \
-    && printf 'elif [ -f /etc/yottadb/env ]; then\n' >> /etc/bashrc \
-    && printf '  source /etc/yottadb/env\n' >> /etc/bashrc \
+    && printf 'fi\n' >> /etc/bashrc \
+    && printf '# Step 2: VEHU VistA database paths (gtmgbldir -> /home/vehu/g/vehu.gld)\n' >> /etc/bashrc \
+    && printf 'if [ -f /home/vehu/etc/env ]; then\n' >> /etc/bashrc \
+    && printf '  source /home/vehu/etc/env\n' >> /etc/bashrc \
+    && printf 'fi\n' >> /etc/bashrc \
+    && printf '# Step 3: Point ydb_gbldir at the VEHU database so the Python connector\n' >> /etc/bashrc \
+    && printf '#         reads VEHU data (ydb_gbldir takes priority over gtmgbldir).\n' >> /etc/bashrc \
+    && printf 'if [ -f /home/vehu/g/vehu.gld ]; then\n' >> /etc/bashrc \
+    && printf '  export ydb_gbldir=/home/vehu/g/vehu.gld\n' >> /etc/bashrc \
     && printf 'fi\n' >> /etc/bashrc \
     && printf 'export VIRTUAL_ENV=/opt/venv\n' >> /etc/bashrc \
     && printf 'export PATH=/opt/venv/bin:$PATH\n' >> /etc/bashrc \

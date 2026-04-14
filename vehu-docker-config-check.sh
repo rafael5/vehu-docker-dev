@@ -406,6 +406,14 @@ run_container_checks() {
                  "source /usr/local/etc/ydb_env_set  (check YDB installation)"
             YDB_ENV_OK=false
         fi
+        # Must point to VEHU database, not the empty root database
+        if [[ "$ydb_gbldir" == "/home/vehu/g/vehu.gld" ]]; then
+            pass "ydb_gbldir points to VEHU database (/home/vehu/g/vehu.gld)"
+        else
+            fail "ydb_gbldir points to wrong database: $ydb_gbldir" \
+                 "source /etc/bashrc  (or: export ydb_gbldir=/home/vehu/g/vehu.gld)"
+            YDB_ENV_OK=false
+        fi
     fi
 
     # ydb_dist directory
@@ -434,12 +442,17 @@ run_container_checks() {
         fi
     fi
 
-    # /etc/bashrc sources YDB on login
-    if grep -q "ydb_env_set\|yottadb/env" /etc/bashrc 2>/dev/null; then
-        pass "/etc/bashrc sources YottaDB environment on interactive login"
+    # /etc/bashrc sources YDB on login (must have both ydb_env_set and vehu/etc/env)
+    if grep -q "ydb_env_set" /etc/bashrc 2>/dev/null && \
+       grep -q "home/vehu/etc/env" /etc/bashrc 2>/dev/null && \
+       grep -q "ydb_gbldir=/home/vehu/g/vehu.gld" /etc/bashrc 2>/dev/null; then
+        pass "/etc/bashrc sources YDB env + VEHU database on interactive login"
+    elif grep -q "ydb_env_set\|yottadb/env" /etc/bashrc 2>/dev/null; then
+        fail "/etc/bashrc sources YDB env but NOT the VEHU database (vehu.gld)" \
+             "Add to /etc/bashrc: source /home/vehu/etc/env && export ydb_gbldir=/home/vehu/g/vehu.gld"
     else
         warn "/etc/bashrc does NOT source YDB env" \
-             "Add: source /usr/local/etc/ydb_env_set to /etc/bashrc"
+             "source /etc/bashrc  (or run: source /usr/local/etc/ydb_env_set)"
     fi
 
     # -----------------------------------------------------------------------
@@ -680,16 +693,17 @@ except Exception:
 
     # fm-browser files — live data test (only if YDB env is OK)
     if [[ "$YDB_ENV_OK" == true ]]; then
-        FM_OUT=$("$FM_BROWSER" files --limit 3 2>&1 || echo "ERROR")
-        if echo "$FM_OUT" | grep -qiE "error|traceback|exception|not found"; then
+        FM_OUT=$("$FM_BROWSER" files 2>&1 | head -5 || echo "ERROR")
+        FILE_COUNT=$(echo "$FM_OUT" | grep -oP '\d+ found' | grep -oP '\d+' || echo "0")
+        if echo "$FM_OUT" | grep -qiE "traceback|exception|ImportError|YDBError"; then
             fail "fm-browser files failed (live YDB query)" \
                  "Check YDB env vars and that ^DIC global is readable"
-            [[ "$VERBOSE" == true ]] && info "Output: $(echo "$FM_OUT" | head -5)"
+            [[ "$VERBOSE" == true ]] && info "Output: $FM_OUT"
+        elif [[ "${FILE_COUNT:-0}" -gt 0 ]]; then
+            pass "fm-browser files (live YottaDB query) — $FILE_COUNT files found"
         else
-            pass "fm-browser files (live YottaDB query) — OK"
-            if [[ "$VERBOSE" == true ]]; then
-                echo "$FM_OUT" | head -5 | while IFS= read -r line; do info "$line"; done
-            fi
+            fail "fm-browser files returned 0 files (globals not loaded?)" \
+                 "export ydb_gbldir=/home/vehu/g/vehu.gld  then retry"
         fi
     else
         warn "Skipping fm-browser files test — YDB env not complete"
@@ -882,10 +896,13 @@ print_summary() {
     fi
     echo
     if [[ "$FAIL_COUNT" -gt 0 ]]; then
-        echo -e "  ${DIM}Quick fixes:"
-        echo -e "    source /usr/local/etc/ydb_env_set"
-        echo -e "    uv pip install -e '/opt/vista-fm-browser[dev,analysis]' -q"
-        echo -e "    python scripts/analysis/phase1_scope.py${RESET}"
+        echo -e "  ${DIM}Quick fixes (inside container):"
+        echo -e "    source /etc/bashrc                                        # activate full env"
+        echo -e "    uv pip install -e '/opt/vista-fm-browser[dev,analysis]' -q  # install packages"
+        echo -e "    python scripts/analysis/phase1_scope.py                  # smoke test"
+        echo -e ""
+        echo -e "  If globals still empty:"
+        echo -e "    export ydb_gbldir=/home/vehu/g/vehu.gld${RESET}"
         echo
     fi
 }
