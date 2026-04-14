@@ -157,11 +157,15 @@ group is active automatically in all shells.
 ```bash
 docker-compose up -d
 docker exec -it vehu bash
-source /etc/yottadb/env
+source /usr/local/etc/ydb_env_set   # activates $ydb_gbldir, $ydb_routines, etc.
 cd /opt/vista-fm-browser
 source .venv/bin/activate
 python3
 ```
+
+> **Note:** If `/usr/local/etc/ydb_env_set` is not found, locate it with:
+> `find / -name 'ydb_env_set' 2>/dev/null`
+> then source whichever path is returned.
 
 ### From the host via RPC Broker
 
