@@ -80,6 +80,7 @@ WORKDIR /opt/vista-fm-browser
 COPY pyproject.toml uv.lock ./
 
 RUN uv pip install --quiet \
+        pip \
         "click>=8.0" \
         "rich>=13.0" \
         "flask>=3.0" \
