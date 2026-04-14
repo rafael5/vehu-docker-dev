@@ -136,6 +136,22 @@ Key files — meta-files and clinical hub files:
 
 ## Setup
 
+### Prerequisites — Docker socket access
+
+`docker-compose` talks to the Docker daemon via `/var/run/docker.sock`.  If your user
+is not in the `docker` group you will get a `PermissionError: [Errno 13] Permission denied`
+error before the container even starts.
+
+**Fix (one-time):**
+
+```bash
+sudo usermod -aG docker $USER
+newgrp docker        # activates the group in the current shell without logging out
+```
+
+Verify with `groups` — `docker` should appear in the list.  On the next full login the
+group is active automatically in all shells.
+
 ### Inside the VEHU container (full access — recommended)
 
 ```bash
