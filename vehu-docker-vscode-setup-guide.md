@@ -1,4 +1,4 @@
-# VS Code + Claude — Setup Guide for VEHU FileMan Analysis
+# VEHU Docker + VS Code Setup Guide
 
 ## Should each analysis phase be a standalone script?
 
@@ -22,12 +22,93 @@
 
 ## Part 1 — Prerequisites
 
-### On the host machine
+### 1.1 Install Docker Engine (official method)
 
-**1. VS Code**
-Download from https://code.visualstudio.com/
+Do **not** use `apt install docker.io` or `apt install docker-compose` — those are outdated Ubuntu packages that install Docker 20.x and docker-compose v1, which are incompatible with modern images and the Compose V2 plugin.
 
-**2. VS Code extensions (install on the host)**
+Install Docker Engine from Docker's official apt repository:
+
+```bash
+# Remove any old/conflicting packages
+sudo apt remove docker docker-engine docker.io containerd runc \
+    docker-compose docker-compose-plugin docker-compose-v2 2>/dev/null
+
+# Install prerequisites
+sudo apt update
+sudo apt install -y ca-certificates curl gnupg lsb-release
+
+# Add Docker's official GPG key
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
+  | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+# Add Docker's apt repository
+# NOTE: Linux Mint is Ubuntu-based. Map the Mint codename to its Ubuntu base:
+#   Mint 21.x → ubuntu jammy   (22.04)
+#   Mint 22.x → ubuntu noble   (24.04)
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
+  https://download.docker.com/linux/ubuntu \
+  noble stable" \
+  | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Install Docker Engine + Compose plugin
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io \
+    docker-buildx-plugin docker-compose-plugin
+
+# Verify
+docker --version
+docker compose version
+```
+
+Expected output:
+```
+Docker version 27.x.x, ...
+Docker Compose version v2.x.x
+```
+
+### 1.2 Add your user to the docker group
+
+Without this, every `docker` command requires `sudo`:
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+**Apply the change** — choose one:
+
+```bash
+newgrp docker          # activates in current shell only (no re-login needed)
+# -- or --
+# log out and log back in (permanent for all shells)
+```
+
+Verify:
+```bash
+groups | grep docker   # should print a line containing "docker"
+docker ps              # should work without sudo
+```
+
+### 1.3 Enable and start Docker
+
+```bash
+sudo systemctl enable docker   # start Docker automatically on boot
+sudo systemctl start docker
+sudo systemctl status docker   # confirm it is "active (running)"
+```
+
+### 1.4 Install VS Code
+
+Download from https://code.visualstudio.com/ and install the `.deb` package:
+
+```bash
+sudo dpkg -i code_*.deb
+sudo apt install -f   # fix any dependency issues
+```
+
+### 1.5 VS Code extensions (install on the host)
 
 Open VS Code → Extensions sidebar (`Ctrl+Shift+X`) → search and install:
 
@@ -37,11 +118,12 @@ Open VS Code → Extensions sidebar (`Ctrl+Shift+X`) → search and install:
 | Claude Code | `anthropic.claude-code` | Claude AI inside VS Code |
 | Docker | `ms-azuretools.vscode-docker` | Container management sidebar |
 
-**3. Docker running**
+### 1.6 Start the VEHU container
 
 ```bash
-groups | grep docker   # verify docker group membership
-docker-compose up -d   # container must be running before VS Code connects
+cd ~/projects/vehu-docker-dev
+docker compose up -d          # note: "docker compose", not "docker-compose"
+docker compose ps             # verify vehu container is "running"
 ```
 
 ---
@@ -77,7 +159,7 @@ VS Code reads it automatically — no manual setup required.
 Ctrl+Shift+P → Dev Containers: Reopen in Container
 ```
 
-The container must be running (`docker-compose up -d`) before reconnecting.
+The container must be running (`docker compose up -d`) before reconnecting.
 
 ---
 
@@ -310,7 +392,7 @@ VS Code also shows detected ports in the **Ports** panel (bottom panel tabs).
 
 **Day-to-day loop:**
 
-1. `docker-compose up -d` (once, on login)
+1. `docker compose up -d` (once, on login)
 2. VS Code → Reopen in Container
 3. Open Claude Code sidebar
 4. Ask Claude to run a phase, read the output, and iterate
@@ -323,9 +405,10 @@ VS Code also shows detected ports in the **Ports** panel (bottom panel tabs).
 
 ```bash
 # Container management (on host)
-docker-compose up -d            # start
-docker-compose restart vehu     # restart (clears stale processes)
-docker-compose down             # stop
+docker compose up -d            # start
+docker compose restart vehu     # restart (clears stale processes)
+docker compose down             # stop
+docker compose ps               # list container status
 
 # Inside container terminal (VS Code integrated terminal)
 source /usr/local/etc/ydb_env_set   # if env vars not set

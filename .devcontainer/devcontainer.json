@@ -7,6 +7,7 @@
   //
   // Then: Open this folder in VSCode → "Reopen in Container"
   "name": "VEHU FileMan Browser",
+  "remoteUser": "root",
 
   // Attach to the already-running container (not build a new one)
   "dockerComposeFile": "../docker-compose.yml",

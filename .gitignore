@@ -15,3 +15,6 @@ build/
 *.sqlite
 .coverage
 htmlcov/
+
+.claude/
+scripts/analysis/__pycache__/
