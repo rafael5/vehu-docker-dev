@@ -1,0 +1,4764 @@
+{
+  "file_number": 2.0,
+  "file_label": "PATIENT",
+  "sample_size": 500,
+  "total_fields": 594,
+  "fields_full_80plus": 5,
+  "fields_partial_20_80": 5,
+  "fields_sparse_under_20": 3,
+  "fields_zero": 581,
+  "fields": [
+    {
+      "field": 0.01,
+      "label": "NAME",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 499,
+      "pct": 99.8
+    },
+    {
+      "field": 0.02,
+      "label": "SEX",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 446,
+      "pct": 89.2
+    },
+    {
+      "field": 0.024,
+      "label": "SELF IDENTIFIED GENDER",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.025,
+      "label": "SEXUAL ORIENTATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.0251,
+      "label": "SEXUAL ORIENTATION FREE TEXT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.03,
+      "label": "DATE OF BIRTH",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 499,
+      "pct": 99.8
+    },
+    {
+      "field": 0.033,
+      "label": "AGE",
+      "type_code": "C",
+      "type_name": "COMPUTED",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.05,
+      "label": "MARITAL STATUS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 262,
+      "pct": 52.4
+    },
+    {
+      "field": 0.06,
+      "label": "RACE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 124,
+      "pct": 24.8
+    },
+    {
+      "field": 0.07,
+      "label": "OCCUPATION",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 165,
+      "pct": 33.0
+    },
+    {
+      "field": 0.08,
+      "label": "RELIGIOUS PREFERENCE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 236,
+      "pct": 47.2
+    },
+    {
+      "field": 0.081,
+      "label": "DUPLICATE STATUS",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.082,
+      "label": "PATIENT MERGED TO",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.083,
+      "label": "CHECK FOR DUPLICATE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.09,
+      "label": "SOCIAL SECURITY NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 499,
+      "pct": 99.8
+    },
+    {
+      "field": 0.0901,
+      "label": "TERMINAL DIGIT OF SSN",
+      "type_code": "C",
+      "type_name": "COMPUTED",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.0905,
+      "label": "1U4N",
+      "type_code": "C",
+      "type_name": "COMPUTED",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.0906,
+      "label": "PSEUDO SSN REASON",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.0907,
+      "label": "SSN VERIFICATION STATUS",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.091,
+      "label": "REMARKS",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.092,
+      "label": "PLACE OF BIRTH [CITY]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.093,
+      "label": "PLACE OF BIRTH [STATE]",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.0931,
+      "label": "PLACE OF BIRTH COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.0932,
+      "label": "PLACE OF BIRTH PROVINCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.096,
+      "label": "WHO ENTERED PATIENT",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.097,
+      "label": "DATE ENTERED INTO FILE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.098,
+      "label": "HOW WAS PATIENT ENTERED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1,
+      "label": "WARD LOCATION",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 32,
+      "pct": 6.4
+    },
+    {
+      "field": 0.101,
+      "label": "ROOM-BED",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.102,
+      "label": "CURRENT MOVEMENT",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.103,
+      "label": "TREATING SPECIALTY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.104,
+      "label": "PROVIDER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1041,
+      "label": "ATTENDING PHYSICIAN",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.105,
+      "label": "CURRENT ADMISSION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.106,
+      "label": "LAST DMMS EPISODE NUMBER",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.107,
+      "label": "LODGER WARD LOCATION",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.108,
+      "label": "CURRENT ROOM",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.109,
+      "label": "EXCLUDE FROM FACILITY DIR",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.111,
+      "label": "STREET ADDRESS [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1112,
+      "label": "ZIP+4",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1118,
+      "label": "STREET ADDRESS CASS IND",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1119,
+      "label": "MAILING ADDR OVERRIDE IND",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.112,
+      "label": "STREET ADDRESS [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.113,
+      "label": "STREET ADDRESS [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.114,
+      "label": "CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.115,
+      "label": "STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1151,
+      "label": "RESIDENTIAL ADDRESS [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1152,
+      "label": "RESIDENTIAL ADDRESS [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1153,
+      "label": "RESIDENTIAL ADDRESS [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1154,
+      "label": "RESIDENTIAL CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1155,
+      "label": "RESIDENTIAL STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1156,
+      "label": "RESIDENTIAL ZIP+4",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1157,
+      "label": "RESIDENTIAL COUNTY",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.11571,
+      "label": "RESIDENTIAL PROVINCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.11572,
+      "label": "RESIDENTIAL POSTAL CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.11573,
+      "label": "RESIDENTIAL COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1158,
+      "label": "RESIDENTIAL ADDR CHANGE DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.11581,
+      "label": "RESIDENTIAL ADDR CHANGE SITE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.11582,
+      "label": "RESIDENTIAL ADDR CHANGE SOURCE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.11583,
+      "label": "RESIDENTIAL ADDR CHANGE USER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1159,
+      "label": "RESIDENTIAL ADDR CASS IND",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.11591,
+      "label": "RESIDENTIAL ADDR OVERRIDE IND",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.116,
+      "label": "ZIP CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.117,
+      "label": "COUNTY",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1171,
+      "label": "PROVINCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1172,
+      "label": "POSTAL CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1173,
+      "label": "COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.118,
+      "label": "ADDRESS CHANGE DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.119,
+      "label": "ADDRESS CHANGE SOURCE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.12,
+      "label": "ADDRESS CHANGE SITE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 72,
+      "pct": 14.4
+    },
+    {
+      "field": 0.121,
+      "label": "BAD ADDRESS INDICATOR",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.12105,
+      "label": "TEMPORARY ADDRESS ACTIVE?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1211,
+      "label": "TEMPORARY STREET [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.12111,
+      "label": "TEMPORARY ADDRESS COUNTY",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.12112,
+      "label": "TEMPORARY ZIP+4",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.12113,
+      "label": "TEMPORARY ADDRESS CHANGE DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.12114,
+      "label": "TEMPORARY ADDRESS CHANGE SITE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.12115,
+      "label": "TEMPORARY ADDR CASS IND",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.12116,
+      "label": "TEMPORARY COUNTRY CODE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.12117,
+      "label": "TEMPORARY EXTENSION",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1212,
+      "label": "TEMPORARY STREET [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1213,
+      "label": "TEMPORARY STREET [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1214,
+      "label": "TEMPORARY CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1215,
+      "label": "TEMPORARY STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1216,
+      "label": "TEMPORARY ZIP CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1217,
+      "label": "TEMPORARY ADDRESS START DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1218,
+      "label": "TEMPORARY ADDRESS END DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1219,
+      "label": "TEMPORARY PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.122,
+      "label": "ADDRESS CHANGE USER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1221,
+      "label": "TEMPORARY ADDRESS PROVINCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1222,
+      "label": "TEMPORARY ADDRESS POSTAL CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1223,
+      "label": "TEMPORARY ADDRESS COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.131,
+      "label": "PHONE NUMBER [RESIDENCE]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1311,
+      "label": "CELLULAR NUMBER CHANGE SOURCE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.13111,
+      "label": "CELLULAR NUMBER CHANGE SITE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1312,
+      "label": "PAGER NUMBER CHANGE DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1313,
+      "label": "PAGER NUMBER CHANGE SOURCE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1314,
+      "label": "PAGER NUMBER CHANGE SITE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1315,
+      "label": "CONFIDENTIAL PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1316,
+      "label": "EMAIL ADDRESS INDICATOR",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1317,
+      "label": "EMAIL ADDRESS INDICATOR DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1318,
+      "label": "EMAIL ADDRESS CHANGE USER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1319,
+      "label": "CELLULAR NUMBER CHANGE USER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.132,
+      "label": "PHONE NUMBER [WORK]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.13201,
+      "label": "CONFIDENTIAL COUNTRY CODE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1321,
+      "label": "RESIDENCE NUMBER CHANGE DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.13211,
+      "label": "EXTENSION [RESIDENCE]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.13212,
+      "label": "EXTENSION [CELLULAR]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.13213,
+      "label": "EXTENSION [WORK]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.13214,
+      "label": "CONFIDENTIAL EXTENSION",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1322,
+      "label": "RESIDENCE NUMBER CHANGE SOURCE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1323,
+      "label": "RESIDENCE NUMBER CHANGE SITE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1324,
+      "label": "RESIDENCE NUMBER CHANGE USER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1325,
+      "label": "PHONE [WORK] CHANGE USER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1326,
+      "label": "PHONE [WORK] CHANGE DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1327,
+      "label": "COUNTRY CODE [RESIDENCE]",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1328,
+      "label": "COUNTRY CODE [CELLULAR]",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1329,
+      "label": "COUNTRY CODE [WORK]",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.133,
+      "label": "EMAIL ADDRESS",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.134,
+      "label": "PHONE NUMBER [CELLULAR]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.135,
+      "label": "PAGER NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.136,
+      "label": "EMAIL ADDRESS CHANGE DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.137,
+      "label": "EMAIL ADDRESS CHANGE SOURCE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.138,
+      "label": "EMAIL ADDRESS CHANGE SITE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.139,
+      "label": "CELLULAR NUMBER CHANGE DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14,
+      "label": "CURRENT MEANS TEST STATUS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 193,
+      "pct": 38.6
+    },
+    {
+      "field": 0.141,
+      "label": "CONFIDENTIAL ADDRESS CATEGORY",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14105,
+      "label": "CONFIDENTIAL ADDRESS ACTIVE?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1411,
+      "label": "CONFIDENTIAL STREET [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14111,
+      "label": "CONFIDENTIAL ADDRESS COUNTY",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14112,
+      "label": "CONFIDENTIAL ADDR CHANGE DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14113,
+      "label": "CONFIDENTIAL ADDR CHANGE SITE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14114,
+      "label": "CONFIDENTIAL ADDR PROVINCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14115,
+      "label": "CONFIDENTIAL ADDR POSTAL CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14116,
+      "label": "CONFIDENTIAL ADDR COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14117,
+      "label": "CONFIDENTIAL ADDR CASS IND",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14118,
+      "label": "CONFIDENTIAL ADDR CHANGE USER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14119,
+      "label": "CONFIDENTIAL PHONE CHANGE USER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1412,
+      "label": "CONFIDENTIAL STREET [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.141201,
+      "label": "CONFIDENTIAL ADDR OVERRIDE IND",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14121,
+      "label": "CONFIDENTIAL PHONE CHG DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14122,
+      "label": "CONFIDENTIAL PHONE CHG SOURCE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.14123,
+      "label": "CONFIDENTIAL PHONE CHG SITE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1413,
+      "label": "CONFIDENTIAL STREET [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1414,
+      "label": "CONFIDENTIAL ADDRESS CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1415,
+      "label": "CONFIDENTIAL ADDRESS STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1416,
+      "label": "CONFIDENTIAL ADDRESS ZIP CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1417,
+      "label": "CONFIDENTIAL START DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1418,
+      "label": "CONFIDENTIAL END DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.152,
+      "label": "INELIGIBLE DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.153,
+      "label": "MISSING PERSON DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.16,
+      "label": "MISSING OR INELIGIBLE",
+      "type_code": "A",
+      "type_name": "ADDRESS",
+      "hits": 475,
+      "pct": 95.0
+    },
+    {
+      "field": 0.1651,
+      "label": "INELIGIBLE TWX SOURCE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1653,
+      "label": "INELIGIBLE TWX CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1654,
+      "label": "INELIGIBLE TWX STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1656,
+      "label": "INELIGIBLE VARO DECISION",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1657,
+      "label": "MISSING PERSON TWX SOURCE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1658,
+      "label": "MISSING PERSON TWX CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.1659,
+      "label": "MISSING PERSON TWX STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.172,
+      "label": "FEE HOSPITAL I.D.",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.181,
+      "label": "EMERGENCY RESPONSE INDICATOR",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.182,
+      "label": "HISTORIC KATRINA ERI",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.19,
+      "label": "DIVISION",
+      "type_code": "C",
+      "type_name": "COMPUTED",
+      "hits": 1,
+      "pct": 0.2
+    },
+    {
+      "field": 0.2101,
+      "label": "K2-COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.21011,
+      "label": "K-WORK PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.21012,
+      "label": "PRIMARY NOK CHANGE DATE/TIME",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2102,
+      "label": "K2-PROVINCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2103,
+      "label": "K2-POSTAL CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2104,
+      "label": "K2-RELATIONSHIP TYPE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.211,
+      "label": "K-NAME OF PRIMARY NOK",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.211011,
+      "label": "K2-WORK PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.211012,
+      "label": "SECONDARY NOK CHANGE DATE/TIME",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.212,
+      "label": "K-RELATIONSHIP TO PATIENT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2125,
+      "label": "K-ADDRESS SAME AS PATIENT'S?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.213,
+      "label": "K-STREET ADDRESS [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.214,
+      "label": "K-STREET ADDRESS [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.215,
+      "label": "K-STREET ADDRESS [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.216,
+      "label": "K-CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.217,
+      "label": "K-STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.218,
+      "label": "K-ZIP CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.219,
+      "label": "K-PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2191,
+      "label": "K2-NAME OF SECONDARY NOK",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2192,
+      "label": "K2-RELATIONSHIP TO PATIENT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.21925,
+      "label": "K2-ADDRESS SAME AS PATIENT'S?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2193,
+      "label": "K2-STREET ADDRESS [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2194,
+      "label": "K2-STREET ADDRESS [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2195,
+      "label": "K2-STREET ADDRESS [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2196,
+      "label": "K2-CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2197,
+      "label": "K2-STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2198,
+      "label": "K2-ZIP CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2199,
+      "label": "K2-PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2201,
+      "label": "E-ZIP+4",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2202,
+      "label": "D-ZIP+4",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2203,
+      "label": "K2-ZIP+4",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2204,
+      "label": "E2-ZIP+4",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2205,
+      "label": "EMPLOYER ZIP+4",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2206,
+      "label": "SPOUSE'S EMP ZIP+4",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2207,
+      "label": "K-ZIP+4",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.221,
+      "label": "K-COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.222,
+      "label": "K-PROVINCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.223,
+      "label": "K-POSTAL CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.224,
+      "label": "K-RELATIONSHIP TYPE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2401,
+      "label": "FATHER'S NAME",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2402,
+      "label": "MOTHER'S NAME",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2403,
+      "label": "MOTHER'S MAIDEN NAME",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2405,
+      "label": "PREFERRED NAME",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2406,
+      "label": "PRONOUN",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.24061,
+      "label": "PRONOUN DESCRIPTION",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.251,
+      "label": "SPOUSE'S EMPLOYER NAME",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2514,
+      "label": "SPOUSE'S OCCUPATION",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2515,
+      "label": "SPOUSE'S EMPLOYMENT STATUS",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2516,
+      "label": "SPOUSE'S RETIREMENT DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.252,
+      "label": "SPOUSE'S EMP STREET [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.253,
+      "label": "SPOUSE'S EMP STREET [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.254,
+      "label": "SPOUSE'S EMP STREET [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.255,
+      "label": "SPOUSE'S EMPLOYER'S CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.256,
+      "label": "SPOUSE'S EMPLOYER'S STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.257,
+      "label": "SPOUSE'S EMP ZIP CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.258,
+      "label": "SPOUSE'S EMP PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.290012,
+      "label": "ZIP+4 (CIVIL)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.29013,
+      "label": "ZIP+4 (VA)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.291,
+      "label": "DATE RULED INCOMPETENT (VA)",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2911,
+      "label": "INSTITUTION (VA)",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2912,
+      "label": "GUARDIAN (VA)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2913,
+      "label": "RELATIONSHIP (VA)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2914,
+      "label": "STREET ADDRESS 1 (VA)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2915,
+      "label": "STREET ADDRESS 2 (VA)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2916,
+      "label": "CITY (VA)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2917,
+      "label": "STATE (VA)",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2918,
+      "label": "ZIP (VA)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2919,
+      "label": "PHONE (VA)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.292,
+      "label": "DATE RULED INCOMPETENT (CIVIL)",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2921,
+      "label": "INSTITUTION (CIVIL)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2922,
+      "label": "GUARDIAN (CIVIL)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2923,
+      "label": "RELATIONSHIP (CIVIL)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2924,
+      "label": "STREET ADDRESS 1 (CIVIL)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2925,
+      "label": "STREET ADDRESS 2 (CIVIL)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2926,
+      "label": "CITY (CIVIL)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2927,
+      "label": "STATE (CIVIL)",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2928,
+      "label": "ZIP (CIVIL)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.2929,
+      "label": "PHONE (CIVIL)",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.293,
+      "label": "RATED INCOMPETENT?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.301,
+      "label": "SERVICE CONNECTED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3012,
+      "label": "SC AWARD DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3013,
+      "label": "P&T EFFECTIVE DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3014,
+      "label": "EFF. DATE COMBINED SC% EVAL.",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.302,
+      "label": "SERVICE CONNECTED PERCENTAGE",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3025,
+      "label": "RECEIVING VA DISABILITY?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.303,
+      "label": "AMOUNT OF VA DISABILITY",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.304,
+      "label": "P&T",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.305,
+      "label": "UNEMPLOYABLE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.306,
+      "label": "MONETARY BEN. VERIFY DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.307,
+      "label": "INELIGIBLE REASON",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.308,
+      "label": "*NON-VET CLASSIFICATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.309,
+      "label": "AGENCY/ALLIED COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.31,
+      "label": "*CATEGORY OF BENEFICIARY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3111,
+      "label": "EMPLOYER NAME",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.31115,
+      "label": "EMPLOYMENT STATUS",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.31116,
+      "label": "DATE OF RETIREMENT",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3112,
+      "label": "GOVERNMENT AGENCY",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3113,
+      "label": "EMPLOYER STREET [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3114,
+      "label": "EMPLOYER STREET [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3115,
+      "label": "EMPLOYER STREET [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3116,
+      "label": "EMPLOYER CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3117,
+      "label": "EMPLOYER STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3118,
+      "label": "EMPLOYER ZIP CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3119,
+      "label": "EMPLOYER PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.312,
+      "label": "*CLAIM FOLDER LOCATION",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3121,
+      "label": "INSURANCE TYPE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.313,
+      "label": "CLAIM NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.314,
+      "label": "CLAIM FOLDER LOCATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3192,
+      "label": "COVERED BY HEALTH INSURANCE?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32101,
+      "label": "VIETNAM SERVICE INDICATED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32102,
+      "label": "AGENT ORANGE EXPOS. INDICATED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32103,
+      "label": "RADIATION EXPOSURE INDICATED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32104,
+      "label": "VIETNAM FROM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32105,
+      "label": "VIETNAM TO DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32107,
+      "label": "AGENT ORANGE REGISTRATION DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32108,
+      "label": "AGENT ORANGE REPORTED TO C.O.",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32109,
+      "label": "AGENT ORANGE EXAM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3211,
+      "label": "AGENT ORANGE REGISTRATION #",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32111,
+      "label": "RADIATION REGISTRATION DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32115,
+      "label": "PROJ 112/SHAD",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32116,
+      "label": "TOXIC EXPOSURE RISK ACTIVITY",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32117,
+      "label": "PERSIAN GULF INDICATOR",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32118,
+      "label": "PERSIAN GULF LAST CHANGE DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3212,
+      "label": "RADIATION EXPOSURE METHOD",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3213,
+      "label": "AGENT ORANGE EXPOSURE LOCATION",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3214,
+      "label": "FILIPINO VETERAN PROOF",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3215,
+      "label": "SERVICE [OEF OR OIF]",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3216,
+      "label": "MILITARY SERVICE EPISODE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.321701,
+      "label": "CAMP LEJEUNE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.321702,
+      "label": "CAMP LEJEUNE DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.321703,
+      "label": "CAMP LEJEUNE CHANGE SITE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.321704,
+      "label": "CAMP LEJEUNE SOURCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32171,
+      "label": "CAMP LEJEUNE DATA ENTRY LOCKED",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322,
+      "label": "SERVICE VERIFICATION DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32201,
+      "label": "PERSIAN GULF SERVICE?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322011,
+      "label": "PERSIAN GULF FROM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322012,
+      "label": "PERSIAN GULF TO DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322013,
+      "label": "SOUTHWEST ASIA CONDITIONS?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322014,
+      "label": "SW ASIA COND REGISTRATION DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322015,
+      "label": "SW ASIA COND EXAM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322016,
+      "label": "SOMALIA SERVICE INDICATED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322017,
+      "label": "SOMALIA FROM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322018,
+      "label": "SOMALIA TO DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322019,
+      "label": "YUGOSLAVIA SERVICE INDICATED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32202,
+      "label": "YUGOSLAVIA FROM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.322021,
+      "label": "YUGOSLAVIA TO DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3221,
+      "label": "LEBANON SERVICE INDICATED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3222,
+      "label": "LEBANON FROM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3223,
+      "label": "LEBANON TO DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3224,
+      "label": "GRENADA SERVICE INDICATED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3225,
+      "label": "GRENADA FROM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3226,
+      "label": "GRENADA TO DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3227,
+      "label": "PANAMA SERVICE INDICATED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3228,
+      "label": "PANAMA FROM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3229,
+      "label": "PANAMA TO DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.323,
+      "label": "PERIOD OF SERVICE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.324,
+      "label": "SERVICE DISCHARGE TYPE [LAST]",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.325,
+      "label": "SERVICE BRANCH [LAST]",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.326,
+      "label": "SERVICE ENTRY DATE [LAST]",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.327,
+      "label": "SERVICE SEPARATION DATE [LAST]",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.328,
+      "label": "SERVICE NUMBER [LAST]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3285,
+      "label": "SERVICE SECOND EPISODE?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.329,
+      "label": "SERVICE DISCHARGE TYPE [NTL]",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3291,
+      "label": "SERVICE BRANCH [NTL]",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32911,
+      "label": "SERVICE COMPONENT [LAST]",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32912,
+      "label": "SERVICE COMPONENT [NTL]",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32913,
+      "label": "SERVICE COMPONENT [NNTL]",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3292,
+      "label": "SERVICE ENTRY DATE [NTL]",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3293,
+      "label": "SERVICE SEPARATION DATE [NTL]",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3294,
+      "label": "SERVICE NUMBER [NTL]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.32945,
+      "label": "SERVICE THIRD EPISODE?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3295,
+      "label": "SERVICE DISCHARGE TYPE [NNTL]",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3296,
+      "label": "SERVICE BRANCH [NNTL]",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3297,
+      "label": "SERVICE ENTRY DATE [NNTL]",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3298,
+      "label": "SERVICE SEPARATION DATE [NNTL]",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3299,
+      "label": "SERVICE NUMBER [NNTL]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.33011,
+      "label": "E-WORK PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.33012,
+      "label": "E-CONTACT CHANGE DATE/TIME",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3305,
+      "label": "E-EMER. CONTACT SAME AS NOK?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3306,
+      "label": "E-COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3307,
+      "label": "E-PROVINCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3308,
+      "label": "E-POSTAL CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3309,
+      "label": "E-RELATIONSHIP TYPE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.331,
+      "label": "E-NAME",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.331011,
+      "label": "E2-WORK PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.331012,
+      "label": "E2-COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.331013,
+      "label": "E2-PROVINCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.331014,
+      "label": "E2-POSTAL CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.331015,
+      "label": "E2-RELATIONSHIP TYPE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3311,
+      "label": "E2-NAME OF SECONDARY CONTACT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.33112,
+      "label": "E2-CONTACT CHANGE DATE/TIME",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3312,
+      "label": "E2-RELATIONSHIP TO PATIENT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3313,
+      "label": "E2-STREET ADDRESS [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3314,
+      "label": "E2-STREET ADDRESS [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3315,
+      "label": "E2-STREET ADDRESS [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3316,
+      "label": "E2-CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3317,
+      "label": "E2-STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3318,
+      "label": "E2-ZIP CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3319,
+      "label": "E2-PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.332,
+      "label": "E-RELATIONSHIP TO PATIENT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.333,
+      "label": "E-STREET ADDRESS [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.334,
+      "label": "E-STREET ADDRESS [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.335,
+      "label": "E-STREET ADDRESS [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.336,
+      "label": "E-CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.337,
+      "label": "E-STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.338,
+      "label": "E-ZIP CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.339,
+      "label": "E-PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.34011,
+      "label": "D-WORK PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.34012,
+      "label": "D-COUNTRY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.34013,
+      "label": "D-PROVINCE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.34014,
+      "label": "D-POSTAL CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.34015,
+      "label": "D-RELATIONSHIP TYPE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3405,
+      "label": "D-DESIGNEE SAME AS NOK?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.341,
+      "label": "D-NAME OF DESIGNEE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3412,
+      "label": "DESIGNEE CHANGE DATE/TIME",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.342,
+      "label": "D-RELATIONSHIP TO PATIENT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.343,
+      "label": "D-STREET ADDRESS [LINE 1]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.344,
+      "label": "D-STREET ADDRESS [LINE 2]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.345,
+      "label": "D-STREET ADDRESS [LINE 3]",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.346,
+      "label": "D-CITY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.347,
+      "label": "D-STATE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.348,
+      "label": "D-ZIP CODE",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.349,
+      "label": "D-PHONE NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.351,
+      "label": "DATE OF DEATH",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.352,
+      "label": "DEATH ENTERED BY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.353,
+      "label": "SOURCE OF NOTIFICATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.354,
+      "label": "DATE OF DEATH LAST UPDATED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.355,
+      "label": "LAST EDITED BY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.357,
+      "label": "SUPPORTING DOCUMENT TYPE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.358,
+      "label": "DATE OF DEATH OPTION USED",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3601,
+      "label": "COLLATERAL SPONSOR'S NAME",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3602,
+      "label": "MILITARY DISABILITY RETIREMENT",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3603,
+      "label": "DISCHARGE DUE TO DISABILITY",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.361,
+      "label": "PRIMARY ELIGIBILITY CODE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3611,
+      "label": "ELIGIBILITY STATUS",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3612,
+      "label": "ELIGIBILITY STATUS DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3613,
+      "label": "ELIGIBILITY VERIF. SOURCE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3614,
+      "label": "ELIGIBILITY INTERIM RESPONSE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3615,
+      "label": "ELIGIBILITY VERIF. METHOD",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3616,
+      "label": "ELIGIBILITY STATUS ENTERED BY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3617,
+      "label": "USER ENROLLEE VALID THROUGH",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3618,
+      "label": "USER ENROLLEE SITE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.362,
+      "label": "DISABILITY RET. FROM MILITARY?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.36205,
+      "label": "RECEIVING A&A BENEFITS?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3621,
+      "label": "AMOUNT OF AID & ATTENDANCE",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.36215,
+      "label": "RECEIVING HOUSEBOUND BENEFITS?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3622,
+      "label": "AMOUNT OF HOUSEBOUND",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.36225,
+      "label": "RECEIVING SOCIAL SECURITY?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3623,
+      "label": "*AMOUNT OF SOCIAL SECURITY",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.36235,
+      "label": "RECEIVING A VA PENSION?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3624,
+      "label": "AMOUNT OF VA PENSION",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3625,
+      "label": "*AMOUNT OF MILITARY RETIREMENT",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.36255,
+      "label": "RECEIVING MILITARY RETIREMENT?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3626,
+      "label": "AMOUNT OF GI INSURANCE",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.36265,
+      "label": "GI INSURANCE POLICY?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3627,
+      "label": "AMOUNT OF SSI",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.36275,
+      "label": "RECEIVING SUP. SECURITY (SSI)?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3628,
+      "label": "AMOUNT OF OTHER RETIREMENT",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.36285,
+      "label": "TYPE OF OTHER RETIREMENT",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3629,
+      "label": "AMOUNT OF OTHER INCOME",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.36295,
+      "label": "TOTAL ANNUAL VA CHECK AMOUNT",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.363,
+      "label": "PRIMARY LONG ID",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.364,
+      "label": "PRIMARY SHORT ID",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.368,
+      "label": "SERVICE DENTAL INJURY?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.369,
+      "label": "SERVICE TEETH EXTRACTED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.37,
+      "label": "DATE OF DENTAL TREATMENT",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3721,
+      "label": "RATED DISABILITIES (VA)",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3731,
+      "label": "SERVICE CONNECTED CONDITIONS",
+      "type_code": "A",
+      "type_name": "ADDRESS",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.381,
+      "label": "ELIGIBLE FOR MEDICAID?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.382,
+      "label": "DATE MEDICAID LAST ASKED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.383,
+      "label": "MEDICAID NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3851,
+      "label": "PENSION AWARD EFFECTIVE DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3852,
+      "label": "PENSION AWARD REASON",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3853,
+      "label": "PENSION TERMINATED DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3854,
+      "label": "PENSION TERMINATED REASON 1",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3855,
+      "label": "PENSION TERMINATED REASON 2",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3856,
+      "label": "PENSION TERMINATED REASON 3",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3857,
+      "label": "PENSION TERMINATED REASON 4",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3858,
+      "label": "CLASS II DENTAL INDICATOR",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3859,
+      "label": "DENTAL APPL DUE BEFORE DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.386,
+      "label": "PENSION INDICATOR LOCK",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3861,
+      "label": "PENSION AWARD LOCK",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.39,
+      "label": "VETERAN CATASTROPHICALLY DISABLED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.391,
+      "label": "DECIDED BY",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.392,
+      "label": "DATE OF DECISION",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.393,
+      "label": "FACILITY MAKING DETERMINATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.394,
+      "label": "REVIEW DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.395,
+      "label": "METHOD OF DETERMINATION",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3951,
+      "label": "DATE VETERAN REQUESTED CD EVAL",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3952,
+      "label": "DATE FACILITY INITIATED REVIEW",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.3953,
+      "label": "DATE VETERAN WAS NOTIFIED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.396,
+      "label": "CD STATUS DIAGNOSES",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.397,
+      "label": "CD STATUS PROCEDURES",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.398,
+      "label": "CD STATUS CONDITIONS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.399,
+      "label": "CD HISTORY DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.401,
+      "label": "CD DESCRIPTORS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.525,
+      "label": "POW STATUS INDICATED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.526,
+      "label": "POW CONFINEMENT LOCATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.527,
+      "label": "POW FROM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.528,
+      "label": "POW TO DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.529,
+      "label": "POW STATUS VERIFIED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.5291,
+      "label": "COMBAT SERVICE INDICATED?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.5292,
+      "label": "COMBAT SERVICE LOCATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.5293,
+      "label": "COMBAT FROM DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.5294,
+      "label": "COMBAT TO DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.5295,
+      "label": "COMBAT VETERAN END DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.5296,
+      "label": "CV DATE EDITED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.531,
+      "label": "CURRENT PH INDICATOR",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.532,
+      "label": "CURRENT PURPLE HEART STATUS",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.533,
+      "label": "CURRENT PURPLE HEART REMARKS",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.535,
+      "label": "PH DIVISION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.541,
+      "label": "CURRENT MOH INDICATOR",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.542,
+      "label": "MOH AWARD DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.543,
+      "label": "MOH STATUS DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.544,
+      "label": "MOH COPAYMENT EXEMPTION DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.5501,
+      "label": "EXPANDED MH CARE TYPE",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.5502,
+      "label": "AUTOMATIC CHANGE DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.5601,
+      "label": "PRESUMPTIVE PSYCHOSIS CATEGORY",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.571,
+      "label": "INDIAN SELF IDENTIFICATION",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.572,
+      "label": "INDIAN START DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.573,
+      "label": "INDIAN ATTESTATION DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.574,
+      "label": "INDIAN END DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.575,
+      "label": "INDIAN SELF IDENT CHANGE DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.576,
+      "label": "INDIAN SELF IDENT CHANGE USER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 0.6,
+      "label": "TEST PATIENT INDICATOR",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1.0,
+      "label": "ALIAS",
+      "type_code": "2",
+      "type_name": "2",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1.01,
+      "label": "NAME COMPONENTS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1.02,
+      "label": "K-NAME COMPONENTS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1.03,
+      "label": "K2-NAME COMPONENTS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1.04,
+      "label": "FATHER'S NAME COMPONENTS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1.05,
+      "label": "MOTHER'S NAME COMPONENTS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1.06,
+      "label": "MOTHERS MAIDEN NAME COMPONENTS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1.07,
+      "label": "E-NAME COMPONENTS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1.08,
+      "label": "E2-NAME COMPONENTS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1.09,
+      "label": "D-NAME COMPONENTS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 2.0,
+      "label": "RACE INFORMATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 3.0,
+      "label": "ENROLLMENT CLINIC",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 6.0,
+      "label": "ETHNICITY INFORMATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 7.0,
+      "label": "LANGUAGE DATE/TIME",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 25.01,
+      "label": "CURRENT HEALTH BENEFIT PLAN",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 25.02,
+      "label": "HISTORY HEALTH BENEFIT PLAN",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 27.01,
+      "label": "CURRENT ENROLLMENT",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 27.02,
+      "label": "PREFERRED FACILITY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 27.03,
+      "label": "SOURCE DESIGNATION",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 27.04,
+      "label": "PT APPLIED FOR ENROLLMENT?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 53.0,
+      "label": "*REACTIONS",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 57.1,
+      "label": "*HEIGHT(cm)",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 57.2,
+      "label": "*WEIGHT(kg)",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 57.4,
+      "label": "SPINAL CORD INJURY",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 63.0,
+      "label": "LABORATORY REFERENCE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 67.0,
+      "label": "LAB REFERRAL REF",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 148.0,
+      "label": "CNH CURRENT",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 220.0,
+      "label": "DENTAL CLASSIFICATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 220.1,
+      "label": "DENTAL ELIGIBILITY EXPIRATION",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 361.0,
+      "label": "PATIENT ELIGIBILITIES",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 391.0,
+      "label": "TYPE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 401.3,
+      "label": "CONDITION",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 401.4,
+      "label": "DATE ENTERED ON SI LIST",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 404.01,
+      "label": "*CURRENT PC PRACTITIONER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 404.02,
+      "label": "*CURRENT PC TEAM",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 534.0,
+      "label": "PH DATE/TIME UPDATED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.01,
+      "label": "INTEGRATION CONTROL NUMBER",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.02,
+      "label": "ICN CHECKSUM",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.03,
+      "label": "COORDINATING MASTER OF RECORD",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.04,
+      "label": "LOCALLY ASSIGNED ICN",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.05,
+      "label": "SUBSCRIPTION CONTROL NUMBER",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.06,
+      "label": "CMOR ACTIVITY SCORE",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.07,
+      "label": "SCORE CALCULATION DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.08,
+      "label": "TEMPORARY ID NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.09,
+      "label": "FOREIGN ID NUMBER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.1,
+      "label": "FULL ICN",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.11,
+      "label": "INDIVIDUAL TAX ID",
+      "type_code": "N",
+      "type_name": "NUMERIC",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 991.91,
+      "label": "FULL ICN HISTORY",
+      "type_code": "A",
+      "type_name": "ADDRESS",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 992.0,
+      "label": "ICN HISTORY",
+      "type_code": "A",
+      "type_name": "ADDRESS",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 993.0,
+      "label": "CMOR HISTORY",
+      "type_code": "A",
+      "type_name": "ADDRESS",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 994.0,
+      "label": "MULTIPLE BIRTH INDICATOR",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 999.0,
+      "label": "ABSENCE DIVISION",
+      "type_code": "C",
+      "type_name": "COMPUTED",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 999.1,
+      "label": "INPATIENT WARD",
+      "type_code": "C",
+      "type_name": "COMPUTED",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 999.2,
+      "label": "LAST MEANS TEST",
+      "type_code": "C",
+      "type_name": "COMPUTED",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1000.0,
+      "label": "DISPOSITION LOG-IN DATE/TIME",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.15,
+      "label": "RECEIVED VA CARE PREVIOUSLY?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.151,
+      "label": "MOST RECENT DATE OF CARE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.1511,
+      "label": "APPOINTMENT REQUEST DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.1512,
+      "label": "ORIGINAL APPOINTMENT REQUEST",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.1513,
+      "label": "ORIGINAL APPT REQUEST DATE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.1514,
+      "label": "ORIG APPT REQUEST CHG DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.1515,
+      "label": "APPT REQUEST 1010EZ CHG DT/TM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.152,
+      "label": "MOST RECENT LOCATION OF CARE",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.153,
+      "label": "2ND MOST RECENT DATE OF CARE",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.154,
+      "label": "2ND MOST RECENT LOCATION",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.156,
+      "label": "MOST RECENT 1010EZ",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.157,
+      "label": "COMBAT INDICATED ON 1010EZ",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.158,
+      "label": "DISABILITY DISCHARGE ON 1010EZ",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.159,
+      "label": "APPOINTMENT REQUEST ON 1010EZ",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.161,
+      "label": "APPOINTMENT REQUEST STATUS",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.162,
+      "label": "DATE STATUS LAST EDITED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.163,
+      "label": "APPOINTMENT REQUEST COMMENT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1010.164,
+      "label": "DATE COMMENT LAST EDITED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1100.01,
+      "label": "FUGITIVE FELON FLAG",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1100.02,
+      "label": "FFF ENTERED BY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1100.03,
+      "label": "FFF DATE ENTERED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1100.04,
+      "label": "FFF REMOVED BY",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1100.05,
+      "label": "FFF DATE REMOVED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1100.09,
+      "label": "FFF REMOVAL REMARKS",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1900.0,
+      "label": "APPOINTMENT",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1901.0,
+      "label": "VETERAN (Y/N)?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1903.0,
+      "label": "ARCHIVED DATA",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 1910.0,
+      "label": "COMMUNITY CARE PROGRAM",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 2001.0,
+      "label": "DATE LAST EICD RUN",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 3000.0,
+      "label": "VTS PATIENT FLAG",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 9000.0,
+      "label": "DISCHARGED TO CERNER",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 11500.01,
+      "label": "INITIAL ODS TREATMENT RECEIVED",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 11500.02,
+      "label": "RECALLED TO ACTIVE DUTY",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 11500.03,
+      "label": "RANK",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 500001.0,
+      "label": "IS PATIENT DIABETIC?",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537025.0,
+      "label": "NETWORK IDENTIFIER",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537026.0,
+      "label": "MHV SOCIALIZATION",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537027.0,
+      "label": "MHV REGISTERED",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537028.0,
+      "label": "MHV AUTHENTICATED",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537029.0,
+      "label": "MHV SECURE MESSAGING",
+      "type_code": "S",
+      "type_name": "SET OF CODES",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537030.0,
+      "label": "MHVREG UPDATE DATE/TIME",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537031.0,
+      "label": "MHVAUTH UPDATE DATE/TIME",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537032.0,
+      "label": "MHVSM UPDATE DATE/TIME",
+      "type_code": "D",
+      "type_name": "DATE/TIME",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537033.0,
+      "label": "MHV REGISTER DECLINED TEXT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537034.0,
+      "label": "MHV AUTH DECLINED TEXT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537035.0,
+      "label": "MHV MSG DECLINED TEXT",
+      "type_code": "F",
+      "type_name": "FREE TEXT",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537036.0,
+      "label": "MHV REGISTER DECLINED REASON",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537037.0,
+      "label": "MHV AUTH DECLINED REASON",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537038.0,
+      "label": "MHV MSG DECLINED REASON",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537041.0,
+      "label": "MHV MSG ACTIONS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    },
+    {
+      "field": 537042.0,
+      "label": "MHV AUTH ACTIONS",
+      "type_code": "P",
+      "type_name": "POINTER",
+      "hits": 0,
+      "pct": 0.0
+    }
+  ]
+}

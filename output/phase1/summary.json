@@ -1,0 +1,246 @@
+{
+  "total_files": 2915,
+  "total_packages": 470,
+  "unpackaged_files": 1683,
+  "total_fields": 69328,
+  "avg_fields_per_file": 23.78319039451115,
+  "file_1": {
+    "file_1_label": "ATTRIBUTE",
+    "file_1_fields": 25,
+    "file_1_entries": 0
+  },
+  "top_packages_by_file_count": [
+    {
+      "name": "IFCAP",
+      "file_count": 90
+    },
+    {
+      "name": "REGISTRATION",
+      "file_count": 89
+    },
+    {
+      "name": "INTEGRATED BILLING",
+      "file_count": 81
+    },
+    {
+      "name": "LAB SERVICE",
+      "file_count": 52
+    },
+    {
+      "name": "DIETETICS",
+      "file_count": 44
+    },
+    {
+      "name": "ENGINEERING",
+      "file_count": 36
+    },
+    {
+      "name": "MEDICINE/CARDIOLOGY",
+      "file_count": 35
+    },
+    {
+      "name": "KERNEL",
+      "file_count": 33
+    },
+    {
+      "name": "FEE BASIS",
+      "file_count": 33
+    },
+    {
+      "name": "PAID",
+      "file_count": 30
+    },
+    {
+      "name": "SURGERY",
+      "file_count": 28
+    },
+    {
+      "name": "ONCOLOGY",
+      "file_count": 27
+    },
+    {
+      "name": "MENTAL HEALTH",
+      "file_count": 25
+    },
+    {
+      "name": "RADIOLOGY/NUCLEAR MEDICINE",
+      "file_count": 24
+    },
+    {
+      "name": "PROSTHETICS",
+      "file_count": 23
+    },
+    {
+      "name": "SCHEDULING",
+      "file_count": 22
+    },
+    {
+      "name": "ACCOUNTS RECEIVABLE",
+      "file_count": 21
+    },
+    {
+      "name": "HEALTH LEVEL SEVEN",
+      "file_count": 20
+    },
+    {
+      "name": "MAILMAN",
+      "file_count": 19
+    },
+    {
+      "name": "PATIENT DATA EXCHANGE",
+      "file_count": 18
+    }
+  ],
+  "type_distribution": [
+    {
+      "code": "F",
+      "name": "FREE TEXT",
+      "count": 11962
+    },
+    {
+      "code": "S",
+      "name": "SET OF CODES",
+      "count": 9721
+    },
+    {
+      "code": "D",
+      "name": "DATE/TIME",
+      "count": 3646
+    },
+    {
+      "code": "RF",
+      "name": "RF",
+      "count": 2227
+    },
+    {
+      "code": "FX",
+      "name": "FX",
+      "count": 1563
+    },
+    {
+      "code": "P200'",
+      "name": "P200'",
+      "count": 1281
+    },
+    {
+      "code": "NJ3,0",
+      "name": "NJ3,0",
+      "count": 1095
+    },
+    {
+      "code": "RS",
+      "name": "RS",
+      "count": 1079
+    },
+    {
+      "code": "NJ4,0",
+      "name": "NJ4,0",
+      "count": 898
+    },
+    {
+      "code": "NJ2,0",
+      "name": "NJ2,0",
+      "count": 896
+    },
+    {
+      "code": "W",
+      "name": "WORD PROCESSING",
+      "count": 866
+    },
+    {
+      "code": "FXO",
+      "name": "FXO",
+      "count": 861
+    },
+    {
+      "code": "NJ6,0",
+      "name": "NJ6,0",
+      "count": 753
+    },
+    {
+      "code": "RFX",
+      "name": "RFX",
+      "count": 568
+    },
+    {
+      "code": "RD",
+      "name": "RD",
+      "count": 565
+    },
+    {
+      "code": "DX",
+      "name": "DX",
+      "count": 560
+    },
+    {
+      "code": "FO",
+      "name": "FO",
+      "count": 544
+    },
+    {
+      "code": "NJ5,0",
+      "name": "NJ5,0",
+      "count": 510
+    },
+    {
+      "code": "MF",
+      "name": "MF",
+      "count": 468
+    },
+    {
+      "code": "NJ7,0",
+      "name": "NJ7,0",
+      "count": 462
+    },
+    {
+      "code": "NJ8,2",
+      "name": "NJ8,2",
+      "count": 351
+    },
+    {
+      "code": "NJ9,0",
+      "name": "NJ9,0",
+      "count": 343
+    },
+    {
+      "code": "NJ6,2",
+      "name": "NJ6,2",
+      "count": 307
+    },
+    {
+      "code": "NJ1,0",
+      "name": "NJ1,0",
+      "count": 303
+    },
+    {
+      "code": "WL",
+      "name": "WL",
+      "count": 276
+    },
+    {
+      "code": "SX",
+      "name": "SX",
+      "count": 271
+    },
+    {
+      "code": "K",
+      "name": "MUMPS",
+      "count": 266
+    },
+    {
+      "code": "NJ5,0O",
+      "name": "NJ5,0O",
+      "count": 257
+    },
+    {
+      "code": "NJ10,2",
+      "name": "NJ10,2",
+      "count": 241
+    },
+    {
+      "code": "P",
+      "name": "POINTER",
+      "count": 234
+    }
+  ]
+}

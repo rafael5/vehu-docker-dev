@@ -1,0 +1,817 @@
+{
+  "total_pointer_edges": 6632,
+  "unique_source_files": 1587,
+  "unique_target_files": 1175,
+  "hub_files_10plus": 58,
+  "top_hubs": [
+    {
+      "file_number": 200.0,
+      "label": "NEW PERSON",
+      "package": "SOCIAL WORK",
+      "inbound_count": 561
+    },
+    {
+      "file_number": 2.0,
+      "label": "PATIENT",
+      "package": "PATIENT FILE",
+      "inbound_count": 314
+    },
+    {
+      "file_number": 4.0,
+      "label": "INSTITUTION",
+      "package": "KERNEL",
+      "inbound_count": 209
+    },
+    {
+      "file_number": 44.0,
+      "label": "HOSPITAL LOCATION",
+      "package": "SCHEDULING",
+      "inbound_count": 115
+    },
+    {
+      "file_number": 5.0,
+      "label": "STATE",
+      "package": "PATIENT FILE",
+      "inbound_count": 81
+    },
+    {
+      "file_number": 40.8,
+      "label": "MEDICAL CENTER DIVISION",
+      "package": "REGISTRATION",
+      "inbound_count": 53
+    },
+    {
+      "file_number": 3.5,
+      "label": "DEVICE",
+      "package": "KERNEL",
+      "inbound_count": 49
+    },
+    {
+      "file_number": 3.8,
+      "label": "MAIL GROUP",
+      "package": "MAILMAN",
+      "inbound_count": 43
+    },
+    {
+      "file_number": 9000010.0,
+      "label": "VISIT",
+      "package": "(unpackaged)",
+      "inbound_count": 41
+    },
+    {
+      "file_number": 1.0,
+      "label": "FILE",
+      "package": "(unpackaged)",
+      "inbound_count": 40
+    },
+    {
+      "file_number": 100.0,
+      "label": "ORDER",
+      "package": "ORDER ENTRY/RESULTS REPORTING",
+      "inbound_count": 38
+    },
+    {
+      "file_number": 49.0,
+      "label": "SERVICE/SECTION",
+      "package": "INTERIM MANAGEMENT SUPPORT",
+      "inbound_count": 37
+    },
+    {
+      "file_number": 80.0,
+      "label": "ICD DIAGNOSIS",
+      "package": "DRG GROUPER",
+      "inbound_count": 35
+    },
+    {
+      "file_number": 81.0,
+      "label": "CPT",
+      "package": "REGISTRATION",
+      "inbound_count": 35
+    },
+    {
+      "file_number": 9.4,
+      "label": "PACKAGE",
+      "package": "KERNEL",
+      "inbound_count": 33
+    },
+    {
+      "file_number": 405.0,
+      "label": "PATIENT MOVEMENT",
+      "package": "REGISTRATION",
+      "inbound_count": 32
+    },
+    {
+      "file_number": 50.0,
+      "label": "DRUG",
+      "package": "CONTROLLED SUBSTANCES",
+      "inbound_count": 30
+    },
+    {
+      "file_number": 4.2,
+      "label": "DOMAIN",
+      "package": "MAILMAN",
+      "inbound_count": 27
+    },
+    {
+      "file_number": 36.0,
+      "label": "INSURANCE COMPANY",
+      "package": "REGISTRATION",
+      "inbound_count": 24
+    },
+    {
+      "file_number": 42.0,
+      "label": "WARD LOCATION",
+      "package": "REGISTRATION",
+      "inbound_count": 24
+    },
+    {
+      "file_number": 727.0,
+      "label": "",
+      "package": "(unpackaged)",
+      "inbound_count": 22
+    },
+    {
+      "file_number": 3.9,
+      "label": "MESSAGE",
+      "package": "MAILMAN",
+      "inbound_count": 20
+    },
+    {
+      "file_number": 45.7,
+      "label": "FACILITY TREATING SPECIALTY",
+      "package": "REGISTRATION",
+      "inbound_count": 20
+    },
+    {
+      "file_number": 40.7,
+      "label": "CLINIC STOP",
+      "package": "SCHEDULING",
+      "inbound_count": 20
+    },
+    {
+      "file_number": 59.0,
+      "label": "OUTPATIENT SITE",
+      "package": "PHARMACY",
+      "inbound_count": 20
+    },
+    {
+      "file_number": 440.0,
+      "label": "VENDOR",
+      "package": "IFCAP",
+      "inbound_count": 20
+    },
+    {
+      "file_number": 123.0,
+      "label": "REQUEST/CONSULTATION",
+      "package": "SUPPLY",
+      "inbound_count": 20
+    },
+    {
+      "file_number": 8925.0,
+      "label": "TIU DOCUMENT",
+      "package": "(unpackaged)",
+      "inbound_count": 18
+    },
+    {
+      "file_number": 52.0,
+      "label": "PRESCRIPTION",
+      "package": "PHARMACY",
+      "inbound_count": 18
+    },
+    {
+      "file_number": 445.0,
+      "label": "GENERIC INVENTORY",
+      "package": "GENERIC INVENTORY PACKAGE",
+      "inbound_count": 17
+    }
+  ],
+  "top_outbound": [
+    {
+      "file_number": 165.5,
+      "label": "ONCOLOGY PRIMARY",
+      "package": "ONCOLOGY",
+      "outbound_count": 43
+    },
+    {
+      "file_number": 2.0,
+      "label": "PATIENT",
+      "package": "PATIENT FILE",
+      "outbound_count": 36
+    },
+    {
+      "file_number": 356.22,
+      "label": "HCS REVIEW TRANSMISSION",
+      "package": "(unpackaged)",
+      "outbound_count": 32
+    },
+    {
+      "file_number": 130.0,
+      "label": "SURGERY",
+      "package": "SURGERY",
+      "outbound_count": 27
+    },
+    {
+      "file_number": 2260.0,
+      "label": "ASISTS ACCIDENT REPORTING",
+      "package": "(unpackaged)",
+      "outbound_count": 27
+    },
+    {
+      "file_number": 399.0,
+      "label": "BILL/CLAIMS",
+      "package": "UB-82 BILLING",
+      "outbound_count": 24
+    },
+    {
+      "file_number": 442.0,
+      "label": "PROCUREMENT & ACCOUNTING TRANSACTIONS",
+      "package": "IFCAP",
+      "outbound_count": 22
+    },
+    {
+      "file_number": 6914.0,
+      "label": "EQUIPMENT INV.",
+      "package": "ENGINEERING",
+      "outbound_count": 22
+    },
+    {
+      "file_number": 2005.0,
+      "label": "IMAGE",
+      "package": "(unpackaged)",
+      "outbound_count": 19
+    },
+    {
+      "file_number": 162.5,
+      "label": "FEE BASIS INVOICE",
+      "package": "FEE BASIS",
+      "outbound_count": 18
+    },
+    {
+      "file_number": 200.0,
+      "label": "NEW PERSON",
+      "package": "SOCIAL WORK",
+      "outbound_count": 18
+    },
+    {
+      "file_number": 405.0,
+      "label": "PATIENT MOVEMENT",
+      "package": "REGISTRATION",
+      "outbound_count": 18
+    },
+    {
+      "file_number": 2005.1,
+      "label": "IMAGE AUDIT",
+      "package": "(unpackaged)",
+      "outbound_count": 18
+    },
+    {
+      "file_number": 660.0,
+      "label": "RECORD OF PROS APPLIANCE/REPAIR",
+      "package": "PROSTHETICS",
+      "outbound_count": 17
+    },
+    {
+      "file_number": 9000010.11,
+      "label": "V IMMUNIZATION",
+      "package": "(unpackaged)",
+      "outbound_count": 17
+    },
+    {
+      "file_number": 9000080.11,
+      "label": "V IMMUNIZATION DELETED",
+      "package": "(unpackaged)",
+      "outbound_count": 17
+    },
+    {
+      "file_number": 443.6,
+      "label": "AMENDMENTS",
+      "package": "IFCAP",
+      "outbound_count": 16
+    },
+    {
+      "file_number": 44.0,
+      "label": "HOSPITAL LOCATION",
+      "package": "SCHEDULING",
+      "outbound_count": 15
+    },
+    {
+      "file_number": 45.0,
+      "label": "PTF",
+      "package": "REGISTRATION",
+      "outbound_count": 15
+    },
+    {
+      "file_number": 350.9,
+      "label": "IB SITE PARAMETERS",
+      "package": "INTEGRATED BILLING",
+      "outbound_count": 15
+    },
+    {
+      "file_number": 365.0,
+      "label": "IIV RESPONSE",
+      "package": "(unpackaged)",
+      "outbound_count": 15
+    },
+    {
+      "file_number": 52.49,
+      "label": "ERX HOLDING QUEUE",
+      "package": "(unpackaged)",
+      "outbound_count": 14
+    },
+    {
+      "file_number": 430.0,
+      "label": "ACCOUNTS RECEIVABLE",
+      "package": "ACCOUNTS RECEIVABLE",
+      "outbound_count": 14
+    },
+    {
+      "file_number": 721.0,
+      "label": "EVENT CAPTURE PATIENT",
+      "package": "(unpackaged)",
+      "outbound_count": 14
+    },
+    {
+      "file_number": 8925.0,
+      "label": "TIU DOCUMENT",
+      "package": "(unpackaged)",
+      "outbound_count": 14
+    },
+    {
+      "file_number": 19620.0,
+      "label": "DSIR ROI INSTANCE",
+      "package": "(unpackaged)",
+      "outbound_count": 14
+    },
+    {
+      "file_number": 50.0,
+      "label": "DRUG",
+      "package": "CONTROLLED SUBSTANCES",
+      "outbound_count": 13
+    },
+    {
+      "file_number": 58.81,
+      "label": "DRUG ACCOUNTABILITY TRANSACTION",
+      "package": "CONTROLLED SUBSTANCES",
+      "outbound_count": 13
+    },
+    {
+      "file_number": 392.0,
+      "label": "BENEFICIARY TRAVEL CLAIM",
+      "package": "BENEFICIARY TRAVEL",
+      "outbound_count": 13
+    },
+    {
+      "file_number": 410.0,
+      "label": "CONTROL POINT ACTIVITY",
+      "package": "IFCAP",
+      "outbound_count": 13
+    }
+  ],
+  "variable_pointer_fields": 99,
+  "multiple_fields": 1582,
+  "top_variable_pointer_files": [
+    {
+      "file_number": 100.0,
+      "label": "ORDER",
+      "count": 4
+    },
+    {
+      "file_number": 548260.0,
+      "label": "PATCH PACKAGE",
+      "count": 4
+    },
+    {
+      "file_number": 15.0,
+      "label": "DUPLICATE RECORD",
+      "count": 2
+    },
+    {
+      "file_number": 15.4,
+      "label": "MERGE IMAGES",
+      "count": 2
+    },
+    {
+      "file_number": 123.0,
+      "label": "REQUEST/CONSULTATION",
+      "count": 2
+    },
+    {
+      "file_number": 350.9,
+      "label": "IB SITE PARAMETERS",
+      "count": 2
+    },
+    {
+      "file_number": 444.0,
+      "label": "REQUEST FOR QUOTATION",
+      "count": 2
+    },
+    {
+      "file_number": 811.1,
+      "label": "PCE CODE MAPPING",
+      "count": 2
+    },
+    {
+      "file_number": 19620.92,
+      "label": "DSIR REQUEST ADDRESS",
+      "count": 2
+    },
+    {
+      "file_number": 1.1,
+      "label": "AUDIT",
+      "count": 1
+    },
+    {
+      "file_number": 26.13,
+      "label": "PRF ASSIGNMENT",
+      "count": 1
+    },
+    {
+      "file_number": 27.17,
+      "label": "CATASTROPHIC DISABILITY REASONS",
+      "count": 1
+    },
+    {
+      "file_number": 35.1,
+      "label": "SHARING AGREEMENT CATEGORY",
+      "count": 1
+    },
+    {
+      "file_number": 43.0,
+      "label": "MAS PARAMETERS",
+      "count": 1
+    },
+    {
+      "file_number": 45.89,
+      "label": "PTF EXPANDED CODE",
+      "count": 1
+    }
+  ],
+  "top_multiple_files": [
+    {
+      "file_number": 454.0,
+      "label": "PAID CODE FILES",
+      "count": 58
+    },
+    {
+      "file_number": 1927.4,
+      "label": "NUPA CARE PLANS",
+      "count": 37
+    },
+    {
+      "file_number": 164.0,
+      "label": "ICDO TOPOGRAPHY",
+      "count": 30
+    },
+    {
+      "file_number": 117.3,
+      "label": "ANNUAL REPORT",
+      "count": 21
+    },
+    {
+      "file_number": 130.0,
+      "label": "SURGERY",
+      "count": 20
+    },
+    {
+      "file_number": 164.33,
+      "label": "AJCC STAGING GROUPS",
+      "count": 18
+    },
+    {
+      "file_number": 413.0,
+      "label": "EQUIPMENT REQUEST",
+      "count": 18
+    },
+    {
+      "file_number": 811.9,
+      "label": "REMINDER DEFINITION",
+      "count": 16
+    },
+    {
+      "file_number": 48.0,
+      "label": "MAS RELEASE NOTES",
+      "count": 15
+    },
+    {
+      "file_number": 50.621,
+      "label": "PMI-ENGLISH",
+      "count": 15
+    },
+    {
+      "file_number": 50.622,
+      "label": "PMI-SPANISH",
+      "count": 15
+    },
+    {
+      "file_number": 52.49,
+      "label": "ERX HOLDING QUEUE",
+      "count": 12
+    },
+    {
+      "file_number": 912.0,
+      "label": "ESP OFFENSE REPORT",
+      "count": 12
+    },
+    {
+      "file_number": 2260.0,
+      "label": "ASISTS ACCIDENT REPORTING",
+      "count": 12
+    },
+    {
+      "file_number": 604.0,
+      "label": "ADDICTION SEVERITY INDEX",
+      "count": 10
+    }
+  ],
+  "package_matrix": {
+    "top_packages": [
+      "(unpackaged)",
+      "SOCIAL WORK",
+      "PATIENT FILE",
+      "REGISTRATION",
+      "KERNEL",
+      "DRG GROUPER",
+      "INTEGRATED BILLING",
+      "SCHEDULING",
+      "IFCAP",
+      "MAILMAN",
+      "ONCOLOGY",
+      "MEDICINE",
+      "FEE BASIS",
+      "LAB SERVICE",
+      "MEDICINE/CARDIOLOGY"
+    ],
+    "matrix": [
+      {
+        "package": "(unpackaged)",
+        "(unpackaged)": 0,
+        "SOCIAL WORK": 546,
+        "PATIENT FILE": 266,
+        "REGISTRATION": 142,
+        "KERNEL": 198,
+        "DRG GROUPER": 51,
+        "INTEGRATED BILLING": 27,
+        "SCHEDULING": 109,
+        "IFCAP": 27,
+        "MAILMAN": 40,
+        "ONCOLOGY": 11,
+        "MEDICINE": 0,
+        "FEE BASIS": 3,
+        "LAB SERVICE": 12,
+        "MEDICINE/CARDIOLOGY": 1
+      },
+      {
+        "package": "SOCIAL WORK",
+        "(unpackaged)": 8,
+        "SOCIAL WORK": 0,
+        "PATIENT FILE": 2,
+        "REGISTRATION": 0,
+        "KERNEL": 4,
+        "DRG GROUPER": 0,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 0,
+        "IFCAP": 0,
+        "MAILMAN": 0,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "PATIENT FILE",
+        "(unpackaged)": 33,
+        "SOCIAL WORK": 18,
+        "PATIENT FILE": 0,
+        "REGISTRATION": 21,
+        "KERNEL": 18,
+        "DRG GROUPER": 0,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 0,
+        "IFCAP": 0,
+        "MAILMAN": 0,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 2,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "REGISTRATION",
+        "(unpackaged)": 21,
+        "SOCIAL WORK": 40,
+        "PATIENT FILE": 25,
+        "REGISTRATION": 0,
+        "KERNEL": 6,
+        "DRG GROUPER": 32,
+        "INTEGRATED BILLING": 1,
+        "SCHEDULING": 2,
+        "IFCAP": 0,
+        "MAILMAN": 22,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "KERNEL",
+        "(unpackaged)": 4,
+        "SOCIAL WORK": 10,
+        "PATIENT FILE": 3,
+        "REGISTRATION": 0,
+        "KERNEL": 0,
+        "DRG GROUPER": 0,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 0,
+        "IFCAP": 0,
+        "MAILMAN": 5,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "DRG GROUPER",
+        "(unpackaged)": 3,
+        "SOCIAL WORK": 0,
+        "PATIENT FILE": 0,
+        "REGISTRATION": 0,
+        "KERNEL": 0,
+        "DRG GROUPER": 0,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 0,
+        "IFCAP": 0,
+        "MAILMAN": 0,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "INTEGRATED BILLING",
+        "(unpackaged)": 34,
+        "SOCIAL WORK": 40,
+        "PATIENT FILE": 11,
+        "REGISTRATION": 19,
+        "KERNEL": 6,
+        "DRG GROUPER": 8,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 4,
+        "IFCAP": 0,
+        "MAILMAN": 10,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "SCHEDULING",
+        "(unpackaged)": 8,
+        "SOCIAL WORK": 9,
+        "PATIENT FILE": 4,
+        "REGISTRATION": 6,
+        "KERNEL": 6,
+        "DRG GROUPER": 1,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 0,
+        "IFCAP": 0,
+        "MAILMAN": 0,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "IFCAP",
+        "(unpackaged)": 16,
+        "SOCIAL WORK": 51,
+        "PATIENT FILE": 13,
+        "REGISTRATION": 0,
+        "KERNEL": 1,
+        "DRG GROUPER": 0,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 0,
+        "IFCAP": 0,
+        "MAILMAN": 2,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "MAILMAN",
+        "(unpackaged)": 1,
+        "SOCIAL WORK": 6,
+        "PATIENT FILE": 0,
+        "REGISTRATION": 0,
+        "KERNEL": 1,
+        "DRG GROUPER": 0,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 0,
+        "IFCAP": 0,
+        "MAILMAN": 0,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "ONCOLOGY",
+        "(unpackaged)": 64,
+        "SOCIAL WORK": 5,
+        "PATIENT FILE": 8,
+        "REGISTRATION": 0,
+        "KERNEL": 3,
+        "DRG GROUPER": 43,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 0,
+        "IFCAP": 0,
+        "MAILMAN": 0,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "MEDICINE",
+        "(unpackaged)": 9,
+        "SOCIAL WORK": 43,
+        "PATIENT FILE": 0,
+        "REGISTRATION": 0,
+        "KERNEL": 2,
+        "DRG GROUPER": 0,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 4,
+        "IFCAP": 0,
+        "MAILMAN": 0,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 1,
+        "MEDICINE/CARDIOLOGY": 22
+      },
+      {
+        "package": "FEE BASIS",
+        "(unpackaged)": 29,
+        "SOCIAL WORK": 17,
+        "PATIENT FILE": 12,
+        "REGISTRATION": 1,
+        "KERNEL": 3,
+        "DRG GROUPER": 53,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 0,
+        "IFCAP": 0,
+        "MAILMAN": 0,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "LAB SERVICE",
+        "(unpackaged)": 12,
+        "SOCIAL WORK": 20,
+        "PATIENT FILE": 4,
+        "REGISTRATION": 7,
+        "KERNEL": 6,
+        "DRG GROUPER": 0,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 3,
+        "IFCAP": 0,
+        "MAILMAN": 1,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 0,
+        "MEDICINE/CARDIOLOGY": 0
+      },
+      {
+        "package": "MEDICINE/CARDIOLOGY",
+        "(unpackaged)": 6,
+        "SOCIAL WORK": 48,
+        "PATIENT FILE": 1,
+        "REGISTRATION": 0,
+        "KERNEL": 0,
+        "DRG GROUPER": 2,
+        "INTEGRATED BILLING": 0,
+        "SCHEDULING": 6,
+        "IFCAP": 0,
+        "MAILMAN": 0,
+        "ONCOLOGY": 0,
+        "MEDICINE": 0,
+        "FEE BASIS": 0,
+        "LAB SERVICE": 7,
+        "MEDICINE/CARDIOLOGY": 0
+      }
+    ]
+  }
+}

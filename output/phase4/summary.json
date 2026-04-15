@@ -1,0 +1,1798 @@
+{
+  "unique_labels": 32107,
+  "set_fields_with_values": 9391,
+  "shared_sets_count": 121,
+  "label_type_inconsistencies": 416,
+  "boolean_patterns": [
+    {
+      "codes": {
+        "Y": "YES",
+        "N": "NO"
+      },
+      "field_count": 1156,
+      "file_count": 246
+    },
+    {
+      "codes": {
+        "0": "NO",
+        "1": "YES"
+      },
+      "field_count": 2081,
+      "file_count": 629
+    },
+    {
+      "codes": {
+        "A": "ACTIVE",
+        "I": "INACTIVE"
+      },
+      "field_count": 29,
+      "file_count": 28
+    },
+    {
+      "codes": {
+        "1": "ACTIVE",
+        "0": "INACTIVE"
+      },
+      "field_count": 44,
+      "file_count": 43
+    }
+  ],
+  "top_labels": [
+    [
+      "NAME",
+      1055
+    ],
+    [
+      "DESCRIPTION",
+      374
+    ],
+    [
+      "CODE",
+      311
+    ],
+    [
+      "STATUS",
+      246
+    ],
+    [
+      "NUMBER",
+      214
+    ],
+    [
+      "PATIENT",
+      214
+    ],
+    [
+      "TYPE",
+      177
+    ],
+    [
+      "INACTIVE?",
+      112
+    ],
+    [
+      "ABBREVIATION",
+      111
+    ],
+    [
+      "PLACEHOLDER",
+      99
+    ],
+    [
+      "DIVISION",
+      90
+    ],
+    [
+      "SYNONYM",
+      90
+    ],
+    [
+      "USER",
+      83
+    ],
+    [
+      "COMMENTS",
+      77
+    ],
+    [
+      "DATE",
+      71
+    ],
+    [
+      "STATE",
+      71
+    ],
+    [
+      "INACTIVE",
+      69
+    ],
+    [
+      "PATIENT NAME",
+      68
+    ],
+    [
+      "ACTIVE",
+      60
+    ],
+    [
+      "LOCATION",
+      57
+    ],
+    [
+      "CITY",
+      55
+    ],
+    [
+      "PROVIDER",
+      50
+    ],
+    [
+      "EFFECTIVE DATE/TIME",
+      48
+    ],
+    [
+      "VUID",
+      48
+    ],
+    [
+      "SSN",
+      48
+    ],
+    [
+      "SERVICE",
+      47
+    ],
+    [
+      "ENTERED BY",
+      47
+    ],
+    [
+      "EFFECTIVE DATE",
+      47
+    ],
+    [
+      "COMMENT",
+      46
+    ],
+    [
+      "ID",
+      45
+    ],
+    [
+      "MASTER ENTRY FOR VUID",
+      44
+    ],
+    [
+      "VERSION",
+      43
+    ],
+    [
+      "SEX",
+      43
+    ],
+    [
+      "ZIP CODE",
+      43
+    ],
+    [
+      "FACILITY",
+      43
+    ],
+    [
+      "INSTITUTION",
+      42
+    ],
+    [
+      "DATE LAST EDITED",
+      42
+    ],
+    [
+      "DATE/TIME",
+      41
+    ],
+    [
+      "SEQUENCE NUMBER",
+      39
+    ],
+    [
+      "TEXT",
+      38
+    ],
+    [
+      "INACTIVE DATE",
+      36
+    ],
+    [
+      "CLASS",
+      36
+    ],
+    [
+      "INACTIVATION DATE",
+      36
+    ],
+    [
+      "STATION NUMBER",
+      35
+    ],
+    [
+      "PRIORITY",
+      34
+    ],
+    [
+      "CATEGORY",
+      34
+    ],
+    [
+      "PACKAGE",
+      34
+    ],
+    [
+      "DATE OF BIRTH",
+      33
+    ],
+    [
+      "REMARKS",
+      33
+    ],
+    [
+      "MESSAGE",
+      32
+    ],
+    [
+      "STATION",
+      32
+    ],
+    [
+      "WARD",
+      32
+    ],
+    [
+      "SOURCE",
+      32
+    ],
+    [
+      "CLINIC",
+      32
+    ],
+    [
+      "FSC CONTROLLED",
+      32
+    ],
+    [
+      "TREATING SPECIALTY",
+      31
+    ],
+    [
+      "PROCEDURE",
+      31
+    ],
+    [
+      "SITE",
+      30
+    ],
+    [
+      "VENDOR",
+      30
+    ],
+    [
+      "IDENTIFIER",
+      29
+    ]
+  ],
+  "top_inconsistencies": [
+    {
+      "label": "NAME",
+      "occurrences": 1055,
+      "types": {
+        "F": 921,
+        "P": 93,
+        "": 20,
+        "X": 3,
+        "C": 1,
+        "N": 7,
+        "V": 7,
+        "S": 3
+      },
+      "files": 1055
+    },
+    {
+      "label": "DESCRIPTION",
+      "occurrences": 374,
+      "types": {
+        "M": 148,
+        "F": 216,
+        "A": 4,
+        "D": 5,
+        "P": 1
+      },
+      "files": 374
+    },
+    {
+      "label": "CODE",
+      "occurrences": 311,
+      "types": {
+        "F": 249,
+        "N": 51,
+        "P": 5,
+        "A": 4,
+        "S": 1,
+        "M": 1
+      },
+      "files": 311
+    },
+    {
+      "label": "STATUS",
+      "occurrences": 246,
+      "types": {
+        "S": 180,
+        "F": 17,
+        "D": 3,
+        "P": 40,
+        "C": 4,
+        "N": 2
+      },
+      "files": 246
+    },
+    {
+      "label": "NUMBER",
+      "occurrences": 214,
+      "types": {
+        "N": 204,
+        "F": 9,
+        "P": 1
+      },
+      "files": 214
+    },
+    {
+      "label": "PATIENT",
+      "occurrences": 214,
+      "types": {
+        "C": 3,
+        "P": 204,
+        "F": 6,
+        "V": 1
+      },
+      "files": 214
+    },
+    {
+      "label": "TYPE",
+      "occurrences": 177,
+      "types": {
+        "S": 131,
+        "P": 19,
+        "F": 25,
+        "A": 2
+      },
+      "files": 177
+    },
+    {
+      "label": "ABBREVIATION",
+      "occurrences": 111,
+      "types": {
+        "F": 110,
+        "M": 1
+      },
+      "files": 111
+    },
+    {
+      "label": "PLACEHOLDER",
+      "occurrences": 99,
+      "types": {
+        "F": 92,
+        "P": 4,
+        "N": 2,
+        "S": 1
+      },
+      "files": 16
+    },
+    {
+      "label": "DIVISION",
+      "occurrences": 90,
+      "types": {
+        "C": 1,
+        "P": 80,
+        "A": 1,
+        "F": 8
+      },
+      "files": 90
+    },
+    {
+      "label": "SYNONYM",
+      "occurrences": 90,
+      "types": {
+        "F": 33,
+        "M": 44,
+        "A": 12,
+        "N": 1
+      },
+      "files": 90
+    },
+    {
+      "label": "USER",
+      "occurrences": 83,
+      "types": {
+        "P": 80,
+        "F": 3
+      },
+      "files": 83
+    },
+    {
+      "label": "COMMENTS",
+      "occurrences": 77,
+      "types": {
+        "M": 41,
+        "F": 33,
+        "D": 2,
+        "A": 1
+      },
+      "files": 76
+    },
+    {
+      "label": "DATE",
+      "occurrences": 71,
+      "types": {
+        "D": 69,
+        "C": 1,
+        "F": 1
+      },
+      "files": 70
+    },
+    {
+      "label": "STATE",
+      "occurrences": 71,
+      "types": {
+        "P": 51,
+        "C": 4,
+        "F": 16
+      },
+      "files": 71
+    },
+    {
+      "label": "INACTIVE",
+      "occurrences": 69,
+      "types": {
+        "S": 64,
+        "D": 4,
+        "C": 1
+      },
+      "files": 69
+    },
+    {
+      "label": "PATIENT NAME",
+      "occurrences": 68,
+      "types": {
+        "P": 52,
+        "F": 14,
+        "V": 2
+      },
+      "files": 68
+    },
+    {
+      "label": "ACTIVE",
+      "occurrences": 60,
+      "types": {
+        "S": 59,
+        "C": 1
+      },
+      "files": 60
+    },
+    {
+      "label": "LOCATION",
+      "occurrences": 57,
+      "types": {
+        "C": 2,
+        "F": 22,
+        "V": 1,
+        "P": 32
+      },
+      "files": 57
+    },
+    {
+      "label": "CITY",
+      "occurrences": 55,
+      "types": {
+        "F": 53,
+        "C": 2
+      },
+      "files": 55
+    },
+    {
+      "label": "PROVIDER",
+      "occurrences": 50,
+      "types": {
+        "P": 37,
+        "F": 11,
+        "S": 1,
+        "D": 1
+      },
+      "files": 50
+    },
+    {
+      "label": "SSN",
+      "occurrences": 48,
+      "types": {
+        "C": 7,
+        "F": 40,
+        "N": 1
+      },
+      "files": 48
+    },
+    {
+      "label": "SERVICE",
+      "occurrences": 47,
+      "types": {
+        "S": 7,
+        "P": 33,
+        "C": 1,
+        "F": 6
+      },
+      "files": 47
+    },
+    {
+      "label": "ENTERED BY",
+      "occurrences": 47,
+      "types": {
+        "P": 43,
+        "S": 2,
+        "F": 2
+      },
+      "files": 47
+    },
+    {
+      "label": "EFFECTIVE DATE",
+      "occurrences": 47,
+      "types": {
+        "D": 46,
+        "S": 1
+      },
+      "files": 47
+    },
+    {
+      "label": "COMMENT",
+      "occurrences": 46,
+      "types": {
+        "M": 18,
+        "F": 27,
+        "D": 1
+      },
+      "files": 46
+    },
+    {
+      "label": "ID",
+      "occurrences": 45,
+      "types": {
+        "N": 8,
+        "F": 36,
+        "P": 1
+      },
+      "files": 45
+    },
+    {
+      "label": "VERSION",
+      "occurrences": 43,
+      "types": {
+        "C": 3,
+        "F": 18,
+        "9": 1,
+        "N": 9,
+        "M": 1,
+        "P": 10,
+        "S": 1
+      },
+      "files": 43
+    },
+    {
+      "label": "SEX",
+      "occurrences": 43,
+      "types": {
+        "S": 35,
+        "D": 2,
+        "C": 4,
+        "F": 1,
+        "M": 1
+      },
+      "files": 42
+    },
+    {
+      "label": "ZIP CODE",
+      "occurrences": 43,
+      "types": {
+        "F": 38,
+        "C": 2,
+        "P": 1,
+        "N": 1,
+        "A": 1
+      },
+      "files": 42
+    },
+    {
+      "label": "FACILITY",
+      "occurrences": 43,
+      "types": {
+        "P": 22,
+        "N": 1,
+        "C": 1,
+        "F": 19
+      },
+      "files": 43
+    },
+    {
+      "label": "INSTITUTION",
+      "occurrences": 42,
+      "types": {
+        "P": 37,
+        "F": 3,
+        "M": 1,
+        "V": 1
+      },
+      "files": 42
+    },
+    {
+      "label": "DATE/TIME",
+      "occurrences": 41,
+      "types": {
+        "D": 37,
+        "M": 3,
+        "F": 1
+      },
+      "files": 41
+    },
+    {
+      "label": "SEQUENCE NUMBER",
+      "occurrences": 39,
+      "types": {
+        "N": 32,
+        "F": 6,
+        "S": 1
+      },
+      "files": 39
+    },
+    {
+      "label": "TEXT",
+      "occurrences": 38,
+      "types": {
+        "M": 20,
+        "A": 3,
+        "F": 14,
+        "S": 1
+      },
+      "files": 38
+    },
+    {
+      "label": "INACTIVE DATE",
+      "occurrences": 36,
+      "types": {
+        "D": 35,
+        "F": 1
+      },
+      "files": 36
+    },
+    {
+      "label": "CLASS",
+      "occurrences": 36,
+      "types": {
+        "S": 29,
+        "P": 5,
+        "F": 2
+      },
+      "files": 36
+    },
+    {
+      "label": "STATION NUMBER",
+      "occurrences": 35,
+      "types": {
+        "F": 26,
+        "C": 1,
+        "P": 5,
+        "N": 3
+      },
+      "files": 35
+    },
+    {
+      "label": "PRIORITY",
+      "occurrences": 34,
+      "types": {
+        "S": 17,
+        "N": 15,
+        "F": 2
+      },
+      "files": 34
+    },
+    {
+      "label": "CATEGORY",
+      "occurrences": 34,
+      "types": {
+        "S": 10,
+        "P": 13,
+        "F": 10,
+        "N": 1
+      },
+      "files": 34
+    }
+  ],
+  "top_shared_sets": [
+    {
+      "codes": {
+        "0": "NO",
+        "1": "YES"
+      },
+      "occurrences": 2081,
+      "unique_files": 629,
+      "sample_fields": [
+        {
+          "file_number": 1.6,
+          "file_label": "POLICY",
+          "field_label": "DISABLE"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "EXCLUDE FROM FACILITY DIR"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "RATED INCOMPETENT?"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "PROJ 112/SHAD"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "MILITARY DISABILITY RETIREMENT"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "Y": "YES",
+        "N": "NO"
+      },
+      "occurrences": 1156,
+      "unique_files": 246,
+      "sample_fields": [
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "TEMPORARY ADDRESS ACTIVE?"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "EMAIL ADDRESS INDICATOR"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "CONFIDENTIAL ADDRESS ACTIVE?"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "K-ADDRESS SAME AS PATIENT'S?"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "K2-ADDRESS SAME AS PATIENT'S?"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "1": "YES"
+      },
+      "occurrences": 252,
+      "unique_files": 168,
+      "sample_fields": [
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "CHECK FOR DUPLICATE"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "LOCALLY ASSIGNED ICN"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "FUGITIVE FELON FLAG"
+        },
+        {
+          "file_number": 3.076,
+          "file_label": "ERROR MESSAGES",
+          "field_label": "National"
+        },
+        {
+          "file_number": 3.5,
+          "file_label": "DEVICE",
+          "field_label": "NVS PASSOVER FLAG"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "0": "NO",
+        "9": "UNKNOWN",
+        "1": "YES"
+      },
+      "occurrences": 230,
+      "unique_files": 4,
+      "sample_fields": [
+        {
+          "file_number": 160.0,
+          "file_label": "ONCOLOGY PATIENT",
+          "field_label": "FAMILY HISTORY OF CANCER"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "AFIP/JPC SUBMISSION"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "REFERRAL TO SUPPORT SERVICES"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "OTHER CANCER"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "HISTORY OF CERVIX CA (PT)"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "Y": "YES"
+      },
+      "occurrences": 117,
+      "unique_files": 61,
+      "sample_fields": [
+        {
+          "file_number": 19.0,
+          "file_label": "OPTION",
+          "field_label": "KEEP FROM DELETING"
+        },
+        {
+          "file_number": 44.0,
+          "file_label": "HOSPITAL LOCATION",
+          "field_label": "SCHEDULE ON HOLIDAYS?"
+        },
+        {
+          "file_number": 44.0,
+          "file_label": "HOSPITAL LOCATION",
+          "field_label": "REQUIRE X-RAY FILMS?"
+        },
+        {
+          "file_number": 44.0,
+          "file_label": "HOSPITAL LOCATION",
+          "field_label": "PROHIBIT ACCESS TO CLINIC?"
+        },
+        {
+          "file_number": 44.0,
+          "file_label": "HOSPITAL LOCATION",
+          "field_label": "ON MUMPS TALK SYSTEM?"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "U": "UNKNOWN",
+        "Y": "YES",
+        "N": "NO"
+      },
+      "occurrences": 99,
+      "unique_files": 21,
+      "sample_fields": [
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "RECEIVING VA DISABILITY?"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "COVERED BY HEALTH INSURANCE?"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "VIETNAM SERVICE INDICATED?"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "AGENT ORANGE EXPOS. INDICATED?"
+        },
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "RADIATION EXPOSURE INDICATED?"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "NS": "NO STUDY",
+        "Y": "YES",
+        "N": "NO"
+      },
+      "occurrences": 86,
+      "unique_files": 2,
+      "sample_fields": [
+        {
+          "file_number": 130.0,
+          "file_label": "SURGERY",
+          "field_label": "REDO PROCEDURE"
+        },
+        {
+          "file_number": 130.0,
+          "file_label": "SURGERY",
+          "field_label": "*CURRENT SMOKER"
+        },
+        {
+          "file_number": 130.0,
+          "file_label": "SURGERY",
+          "field_label": "VENTILATOR DEPENDENT"
+        },
+        {
+          "file_number": 130.0,
+          "file_label": "SURGERY",
+          "field_label": "VASCULAR (Y/N)"
+        },
+        {
+          "file_number": 130.0,
+          "file_label": "SURGERY",
+          "field_label": "*HYPERTENSION REQUIRING MEDS"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "5": "DNT",
+        "4": "CNM",
+        "2": "NO RESPONSE",
+        "1": "MASKED",
+        "6": "CNT",
+        "0": "UNMASKED",
+        "3": "MASKED NO RESPONSE"
+      },
+      "occurrences": 85,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 509850.9,
+          "file_label": "AUDIOMETRIC EXAM DATA",
+          "field_label": "*INITIAL A/C THRESH TAG R 125"
+        },
+        {
+          "file_number": 509850.9,
+          "file_label": "AUDIOMETRIC EXAM DATA",
+          "field_label": "*INITIAL A/C THRESH TAG R 250"
+        },
+        {
+          "file_number": 509850.9,
+          "file_label": "AUDIOMETRIC EXAM DATA",
+          "field_label": "*INITIAL A/C THRESH TAG R 500"
+        },
+        {
+          "file_number": 509850.9,
+          "file_label": "AUDIOMETRIC EXAM DATA",
+          "field_label": "*INITIAL A/C THRESH TAG R 1000"
+        },
+        {
+          "file_number": 509850.9,
+          "file_label": "AUDIOMETRIC EXAM DATA",
+          "field_label": "*INITIAL A/C THRESH TAG R 1500"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "0": "NONE",
+        "3": "SEVERE",
+        "2": "MODERATE",
+        "1": "MILD"
+      },
+      "occurrences": 80,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 701.0,
+          "file_label": "RHEUMATOLOGY",
+          "field_label": "UVEITIS"
+        },
+        {
+          "file_number": 701.0,
+          "file_label": "RHEUMATOLOGY",
+          "field_label": "UVEITIS/IRITIS"
+        },
+        {
+          "file_number": 701.0,
+          "file_label": "RHEUMATOLOGY",
+          "field_label": "CONJUNCTIVITIS/EPISCLERITIS"
+        },
+        {
+          "file_number": 701.0,
+          "file_label": "RHEUMATOLOGY",
+          "field_label": "CATARACT"
+        },
+        {
+          "file_number": 701.0,
+          "file_label": "RHEUMATOLOGY",
+          "field_label": "IRITIS"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "0": "NO",
+        "8": "NA",
+        "9": "UNKNOWN",
+        "1": "YES"
+      },
+      "occurrences": 73,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "OUTSIDE SLIDES REVIEWED"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "INTERLEUKIN-2"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "OTHER TYPE OF IMMUNOTHERAPY"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "AIRWAY PROBLEM"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "BLEEDING/HEMATOMA"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "YES": "YES",
+        "NO": "NO"
+      },
+      "occurrences": 59,
+      "unique_files": 21,
+      "sample_fields": [
+        {
+          "file_number": 9.6,
+          "file_label": "BUILD",
+          "field_label": "XPF1"
+        },
+        {
+          "file_number": 9.6,
+          "file_label": "BUILD",
+          "field_label": "XPF2"
+        },
+        {
+          "file_number": 9.6,
+          "file_label": "BUILD",
+          "field_label": "XPI1"
+        },
+        {
+          "file_number": 9.6,
+          "file_label": "BUILD",
+          "field_label": "XPM1"
+        },
+        {
+          "file_number": 9.6,
+          "file_label": "BUILD",
+          "field_label": "XPO1"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "0": "FALSE",
+        "1": "TRUE"
+      },
+      "occurrences": 54,
+      "unique_files": 21,
+      "sample_fields": [
+        {
+          "file_number": 18.12,
+          "file_label": "WEB SERVER",
+          "field_label": "SSL ENABLED"
+        },
+        {
+          "file_number": 100.0,
+          "file_label": "ORDER",
+          "field_label": "DC ORIGINAL ORDER"
+        },
+        {
+          "file_number": 101.45,
+          "file_label": "AP DIALOG CONFIG",
+          "field_label": "ALLOW OTHER SPECIMENS"
+        },
+        {
+          "file_number": 101.45,
+          "file_label": "AP DIALOG CONFIG",
+          "field_label": "RESTRICT MULTIPLE SPECIMEN"
+        },
+        {
+          "file_number": 102.91,
+          "file_label": "ORR PARAMETER CATEGORY",
+          "field_label": "PACKAGE ROOT"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "0": "NO",
+        "N": "QUESTION NOT APPLICABLE",
+        "1": "YES",
+        "X": "QUESTION NOT ANSWERED"
+      },
+      "occurrences": 54,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 604.0,
+          "file_label": "ADDICTION SEVERITY INDEX",
+          "field_label": "ADDR OWN"
+        },
+        {
+          "file_number": 604.0,
+          "file_label": "ADDICTION SEVERITY INDEX",
+          "field_label": "CHRONIC PROBLEM"
+        },
+        {
+          "file_number": 604.0,
+          "file_label": "ADDICTION SEVERITY INDEX",
+          "field_label": "MEDICATION"
+        },
+        {
+          "file_number": 604.0,
+          "file_label": "ADDICTION SEVERITY INDEX",
+          "field_label": "DISABILITY PENSION"
+        },
+        {
+          "file_number": 604.0,
+          "file_label": "ADDICTION SEVERITY INDEX",
+          "field_label": "PATIENT MISREP MEDICAL"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "1": "ACTIVE",
+        "0": "INACTIVE"
+      },
+      "occurrences": 44,
+      "unique_files": 43,
+      "sample_fields": [
+        {
+          "file_number": 26.11,
+          "file_label": "PRF LOCAL FLAG",
+          "field_label": "STATUS"
+        },
+        {
+          "file_number": 26.13,
+          "file_label": "PRF ASSIGNMENT",
+          "field_label": "STATUS"
+        },
+        {
+          "file_number": 26.15,
+          "file_label": "PRF NATIONAL FLAG",
+          "field_label": "STATUS"
+        },
+        {
+          "file_number": 26.18,
+          "file_label": "PRF PARAMETERS",
+          "field_label": "PRF HL7 UPDATE STATUS"
+        },
+        {
+          "file_number": 33.0,
+          "file_label": "OTH ELIGIBILITY PATIENT",
+          "field_label": "OTH STATUS"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "1": "ABNORMAL, SUGGESTIVE OF CANCER",
+        "9": "UNKNOWN IF TEST DONE",
+        "2": "ABNORMAL, NOT SUGGESTIVE OF CANCER",
+        "4": "PROCEDURE ATTEMPTED AND INCOMPLETE",
+        "8": "TEST DONE, RESULTS UNKNOWN",
+        "0": "TEST NOT DONE",
+        "3": "NORMAL"
+      },
+      "occurrences": 43,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "BONE SCAN (THYROID)"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "CHEST X-RAY (THYROID)"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "CT SCAN OF NECK (THYROID)"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "CT SCAN OF CHEST"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "INCISIONAL BIOPSY OF THYROID"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "9": "UNKNOWN",
+        "0": "NO",
+        "8": "NA, CHEMOTHERAPY NOT ADMINISTERED",
+        "1": "YES"
+      },
+      "occurrences": 41,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "CISPLATIN"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "CYCLOPHOSPHAMIDE"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "METHOTREXATE"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "INTERFERON"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "PROCARBAZINE"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "F": "FEMALE",
+        "M": "MALE"
+      },
+      "occurrences": 39,
+      "unique_files": 39,
+      "sample_fields": [
+        {
+          "file_number": 2.0,
+          "file_label": "PATIENT",
+          "field_label": "SEX"
+        },
+        {
+          "file_number": 45.9,
+          "file_label": "PAF",
+          "field_label": "SEX"
+        },
+        {
+          "file_number": 50.625,
+          "file_label": "WARNING LABEL-ENGLISH",
+          "field_label": "SPECIFIC TO GENDER"
+        },
+        {
+          "file_number": 50.626,
+          "file_label": "WARNING LABEL-SPANISH",
+          "field_label": "SPECIFIC TO GENDER"
+        },
+        {
+          "file_number": 61.0,
+          "file_label": "TOPOGRAPHY FIELD",
+          "field_label": "SEX SPECIFIC"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "1": "ON",
+        "0": "OFF"
+      },
+      "occurrences": 36,
+      "unique_files": 24,
+      "sample_fields": [
+        {
+          "file_number": 52.85,
+          "file_label": "EPHARMACY MEDICATION PROFILE PREFERENCES",
+          "field_label": "DISPLAY SIG"
+        },
+        {
+          "file_number": 52.85,
+          "file_label": "EPHARMACY MEDICATION PROFILE PREFERENCES",
+          "field_label": "GROUP BY STATUS"
+        },
+        {
+          "file_number": 52.85,
+          "file_label": "EPHARMACY MEDICATION PROFILE PREFERENCES",
+          "field_label": "DISPLAY ORDER COUNT"
+        },
+        {
+          "file_number": 58.8,
+          "file_label": "DRUG ACCOUNTABILITY STATS",
+          "field_label": "BALANCE DISCREPANCY CHECK"
+        },
+        {
+          "file_number": 59.0,
+          "file_label": "OUTPATIENT SITE",
+          "field_label": "ONEVA PHARMACY FLAG"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "1": "INACTIVE",
+        "0": "ACTIVE"
+      },
+      "occurrences": 32,
+      "unique_files": 32,
+      "sample_fields": [
+        {
+          "file_number": 43.4,
+          "file_label": "VA ADMITTING REGULATION",
+          "field_label": "ACTIVE"
+        },
+        {
+          "file_number": 80.2,
+          "file_label": "DRG",
+          "field_label": "*INACTIVE"
+        },
+        {
+          "file_number": 100.02,
+          "file_label": "NATURE OF ORDER",
+          "field_label": "INACTIVE"
+        },
+        {
+          "file_number": 100.03,
+          "file_label": "ORDER REASON",
+          "field_label": "INACTIVE"
+        },
+        {
+          "file_number": 231.7,
+          "file_label": "TRACKING STAFF",
+          "field_label": "INACTIVE"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "W": "WITHOUT PAY",
+        "X": "PAID"
+      },
+      "occurrences": 31,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 2100.0,
+          "file_label": "GENERIC CODE SHEET",
+          "field_label": "DAY 1"
+        },
+        {
+          "file_number": 2100.0,
+          "file_label": "GENERIC CODE SHEET",
+          "field_label": "DAY 2"
+        },
+        {
+          "file_number": 2100.0,
+          "file_label": "GENERIC CODE SHEET",
+          "field_label": "DAY 3"
+        },
+        {
+          "file_number": 2100.0,
+          "file_label": "GENERIC CODE SHEET",
+          "field_label": "DAY 4"
+        },
+        {
+          "file_number": 2100.0,
+          "file_label": "GENERIC CODE SHEET",
+          "field_label": "DAY 5"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "R": "RUNNING"
+      },
+      "occurrences": 30,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 728.0,
+          "file_label": "DSS EXTRACTS",
+          "field_label": "LAB"
+        },
+        {
+          "file_number": 728.0,
+          "file_label": "DSS EXTRACTS",
+          "field_label": "OP"
+        },
+        {
+          "file_number": 728.0,
+          "file_label": "DSS EXTRACTS",
+          "field_label": "EC"
+        },
+        {
+          "file_number": 728.0,
+          "file_label": "DSS EXTRACTS",
+          "field_label": "SURGERY"
+        },
+        {
+          "file_number": 728.0,
+          "file_label": "DSS EXTRACTS",
+          "field_label": "RADIOLOGY"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "2": "YES",
+        "1": "NO"
+      },
+      "occurrences": 29,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 45.9,
+          "file_label": "PAF",
+          "field_label": "TRACHEOSTOMY CARE/SUCTIONING"
+        },
+        {
+          "file_number": 45.9,
+          "file_label": "PAF",
+          "field_label": "SUCTIONING-GENERAL(DAILY)"
+        },
+        {
+          "file_number": 45.9,
+          "file_label": "PAF",
+          "field_label": "OXYGEN(DAILY)"
+        },
+        {
+          "file_number": 45.9,
+          "file_label": "PAF",
+          "field_label": "RESPIRATORY CARE"
+        },
+        {
+          "file_number": 45.9,
+          "file_label": "PAF",
+          "field_label": "TUBE FEEDING"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "A": "ACTIVE",
+        "I": "INACTIVE"
+      },
+      "occurrences": 29,
+      "unique_files": 28,
+      "sample_fields": [
+        {
+          "file_number": 58.63,
+          "file_label": "PADE DISPENSING DEVICE",
+          "field_label": "PADE STATUS"
+        },
+        {
+          "file_number": 161.43,
+          "file_label": "FEE BASIS CONTRACT",
+          "field_label": "STATUS"
+        },
+        {
+          "file_number": 211.4,
+          "file_label": "NURS LOCATION",
+          "field_label": "PATIENT CARE FLAG"
+        },
+        {
+          "file_number": 214.0,
+          "file_label": "NURS PATIENT",
+          "field_label": "ADMISSION STATUS"
+        },
+        {
+          "file_number": 396.45,
+          "file_label": "2507 EXAM CONTRACTORS",
+          "field_label": "STATUS"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "8": "NA, EXAMINATION NOT DONE",
+        "0": "NO",
+        "9": "UNKNOWN",
+        "1": "YES"
+      },
+      "occurrences": 29,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "ALERTNESS"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "SPEECH"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "PERSONALITY"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "MEMORY OR JUDGEMENT"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "VISUAL ACUITY"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "2": "ABSENT",
+        "8": "NA, TEST NOT PERFORMED",
+        "1": "PRESENT",
+        "9": "NOT DOCUMENTED"
+      },
+      "occurrences": 28,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "LNG EMPHYSEMA (BONE SCAN)"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "LNG VASCULAR INV (BONE SCAN)"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "LNG MEDIASTINAL LN (BONE SCAN)"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "LNG METASTASIS (BONE SCAN)"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "LNG EMPHYSEMA (CHEST CT)"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "I": "INAPPLICABLE",
+        "Y": "YES",
+        "N": "NO"
+      },
+      "occurrences": 26,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 130.0,
+          "file_label": "SURGERY",
+          "field_label": "CONSENT SIG&WIT"
+        },
+        {
+          "file_number": 130.0,
+          "file_label": "SURGERY",
+          "field_label": "BATH & SHAMPOO"
+        },
+        {
+          "file_number": 130.0,
+          "file_label": "SURGERY",
+          "field_label": "ENEMA(S) IF ORD"
+        },
+        {
+          "file_number": 130.0,
+          "file_label": "SURGERY",
+          "field_label": "NPO AS ORD/CLIN MID"
+        },
+        {
+          "file_number": 130.0,
+          "file_label": "SURGERY",
+          "field_label": "*VERFIFY ID TAG SSN"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "0": "NO",
+        "9": "UNKNOWN, NOT STATED",
+        "1": "YES"
+      },
+      "occurrences": 25,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "HEADACHE"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "NAUSEA/VOMITING"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "CHANGE IN SENSE OF SMELL/TASTE"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "ALTERED ALERTNESS"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "FATIGUE"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "U": "INSUFFICIENT DOCUM TO PRESENT ON ADMISSION",
+        "Y": "PRESENT ON ADMISSION",
+        "1": "EXEMPT",
+        "N": "NOT PRESENT ON ADMISSION",
+        "W": "CAN'T DETERMINE IF PRESENT ON ADMISSION"
+      },
+      "occurrences": 24,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 45.0,
+          "file_label": "PTF",
+          "field_label": "POA PRINCIPAL DIAGNOSIS"
+        },
+        {
+          "file_number": 45.0,
+          "file_label": "PTF",
+          "field_label": "POA SECONDARY DIAGNOSIS 1"
+        },
+        {
+          "file_number": 45.0,
+          "file_label": "PTF",
+          "field_label": "POA SECONDARY DIAGNOSIS 2"
+        },
+        {
+          "file_number": 45.0,
+          "file_label": "PTF",
+          "field_label": "POA SECONDARY DIAGNOSIS 3"
+        },
+        {
+          "file_number": 45.0,
+          "file_label": "PTF",
+          "field_label": "POA SECONDARY DIAGNOSIS 4"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "9": "UNKNOWN IF TEST DONE",
+        "7": "TEST ATTEMPTED BUT NOT COMPLETED",
+        "3": "EQUIVOCAL, SUGGESTIVE OF CANCER",
+        "1": "POSITIVE FOR CANCER",
+        "8": "TEST DONE, RESULTS UNKNOWN",
+        "0": "TEST NOT DONE",
+        "2": "NEGATIVE FOR CANCER"
+      },
+      "occurrences": 24,
+      "unique_files": 1,
+      "sample_fields": [
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "ANGIOGRAM OF PRIMARY"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "BONE MARROW ASPIRATE OR BIOPSY"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "BONE SCAN (SOFT TIS SARCOMA)"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "CHEST X-RAY (STS/NHL)"
+        },
+        {
+          "file_number": 165.5,
+          "file_label": "ONCOLOGY PRIMARY",
+          "field_label": "CT SCAN OF CHEST (STS)"
+        }
+      ]
+    },
+    {
+      "codes": {
+        "L": "LOCAL",
+        "V": "VISN",
+        "N": "NATIONAL"
+      },
+      "occurrences": 23,
+      "unique_files": 23,
+      "sample_fields": [
+        {
+          "file_number": 125.0,
+          "file_label": "PROBLEM SELECTION LIST",
+          "field_label": "CLASS"
+        },
+        {
+          "file_number": 125.11,
+          "file_label": "PROBLEM SELECTION CATEGORY",
+          "field_label": "CLASS"
+        },
+        {
+          "file_number": 801.0,
+          "file_label": "REMINDER ORDER CHECK ITEMS GROUP",
+          "field_label": "CLASS"
+        },
+        {
+          "file_number": 801.1,
+          "file_label": "REMINDER ORDER CHECK RULES",
+          "field_label": "CLASS"
+        },
+        {
+          "file_number": 801.41,
+          "file_label": "REMINDER DIALOG",
+          "field_label": "CLASS"
+        }
+      ]
+    }
+  ]
+}

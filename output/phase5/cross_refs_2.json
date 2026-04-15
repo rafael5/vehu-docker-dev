@@ -1,0 +1,779 @@
+[
+  {
+    "ien": "8",
+    "file_number": 2.0,
+    "name": "ADTTM1",
+    "xref_type": "TEMPORARY ADDRESS Cross-Reference",
+    "description": "MU"
+  },
+  {
+    "ien": "9",
+    "file_number": 2.0,
+    "name": "ADTTM2",
+    "xref_type": "CONFIDENTIAL ADDRESS Cross-Reference",
+    "description": "MU"
+  },
+  {
+    "ien": "11",
+    "file_number": 2.0,
+    "name": "ADTTM3",
+    "xref_type": "PRIMARY NOK Cross-Reference",
+    "description": "MU"
+  },
+  {
+    "ien": "12",
+    "file_number": 2.0,
+    "name": "ADTTM8",
+    "xref_type": "RESIDENTIAL ADDRESS Cross-Reference",
+    "description": "MU"
+  },
+  {
+    "ien": "13",
+    "file_number": 2.0,
+    "name": "AVAFC0251",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "15",
+    "file_number": 2.0,
+    "name": "ADTTM4",
+    "xref_type": "SECONDARY NOK Cross-Reference",
+    "description": "MU"
+  },
+  {
+    "ien": "16",
+    "file_number": 2.0,
+    "name": "ADTTM5",
+    "xref_type": "E-CONTACT Cross-Reference",
+    "description": "MU"
+  },
+  {
+    "ien": "17",
+    "file_number": 2.0,
+    "name": "ADTTM6",
+    "xref_type": "E2-CONTACT Cross-Reference",
+    "description": "MU"
+  },
+  {
+    "ien": "18",
+    "file_number": 2.0,
+    "name": "ADTTM7",
+    "xref_type": "DESIGNEE Cross-Reference",
+    "description": "MU"
+  },
+  {
+    "ien": "21",
+    "file_number": 2.0,
+    "name": "AVAFC0906",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "22",
+    "file_number": 2.0,
+    "name": "AXENR13",
+    "xref_type": "TRIGGER A MESSAGE FOR ANY CHANGE TO THESE FIELDS",
+    "description": "MU"
+  },
+  {
+    "ien": "41",
+    "file_number": 2.0,
+    "name": "AEAR",
+    "xref_type": "Contains YES entries",
+    "description": "R"
+  },
+  {
+    "ien": "50",
+    "file_number": 2.0,
+    "name": "AXTCNTRY",
+    "xref_type": "Clear temporary addr fields when country changes",
+    "description": "MU"
+  },
+  {
+    "ien": "53",
+    "file_number": 2.0,
+    "name": "AVAFC121",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "54",
+    "file_number": 2.0,
+    "name": "AVAFC133",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "55",
+    "file_number": 2.0,
+    "name": "AVAFC134",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "128",
+    "file_number": 2.0,
+    "name": "G202501",
+    "xref_type": "Index for Date Created and Sexual Orientation.",
+    "description": "R"
+  },
+  {
+    "ien": "153",
+    "file_number": 2.0,
+    "name": "ADGFMD01",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "154",
+    "file_number": 2.0,
+    "name": "ADGFMD03",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "155",
+    "file_number": 2.0,
+    "name": "ADGFMD09",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "156",
+    "file_number": 2.0,
+    "name": "ADGFMD351",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "157",
+    "file_number": 2.0,
+    "name": "AZIPLINK",
+    "xref_type": "This x-ref will link the zip, city, state, and county fields",
+    "description": "MU"
+  },
+  {
+    "ien": "158",
+    "file_number": 2.0,
+    "name": "AZIPLNK2",
+    "xref_type": "Update City, State, and County fields based on Zipcode",
+    "description": "MU"
+  },
+  {
+    "ien": "251",
+    "file_number": 2.0,
+    "name": "ADGFMD111",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "252",
+    "file_number": 2.0,
+    "name": "ADGFMD1112",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "253",
+    "file_number": 2.0,
+    "name": "ADGFMD112",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "254",
+    "file_number": 2.0,
+    "name": "ADGFMD113",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "255",
+    "file_number": 2.0,
+    "name": "ADGFMD114",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "256",
+    "file_number": 2.0,
+    "name": "ADGFMD115",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "257",
+    "file_number": 2.0,
+    "name": "ADGFMD116",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "258",
+    "file_number": 2.0,
+    "name": "ADGFMD1411",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "259",
+    "file_number": 2.0,
+    "name": "ADGFMD1412",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "260",
+    "file_number": 2.0,
+    "name": "ADGFMD1413",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "261",
+    "file_number": 2.0,
+    "name": "ADGFMD1414",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "262",
+    "file_number": 2.0,
+    "name": "ADGFMD1415",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "263",
+    "file_number": 2.0,
+    "name": "ADGFMD1416",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "264",
+    "file_number": 2.0,
+    "name": "ADGFMD1417",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "265",
+    "file_number": 2.0,
+    "name": "ADGFMD1418",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "289",
+    "file_number": 2.0,
+    "name": "ACVCOM",
+    "xref_type": "Update Combat Vet Eligibility End Date",
+    "description": "MU"
+  },
+  {
+    "ien": "387",
+    "file_number": 2.0,
+    "name": "AVAFC994",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "399",
+    "file_number": 2.0,
+    "name": "AMSEL",
+    "xref_type": "DELETE MSE (LAST) FIELDS",
+    "description": "MU"
+  },
+  {
+    "ien": "400",
+    "file_number": 2.0,
+    "name": "AMSENL",
+    "xref_type": "DELETE MSE (NEXT TO LAST) FIELDS",
+    "description": "MU"
+  },
+  {
+    "ien": "401",
+    "file_number": 2.0,
+    "name": "AMSENNL",
+    "xref_type": "DELETE MSE (NEXT TO NEXT TO LAST) FIELDS",
+    "description": "MU"
+  },
+  {
+    "ien": "525",
+    "file_number": 2.0,
+    "name": "ACVCOM2",
+    "xref_type": "Update Combat Veteran End Date",
+    "description": "MU"
+  },
+  {
+    "ien": "556",
+    "file_number": 2.0,
+    "name": "AVAFC525",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "558",
+    "file_number": 2.0,
+    "name": "AX1171",
+    "xref_type": "This cross-reference is used to notify HEC of changes",
+    "description": "MU"
+  },
+  {
+    "ien": "559",
+    "file_number": 2.0,
+    "name": "AX1172",
+    "xref_type": "This cross-reference is used to notify HEC of changes.",
+    "description": "MU"
+  },
+  {
+    "ien": "560",
+    "file_number": 2.0,
+    "name": "AX1173",
+    "xref_type": "This cross-reference is used to notify HEC of changes.",
+    "description": "MU"
+  },
+  {
+    "ien": "561",
+    "file_number": 2.0,
+    "name": "AXCCNTRY",
+    "xref_type": "Clears country specific fields when triggered",
+    "description": "MU"
+  },
+  {
+    "ien": "562",
+    "file_number": 2.0,
+    "name": "AXCNTRY",
+    "xref_type": "Trigger cross reference to clear related fields",
+    "description": "MU"
+  },
+  {
+    "ien": "592",
+    "file_number": 2.0,
+    "name": "NOP",
+    "xref_type": "Index of standardized values that don't match .01 value.",
+    "description": "R"
+  },
+  {
+    "ien": "593",
+    "file_number": 2.0,
+    "name": "ANAM01",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with the .01 field.",
+    "description": "MU"
+  },
+  {
+    "ien": "594",
+    "file_number": 2.0,
+    "name": "ANAM211",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with field #.211.",
+    "description": "MU"
+  },
+  {
+    "ien": "595",
+    "file_number": 2.0,
+    "name": "ANAM2191",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with field #.2191.",
+    "description": "MU"
+  },
+  {
+    "ien": "596",
+    "file_number": 2.0,
+    "name": "ANAM2401",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with field #.2401.",
+    "description": "MU"
+  },
+  {
+    "ien": "597",
+    "file_number": 2.0,
+    "name": "ANAM2402",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with field #.2402.",
+    "description": "MU"
+  },
+  {
+    "ien": "598",
+    "file_number": 2.0,
+    "name": "ANAM2403",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with field #.2403.",
+    "description": "MU"
+  },
+  {
+    "ien": "599",
+    "file_number": 2.0,
+    "name": "ANAM331",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with field #.331.",
+    "description": "MU"
+  },
+  {
+    "ien": "600",
+    "file_number": 2.0,
+    "name": "ANAM3311",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with field #.3311.",
+    "description": "MU"
+  },
+  {
+    "ien": "601",
+    "file_number": 2.0,
+    "name": "ANAM341",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with field #.341.",
+    "description": "MU"
+  },
+  {
+    "ien": "602",
+    "file_number": 2.0,
+    "name": "ANAM201",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with the .01 field.",
+    "description": "MU"
+  },
+  {
+    "ien": "603",
+    "file_number": 2.0,
+    "name": "ANAM1001",
+    "xref_type": "This index keeps the NAME COMPONENTS file in synch with field #30.",
+    "description": "MU"
+  },
+  {
+    "ien": "633",
+    "file_number": 2.0,
+    "name": "ASERLAST",
+    "xref_type": "Index LAST ENTRY and SEPARATION dates",
+    "description": "MU"
+  },
+  {
+    "ien": "634",
+    "file_number": 2.0,
+    "name": "ASERNTL",
+    "xref_type": "Index NTL ENTRY and SEPARATION dates",
+    "description": "MU"
+  },
+  {
+    "ien": "635",
+    "file_number": 2.0,
+    "name": "ASERNNTL",
+    "xref_type": "Index NNTL ENTRY and SEPARATION dates",
+    "description": "MU"
+  },
+  {
+    "ien": "636",
+    "file_number": 2.0,
+    "name": "APTYPE",
+    "xref_type": "Index TYPE OF PATIENT",
+    "description": "R"
+  },
+  {
+    "ien": "724",
+    "file_number": 2.0,
+    "name": "APRFEVT",
+    "xref_type": "Record PRF HL7 event for new patients",
+    "description": "MU"
+  },
+  {
+    "ien": "729",
+    "file_number": 2.0,
+    "name": "ADGFM351",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "847",
+    "file_number": 2.0,
+    "name": "ADGFM27D01",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "848",
+    "file_number": 2.0,
+    "name": "ADGFMD02",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "849",
+    "file_number": 2.0,
+    "name": "ADGFMD097",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "850",
+    "file_number": 2.0,
+    "name": "ADGFMD104",
+    "xref_type": "x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "851",
+    "file_number": 2.0,
+    "name": "ADGFMD14",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "852",
+    "file_number": 2.0,
+    "name": "ADGFMD361",
+    "xref_type": "THhis x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "864",
+    "file_number": 2.0,
+    "name": "AXDCTNRY",
+    "xref_type": "Clear Designee Addr fields when country changes",
+    "description": "MU"
+  },
+  {
+    "ien": "865",
+    "file_number": 2.0,
+    "name": "AXE2CTNRY",
+    "xref_type": "Clear Secondary emergency contact Addr fields when country changes",
+    "description": "MU"
+  },
+  {
+    "ien": "866",
+    "file_number": 2.0,
+    "name": "AXECTNRY",
+    "xref_type": "Clear Primary emergency contact Addr fields when country changes",
+    "description": "MU"
+  },
+  {
+    "ien": "867",
+    "file_number": 2.0,
+    "name": "AXK2CTNRY",
+    "xref_type": "Clear Secondary NOK Addr fields when country changes",
+    "description": "MU"
+  },
+  {
+    "ien": "868",
+    "file_number": 2.0,
+    "name": "AXKCTNRY",
+    "xref_type": "Clear Primary NOK Addr fields when country changes",
+    "description": "MU"
+  },
+  {
+    "ien": "875",
+    "file_number": 2.0,
+    "name": "AVAFC1151",
+    "xref_type": "This x-ref calls the DG Field Monitor event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "876",
+    "file_number": 2.0,
+    "name": "AVAFC1152",
+    "xref_type": "This x-ref calls the DG Field Monitor event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "877",
+    "file_number": 2.0,
+    "name": "AVAFC1153",
+    "xref_type": "This x-ref calls the DG Field Monitor event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "878",
+    "file_number": 2.0,
+    "name": "AVAFC1154",
+    "xref_type": "This x-ref calls the DG Field Monitor event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "879",
+    "file_number": 2.0,
+    "name": "AVAFC1155",
+    "xref_type": "This x-ref calls the DG Field Monitor event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "880",
+    "file_number": 2.0,
+    "name": "AVAFC1156",
+    "xref_type": "This x-ref calls the DG Field Monitor event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "881",
+    "file_number": 2.0,
+    "name": "AVAFC11571",
+    "xref_type": "This x-ref calls the DG Field Monitor event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "882",
+    "file_number": 2.0,
+    "name": "AVAFC11572",
+    "xref_type": "This x-ref calls the DG Field Monitor event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "883",
+    "file_number": 2.0,
+    "name": "AVAFC11573",
+    "xref_type": "This x-ref calls the DG Field Monitor event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "884",
+    "file_number": 2.0,
+    "name": "AVAFC24061",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "885",
+    "file_number": 2.0,
+    "name": "AVAFC99111",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "906",
+    "file_number": 2.0,
+    "name": "ADGFMD1315",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "1182",
+    "file_number": 2.0,
+    "name": "AVAFC024",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "1196",
+    "file_number": 2.0,
+    "name": "BMS",
+    "xref_type": "Speed up LISTPATIENT query in BMS",
+    "description": "R"
+  },
+  {
+    "ien": "1314",
+    "file_number": 2.0,
+    "name": "AVAFC352",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "1315",
+    "file_number": 2.0,
+    "name": "AVAFC353",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "1316",
+    "file_number": 2.0,
+    "name": "AVAFC354",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "1317",
+    "file_number": 2.0,
+    "name": "AVAFC355",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "1410",
+    "file_number": 2.0,
+    "name": "AVAFC357",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "1412",
+    "file_number": 2.0,
+    "name": "AW",
+    "xref_type": "Terminate active policies when DATE OF DEATH is entered",
+    "description": "MU"
+  },
+  {
+    "ien": "1434",
+    "file_number": 2.0,
+    "name": "AVAFC2405",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "1471",
+    "file_number": 2.0,
+    "name": "AVAFC0931",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "1472",
+    "file_number": 2.0,
+    "name": "AVAFC0932",
+    "xref_type": "This x-ref calls the DG FIELD MONITOR event point.",
+    "description": "MU"
+  },
+  {
+    "ien": "1481",
+    "file_number": 2.0,
+    "name": "ACHI",
+    "xref_type": "Covered by Health Insurance",
+    "description": "MU"
+  },
+  {
+    "ien": "1524",
+    "file_number": 2.0,
+    "name": "AXRCTNRY",
+    "xref_type": "Clear Residential Addr fields when country changes",
+    "description": "MU"
+  },
+  {
+    "ien": "1548",
+    "file_number": 2.0,
+    "name": "AX",
+    "xref_type": "Action cross reference to send HL7 notification to TMP when a new appt is made.",
+    "description": "MU"
+  },
+  {
+    "ien": "1549",
+    "file_number": 2.0,
+    "name": "AY",
+    "xref_type": "Action cross reference to send an HL7 notification when an appt is cancelled.",
+    "description": "MU"
+  },
+  {
+    "ien": "1553",
+    "file_number": 2.0,
+    "name": "AEXPMH",
+    "xref_type": "This index is used to print a report for Expanded Mental Health Non-Veterans",
+    "description": "R"
+  },
+  {
+    "ien": "1595",
+    "file_number": 2.0,
+    "name": "AHIST",
+    "xref_type": "Sexual Orientation Free Text",
+    "description": "MU"
+  },
+  {
+    "ien": "1596",
+    "file_number": 2.0,
+    "name": "G202502",
+    "xref_type": "Index on the Date Last Updated and Sexual Orientation.",
+    "description": "R"
+  },
+  {
+    "ien": "1597",
+    "file_number": 2.0,
+    "name": "G202503",
+    "xref_type": "Index by Sexual Orientation and Date Created.",
+    "description": "R"
+  },
+  {
+    "ien": "1598",
+    "file_number": 2.0,
+    "name": "G202504",
+    "xref_type": "Index by Sexual Orientation and Date Last Updated.",
+    "description": "R"
+  }
+]

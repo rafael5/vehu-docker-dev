@@ -1,0 +1,4428 @@
+[
+  {
+    "codes": {
+      "0": "NO",
+      "1": "YES"
+    },
+    "occurrences": 2081,
+    "unique_files": 629,
+    "sample_fields": [
+      {
+        "file_number": 1.6,
+        "file_label": "POLICY",
+        "field_label": "DISABLE"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "EXCLUDE FROM FACILITY DIR"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "RATED INCOMPETENT?"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "PROJ 112/SHAD"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "MILITARY DISABILITY RETIREMENT"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "Y": "YES",
+      "N": "NO"
+    },
+    "occurrences": 1156,
+    "unique_files": 246,
+    "sample_fields": [
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "TEMPORARY ADDRESS ACTIVE?"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "EMAIL ADDRESS INDICATOR"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "CONFIDENTIAL ADDRESS ACTIVE?"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "K-ADDRESS SAME AS PATIENT'S?"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "K2-ADDRESS SAME AS PATIENT'S?"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "YES"
+    },
+    "occurrences": 252,
+    "unique_files": 168,
+    "sample_fields": [
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "CHECK FOR DUPLICATE"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "LOCALLY ASSIGNED ICN"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "FUGITIVE FELON FLAG"
+      },
+      {
+        "file_number": 3.076,
+        "file_label": "ERROR MESSAGES",
+        "field_label": "National"
+      },
+      {
+        "file_number": 3.5,
+        "file_label": "DEVICE",
+        "field_label": "NVS PASSOVER FLAG"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NO",
+      "9": "UNKNOWN",
+      "1": "YES"
+    },
+    "occurrences": 230,
+    "unique_files": 4,
+    "sample_fields": [
+      {
+        "file_number": 160.0,
+        "file_label": "ONCOLOGY PATIENT",
+        "field_label": "FAMILY HISTORY OF CANCER"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "AFIP/JPC SUBMISSION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "REFERRAL TO SUPPORT SERVICES"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OTHER CANCER"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "HISTORY OF CERVIX CA (PT)"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "Y": "YES"
+    },
+    "occurrences": 117,
+    "unique_files": 61,
+    "sample_fields": [
+      {
+        "file_number": 19.0,
+        "file_label": "OPTION",
+        "field_label": "KEEP FROM DELETING"
+      },
+      {
+        "file_number": 44.0,
+        "file_label": "HOSPITAL LOCATION",
+        "field_label": "SCHEDULE ON HOLIDAYS?"
+      },
+      {
+        "file_number": 44.0,
+        "file_label": "HOSPITAL LOCATION",
+        "field_label": "REQUIRE X-RAY FILMS?"
+      },
+      {
+        "file_number": 44.0,
+        "file_label": "HOSPITAL LOCATION",
+        "field_label": "PROHIBIT ACCESS TO CLINIC?"
+      },
+      {
+        "file_number": 44.0,
+        "file_label": "HOSPITAL LOCATION",
+        "field_label": "ON MUMPS TALK SYSTEM?"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "U": "UNKNOWN",
+      "Y": "YES",
+      "N": "NO"
+    },
+    "occurrences": 99,
+    "unique_files": 21,
+    "sample_fields": [
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "RECEIVING VA DISABILITY?"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "COVERED BY HEALTH INSURANCE?"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "VIETNAM SERVICE INDICATED?"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "AGENT ORANGE EXPOS. INDICATED?"
+      },
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "RADIATION EXPOSURE INDICATED?"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "NS": "NO STUDY",
+      "Y": "YES",
+      "N": "NO"
+    },
+    "occurrences": 86,
+    "unique_files": 2,
+    "sample_fields": [
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "REDO PROCEDURE"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "*CURRENT SMOKER"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "VENTILATOR DEPENDENT"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "VASCULAR (Y/N)"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "*HYPERTENSION REQUIRING MEDS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "5": "DNT",
+      "4": "CNM",
+      "2": "NO RESPONSE",
+      "1": "MASKED",
+      "6": "CNT",
+      "0": "UNMASKED",
+      "3": "MASKED NO RESPONSE"
+    },
+    "occurrences": 85,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*INITIAL A/C THRESH TAG R 125"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*INITIAL A/C THRESH TAG R 250"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*INITIAL A/C THRESH TAG R 500"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*INITIAL A/C THRESH TAG R 1000"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*INITIAL A/C THRESH TAG R 1500"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NONE",
+      "3": "SEVERE",
+      "2": "MODERATE",
+      "1": "MILD"
+    },
+    "occurrences": 80,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 701.0,
+        "file_label": "RHEUMATOLOGY",
+        "field_label": "UVEITIS"
+      },
+      {
+        "file_number": 701.0,
+        "file_label": "RHEUMATOLOGY",
+        "field_label": "UVEITIS/IRITIS"
+      },
+      {
+        "file_number": 701.0,
+        "file_label": "RHEUMATOLOGY",
+        "field_label": "CONJUNCTIVITIS/EPISCLERITIS"
+      },
+      {
+        "file_number": 701.0,
+        "file_label": "RHEUMATOLOGY",
+        "field_label": "CATARACT"
+      },
+      {
+        "file_number": 701.0,
+        "file_label": "RHEUMATOLOGY",
+        "field_label": "IRITIS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NO",
+      "8": "NA",
+      "9": "UNKNOWN",
+      "1": "YES"
+    },
+    "occurrences": 73,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OUTSIDE SLIDES REVIEWED"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "INTERLEUKIN-2"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OTHER TYPE OF IMMUNOTHERAPY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "AIRWAY PROBLEM"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BLEEDING/HEMATOMA"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "YES": "YES",
+      "NO": "NO"
+    },
+    "occurrences": 59,
+    "unique_files": 21,
+    "sample_fields": [
+      {
+        "file_number": 9.6,
+        "file_label": "BUILD",
+        "field_label": "XPF1"
+      },
+      {
+        "file_number": 9.6,
+        "file_label": "BUILD",
+        "field_label": "XPF2"
+      },
+      {
+        "file_number": 9.6,
+        "file_label": "BUILD",
+        "field_label": "XPI1"
+      },
+      {
+        "file_number": 9.6,
+        "file_label": "BUILD",
+        "field_label": "XPM1"
+      },
+      {
+        "file_number": 9.6,
+        "file_label": "BUILD",
+        "field_label": "XPO1"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "FALSE",
+      "1": "TRUE"
+    },
+    "occurrences": 54,
+    "unique_files": 21,
+    "sample_fields": [
+      {
+        "file_number": 18.12,
+        "file_label": "WEB SERVER",
+        "field_label": "SSL ENABLED"
+      },
+      {
+        "file_number": 100.0,
+        "file_label": "ORDER",
+        "field_label": "DC ORIGINAL ORDER"
+      },
+      {
+        "file_number": 101.45,
+        "file_label": "AP DIALOG CONFIG",
+        "field_label": "ALLOW OTHER SPECIMENS"
+      },
+      {
+        "file_number": 101.45,
+        "file_label": "AP DIALOG CONFIG",
+        "field_label": "RESTRICT MULTIPLE SPECIMEN"
+      },
+      {
+        "file_number": 102.91,
+        "file_label": "ORR PARAMETER CATEGORY",
+        "field_label": "PACKAGE ROOT"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NO",
+      "N": "QUESTION NOT APPLICABLE",
+      "1": "YES",
+      "X": "QUESTION NOT ANSWERED"
+    },
+    "occurrences": 54,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 604.0,
+        "file_label": "ADDICTION SEVERITY INDEX",
+        "field_label": "ADDR OWN"
+      },
+      {
+        "file_number": 604.0,
+        "file_label": "ADDICTION SEVERITY INDEX",
+        "field_label": "CHRONIC PROBLEM"
+      },
+      {
+        "file_number": 604.0,
+        "file_label": "ADDICTION SEVERITY INDEX",
+        "field_label": "MEDICATION"
+      },
+      {
+        "file_number": 604.0,
+        "file_label": "ADDICTION SEVERITY INDEX",
+        "field_label": "DISABILITY PENSION"
+      },
+      {
+        "file_number": 604.0,
+        "file_label": "ADDICTION SEVERITY INDEX",
+        "field_label": "PATIENT MISREP MEDICAL"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "ACTIVE",
+      "0": "INACTIVE"
+    },
+    "occurrences": 44,
+    "unique_files": 43,
+    "sample_fields": [
+      {
+        "file_number": 26.11,
+        "file_label": "PRF LOCAL FLAG",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 26.13,
+        "file_label": "PRF ASSIGNMENT",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 26.15,
+        "file_label": "PRF NATIONAL FLAG",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 26.18,
+        "file_label": "PRF PARAMETERS",
+        "field_label": "PRF HL7 UPDATE STATUS"
+      },
+      {
+        "file_number": 33.0,
+        "file_label": "OTH ELIGIBILITY PATIENT",
+        "field_label": "OTH STATUS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "ABNORMAL, SUGGESTIVE OF CANCER",
+      "9": "UNKNOWN IF TEST DONE",
+      "2": "ABNORMAL, NOT SUGGESTIVE OF CANCER",
+      "4": "PROCEDURE ATTEMPTED AND INCOMPLETE",
+      "8": "TEST DONE, RESULTS UNKNOWN",
+      "0": "TEST NOT DONE",
+      "3": "NORMAL"
+    },
+    "occurrences": 43,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BONE SCAN (THYROID)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CHEST X-RAY (THYROID)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CT SCAN OF NECK (THYROID)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CT SCAN OF CHEST"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "INCISIONAL BIOPSY OF THYROID"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "UNKNOWN",
+      "0": "NO",
+      "8": "NA, CHEMOTHERAPY NOT ADMINISTERED",
+      "1": "YES"
+    },
+    "occurrences": 41,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CISPLATIN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CYCLOPHOSPHAMIDE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "METHOTREXATE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "INTERFERON"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "PROCARBAZINE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "F": "FEMALE",
+      "M": "MALE"
+    },
+    "occurrences": 39,
+    "unique_files": 39,
+    "sample_fields": [
+      {
+        "file_number": 2.0,
+        "file_label": "PATIENT",
+        "field_label": "SEX"
+      },
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "SEX"
+      },
+      {
+        "file_number": 50.625,
+        "file_label": "WARNING LABEL-ENGLISH",
+        "field_label": "SPECIFIC TO GENDER"
+      },
+      {
+        "file_number": 50.626,
+        "file_label": "WARNING LABEL-SPANISH",
+        "field_label": "SPECIFIC TO GENDER"
+      },
+      {
+        "file_number": 61.0,
+        "file_label": "TOPOGRAPHY FIELD",
+        "field_label": "SEX SPECIFIC"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "ON",
+      "0": "OFF"
+    },
+    "occurrences": 36,
+    "unique_files": 24,
+    "sample_fields": [
+      {
+        "file_number": 52.85,
+        "file_label": "EPHARMACY MEDICATION PROFILE PREFERENCES",
+        "field_label": "DISPLAY SIG"
+      },
+      {
+        "file_number": 52.85,
+        "file_label": "EPHARMACY MEDICATION PROFILE PREFERENCES",
+        "field_label": "GROUP BY STATUS"
+      },
+      {
+        "file_number": 52.85,
+        "file_label": "EPHARMACY MEDICATION PROFILE PREFERENCES",
+        "field_label": "DISPLAY ORDER COUNT"
+      },
+      {
+        "file_number": 58.8,
+        "file_label": "DRUG ACCOUNTABILITY STATS",
+        "field_label": "BALANCE DISCREPANCY CHECK"
+      },
+      {
+        "file_number": 59.0,
+        "file_label": "OUTPATIENT SITE",
+        "field_label": "ONEVA PHARMACY FLAG"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "INACTIVE",
+      "0": "ACTIVE"
+    },
+    "occurrences": 32,
+    "unique_files": 32,
+    "sample_fields": [
+      {
+        "file_number": 43.4,
+        "file_label": "VA ADMITTING REGULATION",
+        "field_label": "ACTIVE"
+      },
+      {
+        "file_number": 80.2,
+        "file_label": "DRG",
+        "field_label": "*INACTIVE"
+      },
+      {
+        "file_number": 100.02,
+        "file_label": "NATURE OF ORDER",
+        "field_label": "INACTIVE"
+      },
+      {
+        "file_number": 100.03,
+        "file_label": "ORDER REASON",
+        "field_label": "INACTIVE"
+      },
+      {
+        "file_number": 231.7,
+        "file_label": "TRACKING STAFF",
+        "field_label": "INACTIVE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "W": "WITHOUT PAY",
+      "X": "PAID"
+    },
+    "occurrences": 31,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DAY 1"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DAY 2"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DAY 3"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DAY 4"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DAY 5"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "R": "RUNNING"
+    },
+    "occurrences": 30,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 728.0,
+        "file_label": "DSS EXTRACTS",
+        "field_label": "LAB"
+      },
+      {
+        "file_number": 728.0,
+        "file_label": "DSS EXTRACTS",
+        "field_label": "OP"
+      },
+      {
+        "file_number": 728.0,
+        "file_label": "DSS EXTRACTS",
+        "field_label": "EC"
+      },
+      {
+        "file_number": 728.0,
+        "file_label": "DSS EXTRACTS",
+        "field_label": "SURGERY"
+      },
+      {
+        "file_number": 728.0,
+        "file_label": "DSS EXTRACTS",
+        "field_label": "RADIOLOGY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "YES",
+      "1": "NO"
+    },
+    "occurrences": 29,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "TRACHEOSTOMY CARE/SUCTIONING"
+      },
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "SUCTIONING-GENERAL(DAILY)"
+      },
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "OXYGEN(DAILY)"
+      },
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "RESPIRATORY CARE"
+      },
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "TUBE FEEDING"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "A": "ACTIVE",
+      "I": "INACTIVE"
+    },
+    "occurrences": 29,
+    "unique_files": 28,
+    "sample_fields": [
+      {
+        "file_number": 58.63,
+        "file_label": "PADE DISPENSING DEVICE",
+        "field_label": "PADE STATUS"
+      },
+      {
+        "file_number": 161.43,
+        "file_label": "FEE BASIS CONTRACT",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 211.4,
+        "file_label": "NURS LOCATION",
+        "field_label": "PATIENT CARE FLAG"
+      },
+      {
+        "file_number": 214.0,
+        "file_label": "NURS PATIENT",
+        "field_label": "ADMISSION STATUS"
+      },
+      {
+        "file_number": 396.45,
+        "file_label": "2507 EXAM CONTRACTORS",
+        "field_label": "STATUS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "8": "NA, EXAMINATION NOT DONE",
+      "0": "NO",
+      "9": "UNKNOWN",
+      "1": "YES"
+    },
+    "occurrences": 29,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ALERTNESS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "SPEECH"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "PERSONALITY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "MEMORY OR JUDGEMENT"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "VISUAL ACUITY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "ABSENT",
+      "8": "NA, TEST NOT PERFORMED",
+      "1": "PRESENT",
+      "9": "NOT DOCUMENTED"
+    },
+    "occurrences": 28,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG EMPHYSEMA (BONE SCAN)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG VASCULAR INV (BONE SCAN)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG MEDIASTINAL LN (BONE SCAN)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG METASTASIS (BONE SCAN)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG EMPHYSEMA (CHEST CT)"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "I": "INAPPLICABLE",
+      "Y": "YES",
+      "N": "NO"
+    },
+    "occurrences": 26,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "CONSENT SIG&WIT"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "BATH & SHAMPOO"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "ENEMA(S) IF ORD"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "NPO AS ORD/CLIN MID"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "*VERFIFY ID TAG SSN"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NO",
+      "9": "UNKNOWN, NOT STATED",
+      "1": "YES"
+    },
+    "occurrences": 25,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "HEADACHE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "NAUSEA/VOMITING"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CHANGE IN SENSE OF SMELL/TASTE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ALTERED ALERTNESS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "FATIGUE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "U": "INSUFFICIENT DOCUM TO PRESENT ON ADMISSION",
+      "Y": "PRESENT ON ADMISSION",
+      "1": "EXEMPT",
+      "N": "NOT PRESENT ON ADMISSION",
+      "W": "CAN'T DETERMINE IF PRESENT ON ADMISSION"
+    },
+    "occurrences": 24,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 45.0,
+        "file_label": "PTF",
+        "field_label": "POA PRINCIPAL DIAGNOSIS"
+      },
+      {
+        "file_number": 45.0,
+        "file_label": "PTF",
+        "field_label": "POA SECONDARY DIAGNOSIS 1"
+      },
+      {
+        "file_number": 45.0,
+        "file_label": "PTF",
+        "field_label": "POA SECONDARY DIAGNOSIS 2"
+      },
+      {
+        "file_number": 45.0,
+        "file_label": "PTF",
+        "field_label": "POA SECONDARY DIAGNOSIS 3"
+      },
+      {
+        "file_number": 45.0,
+        "file_label": "PTF",
+        "field_label": "POA SECONDARY DIAGNOSIS 4"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "UNKNOWN IF TEST DONE",
+      "7": "TEST ATTEMPTED BUT NOT COMPLETED",
+      "3": "EQUIVOCAL, SUGGESTIVE OF CANCER",
+      "1": "POSITIVE FOR CANCER",
+      "8": "TEST DONE, RESULTS UNKNOWN",
+      "0": "TEST NOT DONE",
+      "2": "NEGATIVE FOR CANCER"
+    },
+    "occurrences": 24,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ANGIOGRAM OF PRIMARY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BONE MARROW ASPIRATE OR BIOPSY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BONE SCAN (SOFT TIS SARCOMA)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CHEST X-RAY (STS/NHL)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CT SCAN OF CHEST (STS)"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "L": "LOCAL",
+      "V": "VISN",
+      "N": "NATIONAL"
+    },
+    "occurrences": 23,
+    "unique_files": 23,
+    "sample_fields": [
+      {
+        "file_number": 125.0,
+        "file_label": "PROBLEM SELECTION LIST",
+        "field_label": "CLASS"
+      },
+      {
+        "file_number": 125.11,
+        "file_label": "PROBLEM SELECTION CATEGORY",
+        "field_label": "CLASS"
+      },
+      {
+        "file_number": 801.0,
+        "file_label": "REMINDER ORDER CHECK ITEMS GROUP",
+        "field_label": "CLASS"
+      },
+      {
+        "file_number": 801.1,
+        "file_label": "REMINDER ORDER CHECK RULES",
+        "field_label": "CLASS"
+      },
+      {
+        "file_number": 801.41,
+        "file_label": "REMINDER DIALOG",
+        "field_label": "CLASS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "INACTIVE"
+    },
+    "occurrences": 21,
+    "unique_files": 21,
+    "sample_fields": [
+      {
+        "file_number": 4.0,
+        "file_label": "INSTITUTION",
+        "field_label": "INACTIVE FACILITY FLAG"
+      },
+      {
+        "file_number": 80.7,
+        "file_label": "TEMPORARY DIAGNOSES",
+        "field_label": "INACTIVE FLAG"
+      },
+      {
+        "file_number": 81.3,
+        "file_label": "CPT MODIFIER",
+        "field_label": "INACTIVE FLAG"
+      },
+      {
+        "file_number": 162.95,
+        "file_label": "FEE BASIS CHECK CANCELLATION REASON",
+        "field_label": "INACTIVATION FLAG"
+      },
+      {
+        "file_number": 220.5,
+        "file_label": "DENTAL PROVIDER",
+        "field_label": "STATUS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "REVIEWED"
+    },
+    "occurrences": 20,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OVER-RIDE SEQNO/DXCONF"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OVER-RIDE SITE/LAT/SEQNO"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OVER-RIDE SURG/DXCONF"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OVER-RIDE SITE/TYPE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OVER-RIDE REPORT SOURCE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "NO",
+      "9": "UNKNOWN",
+      "1": "YES"
+    },
+    "occurrences": 19,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CLINICAL DX WITH BONE LESION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CLINICAL DX BY RECTAL EXAM"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CYTOLOGY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "INCIDENTAL FINDING IN TURP"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "NEEDLE ASPIRATION BIOPSY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NO",
+      "N": "N/A",
+      "X": "UNCERTAIN/DON'T KNOW",
+      "1": "YES"
+    },
+    "occurrences": 18,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 604.0,
+        "file_label": "ADDICTION SEVERITY INDEX",
+        "field_label": "PROBLEM W/ MOTHER P30D"
+      },
+      {
+        "file_number": 604.0,
+        "file_label": "ADDICTION SEVERITY INDEX",
+        "field_label": "PROBLEM W/ MOTHER LIFE"
+      },
+      {
+        "file_number": 604.0,
+        "file_label": "ADDICTION SEVERITY INDEX",
+        "field_label": "PROBLEM W/ FATHER P30D"
+      },
+      {
+        "file_number": 604.0,
+        "file_label": "ADDICTION SEVERITY INDEX",
+        "field_label": "PROBLEM W/ FATHER LIFE"
+      },
+      {
+        "file_number": 604.0,
+        "file_label": "ADDICTION SEVERITY INDEX",
+        "field_label": "PROBLEM W/ BRO/SIS P30D"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "RETD": "RETIREE DEPENDENT",
+      "AD": "ACTIVE DUTY",
+      "FNRS": "FORMER NON-REMARRIED SPOUSE",
+      "TFL": "TRICARE FOR LIFE",
+      "REC": "RECRUIT",
+      "RES": "RESERVIST",
+      "ADD": "ACTIVE DUTY DEPENDENT",
+      "RET": "RETIRED",
+      "TDRL": "TEMPORARY DISABILITY"
+    },
+    "occurrences": 18,
+    "unique_files": 18,
+    "sample_fields": [
+      {
+        "file_number": 727.802,
+        "file_label": "ADMISSION EXTRACT",
+        "field_label": "PATCAT"
+      },
+      {
+        "file_number": 727.805,
+        "file_label": "NURSING EXTRACT",
+        "field_label": "PATCAT"
+      },
+      {
+        "file_number": 727.808,
+        "file_label": "PHYSICAL MOVEMENT EXTRACT",
+        "field_label": "PATCAT"
+      },
+      {
+        "file_number": 727.809,
+        "file_label": "UNIT DOSE LOCAL EXTRACT",
+        "field_label": "PATCAT"
+      },
+      {
+        "file_number": 727.81,
+        "file_label": "PRESCRIPTION EXTRACT",
+        "field_label": "PATCAT"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "DONE",
+      "0": "NOT DONE",
+      "9": "UNKNOWN IF DONE"
+    },
+    "occurrences": 17,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BIMANAUL EXAM OF BLADDER"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CYSTOSCOPY WITH BIOPSY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CYSTOSCOPY WITHOUT BIOPSY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "FLOW CYTOMETRY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "INTRAVENOUS PYELOGRAM (BLA)"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "I": "INPATIENT",
+      "O": "OUTPATIENT",
+      "A": "ASIH (OTHER FACILITY)"
+    },
+    "occurrences": 16,
+    "unique_files": 16,
+    "sample_fields": [
+      {
+        "file_number": 727.802,
+        "file_label": "ADMISSION EXTRACT",
+        "field_label": "IN OUT PATIENT INDICATOR"
+      },
+      {
+        "file_number": 727.808,
+        "file_label": "PHYSICAL MOVEMENT EXTRACT",
+        "field_label": "IN OUT PATIENT INDICATOR"
+      },
+      {
+        "file_number": 727.809,
+        "file_label": "UNIT DOSE LOCAL EXTRACT",
+        "field_label": "IN OUT PATIENT INDICATOR"
+      },
+      {
+        "file_number": 727.81,
+        "file_label": "PRESCRIPTION EXTRACT",
+        "field_label": "IN OUT PATIENT INDICATOR"
+      },
+      {
+        "file_number": 727.811,
+        "file_label": "SURGERY EXTRACT",
+        "field_label": "IN OUT PATIENT INDICATOR"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "NO",
+      "1": "YES"
+    },
+    "occurrences": 14,
+    "unique_files": 6,
+    "sample_fields": [
+      {
+        "file_number": 45.0,
+        "file_label": "PTF",
+        "field_label": "VA AUSPICES"
+      },
+      {
+        "file_number": 45.0,
+        "file_label": "PTF",
+        "field_label": "TREATED FOR SC CONDITION"
+      },
+      {
+        "file_number": 45.0,
+        "file_label": "PTF",
+        "field_label": "LEGIONNAIRE'S DISEASE"
+      },
+      {
+        "file_number": 52.46,
+        "file_label": "ERX EXTERNAL PATIENT",
+        "field_label": "HOSPICE INDICATOR"
+      },
+      {
+        "file_number": 65.5,
+        "file_label": "BLOOD DONOR",
+        "field_label": "APHERESIS CODE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "UNKNOWN/NOT DOCUMENTED",
+      "0": "NO",
+      "1": "YES"
+    },
+    "occurrences": 14,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BLOOD IN SPUTUM PER PT"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CHANGE IN BOWEL HABITS PER PT"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "DYSPNEA"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "INCREASED COUGH"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "FEVER"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "TM": "TRANSGENDER MALE",
+      "TF": "TRANSGENDER FEMALE",
+      "F": "FEMALE",
+      "O": "OTHER",
+      "M": "MALE",
+      "N": "DOES NOT WISH TO DISCLOSE",
+      "B": "NON-BINARY"
+    },
+    "occurrences": 14,
+    "unique_files": 14,
+    "sample_fields": [
+      {
+        "file_number": 727.802,
+        "file_label": "ADMISSION EXTRACT",
+        "field_label": "*SELF IDENTIFIED GENDER"
+      },
+      {
+        "file_number": 727.808,
+        "file_label": "PHYSICAL MOVEMENT EXTRACT",
+        "field_label": "*SELF IDENTIFIED GENDER"
+      },
+      {
+        "file_number": 727.809,
+        "file_label": "UNIT DOSE LOCAL EXTRACT",
+        "field_label": "*SELF IDENTIFIED GENDER"
+      },
+      {
+        "file_number": 727.81,
+        "file_label": "PRESCRIPTION EXTRACT",
+        "field_label": "*SELF IDENTIFIED GENDER"
+      },
+      {
+        "file_number": 727.811,
+        "file_label": "SURGERY EXTRACT",
+        "field_label": "*SELF IDENTIFIED GENDER"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NOT USED",
+      "1": "USED"
+    },
+    "occurrences": 14,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 19620.0,
+        "file_label": "DSIR ROI INSTANCE",
+        "field_label": "EXEMPTION 1"
+      },
+      {
+        "file_number": 19620.0,
+        "file_label": "DSIR ROI INSTANCE",
+        "field_label": "EXEMPTION 2"
+      },
+      {
+        "file_number": 19620.0,
+        "file_label": "DSIR ROI INSTANCE",
+        "field_label": "EXEMPTION 3"
+      },
+      {
+        "file_number": 19620.0,
+        "file_label": "DSIR ROI INSTANCE",
+        "field_label": "EXEMPTION 4"
+      },
+      {
+        "file_number": 19620.0,
+        "file_label": "DSIR ROI INSTANCE",
+        "field_label": "EXEMPTION 5"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "I": "INPATIENT",
+      "O": "OUTPATIENT"
+    },
+    "occurrences": 13,
+    "unique_files": 13,
+    "sample_fields": [
+      {
+        "file_number": 100.0,
+        "file_label": "ORDER",
+        "field_label": "PATIENT CLASS"
+      },
+      {
+        "file_number": 119.6,
+        "file_label": "NUTRITION LOCATION",
+        "field_label": "INPATIENT/OUTPATIENT"
+      },
+      {
+        "file_number": 123.0,
+        "file_label": "REQUEST/CONSULTATION",
+        "field_label": "SERVICE RENDERED AS IN OR OUT"
+      },
+      {
+        "file_number": 228.1,
+        "file_label": "DENTAL HISTORY",
+        "field_label": "PATIENT TYPE"
+      },
+      {
+        "file_number": 356.22,
+        "file_label": "HCS REVIEW TRANSMISSION",
+        "field_label": "INPATIENT / OUTPATIENT"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "Y": "YES",
+      "NA": "NOT APPLICABLE",
+      "N": "NO"
+    },
+    "occurrences": 12,
+    "unique_files": 4,
+    "sample_fields": [
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "PREOPERATIVE IMAGES CONFIRMED"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "CORRECT MEDICAL IMPLANTS"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "AVAILABILITY OF SPECIAL EQUIP"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "DONOR SEROLOGY HCV"
+      },
+      {
+        "file_number": 130.0,
+        "file_label": "SURGERY",
+        "field_label": "DONOR SEROLOGY HBV"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "RESULTS -, NO EVIDENCE OF BRAIN TUMOR",
+      "9": "UNKNOWN IF TEST DONE",
+      "2": "RESULTS UNKNOWN, EQUIVOCAL/INCONCLUSIVE",
+      "8": "NA, TEST NOT DONE",
+      "1": "RESULTS +, SOME INDICATION OF DISEASE"
+    },
+    "occurrences": 12,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ANGIOGRAPHY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "COMPUTED TOMOGRAPHY (CT) SCAN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CT SCAN OF SPINE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ELECTROENCEPHALOGRAPHY (EEG)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ISOTOPE BRAIN SCAN"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "NO HELP  (1)",
+      "2": "RECEIVES HELP  (2)",
+      "3": "NOT DONE OR DONE WITHOUT PATIENT PARTICIPATION  (3)",
+      "9": "NOT DETERMINED  (9)"
+    },
+    "occurrences": 12,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 631.0,
+        "file_label": "HBHC PATIENT",
+        "field_label": "BATHING @ ADMISSION"
+      },
+      {
+        "file_number": 631.0,
+        "file_label": "HBHC PATIENT",
+        "field_label": "DRESSING @ ADMISSION"
+      },
+      {
+        "file_number": 631.0,
+        "file_label": "HBHC PATIENT",
+        "field_label": "TOILET USAGE @ ADMISSION"
+      },
+      {
+        "file_number": 631.0,
+        "file_label": "HBHC PATIENT",
+        "field_label": "TRANSFERRING @ ADMISSION"
+      },
+      {
+        "file_number": 631.0,
+        "file_label": "HBHC PATIENT",
+        "field_label": "EATING @ ADMISSION"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "EDITED"
+    },
+    "occurrences": 12,
+    "unique_files": 12,
+    "sample_fields": [
+      {
+        "file_number": 9000010.06,
+        "file_label": "V PROVIDER",
+        "field_label": "EDITED FLAG"
+      },
+      {
+        "file_number": 9000010.07,
+        "file_label": "V POV",
+        "field_label": "EDITED FLAG"
+      },
+      {
+        "file_number": 9000010.11,
+        "file_label": "V IMMUNIZATION",
+        "field_label": "EDITED FLAG"
+      },
+      {
+        "file_number": 9000010.12,
+        "file_label": "V SKIN TEST",
+        "field_label": "EDITED FLAG"
+      },
+      {
+        "file_number": 9000010.13,
+        "file_label": "V EXAM",
+        "field_label": "EDITED FLAG"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "8": "TEST NOT DONE/UNKNOWN IF DONE",
+      "1": "NORMAL",
+      "2": "ABNORMAL/ELEVATED",
+      "9": "TEST DONE, RESULTS UNKNOWN"
+    },
+    "occurrences": 11,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BONE MARROW ASPIRATION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BONE SCAN (PROSTATE)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BONE X-RAY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CHEST X-RAY (PROSTATE)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CT SCAN OF PRIMARY SITE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NO",
+      "8": "NA",
+      "9": "UNKNOWN IF GIVEN",
+      "1": "YES"
+    },
+    "occurrences": 11,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CHLORAMBUCIL"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CYCLOPHOSPHAMIDE (NHL)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "DOXORUBICIN (NHL)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "FLUDARABINE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CHOP"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "ABNORMAL, SUGGESTIVE OF CANCER",
+      "2": "ABNORMAL, NOT SUGGESTIVE OF CANCER",
+      "4": "NOT PERFORMED",
+      "8": "PERFORMED, RESULTS NOT DOCUMENTED",
+      "3": "NORMAL",
+      "9": "NOT DOCUMENTED"
+    },
+    "occurrences": 11,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS CT SCAN OF ABDOMEN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS CT SCAN OF CHEST"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS CT PELVIS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS CHEST X-RAY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS GALLIUM SCAN"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "C": "COMPLETED",
+      "P": "PENDING"
+    },
+    "occurrences": 11,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 396.0,
+        "file_label": "FORM 7131",
+        "field_label": "NOTICE/DISCHG STATUS"
+      },
+      {
+        "file_number": 396.0,
+        "file_label": "FORM 7131",
+        "field_label": "HOSPITAL SUMMARY STATUS"
+      },
+      {
+        "file_number": 396.0,
+        "file_label": "FORM 7131",
+        "field_label": "(21-DAY) CERTIFICATE STATUS"
+      },
+      {
+        "file_number": 396.0,
+        "file_label": "FORM 7131",
+        "field_label": "STATUS OF OTHER/EXAM"
+      },
+      {
+        "file_number": 396.0,
+        "file_label": "FORM 7131",
+        "field_label": "STATUS OF SPECIAL REPORT"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "Y": "YES",
+      "E": "ELIGIBILITY EXPIRED"
+    },
+    "occurrences": 11,
+    "unique_files": 11,
+    "sample_fields": [
+      {
+        "file_number": 727.802,
+        "file_label": "ADMISSION EXTRACT",
+        "field_label": "CV STATUS ELIGIBILITY"
+      },
+      {
+        "file_number": 727.809,
+        "file_label": "UNIT DOSE LOCAL EXTRACT",
+        "field_label": "CV STATUS ELIGIBILITY"
+      },
+      {
+        "file_number": 727.81,
+        "file_label": "PRESCRIPTION EXTRACT",
+        "field_label": "CV STATUS ELIGIBILITY"
+      },
+      {
+        "file_number": 727.811,
+        "file_label": "SURGERY EXTRACT",
+        "field_label": "CV STATUS ELIGIBILITY"
+      },
+      {
+        "file_number": 727.815,
+        "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+        "field_label": "CV STATUS ELIGIBILITY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "NO",
+      "0": "YES"
+    },
+    "occurrences": 10,
+    "unique_files": 8,
+    "sample_fields": [
+      {
+        "file_number": 4.3,
+        "file_label": "MAILMAN SITE PARAMETERS",
+        "field_label": "AUTOMATIC INTEGRITY CHECK"
+      },
+      {
+        "file_number": 4.3,
+        "file_label": "MAILMAN SITE PARAMETERS",
+        "field_label": "FWD TEST MESSAGE TO POSTMASTER"
+      },
+      {
+        "file_number": 44.0,
+        "file_label": "HOSPITAL LOCATION",
+        "field_label": "REQUIRE ACTION PROFILES?"
+      },
+      {
+        "file_number": 58.1,
+        "file_label": "PHARMACY AOU STOCK",
+        "field_label": "COUNT ON AMIS?"
+      },
+      {
+        "file_number": 60.0,
+        "file_label": "LABORATORY TEST",
+        "field_label": "COMBINE TEST DURING ORDER"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "Y",
+      "0": "N"
+    },
+    "occurrences": 10,
+    "unique_files": 8,
+    "sample_fields": [
+      {
+        "file_number": 43.0,
+        "file_label": "MAS PARAMETERS",
+        "field_label": "ASK MEDICAL CENTER DIVISION"
+      },
+      {
+        "file_number": 58.81,
+        "file_label": "DRUG ACCOUNTABILITY TRANSACTION",
+        "field_label": "EDIT MFG/LOT/EXP.DATE"
+      },
+      {
+        "file_number": 349.2,
+        "file_label": "AR CCPC STATEMENTS",
+        "field_label": "CCPC PRINTED"
+      },
+      {
+        "file_number": 396.17,
+        "file_label": "CAPRI TEMPLATES",
+        "field_label": "FLAG NEW"
+      },
+      {
+        "file_number": 396.17,
+        "file_label": "CAPRI TEMPLATES",
+        "field_label": "FLAG GREEN FLAG"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "NO PAST HISTORY, PRESENT AT DX",
+      "1": "PAST HISTORY, PRESENT AT DX",
+      "3": "PAST HISTORY, NOT PRESENT AT DX",
+      "9": "UNKNOWN, NOT DOCUMENTED",
+      "4": "DOCUMENTED NEVER PRESENT"
+    },
+    "occurrences": 10,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS H-PYLORI INFECTION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS DUODENAL ULCER"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS GASTRIC ULCER"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS HEARTBURN (BENIGN COND)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS PERNICIOUS ANEMIA"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "RESECTED, NO TUMOR ADHERENCE",
+      "1": "RESECTED, TUMOR ADHERENCE",
+      "3": "NOT RESECTED, TUMOR ADHERENCE",
+      "4": "NOT RESECTED, NO TUMOR ADHERENCE",
+      "9": "EXTENT OF RESECTION NOT DOCUMENTED"
+    },
+    "occurrences": 10,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS SPLEEN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS TRANSVERSE COLON"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS LIVER"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS DIAPHRAGM"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS PANCREAS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "PRIMARY",
+      "2": "SECONDARY",
+      "3": "TERTIARY"
+    },
+    "occurrences": 10,
+    "unique_files": 9,
+    "sample_fields": [
+      {
+        "file_number": 355.33,
+        "file_label": "INSURANCE VERIFICATION PROCESSOR",
+        "field_label": "COORDINATION OF BENEFITS"
+      },
+      {
+        "file_number": 361.1,
+        "file_label": "EXPLANATION OF BENEFITS",
+        "field_label": "INSURANCE SEQUENCE"
+      },
+      {
+        "file_number": 365.0,
+        "file_label": "IIV RESPONSE",
+        "field_label": "COORDINATION OF BENEFITS"
+      },
+      {
+        "file_number": 365.19,
+        "file_label": "INTERFACILITY INSURANCE UPDATE",
+        "field_label": "SEND COORDINATION OF BENEFITS"
+      },
+      {
+        "file_number": 9002313.31,
+        "file_label": "BPS CERTIFICATION",
+        "field_label": "COB INDICATOR"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "3": "ATMOSPHERIC NUCLEAR TESTING",
+      "U": "UNKNOWN",
+      "2": "HIROSHIMA/NAGASAKI",
+      "6": "EXPOSURE AT NUCLEAR FACILITY",
+      "7": "OTHER",
+      "N": "NO",
+      "Y": "YES",
+      "5": "UNDERGROUND NUCLEAR TESTING",
+      "1": "NO RADIATION",
+      "4": "H/N AND ATMOSPHERIC TESTING"
+    },
+    "occurrences": 10,
+    "unique_files": 10,
+    "sample_fields": [
+      {
+        "file_number": 727.802,
+        "file_label": "ADMISSION EXTRACT",
+        "field_label": "RADIATION STATUS"
+      },
+      {
+        "file_number": 727.809,
+        "file_label": "UNIT DOSE LOCAL EXTRACT",
+        "field_label": "RADIATION STATUS"
+      },
+      {
+        "file_number": 727.81,
+        "file_label": "PRESCRIPTION EXTRACT",
+        "field_label": "RADIATION STATUS"
+      },
+      {
+        "file_number": 727.811,
+        "file_label": "SURGERY EXTRACT",
+        "field_label": "RADIATION STATUS"
+      },
+      {
+        "file_number": 727.815,
+        "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+        "field_label": "RADIATION EXPOSURE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "P": "GEN. PRRTP",
+      "D": "DOMICILIARY",
+      "B": "PTSD CWT/TR",
+      "T": "PTSD PRRTP",
+      "A": "SA CWT/TR",
+      "H": "HOMELESS CWT/TR",
+      "S": "DOM. PRRTP",
+      "C": "GEN. CET/TR"
+    },
+    "occurrences": 10,
+    "unique_files": 10,
+    "sample_fields": [
+      {
+        "file_number": 727.802,
+        "file_label": "ADMISSION EXTRACT",
+        "field_label": "DOM, PRRTP AND SAARTP"
+      },
+      {
+        "file_number": 727.808,
+        "file_label": "PHYSICAL MOVEMENT EXTRACT",
+        "field_label": "DOM,PRRTP AND SAARTP INDICATOR"
+      },
+      {
+        "file_number": 727.81,
+        "file_label": "PRESCRIPTION EXTRACT",
+        "field_label": "DOM,PRRTP AND SAARTP INDICATOR"
+      },
+      {
+        "file_number": 727.811,
+        "file_label": "SURGERY EXTRACT",
+        "field_label": "DOM,PRRTP AND SAARTP INDICATOR"
+      },
+      {
+        "file_number": 727.815,
+        "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+        "field_label": "DOM,PRRTP AND SAARTP INDICATOR"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "5": "W22-50",
+      "3": "CNC-25",
+      "1": "NU6-25",
+      "7": "OTHER",
+      "4": "NU6-50",
+      "2": "W22-25",
+      "6": "CNC-50"
+    },
+    "occurrences": 10,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "MATERIAL R-1"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*WORD LIST R-2"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*WORD LIST R-3"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*WORD LIST R-4"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*WORD LIST R-5"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "3": "MLV",
+      "1": "CD",
+      "2": "TAPE"
+    },
+    "occurrences": 10,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "PRESENTATION METHOD R-1"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*PRESENTATION METHOD R-2"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*PRESENTATION METHOD R-3"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*PRESENTATION METHOD R-4"
+      },
+      {
+        "file_number": 509850.9,
+        "file_label": "AUDIOMETRIC EXAM DATA",
+        "field_label": "*PRESENTATION METHOD R-5"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "VERIFIED BY PACKAGE",
+      "1": "ELECTRONICALLY SIGNED"
+    },
+    "occurrences": 10,
+    "unique_files": 10,
+    "sample_fields": [
+      {
+        "file_number": 9000010.07,
+        "file_label": "V POV",
+        "field_label": "VERIFIED"
+      },
+      {
+        "file_number": 9000010.11,
+        "file_label": "V IMMUNIZATION",
+        "field_label": "VERIFIED"
+      },
+      {
+        "file_number": 9000010.12,
+        "file_label": "V SKIN TEST",
+        "field_label": "VERIFIED"
+      },
+      {
+        "file_number": 9000010.13,
+        "file_label": "V EXAM",
+        "field_label": "VERIFIED"
+      },
+      {
+        "file_number": 9000010.15,
+        "file_label": "V TREATMENT",
+        "field_label": "VERIFIED"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "WITHIN NORMAL LIMITS",
+      "9": "UNKNOWN/NOT DOCUMENTED",
+      "0": "NOT DONE",
+      "1": "ABNORMAL"
+    },
+    "occurrences": 9,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CHEST X-RAY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CT SCAN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BRONCHOSCOPY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "MEDIASTINOSCOPY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "PET SCAN"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "DONE",
+      "0": "NOT DONE",
+      "9": "UNKNOWN"
+    },
+    "occurrences": 9,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ABDOMINAL ULTRASOUND"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "BONE IMAGING"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CHEST X-RAY (BLADDER)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CT CHEST/LUNG"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CT ABDOMEN/PELVIS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "SAMPLED, NO EVIDENCE OF POSITIVE NODES",
+      "3": "SAMPLED, EVIDENCE OF POSITIVE NODES",
+      "4": "NODE SAMPLING NOT MENTIONED",
+      "5": "SAMPLED, RESULTS NOT DOCUMENTED",
+      "1": "NO NODES SAMPLED"
+    },
+    "occurrences": 9,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG HIGH MEDIASTINAL (PRE-OP)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG UPPER PARATRACH (PRE-OP)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG PREVASC/RETRO (PRE-OP)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG LOWER PARATRACH (PRE-OP)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG SUBAORTIC (PRE-OP)"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "NODES SAMPLED, BUT NOT REMOVED EN BLOC",
+      "9": "LYMPH NODE ASSESSMENT NOT DOCUMENTED",
+      "3": "NODES REMOVED EN BLOC",
+      "1": "NODES NOT SAMPLED"
+    },
+    "occurrences": 9,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG HIGH MEDIASTINAL (SCOPE)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG UPPER PARATRACHEAL (SCOPE)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG PREVASC/RETROTRACH (SCOPE)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG LOWER PARATRACHEAL (SCOPE)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG SUBAORTIC (SCOPE)"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "U": "USER ENROLLED"
+    },
+    "occurrences": 9,
+    "unique_files": 9,
+    "sample_fields": [
+      {
+        "file_number": 727.802,
+        "file_label": "ADMISSION EXTRACT",
+        "field_label": "USER ENROLLEE"
+      },
+      {
+        "file_number": 727.809,
+        "file_label": "UNIT DOSE LOCAL EXTRACT",
+        "field_label": "USER ENROLLEE"
+      },
+      {
+        "file_number": 727.811,
+        "file_label": "SURGERY EXTRACT",
+        "field_label": "USER ENROLLEE"
+      },
+      {
+        "file_number": 727.815,
+        "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+        "field_label": "USER ENROLLEE"
+      },
+      {
+        "file_number": 727.819,
+        "file_label": "IV DETAIL EXTRACT",
+        "field_label": "USER ENROLLEE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "CO": "COLLATERAL",
+      "TR": "TRICARE",
+      "SC": "SC VETERAN",
+      "AL": "ALLIED VETERAN",
+      "EM": "EMPLOYEE",
+      "AC": "ACTIVE DUTY",
+      "NS": "NSC VETERAN",
+      "MI": "MILITARY RETIREE",
+      "IN": "INELIGIBLE",
+      "NO": "NON-VETERAN (OTHER)"
+    },
+    "occurrences": 9,
+    "unique_files": 9,
+    "sample_fields": [
+      {
+        "file_number": 727.802,
+        "file_label": "ADMISSION EXTRACT",
+        "field_label": "PATIENT TYPE"
+      },
+      {
+        "file_number": 727.809,
+        "file_label": "UNIT DOSE LOCAL EXTRACT",
+        "field_label": "PATIENT TYPE"
+      },
+      {
+        "file_number": 727.811,
+        "file_label": "SURGERY EXTRACT",
+        "field_label": "PATIENT TYPE"
+      },
+      {
+        "file_number": 727.815,
+        "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+        "field_label": "PATIENT TYPE"
+      },
+      {
+        "file_number": 727.819,
+        "file_label": "IV DETAIL EXTRACT",
+        "field_label": "PATIENT TYPE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "FSNORMAL",
+      "0": "FSMDICHILD",
+      "3": "FSSTAYONTOP"
+    },
+    "occurrences": 9,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 2006.18,
+        "file_label": "IMAGING USER PREFERENCE",
+        "field_label": "ABS STYLE"
+      },
+      {
+        "file_number": 2006.18,
+        "file_label": "IMAGING USER PREFERENCE",
+        "field_label": "GROUP STYLE"
+      },
+      {
+        "file_number": 2006.18,
+        "file_label": "IMAGING USER PREFERENCE",
+        "field_label": "FULL STYLE"
+      },
+      {
+        "file_number": 2006.18,
+        "file_label": "IMAGING USER PREFERENCE",
+        "field_label": "REPORT STYLE"
+      },
+      {
+        "file_number": 2006.18,
+        "file_label": "IMAGING USER PREFERENCE",
+        "field_label": "DOC STYLE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "PRESENT",
+      "2": "NOT PRESENT",
+      "9": "NOT DOCUMENTED"
+    },
+    "occurrences": 8,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS HEARTBURN (SYMPTOMS)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS FEVER/NIGHT SWEATS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS ACUTE HEMATEMESIS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS TRANSFUSIONS FOR BLD LOSS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS MELENA"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "CAUSED RE-OPERATION",
+      "2": "DID NOT CAUSE RE-OPERATION",
+      "9": "NOT DOCUMENTED",
+      "3": "DID NOT OCCUR"
+    },
+    "occurrences": 8,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS ANASTOMATIC LEAK"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS STUMP LEAK"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS BLEEDING"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS WOUND INFECTION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS SEPSIS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "X": "YES"
+    },
+    "occurrences": 8,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "MORPHINE PRESCRIBED"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "BARBITURATE PRESCRIBED"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "AMPHETAMINE PRESCRIBED"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "METHADONE PRESCRIBED"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "OTHER DRUG 1 PRESCRIBED"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "3": "RE-TRANSMIT",
+      "1": "TRANSMITTED",
+      "2": "NEVER TRANSMITTED",
+      "0": "PENDING"
+    },
+    "occurrences": 8,
+    "unique_files": 8,
+    "sample_fields": [
+      {
+        "file_number": 11500.1,
+        "file_label": "ODS PATIENT",
+        "field_label": "TRANSMISSION STATUS"
+      },
+      {
+        "file_number": 11500.2,
+        "file_label": "ODS ADMISSIONS",
+        "field_label": "TRANSMISSION STATUS"
+      },
+      {
+        "file_number": 11500.3,
+        "file_label": "DISPLACED PATIENT",
+        "field_label": "TRANSMISSION STATUS"
+      },
+      {
+        "file_number": 11500.4,
+        "file_label": "ODS REGISTRATIONS",
+        "field_label": "TRANSMISSION STATUS"
+      },
+      {
+        "file_number": 11500.61,
+        "file_label": "ODS BILLING SPECIALTY",
+        "field_label": "TRANSMISSION STATUS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "NOT EDITABLE",
+      "0": "EDITABLE"
+    },
+    "occurrences": 8,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 9000010.0,
+        "file_label": "VISIT",
+        "field_label": "SERVICE CONNECTION EDIT FLAG"
+      },
+      {
+        "file_number": 9000010.0,
+        "file_label": "VISIT",
+        "field_label": "AGENT ORANGE EDIT FLAG"
+      },
+      {
+        "file_number": 9000010.0,
+        "file_label": "VISIT",
+        "field_label": "IONIZING RADIATION EDIT FLAG"
+      },
+      {
+        "file_number": 9000010.0,
+        "file_label": "VISIT",
+        "field_label": "SW ASIA CONDITIONS EDIT FLAG"
+      },
+      {
+        "file_number": 9000010.0,
+        "file_label": "VISIT",
+        "field_label": "MST EDIT FLAG"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "ACTIVE",
+      "0": "NOT ACTIVE"
+    },
+    "occurrences": 7,
+    "unique_files": 5,
+    "sample_fields": [
+      {
+        "file_number": 52.6,
+        "file_label": "IV ADDITIVES",
+        "field_label": "*STATUS"
+      },
+      {
+        "file_number": 301.9,
+        "file_label": "IVM SITE PARAMETER",
+        "field_label": "ENROLLMENT QUERY ACTIVE?"
+      },
+      {
+        "file_number": 301.9,
+        "file_label": "IVM SITE PARAMETER",
+        "field_label": "DCD MESSAGING ACTIVE?"
+      },
+      {
+        "file_number": 349.9,
+        "file_label": "AR TRANSMISSION SEGMENTS",
+        "field_label": "ACTIVE"
+      },
+      {
+        "file_number": 350.9,
+        "file_label": "IB SITE PARAMETERS",
+        "field_label": "HIPAA NCPDP ACTIVE FLAG"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "I": "INACTIVE"
+    },
+    "occurrences": 7,
+    "unique_files": 7,
+    "sample_fields": [
+      {
+        "file_number": 101.15,
+        "file_label": "OE/RR COM OBJECTS",
+        "field_label": "INACTIVE"
+      },
+      {
+        "file_number": 420.51,
+        "file_label": "REASON NOT COMPETED",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 420.52,
+        "file_label": "SOLICITATION PROCEDURE",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 420.53,
+        "file_label": "EXTENT COMPETED",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 420.54,
+        "file_label": "EVALUATED PREFERENCE",
+        "field_label": "STATUS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NO",
+      "9": "UNKNOWN",
+      "1": "YES",
+      "8": "NA, SURGERY NOT PERFORMED"
+    },
+    "occurrences": 7,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OTHER SURGICAL COMPLICATIONS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ANESTHETIC PROBLEM"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "HEMORRHAGE AT OPERATIVE SITE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "SEIZURE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "INFECTION(S)"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "UNKNOWN IF RECOMMENDED OR ADMINISTERED",
+      "0": "NO",
+      "8": "RECOMMENDED, NOT KNOWN IF ADMINISTERED",
+      "1": "YES"
+    },
+    "occurrences": 7,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CISPLATIN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "FUDR"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "5-FU"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "FU & LEUCOVORIN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "IRINOTECAN (CPT-11)"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "REQUESTED, NOT DOCUMENTED IF PERFORMED",
+      "2": "NOT PERFORMED",
+      "1": "PERFORMED"
+    },
+    "occurrences": 7,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG BONE SCAN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG CT SCAN OF CHEST"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG CT SCAN OF BRAIN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG MRI SCAN OF CHEST"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG MRI SCAN OF BRAIN"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "O": "OPEN",
+      "C": "CLOSED"
+    },
+    "occurrences": 7,
+    "unique_files": 7,
+    "sample_fields": [
+      {
+        "file_number": 409.3,
+        "file_label": "SD WAIT LIST",
+        "field_label": "CURRENT STATUS"
+      },
+      {
+        "file_number": 409.85,
+        "file_label": "SDEC APPT REQUEST",
+        "field_label": "CURRENT STATUS"
+      },
+      {
+        "file_number": 618.4,
+        "file_label": "MENTAL HEALTH INPT",
+        "field_label": "OPEN/CLOSED"
+      },
+      {
+        "file_number": 790.02,
+        "file_label": "WV SITE PARAMETER",
+        "field_label": "STATUS OF IMPORTED MAMMOGRAMS"
+      },
+      {
+        "file_number": 809.0,
+        "file_label": "REMINDERS EPISODE OF CARE",
+        "field_label": "STATUS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "ROV": "RELEASED OFF-LINE VERIFIED",
+      "RV": "RELEASED ON-LINE VERIFIED",
+      "SROV": "RELEASED OFF-LINE VERIFIED OF SUPERSEDED",
+      "SRV": "RELEASED ON-LINE VERIFIED OF SUPERSEDED",
+      "S": "SUPERSEDED",
+      "RNV": "RELEASED NOT VERIFIED",
+      "PD": "PROBLEM DRAFT",
+      "D": "DRAFT"
+    },
+    "occurrences": 7,
+    "unique_files": 7,
+    "sample_fields": [
+      {
+        "file_number": 691.0,
+        "file_label": "ECHO",
+        "field_label": "RELEASE CODE"
+      },
+      {
+        "file_number": 691.5,
+        "file_label": "ELECTROCARDIOGRAM (EKG)",
+        "field_label": "RELEASE STATUS"
+      },
+      {
+        "file_number": 691.6,
+        "file_label": "HOLTER",
+        "field_label": "RELEASE CODE"
+      },
+      {
+        "file_number": 691.7,
+        "file_label": "EXERCISE TOLERANCE TEST",
+        "field_label": "RELEASE CODE"
+      },
+      {
+        "file_number": 691.8,
+        "file_label": "ELECTROPHYSIOLOGY (EP)",
+        "field_label": "RELEASE CODE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "P": "POSITIVE",
+      "Q": "QUESTIONABLE",
+      "N": "NEGATIVE"
+    },
+    "occurrences": 7,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "MORPHINE RESULT"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "BARBITURATE RESULT"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "AMPHETAMINE RESULT"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "METHADONE RESULT"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "OTHER DRUG 1 RESULT"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "N": "NO EXPOSURE DOCUMENTED IN MEDICAL RECORD",
+      "O": "EXPOSURE DURING NON-MILITARY ACTIVITIES, INCLUDING OCCUPATION",
+      "Y": "YES-DURING MILITARY SERVICE",
+      "U": "UNK IF EXPOSURE OR UNK IF EXPOSURE WAS MILITARY OR NON-MILITARY"
+    },
+    "occurrences": 6,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 160.0,
+        "file_label": "ONCOLOGY PATIENT",
+        "field_label": "EXPOSURE AGENT ORANGE"
+      },
+      {
+        "file_number": 160.0,
+        "file_label": "ONCOLOGY PATIENT",
+        "field_label": "EXPOSURE IONIZING RADIATION"
+      },
+      {
+        "file_number": 160.0,
+        "file_label": "ONCOLOGY PATIENT",
+        "field_label": "EXPOSURE CHEMICAL"
+      },
+      {
+        "file_number": 160.0,
+        "file_label": "ONCOLOGY PATIENT",
+        "field_label": "EXPOSURE ASBESTOS"
+      },
+      {
+        "file_number": 160.0,
+        "file_label": "ONCOLOGY PATIENT",
+        "field_label": "EXPOSURE BURN PIT"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NONE",
+      "8": "NA",
+      "9": "UNKNOWN",
+      "1": "YES"
+    },
+    "occurrences": 6,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "METS AT DX-BONE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "METS AT DX-BRAIN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "METS AT DX-LIVER"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "METS AT DX-LUNG"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "METS AT DX-DISTANT LN"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "INFUSION",
+      "8": "NOT APPLICABLE",
+      "9": "UNKNOWN",
+      "1": "BOLUS"
+    },
+    "occurrences": 6,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CISPLATIN METHOD OF DELIVERY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CYTOXAN METHOD OF DELIVERY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "DTIC METHOD OF DELIVERY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "DOXORUBICIN METHOD OF DELIVERY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ETOPOSIDE METHOD OF DELIVERY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "INTRA-ARTERIAL",
+      "2": "INTRAVENOUS",
+      "9": "UNKNOWN",
+      "8": "NOT APPLICABLE",
+      "3": "ORAL"
+    },
+    "occurrences": 6,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CISPLATIN LOCATION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CYTOXAN LOCATION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "DTIC LOCATION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "DOXORUBICIN LOCATION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ETOPOSIDE LOCATION"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "3": "LOWER THAN NORMAL",
+      "9": "UNKNOWN IF TEST DONE",
+      "1": "NORMAL",
+      "8": "TEST DONE, RESULTS UNKNOWN",
+      "0": "TEST NOT DONE",
+      "2": "HIGHER THAN NORMAL"
+    },
+    "occurrences": 6,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "HEMOGLOBIN/HEMATOCRIT"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "WHITE COUNT"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "PLATELET COUNT"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LACTIC DEHYDROGENASE (LDH)"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LIVER FUNCTION STUDIES (NHL)"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "ABNORMAL, SUGGESTIVE OF CANCER",
+      "2": "ABNORMAL, NOT SUGGESTIVE OF CANCER",
+      "8": "NOT PERFORMED, NOT MENTIONED IN RECORD",
+      "3": "NORMAL RESULTS",
+      "9": "DONE, RESULTS NOT DOCUMENTED"
+    },
+    "occurrences": 6,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG HISTORY AND PHYSICAL"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG BRONCHOSCOPY PRE-THERAPY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG FNAB"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG MEDIASTINOSCOPY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG THOROCOTOMY/OPEN BIOPSY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "NOT USED",
+      "9": "NOT DOCUMENTED",
+      "1": "USED"
+    },
+    "occurrences": 6,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS FLOW CYTOMETRY/FRESH TISS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS IMMUNOHISTOCHEM/FROZEN TIS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS IMMUNOHISTOCHEM/PARAFFIN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS MOLECULAR GENETICS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS POLYMERASE CHAIN REACTION"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "FX": "FAX",
+      "EM": "E-MAIL",
+      "TE": "TELEPHONE",
+      "EX": "TELEPHONE EXTENSION"
+    },
+    "occurrences": 6,
+    "unique_files": 2,
+    "sample_fields": [
+      {
+        "file_number": 344.4,
+        "file_label": "ELECTRONIC REMITTANCE ADVICE",
+        "field_label": "CONTACT TYPE 1"
+      },
+      {
+        "file_number": 344.4,
+        "file_label": "ELECTRONIC REMITTANCE ADVICE",
+        "field_label": "CONTACT TYPE 2"
+      },
+      {
+        "file_number": 344.4,
+        "file_label": "ELECTRONIC REMITTANCE ADVICE",
+        "field_label": "CONTACT TYPE 3"
+      },
+      {
+        "file_number": 361.1,
+        "file_label": "EXPLANATION OF BENEFITS",
+        "field_label": "CONTACT TYPE 1"
+      },
+      {
+        "file_number": 361.1,
+        "file_label": "EXPLANATION OF BENEFITS",
+        "field_label": "CONTACT TYPE 2"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "NOT DETERMINED  (9)",
+      "2": "EXHIBITS THIS CHARACTERISTIC  (2)",
+      "1": "DOES NOT EXHIBIT THIS CHARACTERISTIC  (1)"
+    },
+    "occurrences": 6,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 631.0,
+        "file_label": "HBHC PATIENT",
+        "field_label": "BEHAVIOR PROBLEMS @ ADMISSION"
+      },
+      {
+        "file_number": 631.0,
+        "file_label": "HBHC PATIENT",
+        "field_label": "DISORIENTATION @ ADMISSION"
+      },
+      {
+        "file_number": 631.0,
+        "file_label": "HBHC PATIENT",
+        "field_label": "MOOD DISTURBANCE @ ADMISSION"
+      },
+      {
+        "file_number": 631.0,
+        "file_label": "HBHC PATIENT",
+        "field_label": "BEHAVIOR PROBLEMS @ DISCHARGE"
+      },
+      {
+        "file_number": 631.0,
+        "file_label": "HBHC PATIENT",
+        "field_label": "DISORIENTATION @ DISCHARGE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "A": "ABNORMAL",
+      "N": "NORMAL",
+      "B": "BORDERLINE"
+    },
+    "occurrences": 6,
+    "unique_files": 6,
+    "sample_fields": [
+      {
+        "file_number": 691.0,
+        "file_label": "ECHO",
+        "field_label": "SUMMARY"
+      },
+      {
+        "file_number": 691.1,
+        "file_label": "CARDIAC CATHETERIZATION",
+        "field_label": "SUMMARY"
+      },
+      {
+        "file_number": 691.7,
+        "file_label": "EXERCISE TOLERANCE TEST",
+        "field_label": "INTERPRETATION"
+      },
+      {
+        "file_number": 691.8,
+        "file_label": "ELECTROPHYSIOLOGY (EP)",
+        "field_label": "SUMMARY"
+      },
+      {
+        "file_number": 698.0,
+        "file_label": "GENERATOR IMPLANT",
+        "field_label": "SUMMARY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "MARK FOR DELETION"
+    },
+    "occurrences": 6,
+    "unique_files": 6,
+    "sample_fields": [
+      {
+        "file_number": 691.5,
+        "file_label": "ELECTROCARDIOGRAM (EKG)",
+        "field_label": "MARK FOR DELETION"
+      },
+      {
+        "file_number": 691.6,
+        "file_label": "HOLTER",
+        "field_label": "MARK FOR DELETATION"
+      },
+      {
+        "file_number": 691.7,
+        "file_label": "EXERCISE TOLERANCE TEST",
+        "field_label": "MARK FOR DELETION"
+      },
+      {
+        "file_number": 694.0,
+        "file_label": "HEMATOLOGY",
+        "field_label": "MARK FOR DELETION"
+      },
+      {
+        "file_number": 699.5,
+        "file_label": "GENERALIZED PROCEDURE/CONSULT",
+        "field_label": "MARK FOR DELETATION"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "P": "GEN. PRRTP",
+      "D": "DOMICILIARY",
+      "B": "PTSD CWT/TR",
+      "T": "PTSD PRRTP",
+      "A": "SA CWT/TR",
+      "H": "HOMELESS CWT/TR",
+      "S": "DOM. PRRTP",
+      "C": "GEN. CWT/TR"
+    },
+    "occurrences": 6,
+    "unique_files": 6,
+    "sample_fields": [
+      {
+        "file_number": 727.809,
+        "file_label": "UNIT DOSE LOCAL EXTRACT",
+        "field_label": "DOM,PRRTP AND SAARTP INDICATOR"
+      },
+      {
+        "file_number": 727.813,
+        "file_label": "LABORATORY EXTRACT",
+        "field_label": "DOM,PRRTP AND SAARTP INDICATOR"
+      },
+      {
+        "file_number": 727.814,
+        "file_label": "RADIOLOGY EXTRACT",
+        "field_label": "DOM,PRRTP AND SAARTP INDICATOR"
+      },
+      {
+        "file_number": 727.817,
+        "file_label": "TREATING SPECIALTY CHANGE EXTRACT",
+        "field_label": "DOM,PRRTP AND SAARTP INDICATOR"
+      },
+      {
+        "file_number": 727.831,
+        "file_label": "DSS TREATING SPECIALTY TRANSLATION",
+        "field_label": "DOM/PRRTP/SARRTP CODE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "I": "INACCESSIBLE",
+      "A": "ACCESSIBLE"
+    },
+    "occurrences": 6,
+    "unique_files": 6,
+    "sample_fields": [
+      {
+        "file_number": 2005.6,
+        "file_label": "IMAGING PATIENT REFERENCE",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 2005.61,
+        "file_label": "IMAGING PROCEDURE REFERENCE",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 2005.62,
+        "file_label": "IMAGE STUDY",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 2005.63,
+        "file_label": "IMAGE SERIES",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 2005.64,
+        "file_label": "IMAGE SOP INSTANCE",
+        "field_label": "STATUS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "3": "NOT DONE OR DONE WITHOUT PATIENT PARTICIPATION",
+      "9": "NOT DETERMINED",
+      "1": "NO HELP",
+      "2": "RECEIVES HELP"
+    },
+    "occurrences": 6,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "BATHING/SHOWER ACTIVITY"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DRESSING ACTIVITY"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "USING TOILET ACTIVITY"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "TRANSFER ACTIVITY"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "EATING ACTIVITY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "A": "AUTHORIZED ABSENCE",
+      "D": "DEATH",
+      "P": "PICKED UP & INGESTED",
+      "U": "UNAUTHORIZED ABSENCE",
+      "X": "DISCHARGED",
+      "T": "TAKEN HOME",
+      "J": "JAIL",
+      "H": "HOSPITALIZED",
+      "W": "WITHHELD"
+    },
+    "occurrences": 6,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DOSAGE CODE-MONDAY"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DOSAGE CODE-TUESDAY"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DOSAGE CODE-WEDNESDAY"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DOSAGE CODE-THURSDAY"
+      },
+      {
+        "file_number": 2100.0,
+        "file_label": "GENERIC CODE SHEET",
+        "field_label": "DOSAGE CODE-SATURDAY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "DISABLED",
+      "1": "ENABLED"
+    },
+    "occurrences": 5,
+    "unique_files": 5,
+    "sample_fields": [
+      {
+        "file_number": 18.12,
+        "file_label": "WEB SERVER",
+        "field_label": "STATUS"
+      },
+      {
+        "file_number": 40.8,
+        "file_label": "MEDICAL CENTER DIVISION",
+        "field_label": "PRF ASSIGNMENT OWNERSHIP"
+      },
+      {
+        "file_number": 344.9,
+        "file_label": "RCDPE DM REPORT PARAMETERS",
+        "field_label": "ENABLED/DISABLE"
+      },
+      {
+        "file_number": 870.0,
+        "file_label": "HL LOGICAL LINK",
+        "field_label": "AUTOSTART"
+      },
+      {
+        "file_number": 2006.18,
+        "file_label": "IMAGING USER PREFERENCE",
+        "field_label": "RIVER AUTO CONNECT ENABLED"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "N": "NO, SCREENED DOES NOT REPORT MST",
+      "D": "SCREENED DECLINES TO ANSWER",
+      "Y": "YES, SCREENED REPORTS MST",
+      "U": "UNKNOWN, NOT SCREENED"
+    },
+    "occurrences": 5,
+    "unique_files": 5,
+    "sample_fields": [
+      {
+        "file_number": 29.11,
+        "file_label": "MST HISTORY",
+        "field_label": "MST STATUS"
+      },
+      {
+        "file_number": 727.815,
+        "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+        "field_label": "MST STATUS"
+      },
+      {
+        "file_number": 727.825,
+        "file_label": "QUASAR EXTRACT",
+        "field_label": "MST STATUS"
+      },
+      {
+        "file_number": 727.832,
+        "file_label": "NUTRITION EXTRACT",
+        "field_label": "MST STATUS"
+      },
+      {
+        "file_number": 727.833,
+        "file_label": "BCMA EXTRACT",
+        "field_label": "MST STATUS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "1> DOES NOT RECEIVE",
+      "2": "2> MAINTENANCE PROGRAM",
+      "3": "3> RESTORATIVE PROGRAM",
+      "4": "4> NON-QUALIFYING PROGRAM"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "PHYSICAL THERAPY LEVEL"
+      },
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "OCCUPATIONAL THERAPY LEVEL"
+      },
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "CORRECTIVE THERAPY LEVEL"
+      },
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "MANUAL ARTS THERAPY LEVEL"
+      },
+      {
+        "file_number": 45.9,
+        "file_label": "PAF",
+        "field_label": "EDUCATIONAL THERAPY LEVEL"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "5": "EXCELLENT",
+      "2": "FAIR",
+      "4": "VERY GOOD",
+      "3": "GOOD",
+      "1": "POOR"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 48.0,
+        "file_label": "MAS RELEASE NOTES",
+        "field_label": "INSTALLATION GUIDE"
+      },
+      {
+        "file_number": 48.0,
+        "file_label": "MAS RELEASE NOTES",
+        "field_label": "RELEASE NOTES"
+      },
+      {
+        "file_number": 48.0,
+        "file_label": "MAS RELEASE NOTES",
+        "field_label": "INITIALIZATION SATISFACTION"
+      },
+      {
+        "file_number": 48.0,
+        "file_label": "MAS RELEASE NOTES",
+        "field_label": "USER SATISFACTION"
+      },
+      {
+        "file_number": 48.0,
+        "file_label": "MAS RELEASE NOTES",
+        "field_label": "OVERALL SATISFACTION"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "V": "VETERAN",
+      "C": "CHAMPVA",
+      "T": "TRICARE"
+    },
+    "occurrences": 5,
+    "unique_files": 5,
+    "sample_fields": [
+      {
+        "file_number": 52.0,
+        "file_label": "PRESCRIPTION",
+        "field_label": "BILLING ELIGIBILITY INDICATOR"
+      },
+      {
+        "file_number": 9002313.57,
+        "file_label": "BPS LOG OF TRANSACTIONS",
+        "field_label": "ELIGIBILITY"
+      },
+      {
+        "file_number": 9002313.59,
+        "file_label": "BPS TRANSACTION",
+        "field_label": "ELIGIBILITY"
+      },
+      {
+        "file_number": 9002313.77,
+        "file_label": "BPS REQUESTS",
+        "field_label": "ELIGIBILITY"
+      },
+      {
+        "file_number": 9002313.78,
+        "file_label": "BPS INSURER DATA",
+        "field_label": "ELIGIBILITY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "Y"
+    },
+    "occurrences": 5,
+    "unique_files": 5,
+    "sample_fields": [
+      {
+        "file_number": 59.3,
+        "file_label": "GROUP DISPLAY",
+        "field_label": "STOP"
+      },
+      {
+        "file_number": 138.0,
+        "file_label": "ELECTROGROUND POSITIONS",
+        "field_label": "INACTIVE?"
+      },
+      {
+        "file_number": 161.4,
+        "file_label": "FEE BASIS SITE PARAMETERS",
+        "field_label": "PRINT U/C ON LETTERHEAD?"
+      },
+      {
+        "file_number": 664.0,
+        "file_label": "PROSTHETICS 1358",
+        "field_label": "LAST AMEND REPRINT OK"
+      },
+      {
+        "file_number": 2006.69,
+        "file_label": "MAG VISTARAD SITE PARAMETERS",
+        "field_label": "REQUISITION FOR RAD STAFF ONLY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "P": "POSITIVE",
+      "N": "NEGATIVE"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 65.0,
+        "file_label": "BLOOD INVENTORY",
+        "field_label": "DONOR CELLS+ANTI D(slide rgt)"
+      },
+      {
+        "file_number": 65.0,
+        "file_label": "BLOOD INVENTORY",
+        "field_label": "DONOR CELLS+RH CTRL(slide rgt)"
+      },
+      {
+        "file_number": 65.0,
+        "file_label": "BLOOD INVENTORY",
+        "field_label": "DONOR CELLS+ANTI A(slide)"
+      },
+      {
+        "file_number": 65.0,
+        "file_label": "BLOOD INVENTORY",
+        "field_label": "DONOR CELLS+ANTI B(slide)"
+      },
+      {
+        "file_number": 65.0,
+        "file_label": "BLOOD INVENTORY",
+        "field_label": "DONOR CELLS+ANTI A,B(slide)"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "UNKNOWN",
+      "8": "NA, EXTERNAL RADIATION NOT ADMINISTERED",
+      "0": "NO, REGION/SITE NOT TARGETED",
+      "1": "YES"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "PROSTATE REGION ONLY"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "PROSTATE AND PELVIC NODES"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "PROSTATE & PELVIC PARA-AORTIC"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "DISTANT METASTATIC SITES"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OTHER EXTERNAL SITES, NOS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "NO",
+      "0": "NO",
+      "9": "UNKNOWN",
+      "1": "YES"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ESTROGENS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ANTIANDROGENS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "PROGESTATIONAL AGENTS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LUTEINIZING HORMONES"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "OTHER EXOGENOUS HORMONE AGENTS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "UNKNOWN",
+      "1": "PERFORMED",
+      "0": "NOT PERFORMED"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "CT ARTERIAL PORT-PERFORMED"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "SPIRAL CT-PERFORMED"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "INCREMENTAL CT-PERFORMED"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ULTRASOUND-PERFORMED"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "MRI-PERFORMED"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "8": "NA, RADIATION TX NOT ADMINISTERED",
+      "3": "PRESENT, TX DELAY OR CESSATION",
+      "1": "PRESENT, NO TX DELAY, NOT REQ MEDICATION",
+      "0": "NO, NOT PRESENT",
+      "9": "UNKNOWN",
+      "2": "PRESENT, NO TX DELAY, REQ MEDICATION"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "SKIN REACTIONS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "ANOREXIA"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "NAUSEA OR VOMITING"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "FATIGUE"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "NEUROLOGIC WORSENING"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "NOT DOCUMENTED IF PRESENT",
+      "1": "PRESENT",
+      "2": "NOT PRESENT"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG COUGH"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG SHORTNESS OF BREATH"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG WEIGHT LOSS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG HEMOPTYSIS"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG PALPABLE LYMPH NODES"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "1": "STRUCTURE NOT INVOLVED",
+      "9": "NOT DOCUMENTED",
+      "2": "YES, STRUCTURE INVOLVED"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG VASCULAR INVASION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG LYMPHATICS INVASION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG PLEURA INVASION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG CHEST WALL INVASION"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "LNG OTHER INVASION"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "SITE NOT DOCUMENTED",
+      "2": "NOT SITE OF INITIAL HISTOLOGIC DX",
+      "1": "SITE OF INITIAL HISTOLOGIC DX"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS STOMACH"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS LIVER"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS EXTRA-ABDOMINAL"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS LYMPH NODES"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS PERITONEUM"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "9": "NOT DOCUMENTED IF USED",
+      "2": "NOT USED",
+      "1": "USED IN PATHOLOGIC EVALUATION",
+      "8": "NA, PATHOLOGIC DX NOT MADE"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS GASTRIN"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS 5-HIAA"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS CEA"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS CA125"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS OTHER MOLECULAR MARKER"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "RESECTED",
+      "9": "EXTENT OF RESECTION NOT DOCUMENTED",
+      "4": "NOT RESECTED"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS PERIGASTRIC LYMPH NODES"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS COMMON HEPATIC LYMPH NODES"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS CELIAC LYMPH NODES"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS SPLENIC LYMPH NODES"
+      },
+      {
+        "file_number": 165.5,
+        "file_label": "ONCOLOGY PRIMARY",
+        "field_label": "GAS OTHER INTRA-ABDOMINAL NDES"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "2": "PRESENT",
+      "3": "BOTH PAST & PRESENT",
+      "1": "PAST"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 228.2,
+        "file_label": "TREATMENT PLAN TRANSACTION/EXAM",
+        "field_label": "SH CIGARETTES"
+      },
+      {
+        "file_number": 228.2,
+        "file_label": "TREATMENT PLAN TRANSACTION/EXAM",
+        "field_label": "SH PIPE/CIGAR"
+      },
+      {
+        "file_number": 228.2,
+        "file_label": "TREATMENT PLAN TRANSACTION/EXAM",
+        "field_label": "SH SMOKELESS"
+      },
+      {
+        "file_number": 228.2,
+        "file_label": "TREATMENT PLAN TRANSACTION/EXAM",
+        "field_label": "SH ALCOHOL"
+      },
+      {
+        "file_number": 228.2,
+        "file_label": "TREATMENT PLAN TRANSACTION/EXAM",
+        "field_label": "SH DRUG ABUSE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "N": "DO NOT SEND",
+      "P": "POSITION'S PATIENTS",
+      "T": "TEAM'S PATIENTS"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 404.57,
+        "file_label": "TEAM POSITION",
+        "field_label": "DEATH MESSAGE"
+      },
+      {
+        "file_number": 404.57,
+        "file_label": "TEAM POSITION",
+        "field_label": "INPATIENT MESSAGE"
+      },
+      {
+        "file_number": 404.57,
+        "file_label": "TEAM POSITION",
+        "field_label": "TEAM MESSAGE"
+      },
+      {
+        "file_number": 404.57,
+        "file_label": "TEAM POSITION",
+        "field_label": "CONSULT MESSAGE"
+      },
+      {
+        "file_number": 404.57,
+        "file_label": "TEAM POSITION",
+        "field_label": "AUTOMATIC INACTIVATION MESSAGE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "4": "NSC/OP",
+      "2": "SC/IP",
+      "1": "SC/OP",
+      "3": "NSC/IP"
+    },
+    "occurrences": 5,
+    "unique_files": 5,
+    "sample_fields": [
+      {
+        "file_number": 660.0,
+        "file_label": "RECORD OF PROS APPLIANCE/REPAIR",
+        "field_label": "PATIENT CATEGORY"
+      },
+      {
+        "file_number": 664.1,
+        "file_label": "PROSTHETIC 2529-3",
+        "field_label": "ELIGIBILITY STATUS"
+      },
+      {
+        "file_number": 665.0,
+        "file_label": "PROSTHETICS PATIENT",
+        "field_label": "HOME OXYGEN ELIGIBILITY"
+      },
+      {
+        "file_number": 667.0,
+        "file_label": "VEHICLE OF RECORD",
+        "field_label": "PATIENT CATEGORY"
+      },
+      {
+        "file_number": 667.3,
+        "file_label": "V.O.R. TRANSACTION",
+        "field_label": "PATIENT CATEGORY"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "4": "AKINESIS",
+      "5": "DYSKINESIS",
+      "1": "NORMAL MOTION",
+      "2": "MILD HYPOKINESIS",
+      "3": "SEVERE HYPOKINESIS",
+      "6": "FRANK ANEURYSM"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 694.5,
+        "file_label": "CARDIAC SURGERY RISK ASSESSMENT",
+        "field_label": "PROXIMAL ANTERIOR SEGMENT"
+      },
+      {
+        "file_number": 694.5,
+        "file_label": "CARDIAC SURGERY RISK ASSESSMENT",
+        "field_label": "MIDANTERIOR SEGMENT"
+      },
+      {
+        "file_number": 694.5,
+        "file_label": "CARDIAC SURGERY RISK ASSESSMENT",
+        "field_label": "APEX"
+      },
+      {
+        "file_number": 694.5,
+        "file_label": "CARDIAC SURGERY RISK ASSESSMENT",
+        "field_label": "MIDINFERIOR SEGMENT"
+      },
+      {
+        "file_number": 694.5,
+        "file_label": "CARDIAC SURGERY RISK ASSESSMENT",
+        "field_label": "PROXIMAL INFERIOR SEGMENT"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NORMAL",
+      "3": "SEVERE",
+      "2": "MODERATE",
+      "1": "MILD"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 701.0,
+        "file_label": "RHEUMATOLOGY",
+        "field_label": "RASH-SLE,NON-MALAR"
+      },
+      {
+        "file_number": 701.0,
+        "file_label": "RHEUMATOLOGY",
+        "field_label": "COSTOCHONDRAL-LEFT"
+      },
+      {
+        "file_number": 701.0,
+        "file_label": "RHEUMATOLOGY",
+        "field_label": "COSTOCHONDRAL-RIGHT"
+      },
+      {
+        "file_number": 701.0,
+        "file_label": "RHEUMATOLOGY",
+        "field_label": "SACROILIAC-LEFT"
+      },
+      {
+        "file_number": 701.0,
+        "file_label": "RHEUMATOLOGY",
+        "field_label": "SACROILIAC-RIGHT"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "N": "SCREENED, DOES NOT REPORT MST",
+      "U": "UNKNOWN, NOT SCREENED",
+      "Y": "YES, SCREENED REPORTS MST",
+      "D": "SCREENED, DECLINES TO ANSWER"
+    },
+    "occurrences": 5,
+    "unique_files": 5,
+    "sample_fields": [
+      {
+        "file_number": 727.802,
+        "file_label": "ADMISSION EXTRACT",
+        "field_label": "MST STATUS"
+      },
+      {
+        "file_number": 727.809,
+        "file_label": "UNIT DOSE LOCAL EXTRACT",
+        "field_label": "MST STATUS"
+      },
+      {
+        "file_number": 727.81,
+        "file_label": "PRESCRIPTION EXTRACT",
+        "field_label": "MST STATUS"
+      },
+      {
+        "file_number": 727.819,
+        "file_label": "IV DETAIL EXTRACT",
+        "field_label": "MST STATUS"
+      },
+      {
+        "file_number": 727.826,
+        "file_label": "PROSTHETICS EXTRACT",
+        "field_label": "MST STATUS"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NO",
+      "2": "DECLINES TO ANSWER",
+      "1": "YES"
+    },
+    "occurrences": 5,
+    "unique_files": 1,
+    "sample_fields": [
+      {
+        "file_number": 1927.4,
+        "file_label": "NUPA CARE PLANS",
+        "field_label": "VERBAL ABUSE"
+      },
+      {
+        "file_number": 1927.4,
+        "file_label": "NUPA CARE PLANS",
+        "field_label": "PHYSICAL ABUSE"
+      },
+      {
+        "file_number": 1927.4,
+        "file_label": "NUPA CARE PLANS",
+        "field_label": "FINANCIAL ABUSE"
+      },
+      {
+        "file_number": 1927.4,
+        "file_label": "NUPA CARE PLANS",
+        "field_label": "RAPE OR SEXUAL ABUSE"
+      },
+      {
+        "file_number": 1927.4,
+        "file_label": "NUPA CARE PLANS",
+        "field_label": "NEGLECT"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "0": "NOT ON FILE",
+      "1": "AOF"
+    },
+    "occurrences": 5,
+    "unique_files": 5,
+    "sample_fields": [
+      {
+        "file_number": 2005.6,
+        "file_label": "IMAGING PATIENT REFERENCE",
+        "field_label": "ARTIFACT ON FILE"
+      },
+      {
+        "file_number": 2005.61,
+        "file_label": "IMAGING PROCEDURE REFERENCE",
+        "field_label": "ARTIFACT ON FILE"
+      },
+      {
+        "file_number": 2005.62,
+        "file_label": "IMAGE STUDY",
+        "field_label": "ARTIFACT ON FILE"
+      },
+      {
+        "file_number": 2005.63,
+        "file_label": "IMAGE SERIES",
+        "field_label": "ARTIFACT ON FILE"
+      },
+      {
+        "file_number": 2005.64,
+        "file_label": "IMAGE SOP INSTANCE",
+        "field_label": "ARTIFACT ON FILE"
+      }
+    ]
+  },
+  {
+    "codes": {
+      "P": "PRIVACY ACT ONLY",
+      "B": "BOTH",
+      "F": "FOIA ONLY"
+    },
+    "occurrences": 5,
+    "unique_files": 5,
+    "sample_fields": [
+      {
+        "file_number": 19620.31,
+        "file_label": "DSIR REQUEST REASON",
+        "field_label": "AVAILABILITY"
+      },
+      {
+        "file_number": 19620.4,
+        "file_label": "DSIR DOCUMENT TYPE",
+        "field_label": "AVAILABILITY"
+      },
+      {
+        "file_number": 19620.51,
+        "file_label": "DSIR AUTHORITY FOR REQUEST",
+        "field_label": "AVAILABILITY"
+      },
+      {
+        "file_number": 19620.61,
+        "file_label": "DSIR TYPE OF REQUEST",
+        "field_label": "AVAILABILITY"
+      },
+      {
+        "file_number": 19620.71,
+        "file_label": "DSIR REQUESTOR TYPE",
+        "field_label": "AVAILABILITY"
+      }
+    ]
+  }
+]

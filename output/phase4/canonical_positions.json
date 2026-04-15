@@ -1,0 +1,154 @@
+[
+  {
+    "position": 0.01,
+    "canonical_concept": "PRIMARY NAME/IDENTIFIER",
+    "definitions": 2904,
+    "top_types": {
+      "F": 1815,
+      "P": 526,
+      "N": 265,
+      "D": 216,
+      "": 21
+    },
+    "top_labels": {
+      "NAME": 982,
+      "CODE": 201,
+      "PATIENT": 64,
+      "DATE": 42,
+      "NUMBER": 40
+    }
+  },
+  {
+    "position": 0.02,
+    "canonical_concept": "CATEGORY/TYPE",
+    "definitions": 1103,
+    "top_types": {
+      "F": 387,
+      "P": 312,
+      "S": 187,
+      "D": 121,
+      "N": 76
+    },
+    "top_labels": {
+      "DESCRIPTION": 76,
+      "PATIENT": 47,
+      "ABBREVIATION": 31,
+      "TYPE": 28,
+      "NAME": 24
+    }
+  },
+  {
+    "position": 0.03,
+    "canonical_concept": "PARENT REFERENCE or DATE",
+    "definitions": 888,
+    "top_types": {
+      "S": 242,
+      "P": 208,
+      "F": 198,
+      "D": 128,
+      "N": 94
+    },
+    "top_labels": {
+      "INACTIVE?": 56,
+      "TYPE": 18,
+      "STATUS": 16,
+      "VISIT": 15,
+      "PATIENT": 14
+    }
+  },
+  {
+    "position": 0.05,
+    "canonical_concept": "SEX or SECONDARY IDENTIFIER",
+    "definitions": 601,
+    "top_types": {
+      "S": 192,
+      "P": 134,
+      "F": 124,
+      "N": 81,
+      "D": 65
+    },
+    "top_labels": {
+      "FSC CONTROLLED": 32,
+      "STATUS": 9,
+      "RISK FACTOR": 6,
+      "USER": 5,
+      "RIGHTLINKED": 5
+    }
+  },
+  {
+    "position": 0.07,
+    "canonical_concept": "STATUS",
+    "definitions": 396,
+    "top_types": {
+      "S": 118,
+      "F": 84,
+      "P": 81,
+      "N": 63,
+      "D": 40
+    },
+    "top_labels": {
+      "STATUS": 7,
+      "FACILITY NUMBER": 7,
+      "ENTRY DEFINITIONS": 4,
+      "PROVIDER": 3,
+      "PROVIDER ID": 3
+    }
+  },
+  {
+    "position": 0.09,
+    "canonical_concept": "SSN or UNIQUE ID",
+    "definitions": 291,
+    "top_types": {
+      "S": 102,
+      "P": 52,
+      "F": 49,
+      "N": 43,
+      "D": 38
+    },
+    "top_labels": {
+      "ACTIVE": 9,
+      "REGION": 7,
+      "SOCIAL SECURITY NUMBER": 6,
+      "STATUS": 6,
+      "NATIONAL": 6
+    }
+  },
+  {
+    "position": 1.0,
+    "canonical_concept": "SECONDARY CONTENT or ADDRESS",
+    "definitions": 1642,
+    "top_types": {
+      "F": 552,
+      "P": 369,
+      "M": 206,
+      "S": 155,
+      "D": 131
+    },
+    "top_labels": {
+      "DESCRIPTION": 110,
+      "CODE": 45,
+      "ABBREVIATION": 31,
+      "TYPE": 25,
+      "PATIENT": 24
+    }
+  },
+  {
+    "position": 99.0,
+    "canonical_concept": "CLASS/CATEGORY",
+    "definitions": 100,
+    "top_types": {
+      "S": 45,
+      "F": 19,
+      "D": 9,
+      "P": 7,
+      "M": 7
+    },
+    "top_labels": {
+      "INACTIVE?": 30,
+      "TIMESTAMP": 8,
+      "DESCRIPTION": 3,
+      "COMMENTS": 3,
+      "PATCAT": 2
+    }
+  }
+]

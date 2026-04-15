@@ -1,0 +1,304 @@
+{
+  "total_candidates": 752,
+  "by_rule": {
+    "label_type_conflict": 416,
+    "hub_file_reference": 58,
+    "date_as_free_text": 227,
+    "pointer_to_empty_file": 51
+  },
+  "priority_max": 1055,
+  "priority_median": 6,
+  "top_25": [
+    {
+      "rule": "label_type_conflict",
+      "label": "NAME",
+      "occurrences": 1055,
+      "types": {
+        "F": 921,
+        "P": 93,
+        "": 20,
+        "X": 3,
+        "C": 1,
+        "N": 7,
+        "V": 7,
+        "S": 3
+      },
+      "recommended_type": "F",
+      "priority": 1055
+    },
+    {
+      "rule": "hub_file_reference",
+      "file": 200.0,
+      "label": "NEW PERSON",
+      "source_files": 561,
+      "priority": 561
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "DESCRIPTION",
+      "occurrences": 374,
+      "types": {
+        "M": 148,
+        "F": 216,
+        "A": 4,
+        "D": 5,
+        "P": 1
+      },
+      "recommended_type": "F",
+      "priority": 374
+    },
+    {
+      "rule": "hub_file_reference",
+      "file": 2.0,
+      "label": "PATIENT",
+      "source_files": 314,
+      "priority": 314
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "CODE",
+      "occurrences": 311,
+      "types": {
+        "F": 249,
+        "N": 51,
+        "P": 5,
+        "A": 4,
+        "S": 1,
+        "M": 1
+      },
+      "recommended_type": "F",
+      "priority": 311
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "STATUS",
+      "occurrences": 246,
+      "types": {
+        "S": 180,
+        "F": 17,
+        "D": 3,
+        "P": 40,
+        "C": 4,
+        "N": 2
+      },
+      "recommended_type": "S",
+      "priority": 246
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "NUMBER",
+      "occurrences": 214,
+      "types": {
+        "N": 204,
+        "F": 9,
+        "P": 1
+      },
+      "recommended_type": "N",
+      "priority": 214
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "PATIENT",
+      "occurrences": 214,
+      "types": {
+        "C": 3,
+        "P": 204,
+        "F": 6,
+        "V": 1
+      },
+      "recommended_type": "P",
+      "priority": 214
+    },
+    {
+      "rule": "hub_file_reference",
+      "file": 4.0,
+      "label": "INSTITUTION",
+      "source_files": 209,
+      "priority": 209
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "TYPE",
+      "occurrences": 177,
+      "types": {
+        "S": 131,
+        "P": 19,
+        "F": 25,
+        "A": 2
+      },
+      "recommended_type": "S",
+      "priority": 177
+    },
+    {
+      "rule": "hub_file_reference",
+      "file": 44.0,
+      "label": "HOSPITAL LOCATION",
+      "source_files": 115,
+      "priority": 115
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "ABBREVIATION",
+      "occurrences": 111,
+      "types": {
+        "F": 110,
+        "M": 1
+      },
+      "recommended_type": "F",
+      "priority": 111
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "PLACEHOLDER",
+      "occurrences": 99,
+      "types": {
+        "F": 92,
+        "P": 4,
+        "N": 2,
+        "S": 1
+      },
+      "recommended_type": "F",
+      "priority": 99
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "DIVISION",
+      "occurrences": 90,
+      "types": {
+        "C": 1,
+        "P": 80,
+        "A": 1,
+        "F": 8
+      },
+      "recommended_type": "P",
+      "priority": 90
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "SYNONYM",
+      "occurrences": 90,
+      "types": {
+        "F": 33,
+        "M": 44,
+        "A": 12,
+        "N": 1
+      },
+      "recommended_type": "M",
+      "priority": 90
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "USER",
+      "occurrences": 83,
+      "types": {
+        "P": 80,
+        "F": 3
+      },
+      "recommended_type": "P",
+      "priority": 83
+    },
+    {
+      "rule": "hub_file_reference",
+      "file": 5.0,
+      "label": "STATE",
+      "source_files": 81,
+      "priority": 81
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "COMMENTS",
+      "occurrences": 77,
+      "types": {
+        "M": 41,
+        "F": 33,
+        "D": 2,
+        "A": 1
+      },
+      "recommended_type": "M",
+      "priority": 77
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "DATE",
+      "occurrences": 71,
+      "types": {
+        "D": 69,
+        "C": 1,
+        "F": 1
+      },
+      "recommended_type": "D",
+      "priority": 71
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "STATE",
+      "occurrences": 71,
+      "types": {
+        "P": 51,
+        "C": 4,
+        "F": 16
+      },
+      "recommended_type": "P",
+      "priority": 71
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "INACTIVE",
+      "occurrences": 69,
+      "types": {
+        "S": 64,
+        "D": 4,
+        "C": 1
+      },
+      "recommended_type": "S",
+      "priority": 69
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "PATIENT NAME",
+      "occurrences": 68,
+      "types": {
+        "P": 52,
+        "F": 14,
+        "V": 2
+      },
+      "recommended_type": "P",
+      "priority": 68
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "ACTIVE",
+      "occurrences": 60,
+      "types": {
+        "S": 59,
+        "C": 1
+      },
+      "recommended_type": "S",
+      "priority": 60
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "LOCATION",
+      "occurrences": 57,
+      "types": {
+        "C": 2,
+        "F": 22,
+        "V": 1,
+        "P": 32
+      },
+      "recommended_type": "P",
+      "priority": 57
+    },
+    {
+      "rule": "label_type_conflict",
+      "label": "CITY",
+      "occurrences": 55,
+      "types": {
+        "F": 53,
+        "C": 2
+      },
+      "recommended_type": "F",
+      "priority": 55
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "file_number": 2.0,
+  "file_label": "PATIENT",
+  "total_fields": 594,
+  "fields_with_description": 569,
+  "fields_with_input_transform": 558,
+  "fields_with_set_values": 116,
+  "fields_with_help_prompt": 514,
+  "fields_with_last_edited": 544,
+  "storage_node_count": 122,
+  "largest_storage_node": ".141",
+  "largest_storage_node_size": 22,
+  "cross_ref_count": 111,
+  "fields_preview": [
+    {
+      "field": 0.01,
+      "label": "NAME",
+      "type": "FREE TEXT",
+      "storage": "0;1"
+    },
+    {
+      "field": 0.02,
+      "label": "SEX",
+      "type": "SET OF CODES",
+      "storage": "0;2"
+    },
+    {
+      "field": 0.024,
+      "label": "SELF IDENTIFIED GENDER",
+      "type": "SET OF CODES",
+      "storage": ".24;4"
+    },
+    {
+      "field": 0.025,
+      "label": "SEXUAL ORIENTATION",
+      "type": "POINTER",
+      "storage": ".025;0"
+    },
+    {
+      "field": 0.0251,
+      "label": "SEXUAL ORIENTATION FREE TEXT",
+      "type": "FREE TEXT",
+      "storage": ".241;1"
+    },
+    {
+      "field": 0.03,
+      "label": "DATE OF BIRTH",
+      "type": "DATE/TIME",
+      "storage": "0;3"
+    },
+    {
+      "field": 0.033,
+      "label": "AGE",
+      "type": "COMPUTED",
+      "storage": " ; "
+    },
+    {
+      "field": 0.05,
+      "label": "MARITAL STATUS",
+      "type": "POINTER",
+      "storage": "0;5"
+    },
+    {
+      "field": 0.06,
+      "label": "RACE",
+      "type": "POINTER",
+      "storage": "0;6"
+    },
+    {
+      "field": 0.07,
+      "label": "OCCUPATION",
+      "type": "FREE TEXT",
+      "storage": "0;7"
+    },
+    {
+      "field": 0.08,
+      "label": "RELIGIOUS PREFERENCE",
+      "type": "POINTER",
+      "storage": "0;8"
+    },
+    {
+      "field": 0.081,
+      "label": "DUPLICATE STATUS",
+      "type": "SET OF CODES",
+      "storage": "0;18"
+    },
+    {
+      "field": 0.082,
+      "label": "PATIENT MERGED TO",
+      "type": "POINTER",
+      "storage": "0;19"
+    },
+    {
+      "field": 0.083,
+      "label": "CHECK FOR DUPLICATE",
+      "type": "SET OF CODES",
+      "storage": "0;20"
+    },
+    {
+      "field": 0.09,
+      "label": "SOCIAL SECURITY NUMBER",
+      "type": "FREE TEXT",
+      "storage": "0;9"
+    },
+    {
+      "field": 0.0901,
+      "label": "TERMINAL DIGIT OF SSN",
+      "type": "COMPUTED",
+      "storage": " ; "
+    },
+    {
+      "field": 0.0905,
+      "label": "1U4N",
+      "type": "COMPUTED",
+      "storage": " ; "
+    },
+    {
+      "field": 0.0906,
+      "label": "PSEUDO SSN REASON",
+      "type": "SET OF CODES",
+      "storage": "SSN;1"
+    },
+    {
+      "field": 0.0907,
+      "label": "SSN VERIFICATION STATUS",
+      "type": "SET OF CODES",
+      "storage": "SSN;2"
+    },
+    {
+      "field": 0.091,
+      "label": "REMARKS",
+      "type": "FREE TEXT",
+      "storage": "0;10"
+    }
+  ]
+}

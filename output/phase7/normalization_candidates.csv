@@ -1,0 +1,753 @@
+rule,priority,label,file,file_label,field,field_label,package,occurrences,types,source_files,target_file,recommended_type
+label_type_conflict,1055,NAME,,,,,,1055,F:921|P:93|:20|X:3|C:1|N:7|V:7|S:3,,,F
+hub_file_reference,561,NEW PERSON,200.0,,,,,,,561,,
+label_type_conflict,374,DESCRIPTION,,,,,,374,M:148|F:216|A:4|D:5|P:1,,,F
+hub_file_reference,314,PATIENT,2.0,,,,,,,314,,
+label_type_conflict,311,CODE,,,,,,311,F:249|N:51|P:5|A:4|S:1|M:1,,,F
+label_type_conflict,246,STATUS,,,,,,246,S:180|F:17|D:3|P:40|C:4|N:2,,,S
+label_type_conflict,214,NUMBER,,,,,,214,N:204|F:9|P:1,,,N
+label_type_conflict,214,PATIENT,,,,,,214,C:3|P:204|F:6|V:1,,,P
+hub_file_reference,209,INSTITUTION,4.0,,,,,,,209,,
+label_type_conflict,177,TYPE,,,,,,177,S:131|P:19|F:25|A:2,,,S
+hub_file_reference,115,HOSPITAL LOCATION,44.0,,,,,,,115,,
+label_type_conflict,111,ABBREVIATION,,,,,,111,F:110|M:1,,,F
+label_type_conflict,99,PLACEHOLDER,,,,,,99,F:92|P:4|N:2|S:1,,,F
+label_type_conflict,90,DIVISION,,,,,,90,C:1|P:80|A:1|F:8,,,P
+label_type_conflict,90,SYNONYM,,,,,,90,F:33|M:44|A:12|N:1,,,M
+label_type_conflict,83,USER,,,,,,83,P:80|F:3,,,P
+hub_file_reference,81,STATE,5.0,,,,,,,81,,
+label_type_conflict,77,COMMENTS,,,,,,77,M:41|F:33|D:2|A:1,,,M
+label_type_conflict,71,DATE,,,,,,71,D:69|C:1|F:1,,,D
+label_type_conflict,71,STATE,,,,,,71,P:51|C:4|F:16,,,P
+label_type_conflict,69,INACTIVE,,,,,,69,S:64|D:4|C:1,,,S
+label_type_conflict,68,PATIENT NAME,,,,,,68,P:52|F:14|V:2,,,P
+label_type_conflict,60,ACTIVE,,,,,,60,S:59|C:1,,,S
+label_type_conflict,57,LOCATION,,,,,,57,C:2|F:22|V:1|P:32,,,P
+label_type_conflict,55,CITY,,,,,,55,F:53|C:2,,,F
+hub_file_reference,53,MEDICAL CENTER DIVISION,40.8,,,,,,,53,,
+label_type_conflict,50,PROVIDER,,,,,,50,P:37|F:11|S:1|D:1,,,P
+hub_file_reference,49,DEVICE,3.5,,,,,,,49,,
+label_type_conflict,48,SSN,,,,,,48,C:7|F:40|N:1,,,F
+label_type_conflict,47,SERVICE,,,,,,47,S:7|P:33|C:1|F:6,,,P
+label_type_conflict,47,ENTERED BY,,,,,,47,P:43|S:2|F:2,,,P
+label_type_conflict,47,EFFECTIVE DATE,,,,,,47,D:46|S:1,,,D
+label_type_conflict,46,COMMENT,,,,,,46,M:18|F:27|D:1,,,F
+label_type_conflict,45,ID,,,,,,45,N:8|F:36|P:1,,,F
+label_type_conflict,43,VERSION,,,,,,43,C:3|F:18|9:1|N:9|M:1|P:10|S:1,,,F
+label_type_conflict,43,SEX,,,,,,43,S:35|D:2|C:4|F:1|M:1,,,S
+label_type_conflict,43,ZIP CODE,,,,,,43,F:38|C:2|P:1|N:1|A:1,,,F
+label_type_conflict,43,FACILITY,,,,,,43,P:22|N:1|C:1|F:19,,,P
+hub_file_reference,43,MAIL GROUP,3.8,,,,,,,43,,
+label_type_conflict,42,INSTITUTION,,,,,,42,P:37|F:3|M:1|V:1,,,P
+label_type_conflict,41,DATE/TIME,,,,,,41,D:37|M:3|F:1,,,D
+hub_file_reference,41,VISIT,9000010.0,,,,,,,41,,
+hub_file_reference,40,FILE,1.0,,,,,,,40,,
+label_type_conflict,39,SEQUENCE NUMBER,,,,,,39,N:32|F:6|S:1,,,N
+label_type_conflict,38,TEXT,,,,,,38,M:20|A:3|F:14|S:1,,,M
+hub_file_reference,38,ORDER,100.0,,,,,,,38,,
+hub_file_reference,37,SERVICE/SECTION,49.0,,,,,,,37,,
+label_type_conflict,36,INACTIVE DATE,,,,,,36,D:35|F:1,,,D
+label_type_conflict,36,CLASS,,,,,,36,S:29|P:5|F:2,,,S
+label_type_conflict,35,STATION NUMBER,,,,,,35,F:26|C:1|P:5|N:3,,,F
+hub_file_reference,35,ICD DIAGNOSIS,80.0,,,,,,,35,,
+hub_file_reference,35,CPT,81.0,,,,,,,35,,
+label_type_conflict,34,PRIORITY,,,,,,34,S:17|N:15|F:2,,,S
+label_type_conflict,34,CATEGORY,,,,,,34,S:10|P:13|F:10|N:1,,,P
+label_type_conflict,34,PACKAGE,,,,,,34,P:24|S:3|F:7,,,P
+label_type_conflict,33,DATE OF BIRTH,,,,,,33,D:13|DC:4|F:15|C:1,,,F
+label_type_conflict,33,REMARKS,,,,,,33,F:17|M:14|S:1|A:1,,,F
+hub_file_reference,33,PACKAGE,9.4,,,,,,,33,,
+label_type_conflict,32,MESSAGE,,,,,,32,P:4|A:3|M:8|F:12|D:2|N:2|C:1,,,F
+label_type_conflict,32,STATION,,,,,,32,F:5|P:27,,,P
+label_type_conflict,32,WARD,,,,,,32,P:24|F:5|C:3,,,P
+label_type_conflict,32,SOURCE,,,,,,32,F:15|P:4|S:11|M:1|D:1,,,F
+label_type_conflict,32,CLINIC,,,,,,32,P:29|C:1|S:1|F:1,,,P
+hub_file_reference,32,PATIENT MOVEMENT,405.0,,,,,,,32,,
+label_type_conflict,31,TREATING SPECIALTY,,,,,,31,P:16|F:14|S:1,,,P
+label_type_conflict,31,PROCEDURE,,,,,,31,F:8|P:20|C:1|V:2,,,P
+label_type_conflict,30,SITE,,,,,,30,P:19|N:3|F:6|S:2,,,P
+label_type_conflict,30,VENDOR,,,,,,30,F:6|P:23|V:1,,,P
+hub_file_reference,30,DRUG,50.0,,,,,,,30,,
+label_type_conflict,29,IDENTIFIER,,,,,,29,A:1|F:22|N:2|S:3|6:1,,,F
+label_type_conflict,28,SHORT DESCRIPTION,,,,,,28,F:27|M:1,,,F
+label_type_conflict,28,DATE ENTERED,,,,,,28,N:1|D:27,,,D
+label_type_conflict,28,PRINT NAME,,,,,,28,F:27|X:1,,,F
+label_type_conflict,28,QUANTITY,,,,,,28,N:27|F:1,,,N
+label_type_conflict,27,ROUTINE,,,,,,27,C:1|F:23|M:3,,,F
+label_type_conflict,27,DATE/TIME ENTERED,,,,,,27,D:26|P:1,,,D
+hub_file_reference,27,DOMAIN,4.2,,,,,,,27,,
+label_type_conflict,26,TIMESTAMP,,,,,,26,F:12|D:14,,,D
+label_type_conflict,26,REASON,,,,,,26,F:20|P:1|S:4|M:1,,,F
+label_type_conflict,25,LAST EDITED BY,,,,,,25,P:24|F:1,,,P
+label_type_conflict,25,DIAGNOSIS,,,,,,25,P:11|M:4|D:1|F:6|A:2|V:1,,,P
+label_type_conflict,25,TRANSACTION NUMBER,,,,,,25,N:8|P:2|F:15,,,F
+label_type_conflict,24,ITEM,,,,,,24,M:4|P:14|D:1|A:3|F:2,,,P
+label_type_conflict,24,ACTION,,,,,,24,F:7|S:13|P:3|A:1,,,S
+label_type_conflict,24,DAY,,,,,,24,M:2|F:21|N:1,,,F
+hub_file_reference,24,INSURANCE COMPANY,36.0,,,,,,,24,,
+hub_file_reference,24,WARD LOCATION,42.0,,,,,,,24,,
+label_type_conflict,23,DATE/TIME CREATED,,,,,,23,F:1|M:1|D:21,,,D
+label_type_conflict,23,BRIEF DESCRIPTION,,,,,,23,M:1|F:22,,,F
+label_type_conflict,22,TITLE,,,,,,22,F:20|P:2,,,F
+label_type_conflict,22,ELIGIBILITY,,,,,,22,P:4|S:7|C:1|F:10,,,F
+hub_file_reference,22,?,727.0,,,,,,,22,,
+label_type_conflict,21,FILE,,,,,,21,P:10|N:7|A:1|F:3,,,P
+label_type_conflict,21,COST CENTER,,,,,,21,F:15|N:1|P:3|4:1|C:1,,,F
+label_type_conflict,21,PATIENT NO. - DFN,,,,,,21,P:20|N:1,,,P
+label_type_conflict,20,SCREEN,,,,,,20,K:10|S:3|F:4|P:3,,,K
+label_type_conflict,20,IMAGE,,,,,,20,P:19|M:1,,,P
+label_type_conflict,20,CODING SYSTEM,,,,,,20,M:10|P:4|S:1|A:2|F:3,,,M
+label_type_conflict,20,OBSERVATION PATIENT INDICATOR,,,,,,20,S:16|F:4,,,S
+hub_file_reference,20,MESSAGE,3.9,,,,,,,20,,
+hub_file_reference,20,FACILITY TREATING SPECIALTY,45.7,,,,,,,20,,
+hub_file_reference,20,CLINIC STOP,40.7,,,,,,,20,,
+hub_file_reference,20,OUTPATIENT SITE,59.0,,,,,,,20,,
+hub_file_reference,20,VENDOR,440.0,,,,,,,20,,
+hub_file_reference,20,REQUEST/CONSULTATION,123.0,,,,,,,20,,
+label_type_conflict,19,COUNTY,,,,,,19,N:2|5:1|P:3|F:10|C:3,,,F
+label_type_conflict,19,APPLICATION,,,,,,19,P:14|5:1|F:3|S:1,,,P
+label_type_conflict,19,DRUG,,,,,,19,P:17|C:2,,,P
+label_type_conflict,19,SEQUENCE,,,,,,19,N:16|M:1|F:1|8:1,,,N
+label_type_conflict,19,COST,,,,,,19,A:1|N:16|C:2,,,N
+label_type_conflict,19,INSTRUMENT,,,,,,19,F:5|P:12|C:1|A:1,,,P
+label_type_conflict,19,TRANSACTION DATE,,,,,,19,D:13|F:6,,,D
+label_type_conflict,18,PERIOD OF SERVICE,,,,,,18,P:3|F:13|C:1|S:1,,,F
+label_type_conflict,18,SHORT NAME,,,,,,18,F:16|C:2,,,F
+label_type_conflict,18,START DATE,,,,,,18,D:17|F:1,,,D
+label_type_conflict,18,BATCH NUMBER,,,,,,18,N:3|P:5|M:1|F:9,,,F
+label_type_conflict,18,VETERAN,,,,,,18,P:8|S:10,,,S
+label_type_conflict,18,PATIENT TYPE,,,,,,18,S:14|F:3|C:1,,,S
+label_type_conflict,18,IN OUT PATIENT INDICATOR,,,,,,18,S:13|F:4|P:1,,,S
+label_type_conflict,18,"DOM,PRRTP AND SAARTP INDICATOR",,,,,,18,F:5|S:13,,,S
+hub_file_reference,18,TIU DOCUMENT,8925.0,,,,,,,18,,
+hub_file_reference,18,PRESCRIPTION,52.0,,,,,,,18,,
+label_type_conflict,17,ENTRY NUMBER,,,,,,17,N:11|A:1|F:5,,,N
+label_type_conflict,17,ADMISSION DATE,,,,,,17,D:5|DC:1|F:11,,,F
+label_type_conflict,17,MANUFACTURER,,,,,,17,P:8|F:7|M:2,,,P
+label_type_conflict,17,TRANSACTION TYPE,,,,,,17,S:12|P:3|F:2,,,S
+hub_file_reference,17,GENERIC INVENTORY,445.0,,,,,,,17,,
+hub_file_reference,17,BILL/CLAIMS,399.0,,,,,,,17,,
+hub_file_reference,17,PATIENT/IHS,9000001.0,,,,,,,17,,
+label_type_conflict,16,FILE NUMBER,,,,,,16,F:4|N:11|S:1,,,N
+label_type_conflict,16,ENROLLMENT PRIORITY,,,,,,16,S:3|F:13,,,F
+label_type_conflict,16,CPT CODE,,,,,,16,P:11|F:5,,,P
+label_type_conflict,16,TRANSMISSION STATUS,,,,,,16,S:14|P:2,,,S
+label_type_conflict,16,DISPLAY TEXT,,,,,,16,F:15|M:1,,,F
+label_type_conflict,16,ORDERING PROVIDER,,,,,,16,F:5|P:11,,,P
+label_type_conflict,16,SUMMARY,,,,,,16,S:15|M:1,,,S
+hub_file_reference,16,PRCD SD STATUS,420.1999,,,,,,,16,,
+hub_file_reference,16,MEDICAL PATIENT,690.0,,,,,,,16,,
+label_type_conflict,15,ATTENDING PHYSICIAN,,,,,,15,P:11|F:4,,,P
+label_type_conflict,15,SITE NAME,,,,,,15,F:9|P:6,,,F
+label_type_conflict,15,DISCHARGE DATE,,,,,,15,D:11|F:4,,,D
+label_type_conflict,15,BLOCK,,,,,,15,F:1|A:2|P:12,,,P
+label_type_conflict,15,ORDER,,,,,,15,P:9|N:5|7:1,,,P
+label_type_conflict,15,TIME,,,,,,15,F:12|D:2|9:1,,,F
+label_type_conflict,15,DEFINITION,,,,,,15,F:10|M:5,,,F
+label_type_conflict,15,DATA SOURCE,,,,,,15,M:1|P:14,,,P
+label_type_conflict,15,SPONSOR,,,,,,15,V:1|P:14,,,P
+label_type_conflict,15,TRANSACTION CODE,,,,,,15,F:13|P:1|C:1,,,F
+hub_file_reference,15,TERM,704.101,,,,,,,15,,
+label_type_conflict,14,PARAMETER,,,,,,14,A:1|4:1|P:10|M:1|F:1,,,P
+label_type_conflict,14,MESSAGE TYPE,,,,,,14,F:6|S:4|P:4,,,F
+label_type_conflict,14,DATE LAST UPDATED,,,,,,14,C:1|D:13,,,D
+label_type_conflict,14,ENROLLMENT STATUS,,,,,,14,P:7|F:7,,,P
+label_type_conflict,14,ENROLLMENT CATEGORY,,,,,,14,S:3|F:11,,,F
+label_type_conflict,14,NDC,,,,,,14,F:12|P:2,,,F
+label_type_conflict,14,FACILITY NAME,,,,,,14,F:11|P:3,,,F
+label_type_conflict,14,DISPOSITION,,,,,,14,S:5|F:2|P:6|M:1,,,P
+label_type_conflict,14,STATUS DATE,,,,,,14,D:11|C:3,,,D
+label_type_conflict,14,VALUE,,,,,,14,S:2|N:5|F:6|M:1,,,F
+label_type_conflict,14,BILL NUMBER,,,,,,14,P:10|F:4,,,P
+label_type_conflict,14,ERI,,,,,,14,F:12|S:2,,,F
+hub_file_reference,14,OPTION,19.0,,,,,,,14,,
+hub_file_reference,14,PROCUREMENT & ACCOUNTING TRANSACTIONS,442.0,,,,,,,14,,
+hub_file_reference,14,PCE DATA SOURCE,839.7,,,,,,,14,,
+label_type_conflict,13,ERROR CODE,,,,,,13,N:2|F:8|A:1|P:2,,,F
+label_type_conflict,13,SOCIAL SECURITY NUMBER,,,,,,13,F:9|C:2|N:2,,,F
+label_type_conflict,13,RESERVED,,,,,,13,F:9|S:4,,,F
+label_type_conflict,13,REGION,,,,,,13,N:9|P:2|F:2,,,N
+label_type_conflict,13,PHONE,,,,,,13,F:12|C:1,,,F
+label_type_conflict,13,TAG,,,,,,13,M:1|N:1|F:9|A:2,,,F
+label_type_conflict,13,ERROR MESSAGE,,,,,,13,F:10|M:2|P:1,,,F
+label_type_conflict,13,LONG DESCRIPTION,,,,,,13,M:8|F:5,,,M
+label_type_conflict,13,MESSAGE ID,,,,,,13,F:12|N:1,,,F
+label_type_conflict,13,FACILITY NUMBER,,,,,,13,F:12|P:1,,,F
+label_type_conflict,13,FISCAL YEAR,,,,,,13,D:2|N:2|M:1|F:6|A:1|4:1,,,F
+label_type_conflict,13,HOSPITAL LOCATION,,,,,,13,P:11|F:1|C:1,,,P
+label_type_conflict,13,COUNTRY CODE,,,,,,13,F:12|P:1,,,F
+label_type_conflict,13,PATIENT ID,,,,,,13,P:3|F:9|C:1,,,F
+label_type_conflict,13,CASE NUMBER,,,,,,13,N:5|F:8,,,F
+label_type_conflict,13,MODALITY,,,,,,13,P:3|S:1|F:8|A:1,,,F
+label_type_conflict,13,AGENT ORANGE LOCATION,,,,,,13,F:9|S:4,,,F
+label_type_conflict,13,AUDIT TRAIL,,,,,,13,D:1|F:12,,,F
+hub_file_reference,13,TIU DOCUMENT DEFINITION,8925.1,,,,,,,13,,
+label_type_conflict,12,AGE,,,,,,12,C:8|N:4,,,C
+label_type_conflict,12,DEVICE,,,,,,12,P:10|F:2,,,P
+label_type_conflict,12,FIELD,,,,,,12,N:4|F:4|1:2|6:1|A:1,,,N
+label_type_conflict,12,SPECIALTY,,,,,,12,P:8|F:4,,,P
+label_type_conflict,12,ORDER NUMBER,,,,,,12,N:2|A:1|F:4|P:5,,,P
+label_type_conflict,12,START TIME,,,,,,12,N:1|F:3|D:8,,,D
+label_type_conflict,12,PATIENT DIVISION,,,,,,12,P:1|F:11,,,F
+label_type_conflict,12,PROTOCOL,,,,,,12,P:5|S:2|F:5,,,P
+label_type_conflict,12,ACCESSION NUMBER,,,,,,12,F:11|A:1,,,F
+label_type_conflict,12,GROUP,,,,,,12,S:2|N:1|P:6|F:3,,,P
+label_type_conflict,12,PLACEHOLD PRIMARY CARE TEAM,,,,,,12,F:9|P:3,,,F
+label_type_conflict,12,USER ENROLLEE,,,,,,12,S:10|F:2,,,S
+label_type_conflict,12,CV STATUS ELIGIBILITY,,,,,,12,S:11|F:1,,,S
+hub_file_reference,12,LAB DATA,63.0,,,,,,,12,,
+hub_file_reference,12,SPECIALTY,42.4,,,,,,,12,,
+hub_file_reference,12,PROTOCOL,101.0,,,,,,,12,,
+hub_file_reference,12,CONTROL POINT ACTIVITY,410.0,,,,,,,12,,
+hub_file_reference,12,IMAGING TYPE,79.2,,,,,,,12,,
+hub_file_reference,12,EXPRESSIONS,757.01,,,,,,,12,,
+hub_file_reference,12,REMINDER SPONSOR,811.6,,,,,,,12,,
+label_type_conflict,11,ERROR,,,,,,11,P:3|F:6|N:2,,,F
+label_type_conflict,11,RESULT,,,,,,11,S:6|V:1|F:1|N:1|C:2,,,S
+label_type_conflict,11,MNEMONIC,,,,,,11,M:1|F:10,,,F
+label_type_conflict,11,DOMAIN,,,,,,11,P:7|F:4,,,P
+label_type_conflict,11,SENDER,,,,,,11,F:4|P:7,,,P
+label_type_conflict,11,ZIP,,,,,,11,F:10|C:1,,,F
+label_type_conflict,11,NOTES,,,,,,11,M:7|F:3|D:1,,,M
+label_type_conflict,11,TASK NUMBER,,,,,,11,F:1|N:10,,,N
+label_type_conflict,11,PORT,,,,,,11,N:10|M:1,,,N
+label_type_conflict,11,SERVICE CONNECTED,,,,,,11,S:10|F:1,,,S
+label_type_conflict,11,UNITS,,,,,,11,P:5|S:1|N:2|F:3,,,P
+label_type_conflict,11,VOLUME,,,,,,11,F:1|N:10,,,N
+label_type_conflict,11,REQUESTOR,,,,,,11,P:9|F:1|C:1,,,P
+label_type_conflict,11,AMOUNT,,,,,,11,N:8|F:1|A:2,,,N
+label_type_conflict,11,FUND,,,,,,11,F:8|P:3,,,F
+label_type_conflict,11,INSURANCE COMPANY,,,,,,11,P:10|F:1,,,P
+label_type_conflict,11,EMPLOYEE,,,,,,11,P:10|F:1,,,P
+label_type_conflict,11,HCPCS,,,,,,11,P:3|F:8,,,F
+hub_file_reference,11,TEAM,404.51,,,,,,,11,,
+hub_file_reference,11,IMAGE,2005.0,,,,,,,11,,
+hub_file_reference,11,TOPOGRAPHY FIELD,61.0,,,,,,,11,,
+hub_file_reference,11,MH TESTS AND SURVEYS,601.71,,,,,,,11,,
+label_type_conflict,10,FIELD NUMBER,,,,,,10,F:4|N:6,,,N
+label_type_conflict,10,RACE,,,,,,10,P:3|F:3|S:2|C:2,,,P
+label_type_conflict,10,ZIP+4,,,,,,10,F:9|C:1,,,F
+label_type_conflict,10,DOMAIN NAME,,,,,,10,P:5|F:5,,,P
+label_type_conflict,10,ONE,,,,,,10,N:8|F:2,,,N
+label_type_conflict,10,EVENT,,,,,,10,P:3|S:2|D:2|F:3,,,P
+label_type_conflict,10,SEGMENT,,,,,,10,S:2|F:3|P:2|N:3,,,F
+label_type_conflict,10,RECORD STATUS,,,,,,10,S:9|F:1,,,S
+label_type_conflict,10,RX #,,,,,,10,P:5|F:5,,,P
+label_type_conflict,10,SECTION,,,,,,10,P:4|F:5|S:1,,,F
+label_type_conflict,10,EVENT TYPE,,,,,,10,F:2|S:4|P:4,,,S
+label_type_conflict,10,SNOMED CODE,,,,,,10,F:9|M:1,,,F
+label_type_conflict,10,SYNONYMS,,,,,,10,A:9|M:1,,,A
+label_type_conflict,10,COMPONENT,,,,,,10,P:4|F:4|S:1|A:1,,,P
+label_type_conflict,10,STREET ADDRESS,,,,,,10,F:9|C:1,,,F
+label_type_conflict,10,PROBLEM,,,,,,10,P:6|F:3|M:1,,,P
+label_type_conflict,10,ID NUMBER,,,,,,10,F:3|N:7,,,N
+label_type_conflict,10,DOCUMENT TYPE,,,,,,10,S:3|P:4|F:3,,,P
+label_type_conflict,10,SUPERSEDED DATE,,,,,,10,D:2|F:8,,,F
+label_type_conflict,10,PLACEHOLD DSS IP #,,,,,,10,N:9|F:1,,,N
+label_type_conflict,10,NATIONAL PATIENT RECORD FLAG,,,,,,10,S:9|F:1,,,S
+hub_file_reference,10,PHARMACY ORDERABLE ITEM,50.7,,,,,,,10,,
+hub_file_reference,10,LABORATORY TEST,60.0,,,,,,,10,,
+hub_file_reference,10,LAB ELECTRONIC CODES,64.061,,,,,,,10,,
+hub_file_reference,10,PAID EMPLOYEE,450.0,,,,,,,10,,
+hub_file_reference,10,OUTPATIENT ENCOUNTER,409.68,,,,,,,10,,
+hub_file_reference,10,ADMIN. ACTIVITY SITE PARAMETER,411.0,,,,,,,10,,
+hub_file_reference,10,UCUM CODES,757.5,,,,,,,10,,
+hub_file_reference,10,IMAGING SITE PARAMETERS,2006.1,,,,,,,10,,
+label_type_conflict,9,DATA,,,,,,9,M:7|N:1|P:1,,,M
+label_type_conflict,9,DISABLE,,,,,,9,S:6|F:3,,,S
+label_type_conflict,9,OCCUPATION,,,,,,9,F:7|A:1|S:1,,,F
+label_type_conflict,9,CONDITION,,,,,,9,S:5|P:2|F:1|A:1,,,S
+label_type_conflict,9,ERROR TEXT,,,,,,9,F:8|M:1,,,F
+label_type_conflict,9,OWNER,,,,,,9,P:7|F:2,,,P
+label_type_conflict,9,RECIPIENT,,,,,,9,A:1|M:1|P:4|F:2|D:1,,,P
+label_type_conflict,9,MESSAGE NUMBER,,,,,,9,N:5|P:2|M:1|F:1,,,N
+label_type_conflict,9,CURRENT STATUS,,,,,,9,S:4|P:3|C:2,,,S
+label_type_conflict,9,TRANSMISSION DATE,,,,,,9,DC:1|D:8,,,D
+label_type_conflict,9,PATIENT STATUS,,,,,,9,P:4|S:4|C:1,,,P
+label_type_conflict,9,TEAM,,,,,,9,F:3|M:1|P:5,,,P
+label_type_conflict,9,RECORD NUMBER,,,,,,9,N:7|M:1|F:1,,,N
+label_type_conflict,9,INSTRUMENT NAME,,,,,,9,F:7|P:2,,,F
+label_type_conflict,9,MESSAGE TEXT,,,,,,9,P:1|F:3|M:5,,,M
+label_type_conflict,9,SPECIMEN,,,,,,9,P:7|F:2,,,P
+label_type_conflict,9,DOB,,,,,,9,D:6|C:1|DC:1|F:1,,,D
+label_type_conflict,9,TYPE OF IMAGING,,,,,,9,P:8|F:1,,,P
+label_type_conflict,9,WEIGHT,,,,,,9,N:6|F:2|C:1,,,N
+label_type_conflict,9,SYSTEM,,,,,,9,P:5|F:3|S:1,,,P
+label_type_conflict,9,COMPLETED BY,,,,,,9,P:8|F:1,,,P
+label_type_conflict,9,LAST UPDATE,,,,,,9,F:2|D:7,,,D
+label_type_conflict,9,TRANSACTION ID,,,,,,9,N:2|F:7,,,F
+label_type_conflict,9,LAST MESSAGE NUMBER,,,,,,9,N:1|P:8,,,P
+label_type_conflict,9,DELETED BY,,,,,,9,P:8|F:1,,,P
+label_type_conflict,9,VALIDATION CODE,,,,,,9,F:7|N:2,,,F
+label_type_conflict,9,JOB NUMBER,,,,,,9,F:5|N:4,,,F
+label_type_conflict,9,UNIT OF ISSUE,,,,,,9,P:6|F:2|N:1,,,P
+label_type_conflict,9,POW LOCATION,,,,,,9,P:7|F:2,,,P
+label_type_conflict,9,ENCOUNTER CV,,,,,,9,S:8|F:1,,,S
+label_type_conflict,9,UCUM CODE,,,,,,9,F:1|P:8,,,P
+label_type_conflict,8,MARITAL STATUS,,,,,,8,P:5|C:1|F:1|S:1,,,P
+label_type_conflict,8,DATE OF DEATH,,,,,,8,D:6|F:2,,,D
+label_type_conflict,8,HEADER,,,,,,8,F:5|K:2|M:1,,,F
+label_type_conflict,8,CLASSIFICATION,,,,,,8,S:3|F:3|P:2,,,S
+label_type_conflict,8,START DATE/TIME,,,,,,8,D:7|M:1,,,D
+label_type_conflict,8,REVIEWED BY,,,,,,8,F:1|P:7,,,P
+label_type_conflict,8,AVAILABILITY,,,,,,8,D:1|S:7,,,S
+label_type_conflict,8,DATA TYPE,,,,,,8,S:4|C:1|F:2|P:1,,,S
+label_type_conflict,8,ENTRY DATE/TIME,,,,,,8,D:7|F:1,,,D
+label_type_conflict,8,DAYS SUPPLY,,,,,,8,N:7|C:1,,,N
+label_type_conflict,8,SORT ORDER,,,,,,8,S:3|F:1|N:4,,,N
+label_type_conflict,8,DATE OF SERVICE,,,,,,8,D:5|F:3,,,D
+label_type_conflict,8,JUSTIFICATION,,,,,,8,F:4|M:4,,,F
+label_type_conflict,8,PARENT FILE,,,,,,8,P:6|C:1|N:1,,,P
+label_type_conflict,8,REPORT,,,,,,8,P:7|A:1,,,P
+label_type_conflict,8,REQUEST STATUS,,,,,,8,S:4|P:4,,,S
+label_type_conflict,8,COLUMNS,,,,,,8,N:3|S:1|M:2|F:1|P:1,,,N
+label_type_conflict,8,PATIENT CATEGORY,,,,,,8,S:5|P:3,,,S
+label_type_conflict,8,SOURCE CODE,,,,,,8,F:2|S:1|P:5,,,P
+label_type_conflict,8,GROUP NUMBER,,,,,,8,F:6|N:1|C:1,,,F
+label_type_conflict,8,CPT MODIFIER,,,,,,8,M:2|P:3|F:2|S:1,,,P
+label_type_conflict,8,STATION NAME,,,,,,8,F:3|P:5,,,P
+label_type_conflict,8,ADDRESS,,,,,,8,F:7|P:1,,,F
+label_type_conflict,8,PAY PLAN,,,,,,8,F:7|4:1,,,F
+label_type_conflict,8,HCPCS ITEM,,,,,,8,N:7|F:1,,,N
+label_type_conflict,7,OLD VALUE,,,,,,7,C:1|F:6,,,F
+label_type_conflict,7,NEW VALUE,,,,,,7,C:1|F:6,,,F
+label_type_conflict,7,YEAR,,,,,,7,M:1|N:3|D:2|F:1,,,N
+label_type_conflict,7,WARD LOCATION,,,,,,7,F:1|P:6,,,P
+label_type_conflict,7,ERROR TYPE,,,,,,7,S:3|F:1|P:3,,,S
+label_type_conflict,7,FREQUENCY,,,,,,7,N:3|F:2|P:1|S:1,,,N
+label_type_conflict,7,SUBTYPE,,,,,,7,P:4|F:3,,,P
+label_type_conflict,7,ENTRY,,,,,,7,P:1|N:2|C:1|F:1|V:2,,,N
+label_type_conflict,7,FROM,,,,,,7,F:4|P:2|D:1,,,F
+label_type_conflict,7,PREFIX,,,,,,7,F:6|S:1,,,F
+label_type_conflict,7,LOCK,,,,,,7,F:4|S:3,,,F
+label_type_conflict,7,APPROVED BY,,,,,,7,P:5|F:2,,,P
+label_type_conflict,7,REQUEST DATE/TIME,,,,,,7,D:6|F:1,,,D
+label_type_conflict,7,REQUESTED BY,,,,,,7,F:2|P:4|S:1,,,P
+label_type_conflict,7,HL7 MESSAGE ID,,,,,,7,F:5|N:1|M:1,,,F
+label_type_conflict,7,TYPE OF CARE,,,,,,7,S:6|P:1,,,S
+label_type_conflict,7,TELEPHONE,,,,,,7,F:6|C:1,,,F
+label_type_conflict,7,RELEASE DATE,,,,,,7,DC:1|D:6,,,D
+label_type_conflict,7,INTERPRETATION,,,,,,7,F:3|P:1|M:2|S:1,,,F
+label_type_conflict,7,REQUEST TYPE,,,,,,7,S:6|F:1,,,S
+label_type_conflict,7,TYPE CODE,,,,,,7,F:3|S:2|P:2,,,F
+label_type_conflict,7,SCHEDULE,,,,,,7,F:5|D:1|N:1,,,F
+label_type_conflict,7,SEVERITY,,,,,,7,F:3|S:4,,,S
+label_type_conflict,7,PHYSICIAN,,,,,,7,P:5|F:2,,,P
+label_type_conflict,7,STOP DATE,,,,,,7,D:6|F:1,,,D
+label_type_conflict,7,METHOD,,,,,,7,F:5|1:1|S:1,,,F
+label_type_conflict,7,STREET ADDRESS 2,,,,,,7,F:5|C:2,,,F
+label_type_conflict,7,REFERENCE NUMBER,,,,,,7,N:4|F:3,,,N
+label_type_conflict,7,CLINIC STOP CODE,,,,,,7,P:4|F:2|S:1,,,P
+label_type_conflict,7,TYPE OF DATA,,,,,,7,S:1|P:6,,,P
+label_type_conflict,7,PROCEDURE TYPE,,,,,,7,S:5|P:1|F:1,,,S
+label_type_conflict,7,COUNT,,,,,,7,N:4|S:1|C:1|F:1,,,N
+label_type_conflict,7,GRADE,,,,,,7,M:1|F:6,,,F
+label_type_conflict,7,EXPLANATION,,,,,,7,F:6|D:1,,,F
+label_type_conflict,7,FORM TYPE,,,,,,7,S:3|P:3|F:1,,,S
+label_type_conflict,7,ROLE,,,,,,7,S:1|F:3|P:3,,,F
+label_type_conflict,7,RECEIPT #,,,,,,7,F:2|P:5,,,P
+label_type_conflict,7,CORRECTIVE ACTION,,,,,,7,M:2|P:2|F:1|S:2,,,M
+label_type_conflict,7,INVENTORY POINT,,,,,,7,F:1|P:6,,,P
+label_type_conflict,7,SUPERVISOR,,,,,,7,P:6|S:1,,,P
+label_type_conflict,7,RISK FACTOR,,,,,,7,P:6|F:1,,,P
+label_type_conflict,6,SORT BY,,,,,,6,F:3|S:3,,,F
+label_type_conflict,6,CPU,,,,,,6,F:5|M:1,,,F
+label_type_conflict,6,USER NAME,,,,,,6,C:1|P:4|F:1,,,P
+label_type_conflict,6,LAST NAME,,,,,,6,F:5|C:1,,,F
+label_type_conflict,6,SENDING APPLICATION,,,,,,6,P:4|F:2,,,P
+label_type_conflict,6,PRIMARY DIAGNOSIS,,,,,,6,P:5|F:1,,,P
+label_type_conflict,6,"DEA, SPECIAL HDLG",,,,,,6,F:2|S:4,,,S
+label_type_conflict,6,PRICE PER DISPENSE UNIT,,,,,,6,N:5|P:1,,,N
+label_type_conflict,6,QUESTION,,,,,,6,A:2|P:2|F:1|7:1,,,A
+label_type_conflict,6,PATIENT LOCATION,,,,,,6,P:4|F:1|V:1,,,P
+label_type_conflict,6,PATIENT SSN,,,,,,6,F:4|C:2,,,F
+label_type_conflict,6,PRESCRIPTION NUMBER,,,,,,6,P:5|M:1,,,P
+label_type_conflict,6,PERSON,,,,,,6,P:5|V:1,,,P
+label_type_conflict,6,INTERVENTION,,,,,,6,P:5|S:1,,,P
+label_type_conflict,6,PURCHASE ORDER NUMBER,,,,,,6,P:2|F:4,,,F
+label_type_conflict,6,ACTIVITY,,,,,,6,D:3|S:1|F:1|N:1,,,D
+label_type_conflict,6,HL7 CODE,,,,,,6,F:5|S:1,,,F
+label_type_conflict,6,PROGRAM,,,,,,6,F:3|S:2|P:1,,,F
+label_type_conflict,6,LRDFN,,,,,,6,F:1|N:4|P:1,,,N
+label_type_conflict,6,LAB TEST,,,,,,6,P:5|M:1,,,P
+label_type_conflict,6,DATE ORDERED,,,,,,6,D:5|F:1,,,D
+label_type_conflict,6,RESULTS,,,,,,6,M:1|6:1|P:1|S:3,,,S
+label_type_conflict,6,AREA,,,,,,6,F:1|P:5,,,P
+label_type_conflict,6,IMAGING LOCATION,,,,,,6,P:4|C:1|F:1,,,P
+label_type_conflict,6,MODIFIER,,,,,,6,F:2|A:1|S:2|P:1,,,F
+label_type_conflict,6,ADMISSION,,,,,,6,P:5|D:1,,,P
+label_type_conflict,6,TYPE OF EVENT,,,,,,6,S:5|P:1,,,S
+label_type_conflict,6,ITEMS,,,,,,6,A:2|P:2|V:1|M:1,,,A
+label_type_conflict,6,PARAMETERS,,,,,,6,M:4|F:1|A:1,,,M
+label_type_conflict,6,ORIENTATION,,,,,,6,F:1|S:5,,,S
+label_type_conflict,6,SIZE,,,,,,6,F:4|S:1|P:1,,,F
+label_type_conflict,6,SURGICAL SPECIALTY,,,,,,6,P:5|F:1,,,P
+label_type_conflict,6,REASON CODE,,,,,,6,P:1|F:2|N:1|S:2,,,F
+label_type_conflict,6,CANCELLATION REASON,,,,,,6,F:1|P:4|S:1,,,P
+label_type_conflict,6,NOTE,,,,,,6,M:4|P:1|F:1,,,M
+label_type_conflict,6,DEBTOR,,,,,,6,V:1|P:4|F:1,,,P
+label_type_conflict,6,AUDIT,,,,,,6,D:4|P:2,,,D
+label_type_conflict,6,TRANSACTION,,,,,,6,A:2|D:1|P:2|F:1,,,A
+label_type_conflict,6,CHECKSUM,,,,,,6,N:4|F:2,,,N
+label_type_conflict,6,BATCH TYPE,,,,,,6,S:2|P:4,,,P
+label_type_conflict,6,EVENT DATE,,,,,,6,D:5|F:1,,,D
+label_type_conflict,6,KEY,,,,,,6,F:3|P:2|M:1,,,F
+label_type_conflict,6,CLAIM,,,,,,6,P:5|D:1,,,P
+label_type_conflict,6,PLAN,,,,,,6,P:2|M:4,,,M
+label_type_conflict,6,TRACKING ID,,,,,,6,P:2|F:4,,,F
+label_type_conflict,6,FORM,,,,,,6,P:5|F:1,,,P
+label_type_conflict,6,DATA ELEMENT,,,,,,6,P:4|M:1|7:1,,,P
+label_type_conflict,6,COUNTY CODE,,,,,,6,F:4|N:2,,,F
+label_type_conflict,6,REQUEST DATE,,,,,,6,M:1|D:5,,,D
+label_type_conflict,6,SYSTEM IDENTIFIER,,,,,,6,S:3|F:3,,,S
+label_type_conflict,6,PAY PERIOD,,,,,,6,F:4|P:1|M:1,,,F
+label_type_conflict,6,CPT,,,,,,6,P:5|A:1,,,P
+label_type_conflict,6,PLACEHOLD MEANS TEST,,,,,,6,S:4|F:2,,,S
+label_type_conflict,6,EXPRESSION,,,,,,6,P:4|N:1|F:1,,,P
+label_type_conflict,6,STUDY UID,,,,,,6,F:5|M:1,,,F
+label_type_conflict,6,MACHINE ID,,,,,,6,F:5|N:1,,,F
+label_type_conflict,5,FIELD NAME,,,,,,5,C:1|A:1|F:3,,,F
+label_type_conflict,5,COUNTRY,,,,,,5,P:4|M:1,,,P
+label_type_conflict,5,ROOM-BED,,,,,,5,F:3|P:2,,,F
+label_type_conflict,5,EMPLOYMENT STATUS,,,,,,5,S:4|C:1,,,S
+label_type_conflict,5,ALIAS,,,,,,5,M:2|C:1|F:2,,,M
+label_type_conflict,5,FACILITY TYPE,,,,,,5,P:3|S:1|F:1,,,P
+label_type_conflict,5,AGENCY CODE,,,,,,5,S:3|F:2,,,S
+label_type_conflict,5,ASSIGNING AUTHORITY,,,,,,5,F:3|S:2,,,F
+label_type_conflict,5,MESSAGES,,,,,,5,N:1|M:1|D:1|P:2,,,P
+label_type_conflict,5,DIRECTION,,,,,,5,S:4|F:1,,,S
+label_type_conflict,5,STATUS CODE,,,,,,5,F:4|S:1,,,F
+label_type_conflict,5,BOX-VOLUME PAIR,,,,,,5,F:2|P:3,,,P
+label_type_conflict,5,TO,,,,,,5,F:4|P:1,,,F
+label_type_conflict,5,OPTION,,,,,,5,P:1|F:4,,,F
+label_type_conflict,5,HELP TEXT,,,,,,5,M:3|F:2,,,M
+label_type_conflict,5,LINE NUMBER,,,,,,5,M:1|N:2|F:2,,,N
+label_type_conflict,5,CENSUS DATE,,,,,,5,D:3|P:2,,,D
+label_type_conflict,5,ADMITTING DIAGNOSIS,,,,,,5,F:3|P:2,,,F
+label_type_conflict,5,SURGERY,,,,,,5,S:3|P:1|M:1,,,S
+label_type_conflict,5,SPECIAL INSTRUCTIONS,,,,,,5,A:1|F:1|M:3,,,M
+label_type_conflict,5,DRG,,,,,,5,C:1|P:4,,,P
+label_type_conflict,5,DISCHARGE STATUS,,,,,,5,S:4|P:1,,,S
+label_type_conflict,5,UNIT,,,,,,5,P:1|F:3|N:1,,,F
+label_type_conflict,5,NARRATIVE,,,,,,5,M:1|F:4,,,F
+label_type_conflict,5,TYPE OF REQUEST,,,,,,5,F:2|S:2|P:1,,,F
+label_type_conflict,5,COMPLETION STATUS,,,,,,5,P:1|F:2|S:2,,,F
+label_type_conflict,5,ACCESSION AREA,,,,,,5,P:4|F:1,,,P
+label_type_conflict,5,TIME ASPECT,,,,,,5,P:4|F:1,,,P
+label_type_conflict,5,WKLD CODE,,,,,,5,P:3|F:2,,,P
+label_type_conflict,5,EVENT CODE,,,,,,5,P:2|F:2|S:1,,,P
+label_type_conflict,5,DFN,,,,,,5,N:2|P:3,,,P
+label_type_conflict,5,ATTRIBUTE,,,,,,5,F:1|A:2|P:2,,,A
+label_type_conflict,5,STREET ADDRESS 3,,,,,,5,F:3|C:2,,,F
+label_type_conflict,5,REPORT STATUS,,,,,,5,S:4|F:1,,,S
+label_type_conflict,5,REQUESTING PHYSICIAN,,,,,,5,C:1|P:2|F:2,,,P
+label_type_conflict,5,FINDINGS,,,,,,5,F:2|P:1|V:2,,,F
+label_type_conflict,5,INDICATION,,,,,,5,F:2|P:2|M:1,,,F
+label_type_conflict,5,STOP CODE,,,,,,5,P:2|N:1|F:2,,,P
+label_type_conflict,5,ACTION TYPE,,,,,,5,F:1|P:2|S:2,,,P
+label_type_conflict,5,TERM,,,,,,5,F:3|P:1|S:1,,,F
+label_type_conflict,5,LOT NUMBER,,,,,,5,F:3|P:2,,,F
+label_type_conflict,5,PROVIDER TYPE,,,,,,5,S:3|F:2,,,S
+label_type_conflict,5,TOTAL AMOUNT PAID,,,,,,5,N:4|C:1,,,N
+label_type_conflict,5,PROMPT PAY TYPE,,,,,,5,S:4|F:1,,,S
+label_type_conflict,5,INVOICE NUMBER,,,,,,5,F:3|N:1|P:1,,,F
+label_type_conflict,5,OTHER,,,,,,5,M:1|F:3|S:1,,,F
+label_type_conflict,5,DELETE REASON,,,,,,5,F:3|P:1|S:1,,,F
+label_type_conflict,5,PAYER NAME,,,,,,5,F:4|P:1,,,F
+label_type_conflict,5,SEQUENCE #,,,,,,5,A:1|N:4,,,N
+label_type_conflict,5,REMOTE DOMAIN,,,,,,5,P:3|F:2,,,P
+label_type_conflict,5,TRANSACTION STATUS,,,,,,5,S:4|F:1,,,S
+label_type_conflict,5,APPOINTMENT TYPE,,,,,,5,P:4|S:1,,,P
+label_type_conflict,5,PLAN ID,,,,,,5,P:2|F:2|C:1,,,P
+label_type_conflict,5,REVENUE CODE,,,,,,5,P:4|F:1,,,P
+label_type_conflict,5,POLICY NUMBER,,,,,,5,F:1|N:4,,,N
+label_type_conflict,5,TEAM POSITION,,,,,,5,P:4|F:1,,,P
+label_type_conflict,5,BUDGET OBJECT CODE,,,,,,5,F:3|N:1|P:1,,,F
+label_type_conflict,5,FCP,,,,,,5,F:4|A:1,,,F
+label_type_conflict,5,STATE CODE,,,,,,5,P:2|F:3,,,F
+label_type_conflict,5,WORK ORDER NUMBER,,,,,,5,P:2|F:3,,,F
+label_type_conflict,5,VIEW_ID,,,,,,5,F:1|P:4,,,P
+label_type_conflict,5,ENCOUNTER SWAC,,,,,,5,F:1|S:4,,,S
+label_type_conflict,5,ENC HEAD/NECK CA,,,,,,5,F:1|S:4,,,S
+label_type_conflict,5,RADIATION ENCOUNTER INDICATOR,,,,,,5,F:1|S:4,,,S
+label_type_conflict,5,QUEUE,,,,,,5,F:2|N:2|P:1,,,F
+label_type_conflict,5,STUDY DATE,,,,,,5,D:2|F:3,,,F
+label_type_conflict,5,PROVIDER NARRATIVE,,,,,,5,F:1|P:4,,,P
+date_as_free_text,5,,3.075,ERROR LOG,0.01,$H DATE,KERNEL,,,,,
+date_as_free_text,5,,3.084,FAILED SIGNON ATTEMPTS,3.0,HOROLOG OF LAST UPDATE,(unpackaged),,,,,
+date_as_free_text,5,,4.001,MASTER FILE PARAMETERS,0.04,PRE-UPDATE ROUTINE,(unpackaged),,,,,
+date_as_free_text,5,,4.001,MASTER FILE PARAMETERS,0.05,POST-UPDATE ROUTINE,(unpackaged),,,,,
+date_as_free_text,5,,4.001,MASTER FILE PARAMETERS,4.16,MFE PRE-UPDATE ROUTINE,(unpackaged),,,,,
+date_as_free_text,5,,4.001,MASTER FILE PARAMETERS,4.17,MFE POST-UPDATE ROUTINE,(unpackaged),,,,,
+date_as_free_text,5,,6.666,KERNEL PKI LOGS,0.01,DATE/TIME CREATED,(unpackaged),,,,,
+date_as_free_text,5,,14.4,TASKS,16.0,Original Create date ($H),(unpackaged),,,,,
+date_as_free_text,5,,14.4,TASKS,52.0,Last Update $H,(unpackaged),,,,,
+date_as_free_text,5,,15.1,DUPLICATE RESOLUTION,0.09,CANDIDATE COLLECTION ROUTINE,KERNEL,,,,,
+date_as_free_text,5,,52.0,PRESCRIPTION,120.02,DATE OF DEATH HISTORY,PHARMACY,,,,,
+date_as_free_text,5,,62.49,LA7 MESSAGE QUEUE,106.0,DATE/TIME OF MESSAGE,LAB MESSAGING,,,,,
+date_as_free_text,5,,62.49,LA7 MESSAGE QUEUE,156.0,INVERSE DATE,LAB MESSAGING,,,,,
+date_as_free_text,5,,69.9,LABORATORY SITE,520.0,DATE ROLLOVER LAST RUN,AUTOMATED LAB INSTRUMENTS,,,,,
+date_as_free_text,5,,101.44,ORDER QUICK VIEW,6.0,LAST UPDATE,(unpackaged),,,,,
+date_as_free_text,5,,103.0,ORAM FLOWSHEET,4.0,START DATE,(unpackaged),,,,,
+date_as_free_text,5,,103.0,ORAM FLOWSHEET,5.0,STOP DATE,(unpackaged),,,,,
+date_as_free_text,5,,123.0,REQUEST/CONSULTATION,512.0,PERFORMED DATE/TIME,SUPPLY,,,,,
+date_as_free_text,5,,130.0,SURGERY,342.0,DATE OF DEATH,SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,364.1,"ESTIMATE OF MORTALITY, DATE",SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,418.0,HOSPITAL ADMISSION DATE,SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,419.0,HOSPITAL DISCHARGE DATE,SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,420.0,ADMISSION/TRANSFER DATE,SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,421.0,DISCHARGE/TRANSFER DATE,SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,452.0,OBSERVATION ADMISSION DATE,SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,453.0,OBSERVATION DISCHARGE DATE,SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,457.1,"HDL, DATE",SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,458.1,"SERUM TRIGLYCERIDE, DATE (CAR)",SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,459.1,"SERUM POTASSIUM, DATE(CARDIAC)",SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,460.1,"SERUM BILIRUBIN, DATE (CARD)",SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,461.1,"LDL, DATE (CARDIAC)",SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,462.1,"TOTAL CHOLESTEROL, DATE",SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,504.1,"HEMOGLOBIN A1C, DATE",SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,507.1,BNP DATE,SURGERY,,,,,
+date_as_free_text,5,,130.0,SURGERY,513.0,SURGERY CONSULT DATE,SURGERY,,,,,
+date_as_free_text,5,,139.5,SURGERY TRANSPLANT ASSESSMENTS,133.0,GRAFT FAILURE DATE,(unpackaged),,,,,
+date_as_free_text,5,,139.5,SURGERY TRANSPLANT ASSESSMENTS,170.0,DATE OF DEATH,(unpackaged),,,,,
+date_as_free_text,5,,139.5,SURGERY TRANSPLANT ASSESSMENTS,187.0,DATE STARTED DIALYSIS,(unpackaged),,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,96.0,PSA DATE,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,156.0,DRE DATE,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,171.0,DATE OF FIRST SYMPTOMS,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,172.0,DATE START OF WORKUP ORDERED,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,173.0,DATE WORKUP STARTED,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,174.1,DATE OF BLOOD IN SPUTUM PER PT,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,175.1,DATE OF CHEST X-RAY,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,176.1,DATE OF CT SCAN,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,177.1,DATE OF BRONCHOSCOPY,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,178.1,DATE OF MEDIASTINOSCOPY,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,179.1,DATE OF PET SCAN,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,180.1,DATE OF CHANGE IN BOWEL HABITS,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,181.1,DATE OF FOBT,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,182.1,DATE OF BARIUM ENEMA,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,183.1,DATE OF SIGMOIDOSCOPY,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,184.1,DATE OF CT OF ABDOMEN/PELVIS,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,185.1,DATE OF COLONOSCOPY,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,186.1,DATE OF DYSPNEA,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,187.1,DATE OF INCREASED COUGH,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,188.1,DATE OF FEVER,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,189.1,DATE OF NIGHT SWEATS,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,193.0,DATE OF CONCLUSIVE DX,ONCOLOGY,,,,,
+date_as_free_text,5,,165.5,ONCOLOGY PRIMARY,195.0,DATE OF MULTIPLE TUMORS,ONCOLOGY,,,,,
+date_as_free_text,5,,200.0,NEW PERSON,11.2,DATE VERIFY CODE LAST CHANGED,SOCIAL WORK,,,,,
+date_as_free_text,5,,200.0,NEW PERSON,20.1,DATE E-SIG LAST CHANGED,SOCIAL WORK,,,,,
+date_as_free_text,5,,213.4,NURS AMIS 1106 MANHOURS,0.01,DATE/SHIFT/WARD,NURSING ADMINISTRATION,,,,,
+date_as_free_text,5,,213.9,NURS PARAMETERS,10.4,DEFAULT EVALUATION DATE,NURSING SERVICE,,,,,
+date_as_free_text,5,,213.9,NURS PARAMETERS,10.5,DEFAULT TARGET DATE,NURSING SERVICE,,,,,
+date_as_free_text,5,,231.9,TRACKING AREA,6.0,WAITING TEXT UPDATES,(unpackaged),,,,,
+date_as_free_text,5,,231.9,TRACKING AREA,230.1,TRACKING UPDATED,(unpackaged),,,,,
+date_as_free_text,5,,231.9,TRACKING AREA,231.1,CHOICES UPDATED,(unpackaged),,,,,
+date_as_free_text,5,,344.5,AR EDI LOCKBOX MESSAGES,0.05,UPDATE TASK,(unpackaged),,,,,
+date_as_free_text,5,,349.0,AR TRANSMISSION RECORDS,0.09,STATEMENT DATE,(unpackaged),,,,,
+date_as_free_text,5,,349.0,AR TRANSMISSION RECORDS,0.1,PROCESS DATE,(unpackaged),,,,,
+date_as_free_text,5,,351.0,MEANS TEST BILLING CLOCK,15.0,UPDATE REASON,INTEGRATED BILLING,,,,,
+date_as_free_text,5,,351.9,CLAIMSMANAGER BILLS,3.07,ENTRY DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,356.22,HCS REVIEW TRANSMISSION,0.07,EVENT DATE,(unpackaged),,,,,
+date_as_free_text,5,,365.0,IIV RESPONSE,12.07,DATE TIME PERIOD,(unpackaged),,,,,
+date_as_free_text,5,,368.0,HEALTH CARE CLAIM RFAI (277),0.02,REQUEST DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,368.0,HEALTH CARE CLAIM RFAI (277),0.03,TRANSACTION DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,368.0,HEALTH CARE CLAIM RFAI (277),12.01,RESPONSE DUE DATE,(unpackaged),,,,,
+date_as_free_text,5,,368.0,HEALTH CARE CLAIM RFAI (277),14.03,CLAIM SERVICE START DATE,(unpackaged),,,,,
+date_as_free_text,5,,368.0,HEALTH CARE CLAIM RFAI (277),14.04,CLAIM SERVICE END DATE,(unpackaged),,,,,
+date_as_free_text,5,,396.0,FORM 7131,18.0,OPT TREATMENT RPT (DATE RANGE),AUTOMATED MED INFO EXCHANGE,,,,,
+date_as_free_text,5,,396.9,FORM 28-8861,10.0,PREFERRED SCHED DATE REASON,(unpackaged),,,,,
+date_as_free_text,5,,423.0,CALM/LOG CODE SHEET,4.0,TRANSACTION DATE,IFCAP,,,,,
+date_as_free_text,5,,423.0,CALM/LOG CODE SHEET,9.0,DATE,IFCAP,,,,,
+date_as_free_text,5,,423.0,CALM/LOG CODE SHEET,62.0,DELIVERY DATE - 920,IFCAP,,,,,
+date_as_free_text,5,,440.5,PURCHASE CARD INFORMATION,54.0,E VALID DATE,(unpackaged),,,,,
+date_as_free_text,5,,440.5,PURCHASE CARD INFORMATION,59.0,E EXPIRATION DATE,(unpackaged),,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,30.0,PRINT DATE 1,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,31.0,PRINT DATE 2,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,32.0,PRINT DATE 3,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,33.0,PRINT DATE 4,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,34.0,PRINT DATE 5,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,35.0,PRINT DATE 6,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,36.0,PRINT DATE 7,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,37.0,PRINT DATE 8,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,38.0,PRINT DATE 9,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,39.0,PRINT DATE 10,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,40.0,PRINT DATE 11,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,41.0,PRINT DATE 12,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,42.0,PRINT DATE 13,PAID,,,,,
+date_as_free_text,5,,458.0,TIME & ATTENDANCE RECORDS,43.0,PRINT DATE 14,PAID,,,,,
+date_as_free_text,5,,550.1,CMOP RX QUEUE,2.0,QUEUED DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,550.1,CMOP RX QUEUE,5.0,TRANSMITTED DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,550.1,CMOP RX QUEUE,6.0,RECEIVED DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,604.0,ADDICTION SEVERITY INDEX,0.033,RESOLVED ADM DATE,(unpackaged),,,,,
+date_as_free_text,5,,605.1,MH DASHBOARD WIDGET,1.0,INACTIVE DATE,(unpackaged),,,,,
+date_as_free_text,5,,634.1,HBHC EVALUATION/ADMISSION ERROR(S),2.0,FIELDS TO UPDATE,(unpackaged),,,,,
+date_as_free_text,5,,634.2,HBHC VISIT ERROR(S),2.0,FIELDS TO UPDATE,(unpackaged),,,,,
+date_as_free_text,5,,634.7,HBHC MEDICAL FOSTER HOME ERROR(S),1.0,FIELDS TO UPDATE,(unpackaged),,,,,
+date_as_free_text,5,,661.1,PROSTHETIC HCPCS,1.2,LAST UPDATE,(unpackaged),,,,,
+date_as_free_text,5,,691.1,CARDIAC CATHETERIZATION,1513.0,SUPERSEDED DATE,MEDICINE/CARDIOLOGY,,,,,
+date_as_free_text,5,,691.5,ELECTROCARDIOGRAM (EKG),1513.0,SUPERSEDED DATE,MEDICINE/CARDIOLOGY,,,,,
+date_as_free_text,5,,691.6,HOLTER,1513.0,SUPERSEDED DATE,MEDICINE/CARDIOLOGY,,,,,
+date_as_free_text,5,,691.7,EXERCISE TOLERANCE TEST,1513.0,SUPERSEDED DATE,MEDICINE/CARDIOLOGY,,,,,
+date_as_free_text,5,,691.8,ELECTROPHYSIOLOGY (EP),1513.0,SUPERSEDED DATE,MEDICINE/CARDIOLOGY,,,,,
+date_as_free_text,5,,694.0,HEMATOLOGY,1513.0,SUPERSEDED DATE,MEDICINE,,,,,
+date_as_free_text,5,,699.0,ENDOSCOPY/CONSULT,1513.0,SUPERSEDED DATE,MEDICINE,,,,,
+date_as_free_text,5,,700.0,PULMONARY FUNCTION TESTS,1513.0,SUPERSEDED DATE,MEDICINE,,,,,
+date_as_free_text,5,,727.802,ADMISSION EXTRACT,11.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.802,ADMISSION EXTRACT,70.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.802,ADMISSION EXTRACT,83.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.804,CLINIC NOSHOW EXTRACT,13.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.805,NURSING EXTRACT,16.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.808,PHYSICAL MOVEMENT EXTRACT,10.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.808,PHYSICAL MOVEMENT EXTRACT,11.0,DISCHARGE DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.809,UNIT DOSE LOCAL EXTRACT,20.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.809,UNIT DOSE LOCAL EXTRACT,31.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.809,UNIT DOSE LOCAL EXTRACT,57.0,ORDERING DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.809,UNIT DOSE LOCAL EXTRACT,72.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.809,UNIT DOSE LOCAL EXTRACT,78.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.81,PRESCRIPTION EXTRACT,23.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.81,PRESCRIPTION EXTRACT,66.0,ORDERING DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.81,PRESCRIPTION EXTRACT,78.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.81,PRESCRIPTION EXTRACT,93.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.811,SURGERY EXTRACT,36.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.811,SURGERY EXTRACT,67.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.811,SURGERY EXTRACT,81.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.811,SURGERY EXTRACT,121.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.812,MENTAL HEALTH EXTRACT,10.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.812,MENTAL HEALTH EXTRACT,11.0,DISCHARGE DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.812,MENTAL HEALTH EXTRACT,44.0,PATIENT BIRTH DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.812,MENTAL HEALTH EXTRACT,56.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.813,LABORATORY EXTRACT,34.0,ORDERING DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.814,RADIOLOGY EXTRACT,35.0,ORDERING DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.814,RADIOLOGY EXTRACT,53.0,RAD VERIFY DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.815,EVENT CAPTURE LOCAL EXTRACT,55.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.815,EVENT CAPTURE LOCAL EXTRACT,65.0,CONTRACT START DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.815,EVENT CAPTURE LOCAL EXTRACT,66.0,CONTRACT END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.815,EVENT CAPTURE LOCAL EXTRACT,80.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.815,EVENT CAPTURE LOCAL EXTRACT,91.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.817,TREATING SPECIALTY CHANGE EXTRACT,10.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.817,TREATING SPECIALTY CHANGE EXTRACT,11.0,DISCHARGE DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.819,IV DETAIL EXTRACT,24.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.819,IV DETAIL EXTRACT,39.0,ORDERING DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.819,IV DETAIL EXTRACT,44.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.819,IV DETAIL EXTRACT,77.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.819,IV DETAIL EXTRACT,83.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.823,PAI EXTRACT,9.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.823,PAI EXTRACT,11.0,TRANSFER/ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.824,LAB RESULTS EXTRACT,13.0,DATE ORDERED,(unpackaged),,,,,
+date_as_free_text,5,,727.824,LAB RESULTS EXTRACT,15.0,DATE RESULTS READY,(unpackaged),,,,,
+date_as_free_text,5,,727.825,QUASAR EXTRACT,55.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.825,QUASAR EXTRACT,65.0,CONTRACT START DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.825,QUASAR EXTRACT,66.0,CONTRACT END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.825,QUASAR EXTRACT,80.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.825,QUASAR EXTRACT,91.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.826,PROSTHETICS EXTRACT,8.0,DATE OF SERVICE,(unpackaged),,,,,
+date_as_free_text,5,,727.826,PROSTHETICS EXTRACT,34.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.826,PROSTHETICS EXTRACT,72.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.826,PROSTHETICS EXTRACT,82.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.826,PROSTHETICS EXTRACT,84.0,NPPD ENTRY DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.827,CLINIC EXTRACT,32.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.827,CLINIC EXTRACT,81.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.827,CLINIC EXTRACT,89.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.827,CLINIC EXTRACT,161.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.829,BLOOD BANK EXTRACT,9.0,DATE OF TRANSFUSION,(unpackaged),,,,,
+date_as_free_text,5,,727.832,NUTRITION EXTRACT,17.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.832,NUTRITION EXTRACT,58.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.832,NUTRITION EXTRACT,60.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.833,BCMA EXTRACT,9.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,727.833,BCMA EXTRACT,36.0,SCHEDULED ADMINISTRATION DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.833,BCMA EXTRACT,73.0,CV ELIGIBILITY END DATE,(unpackaged),,,,,
+date_as_free_text,5,,727.833,BCMA EXTRACT,79.0,OEF/OIF RETURN DATE,(unpackaged),,,,,
+date_as_free_text,5,,757.06,UNRESOLVED NARRATIVES,1.0,DATE-TIME,CLINICAL LEXICON UTILITY,,,,,
+date_as_free_text,5,,790.08,WV LAB TESTS,2.19,LAB INVERSE DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,790.1,WV PROCEDURE,2.19,LAB INVERSE DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,790.404,WV NOTIFICATION PURPOSE,0.08,BR TX DUE DATE,(unpackaged),,,,,
+date_as_free_text,5,,790.404,WV NOTIFICATION PURPOSE,0.1,CX TX DUE DATE,(unpackaged),,,,,
+date_as_free_text,5,,798.1,ROR REGISTRY PARAMETERS,6.1,BEFORE UPDATE,(unpackaged),,,,,
+date_as_free_text,5,,798.1,ROR REGISTRY PARAMETERS,6.2,AFTER UPDATE,(unpackaged),,,,,
+date_as_free_text,5,,810.4,REMINDER LIST RULE,2.0,LIST RULE BEGINNING DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,810.4,REMINDER LIST RULE,3.0,LIST RULE ENDING DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,811.9,REMINDER DEFINITION,45.0,CUSTOM DATE DUE,(unpackaged),,,,,
+date_as_free_text,5,,811.9,REMINDER DEFINITION,46.0,CUSTOM DATE DUE FUNCTION,(unpackaged),,,,,
+date_as_free_text,5,,987.5,WII ADMISSIONS DISCHARGES,5.0,ADMISSION DATE,(unpackaged),,,,,
+date_as_free_text,5,,987.5,WII ADMISSIONS DISCHARGES,6.0,DISCHARGE DATE,(unpackaged),,,,,
+date_as_free_text,5,,987.5,WII ADMISSIONS DISCHARGES,14.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,2006.5714,DICOM INCOMPLETE OBJECT,0.01,DATE/TIME ADDED ($H),(unpackaged),,,,,
+date_as_free_text,5,,2006.573,GE PACS QUERY/RETRIEVE,2.0,STUDY DATE,(unpackaged),,,,,
+date_as_free_text,5,,2006.575,DICOM FAILED IMAGES,23.0,DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,2006.5751,DICOM OBJECTS TO BE IMPORTED,11.0,STUDY DATE,(unpackaged),,,,,
+date_as_free_text,5,,2006.5752,IMPORTABLE DICOM OBJECTS,11.0,STUDY DATE,(unpackaged),,,,,
+date_as_free_text,5,,2006.634,MAGJ ZLIST SEARCH,7.0,IMAGE DATE/TIME,(unpackaged),,,,,
+date_as_free_text,5,,2006.634,MAGJ ZLIST SEARCH,14.0,IMAGE DATE/TIME-SORTABLE,(unpackaged),,,,,
+date_as_free_text,5,,2100.0,GENERIC CODE SHEET,234.0,DATE OF APPOINTMENT,GENERIC CODE SHEET,,,,,
+date_as_free_text,5,,2100.0,GENERIC CODE SHEET,462.34,ENDING DATE DESC,GENERIC CODE SHEET,,,,,
+date_as_free_text,5,,2100.0,GENERIC CODE SHEET,1600.0,FEE TRANSACTION DATE,GENERIC CODE SHEET,,,,,
+date_as_free_text,5,,2260.0,ASISTS ACCIDENT REPORTING,101.0,GRADE/LEVEL DATE OF INJURY,(unpackaged),,,,,
+date_as_free_text,5,,2260.0,ASISTS ACCIDENT REPORTING,102.0,STEP AS OF DATE OF INJURY,(unpackaged),,,,,
+date_as_free_text,5,,2260.0,ASISTS ACCIDENT REPORTING,202.0,STEP AS OF DATE OF ILL.,(unpackaged),,,,,
+date_as_free_text,5,,6000.0,VBECS SITE PARAMETERS,1.0,WORKLOAD RUN DATE,(unpackaged),,,,,
+date_as_free_text,5,,6002.01,VBECS WORKLOAD CAPTURE,21.0,UPDATE ERROR TEXT,(unpackaged),,,,,
+date_as_free_text,5,,6915.2,FA DOCUMENT LOG,11.0,TRANSACTION DATE,ENXI,,,,,
+date_as_free_text,5,,6915.3,FB DOCUMENT LOG,11.0,TRANSACTION DATE,ENXI,,,,,
+date_as_free_text,5,,6915.4,FC DOCUMENT LOG,11.0,TRANSACTION DATE,ENXI,,,,,
+date_as_free_text,5,,6915.5,FD DOCUMENT LOG,11.0,TRANSACTION DATE,ENXI,,,,,
+date_as_free_text,5,,6915.6,FR DOCUMENT LOG,11.0,TRANSACTION DATE,ENXI,,,,,
+date_as_free_text,5,,19620.871,DSIR SAVED AD HOC REPORTS,4.01,REPORT DATE RANGE FIELD 1,(unpackaged),,,,,
+date_as_free_text,5,,19620.871,DSIR SAVED AD HOC REPORTS,5.01,REPORT DATE RANGE FIELD 2,(unpackaged),,,,,
+date_as_free_text,5,,509850.9,AUDIOMETRIC EXAM DATA,791000.05,BIRTH DATE,(unpackaged),,,,,
+date_as_free_text,5,,580950.1,*AJK1UB SITE PARAMETERS,0.16,UPDATE DOW,(unpackaged),,,,,
+date_as_free_text,5,,800000.0,HMP SUBSCRIPTION,0.02,LASTUPDATE,(unpackaged),,,,,
+date_as_free_text,5,,9002313.02,BPS CLAIMS,304.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,9002313.02,BPS CLAIMS,401.0,DATE OF SERVICE,(unpackaged),,,,,
+date_as_free_text,5,,9002313.03,BPS RESPONSES,304.0,DATE OF BIRTH,(unpackaged),,,,,
+date_as_free_text,5,,9002313.03,BPS RESPONSES,401.0,DATE OF SERVICE,(unpackaged),,,,,
+pointer_to_empty_file,3,,1.11,ARCHIVAL ACTIVITY,2.0,SEARCH TEMPLATE,,,,,0.401,
+pointer_to_empty_file,3,,1.11,ARCHIVAL ACTIVITY,3.0,PRINT TEMPLATE,,,,,0.4,
+pointer_to_empty_file,3,,1.12,FILEGRAM HISTORY,0.07,FILEGRAM,,,,,0.4,
+pointer_to_empty_file,3,,1.5211,SQLI_DATA_TYPE,3.0,D_OUTPUT_FORMAT,,,,,1.5214,
+pointer_to_empty_file,3,,1.5212,SQLI_DOMAIN,1.0,DM_DATA_TYPE,,,,,1.5211,
+pointer_to_empty_file,3,,1.5212,SQLI_DOMAIN,3.0,DM_TABLE,,,,,1.5215,
+pointer_to_empty_file,3,,1.5212,SQLI_DOMAIN,6.0,DM_OUTPUT_FORMAT,,,,,1.5214,
+pointer_to_empty_file,3,,1.5213,SQLI_KEY_FORMAT,1.0,KF_DATA_TYPE,,,,,1.5211,
+pointer_to_empty_file,3,,1.5214,SQLI_OUTPUT_FORMAT,1.0,OF_DATA_TYPE,,,,,1.5211,
+pointer_to_empty_file,3,,1.5215,SQLI_TABLE,1.0,T_SCHEMA,,,,,1.521,
+pointer_to_empty_file,3,,1.5215,SQLI_TABLE,3.0,T_MASTER_TABLE,,,,,1.5215,
+pointer_to_empty_file,3,,1.5216,SQLI_TABLE_ELEMENT,1.0,E_DOMAIN,,,,,1.5212,
+pointer_to_empty_file,3,,1.5216,SQLI_TABLE_ELEMENT,2.0,E_TABLE,,,,,1.5215,
+pointer_to_empty_file,3,,1.5217,SQLI_COLUMN,0.01,C_TABLE_ELEMENT,,,,,1.5216,
+pointer_to_empty_file,3,,1.5217,SQLI_COLUMN,8.0,C_PARENT,,,,,1.5217,
+pointer_to_empty_file,3,,1.5217,SQLI_COLUMN,16.0,C_OUTPUT_FORMAT,,,,,1.5214,
+pointer_to_empty_file,3,,1.5218,SQLI_PRIMARY_KEY,0.01,P_TBL_ELEMENT,,,,,1.5216,
+pointer_to_empty_file,3,,1.5218,SQLI_PRIMARY_KEY,1.0,P_COLUMN,,,,,1.5217,
+pointer_to_empty_file,3,,1.5218,SQLI_PRIMARY_KEY,7.0,P_KEY_FORMAT,,,,,1.5213,
+pointer_to_empty_file,3,,1.5219,SQLI_FOREIGN_KEY,0.01,F_TBL_ELEMENT,,,,,1.5216,
+pointer_to_empty_file,3,,1.5219,SQLI_FOREIGN_KEY,1.0,F_PK_ELEMENT,,,,,1.5218,
+pointer_to_empty_file,3,,1.5219,SQLI_FOREIGN_KEY,2.0,F_CLM_ELEMENT,,,,,1.5217,
+pointer_to_empty_file,3,,1.52192,SQLI_ERROR_LOG,2.0,ERROR,,,,,1.52191,
+pointer_to_empty_file,3,,1.52192,SQLI_ERROR_LOG,4.0,FILEMAN_ERROR,,,,,0.84,
+pointer_to_empty_file,3,,43.0,MAS PARAMETERS,70.0,REGISTRATION TEMPLATE (LOCAL),,,,,0.402,
+pointer_to_empty_file,3,,43.7,ADT TEMPLATE,5.0,EDIT TEMPLATE NAME,,,,,0.402,
+pointer_to_empty_file,3,,43.7,ADT TEMPLATE,6.0,PRINT TEMPLATE NAME,,,,,0.4,
+pointer_to_empty_file,3,,43.7,ADT TEMPLATE,7.0,SORT TEMPLATE NAME,,,,,0.401,
+pointer_to_empty_file,3,,45.62,PTF ARCHIVE/PURGE HISTORY FILE,0.08,SEARCH TEMPLATE,,,,,0.401,
+pointer_to_empty_file,3,,46.0,INPATIENT CPT CODE,0.02,CPT MODIFIER 1,,,,,81.3,
+pointer_to_empty_file,3,,46.0,INPATIENT CPT CODE,0.03,CPT MODIFIER 2,,,,,81.3,
+pointer_to_empty_file,3,,81.0,CPT,3.0,CPT CATEGORY,,,,,81.1,
+pointer_to_empty_file,3,,81.1,CPT CATEGORY,3.0,MAJOR CATEGORY,,,,,81.1,
+pointer_to_empty_file,3,,95.11,LAB ARCHIVAL ACTIVITY,2.0,SEARCH TEMPLATE,,,,,0.401,
+pointer_to_empty_file,3,,95.11,LAB ARCHIVAL ACTIVITY,3.0,PRINT TEMPLATE,,,,,0.4,
+pointer_to_empty_file,3,,200.0,NEW PERSON,200.07,LANGUAGE,,,,,0.85,
+pointer_to_empty_file,3,,363.2,CHARGE ITEM,0.07,CPT MODIFIER,,,,,81.3,
+pointer_to_empty_file,3,,618.0,MENTAL HEALTH CENSUS,2.8,DEFAULT TEAM,,,,,618.2,
+pointer_to_empty_file,3,,618.0,MENTAL HEALTH CENSUS,3.0,TEAM ROTATION 1,,,,,618.2,
+pointer_to_empty_file,3,,618.0,MENTAL HEALTH CENSUS,3.1,TEAM ROTATION 2,,,,,618.2,
+pointer_to_empty_file,3,,618.0,MENTAL HEALTH CENSUS,3.2,TEAM ROTATION 3,,,,,618.2,
+pointer_to_empty_file,3,,618.0,MENTAL HEALTH CENSUS,3.3,TEAM ROTATION 4,,,,,618.2,
+pointer_to_empty_file,3,,618.0,MENTAL HEALTH CENSUS,3.4,TEAM ROTATION 5,,,,,618.2,
+pointer_to_empty_file,3,,618.4,MENTAL HEALTH INPT,3.0,TEAM,,,,,618.2,
+pointer_to_empty_file,3,,618.4,MENTAL HEALTH INPT,23.0,CURRENT TEAM,,,,,618.2,
+pointer_to_empty_file,3,,920.0,VACCINE INFORMATION STATEMENT,0.04,LANGUAGE,,,,,0.85,
+pointer_to_empty_file,3,,2006.1,IMAGING SITE PARAMETERS,304.0,RAD CPT MODIFIERS,,,,,81.3,
+pointer_to_empty_file,3,,2006.563,DICOM GATEWAY PARAMETER,133.0,IMPORTER CPT MOD,,,,,81.3,
+pointer_to_empty_file,3,,8989.3,KERNEL SYSTEM PARAMETERS,12.0,USER CHARACTERISTICS TEMPLATE,,,,,0.402,
+pointer_to_empty_file,3,,8989.3,KERNEL SYSTEM PARAMETERS,207.0,DEFAULT LANGUAGE,,,,,0.85,
+pointer_to_empty_file,3,,509850.5,A&SP PROCEDURE MODIFIER,0.01,MODIFIER,,,,,81.3,

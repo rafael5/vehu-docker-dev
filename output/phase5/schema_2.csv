@@ -1,0 +1,595 @@
+field,label,type_code,type_name,storage,pointer_file,has_description,has_input_transform,last_edited,help_prompt
+0.01,NAME,F,FREE TEXT,0;1,,True,True,3060919,"Enter name in 'LAST,FIRST MIDDLE SUFFIX' format, must be 3-30 characters in length."
+0.02,SEX,S,SET OF CODES,0;2,,True,True,3060624,"Enter 'M' for MALE, or 'F' for FEMALE."
+0.024,SELF IDENTIFIED GENDER,S,SET OF CODES,.24;4,,True,True,3230103,Select the code that specifies the patient's preferred gender.
+0.025,SEXUAL ORIENTATION,P,POINTER,.025;0,,True,False,,
+0.0251,SEXUAL ORIENTATION FREE TEXT,F,FREE TEXT,.241;1,,True,True,3231017,Enter the free text value (3-255 characters) of the specified 'Other' Sexual Orientation associated with the patient.
+0.03,DATE OF BIRTH,D,DATE/TIME,0;3,,True,True,3210308,Enter the patient's DATE OF BIRTH which must be later than 12/31/1870.  DATE OF BIRTH cannot be a date after the benefic
+0.033,AGE,C,COMPUTED, ; ,,True,True,2980306,Computed field which determines patients age based on DOB and todays date.
+0.05,MARITAL STATUS,P,POINTER,0;5,11.0,True,True,3060802,Select from the available listing this patients current marital status.
+0.06,RACE,P,POINTER,0;6,10.0,True,True,3030311,This field is for historical purposes only.  Please do not enter data into it.
+0.07,OCCUPATION,F,FREE TEXT,0;7,,True,True,2990921,Enter the patient's occupation [1-30 characters].
+0.08,RELIGIOUS PREFERENCE,P,POINTER,0;8,13.0,True,True,3220626,Select from the available list this patients religious preference.
+0.081,DUPLICATE STATUS,S,SET OF CODES,0;18,,True,True,2870325,
+0.082,PATIENT MERGED TO,P,POINTER,0;19,2.0,True,True,2870325,
+0.083,CHECK FOR DUPLICATE,S,SET OF CODES,0;20,,True,True,2870325,
+0.09,SOCIAL SECURITY NUMBER,F,FREE TEXT,0;9,,True,True,3051006,Enter 9-digit SSN or 'P' for pseudo-SSN.
+0.0901,TERMINAL DIGIT OF SSN,C,COMPUTED, ; ,,True,True,2951107,Computed field which determines last four digits of SSN.
+0.0905,1U4N,C,COMPUTED, ; ,,True,True,,"Computed field which determines first characters of last name and last four digits of SSN, i.e., 'L1234'."
+0.0906,PSEUDO SSN REASON,S,SET OF CODES,SSN;1,,True,True,3070330,
+0.0907,SSN VERIFICATION STATUS,S,SET OF CODES,SSN;2,,True,True,3060406,
+0.091,REMARKS,F,FREE TEXT,0;10,,True,True,,Enter remarks concerning this patient for general display [3-60 characters].
+0.092,PLACE OF BIRTH [CITY],F,FREE TEXT,0;11,,True,True,3181030,Enter city in which patient was born (or foreign country) [2-20 characters].
+0.093,PLACE OF BIRTH [STATE],P,POINTER,0;12,5.0,True,True,3181030,If born in US enter the state in which this patient was born.
+0.0931,PLACE OF BIRTH COUNTRY,P,POINTER,.24;6,779.004,True,True,3170501,Select the COUNTRY CODE from the list that identifies the country where the individual was born.
+0.0932,PLACE OF BIRTH PROVINCE,F,FREE TEXT,.24;7,,True,True,3170501,Enter the Province (1-20 characters) where the individual was born.
+0.096,WHO ENTERED PATIENT,P,POINTER,0;15,200.0,True,True,2901006,The name of the user who entered this patient into the PATIENT file.
+0.097,DATE ENTERED INTO FILE,D,DATE/TIME,0;16,,True,True,3171030,The date this patient record was established in the patient file.
+0.098,HOW WAS PATIENT ENTERED?,S,SET OF CODES,0;17,,True,True,2961220,
+0.1,WARD LOCATION,F,FREE TEXT,".1;E1,30",,True,True,2941123,The ward on which this patient is currently residing [2-30 characters].
+0.101,ROOM-BED,F,FREE TEXT,.101;1,,True,True,2901022,Answer must be 3-15 characters in length.
+0.102,CURRENT MOVEMENT,P,POINTER,.102;1,405.0,True,True,2891218,
+0.103,TREATING SPECIALTY,P,POINTER,.103;1,45.7,True,True,2840328,The treating specialty to which this inpatient applicant is currently assigned.
+0.104,PROVIDER,P,POINTER,.104;1,200.0,True,True,3060624,The provider currently assigned to this inpatient applicant.
+0.1041,ATTENDING PHYSICIAN,P,POINTER,.1041;1,200.0,True,True,2941207,This field should contain the attending physician currently responsible for this patient's care.
+0.105,CURRENT ADMISSION,P,POINTER,.105;1,405.0,True,True,2891214,
+0.106,LAST DMMS EPISODE NUMBER,N,NUMERIC,.106;1,,True,True,2900215,"Type a Number between 1 and 99999, 0 Decimal Digits"
+0.107,LODGER WARD LOCATION,F,FREE TEXT,.107;1,,True,True,2900409,"If the patient is a lodger, this is the ward on which the patient resides (2-30 characters)."
+0.108,CURRENT ROOM,P,POINTER,.108;1,405.4,True,True,2900322,
+0.109,EXCLUDE FROM FACILITY DIR,S,SET OF CODES,.109;1,,True,True,3030218,
+0.111,STREET ADDRESS [LINE 1],F,FREE TEXT,.11;1,,True,True,3180227,Enter the first line of this applicant's residence street address [3-35 characters].
+0.1112,ZIP+4,F,FREE TEXT,.11;12,,True,True,3031113,Answer with either 5 digit or 9 digit zip code.
+0.1118,STREET ADDRESS CASS IND,S,SET OF CODES,.11;18,,True,True,3180213,Select the CASS status for the street address. 
+0.1119,MAILING ADDR OVERRIDE IND,F,FREE TEXT,.11;19,,True,True,3250204,Enter the validation key hash code returned from a Universal Address Module (UAM) request for an entered valid mailing a
+0.112,STREET ADDRESS [LINE 2],F,FREE TEXT,.11;2,,True,True,3060802,"If necessary, enter the second line of this applicant's street address [3-30 characters]."
+0.113,STREET ADDRESS [LINE 3],F,FREE TEXT,.11;3,,True,True,3180227,"If necessary, enter a third line of this applicant's street address [3-30 characters]."
+0.114,CITY,F,FREE TEXT,.11;4,,True,True,3180227,Answer must be 2-15 characters in length
+0.115,STATE,P,POINTER,.11;5,5.0,True,True,3070626,Select from the available listing the state in which this applicant resides.
+0.1151,RESIDENTIAL ADDRESS [LINE 1],F,FREE TEXT,.115;1,,True,True,3210713,Answer must be 3-35 characters in length.
+0.1152,RESIDENTIAL ADDRESS [LINE 2],F,FREE TEXT,.115;2,,True,True,3210713,Answer must be 3-30 characters in length.
+0.1153,RESIDENTIAL ADDRESS [LINE 3],F,FREE TEXT,.115;3,,True,True,3210713,Answer must be 3-30 characters in length.
+0.1154,RESIDENTIAL CITY,F,FREE TEXT,.115;4,,True,True,3210713,Answer must be 2-15 characters in length.
+0.1155,RESIDENTIAL STATE,P,POINTER,.115;5,5.0,True,True,3210713,Select from the available listing the state in which this applicant resides.
+0.1156,RESIDENTIAL ZIP+4,F,FREE TEXT,.115;6,,True,True,3210713,Answer with either 5 digit or 9 digit zip code.
+0.1157,RESIDENTIAL COUNTY,N,NUMERIC,.115;7,,True,True,3180124,Enter the county in which this applicant resides.
+0.11571,RESIDENTIAL PROVINCE,F,FREE TEXT,.115;8,,True,True,3210713,Answer must be 1-20 characters in length.
+0.11572,RESIDENTIAL POSTAL CODE,F,FREE TEXT,.115;9,,True,True,3210713,Answer must be 1-10 characters in length.
+0.11573,RESIDENTIAL COUNTRY,P,POINTER,.115;10,779.004,True,True,3210713,Enter the country where the patient's residential address is located.  If entering an Army/Air Force Post Office (APO) o
+0.1158,RESIDENTIAL ADDR CHANGE DT/TM,D,DATE/TIME,.115;11,,True,True,3210604,
+0.11581,RESIDENTIAL ADDR CHANGE SITE,P,POINTER,.115;15,4.0,True,True,3170814,Please enter the site that last changed this patient's residential address. 
+0.11582,RESIDENTIAL ADDR CHANGE SOURCE,S,SET OF CODES,.115;12,,True,True,3180213,Please enter the source of the address change.
+0.11583,RESIDENTIAL ADDR CHANGE USER,P,POINTER,.115;16,200.0,True,True,3210604,Enter the name of the user who has changed this patient's residential address.
+0.1159,RESIDENTIAL ADDR CASS IND,S,SET OF CODES,.115;19,,True,True,3180213,Select the CASS status for the residential address
+0.11591,RESIDENTIAL ADDR OVERRIDE IND,F,FREE TEXT,.115;20,,True,True,3250204,Enter the validation key hash code returned from a Universal Address Module (UAM) request for an entered valid residenti
+0.116,ZIP CODE,F,FREE TEXT,.11;6,,True,True,3031113,Enter the zip code for the city in which this applicant resides.
+0.117,COUNTY,N,NUMERIC,.11;7,,True,True,2980520,Enter the county in which this applicant resides.
+0.1171,PROVINCE,F,FREE TEXT,.11;8,,True,True,3180227,Answer must be 1-20 characters in length.
+0.1172,POSTAL CODE,F,FREE TEXT,.11;9,,True,True,3180227,Answer must be 1-10 characters in length.
+0.1173,COUNTRY,P,POINTER,.11;10,779.004,True,True,3210527,Enter the country where the patient's mailing address is located.
+0.118,ADDRESS CHANGE DT/TM,D,DATE/TIME,.11;13,,True,True,3061024,(No range limit on date)
+0.119,ADDRESS CHANGE SOURCE,S,SET OF CODES,.11;14,,True,True,3171208,Please enter the source of the address change.
+0.12,ADDRESS CHANGE SITE,P,POINTER,.11;15,4.0,True,True,3020703,Please enter the site that last changed this patient's address.
+0.121,BAD ADDRESS INDICATOR,S,SET OF CODES,.11;16,,True,True,3140707,"Please enter 1 if the address is 'UNDELIVERABLE', 2 if the patient is 'HOMELESS', or 3 for 'OTHER' bad address reasons. "
+0.12105,TEMPORARY ADDRESS ACTIVE?,S,SET OF CODES,.121;9,,True,True,2930419,"Enter 'Y' if you want to enter/edit Temporary address data, 'N' if not."
+0.1211,TEMPORARY STREET [LINE 1],F,FREE TEXT,.121;1,,True,True,3180227,Enter the first line of this applicants temporary address [2-30 characters].
+0.12111,TEMPORARY ADDRESS COUNTY,N,NUMERIC,.121;11,,True,True,3010110,Enter the county in which the applicant's temporary address exists.
+0.12112,TEMPORARY ZIP+4,F,FREE TEXT,.121;12,,True,True,2930603,Answer with either 5 digit or 9 digit zip code.
+0.12113,TEMPORARY ADDRESS CHANGE DT/TM,D,DATE/TIME,.121;13,,True,True,3050615,(No range limit on date)
+0.12114,TEMPORARY ADDRESS CHANGE SITE,P,POINTER,.121;14,4.0,True,True,3050519,
+0.12115,TEMPORARY ADDR CASS IND,S,SET OF CODES,.121;15,,True,True,3180213,Select the CASS status for the temporary address
+0.12116,TEMPORARY COUNTRY CODE,P,POINTER,.121;16,12.12,True,True,3240722,Enter the country dialing code for TEMPORARY PHONE NUMBER.
+0.12117,TEMPORARY EXTENSION,F,FREE TEXT,.121;17,,True,True,3240829,Answer must be 1-6 digits in length.
+0.1212,TEMPORARY STREET [LINE 2],F,FREE TEXT,.121;2,,True,True,3180411,"Enter, if necessary, the second line of this applicants temporary address [2-30 characters]."
+0.1213,TEMPORARY STREET [LINE 3],F,FREE TEXT,.121;3,,True,True,3180227,"Enter, if necessary, the third line of this applicants temporary address [2-30 characters]."
+0.1214,TEMPORARY CITY,F,FREE TEXT,.121;4,,True,True,3180227,Enter the city in which this applicant is temporarily residing [2-30 characters].
+0.1215,TEMPORARY STATE,P,POINTER,.121;5,5.0,True,True,3070626,Enter the state in which this applicant is temporarily residing.
+0.1216,TEMPORARY ZIP CODE,F,FREE TEXT,.121;6,,True,True,2930603,Enter the zip code of the temporary address at which this patient is currently residing.
+0.1217,TEMPORARY ADDRESS START DATE,D,DATE/TIME,.121;7,,True,True,2890115,Enter the date on which the patient will first be found at the temporary address indicated.
+0.1218,TEMPORARY ADDRESS END DATE,D,DATE/TIME,.121;8,,True,True,2890113,Enter the date as of which the patient will no longer be at the temporary address indicated.
+0.1219,TEMPORARY PHONE NUMBER,F,FREE TEXT,.121;10,,True,True,3210528,Enter the telephone number of the temporary address at which the patient is located [4-20 characters].
+0.122,ADDRESS CHANGE USER,P,POINTER,.11;17,200.0,True,True,3030604,
+0.1221,TEMPORARY ADDRESS PROVINCE,F,FREE TEXT,.122;1,,True,True,3180227,Answer must be 1-20 characters in length.
+0.1222,TEMPORARY ADDRESS POSTAL CODE,F,FREE TEXT,.122;2,,True,True,3180227,Answer must be 1-10 characters in length.
+0.1223,TEMPORARY ADDRESS COUNTRY,P,POINTER,.122;3,779.004,True,True,3060615,
+0.131,PHONE NUMBER [RESIDENCE],F,FREE TEXT,.13;1,,True,True,3120131,Enter the patients home telephone number [4-20 characters].
+0.1311,CELLULAR NUMBER CHANGE SOURCE,S,SET OF CODES,.13;10,,True,True,3171208,Please enter the source of the Cellular number change.
+0.13111,CELLULAR NUMBER CHANGE SITE,P,POINTER,.13;11,4.0,True,True,3060410,Please enter the site that last changed this patient's Cellular number.
+0.1312,PAGER NUMBER CHANGE DT/TM,D,DATE/TIME,.13;12,,True,True,3060410,
+0.1313,PAGER NUMBER CHANGE SOURCE,S,SET OF CODES,.13;13,,True,True,3130522,Please enter the source of the Pager number change.
+0.1314,PAGER NUMBER CHANGE SITE,P,POINTER,.13;14,4.0,True,True,3060410,Please enter the site that last changed this patient's Pager number.
+0.1315,CONFIDENTIAL PHONE NUMBER,F,FREE TEXT,.13;15,,True,True,3250725,"Enter the telephone number of the confidential address at which the patient is located [4-20 characters]. ""X"" and extens"
+0.1316,EMAIL ADDRESS INDICATOR,S,SET OF CODES,.13;16,,True,True,3121119,Does the Veteran have an Email address?
+0.1317,EMAIL ADDRESS INDICATOR DT/TM,D,DATE/TIME,.13;17,,True,True,3121120,Enter the date and time of the Email Address Indicator response.
+0.1318,EMAIL ADDRESS CHANGE USER,P,POINTER,.13;18,200.0,True,True,3210604,Enter the name of the user who has changed this patient's email address.
+0.1319,CELLULAR NUMBER CHANGE USER,P,POINTER,.13;19,200.0,True,True,3210617,Enter the name of the user who has changed this patient's cell number.
+0.132,PHONE NUMBER [WORK],F,FREE TEXT,.13;2,,True,True,3250107,"If employed, enter the telephone number of this applicant's place of employment [4-20 characters]."
+0.13201,CONFIDENTIAL COUNTRY CODE,P,POINTER,.132;10,12.12,True,True,3240726,Enter the country dialing code for CONFIDENTIAL PHONE NUMBER.
+0.1321,RESIDENCE NUMBER CHANGE DT/TM,D,DATE/TIME,.132;1,,True,True,3210604,Please enter the date and time of the Residence phone number change.
+0.13211,EXTENSION [RESIDENCE],F,FREE TEXT,.132;11,,True,True,3240829,Answer must be 1-6 digits in length.
+0.13212,EXTENSION [CELLULAR],F,FREE TEXT,.132;12,,True,True,3240829,Answer must be 1-6 digits in length.
+0.13213,EXTENSION [WORK],F,FREE TEXT,.132;13,,True,True,3240829,Answer must be 1-6 digits in length.
+0.13214,CONFIDENTIAL EXTENSION,F,FREE TEXT,.132;14,,True,True,3240829,Answer must be 1-6 digits in length.
+0.1322,RESIDENCE NUMBER CHANGE SOURCE,S,SET OF CODES,.132;2,,True,True,3171208,Please enter the source of the Residence phone number change.
+0.1323,RESIDENCE NUMBER CHANGE SITE,P,POINTER,.132;3,4.0,True,True,3120424,Please enter the site that last changed this patient's Residence phone number.
+0.1324,RESIDENCE NUMBER CHANGE USER,P,POINTER,.132;4,200.0,True,True,3210604,Enter the name of the user who has changed this patient's residential phone number.
+0.1325,PHONE [WORK] CHANGE USER,P,POINTER,.132;5,200.0,True,True,3210604,Enter the name of the user who has changed this patient's work phone number.
+0.1326,PHONE [WORK] CHANGE DT/TM,D,DATE/TIME,.132;6,,True,True,3210701,Please enter the date and time of the work phone number change.
+0.1327,COUNTRY CODE [RESIDENCE],P,POINTER,.132;7,12.12,True,True,3240722,Enter the country dialing code for PHONE NUMBER [RESIDENCE].
+0.1328,COUNTRY CODE [CELLULAR],P,POINTER,.132;8,12.12,True,True,3240726,Enter the country dialing code for PHONE NUMBER [CELLULAR].
+0.1329,COUNTRY CODE [WORK],P,POINTER,.132;9,12.12,True,True,3240722,Enter the country dialing code for PHONE NUMBER [WORK].
+0.133,EMAIL ADDRESS,F,FREE TEXT,.13;3,,False,True,3090410,Enter the applicant's email address [3-50 characters].  The entry must include an '@'.
+0.134,PHONE NUMBER [CELLULAR],F,FREE TEXT,.13;4,,True,True,3220719,"Answer must be 4-20 characters in length, be numeric with only spaces, parenthesis, periods, and dashes for separators."
+0.135,PAGER NUMBER,F,FREE TEXT,.13;5,,True,True,3090410,"Answer must be 4-20 characters in length, be numeric with only spaces, parenthesis, periods, and dashes for separators."
+0.136,EMAIL ADDRESS CHANGE DT/TM,D,DATE/TIME,.13;6,,True,True,3210604,
+0.137,EMAIL ADDRESS CHANGE SOURCE,S,SET OF CODES,.13;7,,True,True,3171208,Please enter the source of the EMAIL address change.
+0.138,EMAIL ADDRESS CHANGE SITE,P,POINTER,.13;8,4.0,True,True,3060410,Please enter the site that last changed this patient's EMAIL address.
+0.139,CELLULAR NUMBER CHANGE DT/TM,D,DATE/TIME,.13;9,,True,True,3210604,
+0.14,CURRENT MEANS TEST STATUS,P,POINTER,0;14,408.32,True,True,3060624,This field is computed by the system.  It contains the current means test status for a patient.
+0.141,CONFIDENTIAL ADDRESS CATEGORY,S,SET OF CODES,.14;0,,True,False,,
+0.14105,CONFIDENTIAL ADDRESS ACTIVE?,S,SET OF CODES,.141;9,,True,True,3060829,Enter 'Y' if you want to enter or edit confidential address data.
+0.1411,CONFIDENTIAL STREET [LINE 1],F,FREE TEXT,.141;1,,True,True,3180227,Enter the first line of the applicant's confidential street address [2-30 characters].
+0.14111,CONFIDENTIAL ADDRESS COUNTY,N,NUMERIC,.141;11,,True,True,3060829,Enter a valid county for the applicant's confidential address.
+0.14112,CONFIDENTIAL ADDR CHANGE DT/TM,D,DATE/TIME,.141;12,,True,True,3210604,
+0.14113,CONFIDENTIAL ADDR CHANGE SITE,P,POINTER,.141;13,4.0,True,True,3050519,
+0.14114,CONFIDENTIAL ADDR PROVINCE,F,FREE TEXT,.141;14,,True,True,3180227,Answer must be 1-20 characters in length.
+0.14115,CONFIDENTIAL ADDR POSTAL CODE,F,FREE TEXT,.141;15,,True,True,3180227,Answer must be 1-10 characters in length.
+0.14116,CONFIDENTIAL ADDR COUNTRY,P,POINTER,.141;16,779.004,True,True,3210528,Enter the country where the patient's address is located.
+0.14117,CONFIDENTIAL ADDR CASS IND,S,SET OF CODES,.141;17,,True,True,3180213,Select the CASS status for the confidential address
+0.14118,CONFIDENTIAL ADDR CHANGE USER,P,POINTER,.141;18,200.0,True,True,3210604,Enter the name of the user who has changed this patient's confidential address.
+0.14119,CONFIDENTIAL PHONE CHANGE USER,P,POINTER,.141;19,200.0,True,True,3210604,Enter the name of the user who has changed this patient's confidential phone number.
+0.1412,CONFIDENTIAL STREET [LINE 2],F,FREE TEXT,.141;2,,True,True,3180227,"If necessary, enter the second line of this applicant's confidential address [2-30 characters]."
+0.141201,CONFIDENTIAL ADDR OVERRIDE IND,F,FREE TEXT,.141;20,,True,True,3250204,Enter the validation key hash code returned from a Universal Address Module (UAM) request for an entered valid confident
+0.14121,CONFIDENTIAL PHONE CHG DT/TM,D,DATE/TIME,.141;21,,True,True,3250611,Please enter the date and time the Confidential phone number was changed.
+0.14122,CONFIDENTIAL PHONE CHG SOURCE,S,SET OF CODES,.141;22,,True,True,3250611,Please enter the source of the Confidential phone number change.
+0.14123,CONFIDENTIAL PHONE CHG SITE,P,POINTER,.141;23,4.0,True,True,3250610,Please enter the site that last changed this patient's Confidential phone number.
+0.1413,CONFIDENTIAL STREET [LINE 3],F,FREE TEXT,.141;3,,True,True,3180227,"If necessary, enter the third line of this applicant's confidential street address [2-30 characters]"
+0.1414,CONFIDENTIAL ADDRESS CITY,F,FREE TEXT,.141;4,,True,True,3180227,Enter the city for the applicant's confidential address [2-30 characters].
+0.1415,CONFIDENTIAL ADDRESS STATE,P,POINTER,.141;5,5.0,True,True,3060829,Enter the State for the applicant's confidential address.
+0.1416,CONFIDENTIAL ADDRESS ZIP CODE,F,FREE TEXT,.141;6,,True,True,3060829,Answer with either the 5 digit or 9 digit zip code.
+0.1417,CONFIDENTIAL START DATE,D,DATE/TIME,.141;7,,True,True,3070801,Enter the date to begin contacting the applicant at the confidential address.  Date cannot be in the past.
+0.1418,CONFIDENTIAL END DATE,D,DATE/TIME,.141;8,,True,True,3070801,Enter the date the applicant will no longer be contacted at the confidential address.  End date must be after start date
+0.152,INELIGIBLE DATE,D,DATE/TIME,.15;2,,True,True,3220613,The Ineligible Date cannot be prior to the beneficiary Date of Birth.  Enter the date this patient was identified as bei
+0.153,MISSING PERSON DATE,D,DATE/TIME,.15;3,,True,True,2900418,Enter the date this patient was identified as being a missing person.
+0.16,MISSING OR INELIGIBLE,A,ADDRESS,.16;0,,True,False,,
+0.1651,INELIGIBLE TWX SOURCE,S,SET OF CODES,INE;1,,True,True,3220721,The source of the TWX which informed you this patient is ineligible for treatment.
+0.1653,INELIGIBLE TWX CITY,F,FREE TEXT,INE;3,,True,True,3220721,The city from which the TWX informing you of this patients ineligibility originated [3-30 characters].
+0.1654,INELIGIBLE TWX STATE,P,POINTER,INE;4,5.0,True,True,3220721,The state from which the TWX informing you of this patients ineligiblity originated.
+0.1656,INELIGIBLE VARO DECISION,F,FREE TEXT,INE;6,,True,True,3220721,The decision made by the VARO concerning this patient's ineligibility [3-75 characters].
+0.1657,MISSING PERSON TWX SOURCE,S,SET OF CODES,INE;7,,True,True,2880527,The location from which the TWX originated advising you that this patient was missing.
+0.1658,MISSING PERSON TWX CITY,F,FREE TEXT,INE;8,,True,True,2880527,ANSWER MUST BE 3-30 CHARACTERS IN LENGTH
+0.1659,MISSING PERSON TWX STATE,P,POINTER,INE;9,5.0,True,True,2880527,The state from which the TWX informing you this patient was missing originated.
+0.172,FEE HOSPITAL I.D.,S,SET OF CODES,.17;2,,True,True,2930326,
+0.181,EMERGENCY RESPONSE INDICATOR,S,SET OF CODES,.18;1,,True,True,3200327,Enter the appropriate ER Indicator to identify patients impacted by the COVID-19 Pandemic.
+0.182,HISTORIC KATRINA ERI,S,SET OF CODES,KATR;1,,True,True,3200401,Enter the appropriate ER Indicator to identify patients from impacted zip code areas designated by FEMA.
+0.19,DIVISION,C,COMPUTED, ; ,,True,True,,A computed field which determines the current division to which this inpatient is assigned.
+0.2101,K2-COUNTRY,P,POINTER,.211;12,779.004,True,True,3191203,Enter the country where the secondary NOK address is located.  If entering an Army/Air Force Post Office (APO) or a Flee
+0.21011,K-WORK PHONE NUMBER,F,FREE TEXT,.21;11,,True,True,3100528,Enter the next of kin's work phone number.  Answer must be 4-20 characters in length.
+0.21012,PRIMARY NOK CHANGE DATE/TIME,D,DATE/TIME,.212;1,,True,True,3050616,
+0.2102,K2-PROVINCE,F,FREE TEXT,.211;13,,True,True,3191203,Answer must be 1-20 characters in length.
+0.2103,K2-POSTAL CODE,F,FREE TEXT,.211;14,,True,True,3191203,Answer must be 1-10 characters in length.
+0.2104,K2-RELATIONSHIP TYPE,P,POINTER,.211;15,12.11,True,True,3220105,Enter the relationship of the secondary NOK to the patient.
+0.211,K-NAME OF PRIMARY NOK,F,FREE TEXT,.21;1,,True,True,3050630,"Enter name in 'LAST,FIRST MIDDLE SUFFIX' format, must be 3-35 characters in length."
+0.211011,K2-WORK PHONE NUMBER,F,FREE TEXT,.211;11,,True,True,3100528,Enter the work phone for the secondary next of kin.  Answer must be 4-20 characters in length.
+0.211012,SECONDARY NOK CHANGE DATE/TIME,D,DATE/TIME,.212;2,,True,True,3100526,
+0.212,K-RELATIONSHIP TO PATIENT,F,FREE TEXT,.21;2,,True,True,3220626,Enter any notes related to the relationship of the primary NOK to the patient [1-30 characters].
+0.2125,K-ADDRESS SAME AS PATIENT'S?,S,SET OF CODES,.21;10,,True,True,2861002,Enter 'Y' if primary NOK address/phone number same as patients otherwise enter 'N'.
+0.213,K-STREET ADDRESS [LINE 1],F,FREE TEXT,.21;3,,True,True,2990920,Enter the first line of the primary NOK's address [3-30 characters].
+0.214,K-STREET ADDRESS [LINE 2],F,FREE TEXT,.21;4,,True,True,2990921,"If necessary, enter the second line of the primary NOK's address [3-30 characters]."
+0.215,K-STREET ADDRESS [LINE 3],F,FREE TEXT,.21;5,,True,True,2861002,"If necessary, enter the third line of the primary NOK's address [3-30 characters]."
+0.216,K-CITY,F,FREE TEXT,.21;6,,True,True,2990921,Enter the city in which the primary NOK resides [3-30 characters].
+0.217,K-STATE,P,POINTER,.21;7,5.0,True,True,2990921,Enter the state in which the primary NOK resides.
+0.218,K-ZIP CODE,F,FREE TEXT,.21;8,,True,True,2930603,Enter the 5-digit zip code where the primary NOK resides.
+0.219,K-PHONE NUMBER,F,FREE TEXT,.21;9,,True,True,3100528,Enter the phone number of the primary NOK [4-20 characters].
+0.2191,K2-NAME OF SECONDARY NOK,F,FREE TEXT,.211;1,,True,True,3190821,"Enter name in 'LAST,FIRST MIDDLE SUFFIX' format, must be 3-35 characters in length."
+0.2192,K2-RELATIONSHIP TO PATIENT,F,FREE TEXT,.211;2,,True,True,3220626,Enter any notes related to the relationship of the secondary NOK to the patient [1-30 characters].
+0.21925,K2-ADDRESS SAME AS PATIENT'S?,S,SET OF CODES,.211;10,,True,True,2861002,Enter 'Y' if the secondary NOK address/phone number is the same as the patients otherwise enter 'N'.
+0.2193,K2-STREET ADDRESS [LINE 1],F,FREE TEXT,.211;3,,True,True,2890115,Enter the first line of the secondary NOK's address [3-30 characters].
+0.2194,K2-STREET ADDRESS [LINE 2],F,FREE TEXT,.211;4,,True,True,2890115,"If necessary, enter the second line of the secondary NOK's address [3-30 characters]."
+0.2195,K2-STREET ADDRESS [LINE 3],F,FREE TEXT,.211;5,,True,True,2861002,"If necessary, enter the third line of the secondary NOK's address [3-30 characters]."
+0.2196,K2-CITY,F,FREE TEXT,.211;6,,True,True,2861002,Enter the city in which the secondary NOK resides [3-30 characters].
+0.2197,K2-STATE,P,POINTER,.211;7,5.0,True,True,2861002,Enter the state in which the secondary NOK resides.
+0.2198,K2-ZIP CODE,F,FREE TEXT,.211;8,,True,True,2930603,Enter the 5-digit zip code of the residence of the secondary NOK.
+0.2199,K2-PHONE NUMBER,F,FREE TEXT,.211;9,,True,True,3190821,Enter the phone number of the secondary NOK [3-20 characters].
+0.2201,E-ZIP+4,F,FREE TEXT,.22;1,,True,True,2930603,Answer with either 5 digit or 9 digit zip code.
+0.2202,D-ZIP+4,F,FREE TEXT,.22;2,,True,True,2930603,Answer with either 5 digit or 9 digit zip code.
+0.2203,K2-ZIP+4,F,FREE TEXT,.22;3,,True,True,2930603,Answer with either 5 digit or 9 digit zip code.
+0.2204,E2-ZIP+4,F,FREE TEXT,.22;4,,True,True,2930603,Answer with either 5 digit or 9 digit zip code.
+0.2205,EMPLOYER ZIP+4,F,FREE TEXT,.22;5,,True,True,2930603,Answer with either 5 digit or 9 digit zip code.
+0.2206,SPOUSE'S EMP ZIP+4,F,FREE TEXT,.22;6,,True,True,2930603,Answer with either 5 digit or 9 digit zip code.
+0.2207,K-ZIP+4,F,FREE TEXT,.22;7,,True,True,2950922,Answer with either 5 digit or 9 digit zip code.
+0.221,K-COUNTRY,P,POINTER,.21;12,779.004,True,True,3191203,Enter the country where the primary NOK address is located.  If entering an Army/Air Force Post Office (APO) or a Fleet 
+0.222,K-PROVINCE,F,FREE TEXT,.21;13,,True,True,3191203,Answer must be 1-20 characters in length.
+0.223,K-POSTAL CODE,F,FREE TEXT,.21;14,,True,True,3191203,Answer must be 1-10 characters in length.
+0.224,K-RELATIONSHIP TYPE,P,POINTER,.21;15,12.11,True,True,3220106,Enter the relationship of the primary NOK to the patient.
+0.2401,FATHER'S NAME,F,FREE TEXT,.24;1,,True,True,3050630,"Enter name in 'LAST,FIRST MIDDLE SUFFIX' format, must be 3-35 characters in length."
+0.2402,MOTHER'S NAME,F,FREE TEXT,.24;2,,True,True,3050630,"Enter name in 'LAST,FIRST MIDDLE SUFFIX' format, must be 3-35 characters in length."
+0.2403,MOTHER'S MAIDEN NAME,F,FREE TEXT,.24;3,,True,True,3050630,"Enter name in 'LAST,FIRST MIDDLE SUFFIX' format, must be 3-35 characters in length."
+0.2405,PREFERRED NAME,F,FREE TEXT,.24;5,,True,True,3241211,Enter the Preferred Name (1-25 alphabetic characters and/or spaces) for how the patient would like to be addressed at th
+0.2406,PRONOUN,P,POINTER,.2406;0,,True,False,,
+0.24061,PRONOUN DESCRIPTION,F,FREE TEXT,.241;2,,True,True,3210624,Enter the description (3-255 characters) of the 'Other' Pronoun for specifically addressing the patient.
+0.251,SPOUSE'S EMPLOYER NAME,F,FREE TEXT,.25;1,,True,True,2880725,Enter the name of this spouse's employer [3-20 characters].
+0.2514,SPOUSE'S OCCUPATION,F,FREE TEXT,.25;14,,True,True,2920110,Enter the spouse's current occupation.  Answer must be 3-30 characters in length.
+0.2515,SPOUSE'S EMPLOYMENT STATUS,S,SET OF CODES,.25;15,,True,True,3041130,Enter the current employment status for this patient's spouse.
+0.2516,SPOUSE'S RETIREMENT DATE,D,DATE/TIME,.25;16,,True,True,3050526,"For this veteran applicant's spouse, enter the date s/he retired from her/his place of employment.  A date may only be e"
+0.252,SPOUSE'S EMP STREET [LINE 1],F,FREE TEXT,.25;2,,True,True,2890115,Enter the first line of the spouse's employers address [3-35 characters].
+0.253,SPOUSE'S EMP STREET [LINE 2],F,FREE TEXT,.25;3,,True,True,2890115,"If necessary, enter the second line of the spouse's employers address [3-35 characters]."
+0.254,SPOUSE'S EMP STREET [LINE 3],F,FREE TEXT,.25;4,,True,True,2861002,"If necessary, enter the third line of the spouse's employers address [3-35 characters]."
+0.255,SPOUSE'S EMPLOYER'S CITY,F,FREE TEXT,.25;5,,True,True,2861002,Enter the city in which the spouse is employed [2-20 characters].
+0.256,SPOUSE'S EMPLOYER'S STATE,P,POINTER,.25;6,5.0,True,True,2861002,Enter the state in which the spouse is employed.
+0.257,SPOUSE'S EMP ZIP CODE,F,FREE TEXT,.25;7,,True,True,2930603,Enter the 5-digit zip code of the spouse's place of employment.
+0.258,SPOUSE'S EMP PHONE NUMBER,F,FREE TEXT,.25;8,,True,True,2861002,Enter the spouse's employment telephone number [4-20 characters].
+0.290012,ZIP+4 (CIVIL),F,FREE TEXT,.291;12,,True,True,2930913,Answer with either 5 digit or 9 digit zip code.
+0.29013,ZIP+4 (VA),F,FREE TEXT,.29;13,,True,True,2930913,Answer with either 5 digit or 9 digit zip code.
+0.291,DATE RULED INCOMPETENT (VA),D,DATE/TIME,.29;1,,True,True,3070522,Enter the date this patient was ruled incompetent to handle his VA funds.  The Date Ruled Incompetent cannot be after th
+0.2911,INSTITUTION (VA),P,POINTER,.29;3,4.0,True,True,2840914,
+0.2912,GUARDIAN (VA),F,FREE TEXT,.29;4,,True,True,2840914,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2913,RELATIONSHIP (VA),F,FREE TEXT,.29;5,,True,True,,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2914,STREET ADDRESS 1 (VA),F,FREE TEXT,.29;6,,True,True,,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2915,STREET ADDRESS 2 (VA),F,FREE TEXT,.29;7,,True,True,,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2916,CITY (VA),F,FREE TEXT,.29;8,,True,True,,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2917,STATE (VA),P,POINTER,.29;9,5.0,True,True,2840914,
+0.2918,ZIP (VA),F,FREE TEXT,.29;10,,True,True,2930603,ANSWER MUST BE 5 CHARACTERS IN LENGTH
+0.2919,PHONE (VA),F,FREE TEXT,.29;11,,True,True,2840914,ANSWER MUST BE 3-20 CHARACTERS IN LENGTH
+0.292,DATE RULED INCOMPETENT (CIVIL),D,DATE/TIME,.29;2,,True,True,3090904,Enter the date ruled incompetent.  The Date Ruled Incompetent cannot be after the Date of Death.
+0.2921,INSTITUTION (CIVIL),F,FREE TEXT,.291;3,,True,True,,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2922,GUARDIAN (CIVIL),F,FREE TEXT,.291;4,,True,True,,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2923,RELATIONSHIP (CIVIL),F,FREE TEXT,.291;5,,True,True,,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2924,STREET ADDRESS 1 (CIVIL),F,FREE TEXT,.291;6,,True,True,,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2925,STREET ADDRESS 2 (CIVIL),F,FREE TEXT,.291;7,,True,True,,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2926,CITY (CIVIL),F,FREE TEXT,.291;8,,True,True,,ANSWER MUST BE 2-30 CHARACTERS IN LENGTH
+0.2927,STATE (CIVIL),P,POINTER,.291;9,5.0,True,True,,
+0.2928,ZIP (CIVIL),F,FREE TEXT,.291;10,,True,True,2930603,ANSWER MUST BE 5 CHARACTERS IN LENGTH
+0.2929,PHONE (CIVIL),F,FREE TEXT,.291;11,,True,True,,ANSWER MUST BE 3-20 CHARACTERS IN LENGTH
+0.293,RATED INCOMPETENT?,S,SET OF CODES,.29;12,,True,True,2890505,"Used by A.M.I.E,  may differ from the Date ruled incompetent"
+0.301,SERVICE CONNECTED?,S,SET OF CODES,.3;1,,True,True,2960911,"Enter 'Y' if this patient is service connected, 'N' if not."
+0.3012,SC AWARD DATE,D,DATE/TIME,.3;12,,True,True,2930419,Enter the date on which Service Connection is effective based on VBA decision.  This can be obtained from either HINQ or
+0.3013,P&T EFFECTIVE DATE,D,DATE/TIME,.3;13,,True,True,3070516,"Enter the Effective Date the patient was awarded P&T disability status by VARO.  This date is optional, but cannot be in"
+0.3014,EFF. DATE COMBINED SC% EVAL.,D,DATE/TIME,.3;14,,True,True,3050714,
+0.302,SERVICE CONNECTED PERCENTAGE,N,NUMERIC,.3;2,,True,True,3030609,For this service connected applicant enter the percentage of service connection between 0 and 100%.
+0.3025,RECEIVING VA DISABILITY?,S,SET OF CODES,.3;11,,True,True,3010107,"Enter 'Y' if receiving a VA Disability, 'N' if not."
+0.303,AMOUNT OF VA DISABILITY,N,NUMERIC,.3;3,,True,True,2880923,"If in receipt of VA Disability, enter the dollar amount awarded."
+0.304,P&T,S,SET OF CODES,.3;4,,True,True,3060712,Is this patient permanently and totally disabled due to an SC condition?
+0.305,UNEMPLOYABLE,S,SET OF CODES,.3;5,,True,True,3041117,Is this patient unemployable due to an SC condition as rated by VARO?
+0.306,MONETARY BEN. VERIFY DATE,D,DATE/TIME,.3;6,,True,True,2900418,Enter the date on which monetary benefits were verified to be accurate.
+0.307,INELIGIBLE REASON,F,FREE TEXT,.3;7,,True,True,3220613,Enter the reason this patient is considered to be ineligible for treatment NTE 40 characters.
+0.308,*NON-VET CLASSIFICATION,P,POINTER,.3;8,24.0,False,True,2851230,
+0.309,AGENCY/ALLIED COUNTRY,P,POINTER,.3;9,35.0,True,True,2861007,"If applicable, enter the federal agency or allied country associated with this patient."
+0.31,*CATEGORY OF BENEFICIARY,P,POINTER,.3;10,45.82,True,True,2911216,Enter the category of benificiary for this patient.
+0.3111,EMPLOYER NAME,F,FREE TEXT,.311;1,,True,True,2890530,Enter the name of this patient's employer [1-30 characters].
+0.31115,EMPLOYMENT STATUS,S,SET OF CODES,.311;15,,True,True,3060802,Enter this patient's current employment status.
+0.31116,DATE OF RETIREMENT,D,DATE/TIME,.311;16,,True,True,3050526,For this veteran applicant enter the date s/he retired from her/his place of employment.  A date may only be entered if 
+0.3112,GOVERNMENT AGENCY,S,SET OF CODES,.311;2,,True,True,2890531,"Enter 'Y' if this patient is employed by a government agency, 'N' if not."
+0.3113,EMPLOYER STREET [LINE 1],F,FREE TEXT,.311;3,,True,True,2890531,Enter the first line of the employer's address [1-30 characters].
+0.3114,EMPLOYER STREET [LINE 2],F,FREE TEXT,.311;4,,True,True,2890531,"If necessary, enter the second line of the employer's address [1-30 characters]."
+0.3115,EMPLOYER STREET [LINE 3],F,FREE TEXT,.311;5,,True,True,2890531,"If necessary, enter the third line of the employer's address [1-30 characters]."
+0.3116,EMPLOYER CITY,F,FREE TEXT,.311;6,,True,True,2890531,Enter the city in which this patient is employed [1-30 characters].
+0.3117,EMPLOYER STATE,P,POINTER,.311;7,5.0,True,True,2890531,Enter the state in which this patient is employed.
+0.3118,EMPLOYER ZIP CODE,F,FREE TEXT,.311;8,,True,True,2930603,Enter the 5-digit zip code for this patient's place of employment.
+0.3119,EMPLOYER PHONE NUMBER,F,FREE TEXT,.311;9,,True,True,2890531,Enter this patient's employment telephone number [3-20 characters].
+0.312,*CLAIM FOLDER LOCATION,F,FREE TEXT,.31;2,,True,True,2930413,Enter the location of this patient's VA claim folder [2-40 characters].
+0.3121,INSURANCE TYPE,P,POINTER,.312;0,,True,False,,Select from the listing available the type of insurance under which this patient is covered.
+0.313,CLAIM NUMBER,F,FREE TEXT,.31;3,,True,True,3230609,Enter this patient's claim number as 7-8 numerics or enter SS if the claim number is the same as his/her SSN.  Pseudo SS
+0.314,CLAIM FOLDER LOCATION,P,POINTER,.31;4,4.0,True,True,3230712,Enter the location of the patient's claim folder.  
+0.3192,COVERED BY HEALTH INSURANCE?,S,SET OF CODES,.31;11,,True,True,3200520,"Enter 'Y' if this patient is covered by health insurance, 'N' if not."
+0.32101,VIETNAM SERVICE INDICATED?,S,SET OF CODES,.321;1,,True,True,3040614,"Enter 'Y' if this patient served in Vietnam, 'N' if not, 'U' if unknown."
+0.32102,AGENT ORANGE EXPOS. INDICATED?,S,SET OF CODES,.321;2,,True,True,3220318,"Enter 'Y' if this patient claims exposure to agent orange, 'N' if not, 'U' if unknown."
+0.32103,RADIATION EXPOSURE INDICATED?,S,SET OF CODES,.321;3,,True,True,3220318,Enter the RADIATION EXPOSURE INDICATED associated with the enrollment priority determination
+0.32104,VIETNAM FROM DATE,D,DATE/TIME,.321;4,,True,True,3040722,Enter the date this patient commenced service in the Republic of Vietnam.
+0.32105,VIETNAM TO DATE,D,DATE/TIME,.321;5,,True,True,3040614,Enter the date this patient ended service in the Republic of Vietnam.
+0.32107,AGENT ORANGE REGISTRATION DATE,D,DATE/TIME,.321;7,,True,True,3010107,Enter the date on which this patient was registered as being exposed to agent orange.
+0.32108,AGENT ORANGE REPORTED TO C.O.,D,DATE/TIME,.321;8,,True,True,2900418,Enter the date on which this patient's claim for agent orange exposure was reported to C.O.
+0.32109,AGENT ORANGE EXAM DATE,D,DATE/TIME,.321;9,,True,True,2900418,Enter the date this patient was examined for the agent orange condition claimed.
+0.3211,AGENT ORANGE REGISTRATION #,N,NUMERIC,.321;10,,True,True,2860806,Enter this patient's agent orange registration number [a number between 1-999999].
+0.32111,RADIATION REGISTRATION DATE,D,DATE/TIME,.321;11,,True,True,2900418,Enter the date on which this patient was registered as claiming exposure to ionizing radiation.
+0.32115,PROJ 112/SHAD,S,SET OF CODES,.321;15,,False,True,3060713,
+0.32116,TOXIC EXPOSURE RISK ACTIVITY,S,SET OF CODES,.321;16,,True,False,3240322,This field is not editable in VistA and is only shared so that it may be displayed to a VistA user along with the patien
+0.32117,PERSIAN GULF INDICATOR,S,SET OF CODES,.321;17,,True,False,3240819,"If the patient indicates deployment to the Persian Gulf, enter ""YES"". If the patient indicates there was no deployment t"
+0.32118,PERSIAN GULF LAST CHANGE DATE,D,DATE/TIME,.321;18,,True,True,3240828,Type a date between 8/2/1999 and 12/31/2099.
+0.3212,RADIATION EXPOSURE METHOD,S,SET OF CODES,.321;12,,True,True,3230201,Select from the listing available the method by which this patient was exposed to ionizing radiation.
+0.3213,AGENT ORANGE EXPOSURE LOCATION,S,SET OF CODES,.321;13,,True,True,3230106,Enter where the patient was exposed to agent orange.
+0.3214,FILIPINO VETERAN PROOF,S,SET OF CODES,.321;14,,True,True,3040614,
+0.3215,SERVICE [OEF OR OIF],S,SET OF CODES,.3215;0,,True,False,3060104,
+0.3216,MILITARY SERVICE EPISODE,D,DATE/TIME,.3216;0,,True,False,,
+0.321701,CAMP LEJEUNE,S,SET OF CODES,.3217;1,,True,True,3150313,"Enter ""Y"" if there is sufficient evidence that the Veteran was housed at Camp Lejeune for a minimum of 30 days between a"
+0.321702,CAMP LEJEUNE DATE,D,DATE/TIME,.3217;2,,True,True,3150313,This is the date when the CAMP LEJEUNE ELIGIBILITY INDICATOR field was last changed.
+0.321703,CAMP LEJEUNE CHANGE SITE,F,FREE TEXT,.3217;3,,True,True,3150313,Answer must be 3-10 characters in length.
+0.321704,CAMP LEJEUNE SOURCE,F,FREE TEXT,.3217;4,,True,True,3150313,Answer must be 3-10 characters in length.
+0.32171,CAMP LEJEUNE DATA ENTRY LOCKED,S,SET OF CODES,.32171;1,,True,True,3150313,Enter 1 to Lock or 0 to unlock Camp Lejeune data entry.
+0.322,SERVICE VERIFICATION DATE,D,DATE/TIME,.32;2,,True,True,2900418,Enter the date on whcih this patient's service record was verified as being accurate.
+0.32201,PERSIAN GULF SERVICE?,S,SET OF CODES,.322;10,,True,True,3040628,"Did this patient serve in the Persian Gulf War?  Answer yes, no, or unknown."
+0.322011,PERSIAN GULF FROM DATE,D,DATE/TIME,.322;11,,True,True,3040722,TYPE A DATE BETWEEN 8/2/1990 AND TODAY INDICATING THE DATE THIS PATIENT BEGAN SERVING IN THE PERSIAN GULF.
+0.322012,PERSIAN GULF TO DATE,D,DATE/TIME,.322;12,,True,True,3040628,Enter the date this patient's service in the Persian Gulf ended.  Date must either be null or in the past.
+0.322013,SOUTHWEST ASIA CONDITIONS?,S,SET OF CODES,.322;13,,True,True,3080422,"Enter 'Y' if this patient claims exposure to Southwest Asia Conditions, 'N' if not, 'U' if unknown."
+0.322014,SW ASIA COND REGISTRATION DATE,D,DATE/TIME,.322;14,,True,True,3060503,Enter the date on which this patient was registered as being exposed to Southwest Asia conditions.  This must be after 8
+0.322015,SW ASIA COND EXAM DATE,D,DATE/TIME,.322;15,,True,True,3060503,Enter the date this patient was examined for the Southwest Asia conditions claimed (Must be after 8/1/1990).
+0.322016,SOMALIA SERVICE INDICATED?,S,SET OF CODES,.322;16,,True,True,3040628,Did this patient serve in Somalia?
+0.322017,SOMALIA FROM DATE,D,DATE/TIME,.322;17,,True,True,3040722,Enter the date veteran's service in Somalia began.
+0.322018,SOMALIA TO DATE,D,DATE/TIME,.322;18,,True,True,3040628,Enter the date veteran's service in Somalia ended.
+0.322019,YUGOSLAVIA SERVICE INDICATED?,S,SET OF CODES,.322;19,,True,True,3040628,Respond yes if patient served in the Kosovo Conflict (the airspace above and the adjacent waters of the Republic of Yugo
+0.32202,YUGOSLAVIA FROM DATE,D,DATE/TIME,.322;20,,True,True,3040722,"Type a date between June 22, 1992 and today indicating the date this patient began serving in the Yugoslavia Conflict."
+0.322021,YUGOSLAVIA TO DATE,D,DATE/TIME,.322;21,,True,True,3040628,"Enter the date this patient's service in the Yugoslavia Conflict ended.  Date must be after June 22, 1992."
+0.3221,LEBANON SERVICE INDICATED?,S,SET OF CODES,.322;1,,True,True,3040614,Did this veteran serve in Lebanon during the conflict there?
+0.3222,LEBANON FROM DATE,D,DATE/TIME,.322;2,,True,True,3040722,"TYPE A DATE AFTER OCTOBER 1, 1983 TO INDICATE THE DATE THIS PATIENT BEGAN HIS SERVICE IN LEBANON"
+0.3223,LEBANON TO DATE,D,DATE/TIME,.322;3,,True,True,3040614,"TYPE A DATE AFTER OCTOBER 1, 1983 INDICATING THE DATE THIS PATIENT'S SERVICE IN LEBANON ENDED."
+0.3224,GRENADA SERVICE INDICATED?,S,SET OF CODES,.322;4,,True,True,3040614,"If this patient served during the conflict in Grenada, enter YES here.  Enter NO if the patient did not serve in Grenada"
+0.3225,GRENADA FROM DATE,D,DATE/TIME,.322;5,,True,True,3040722,TYPE A DATE BETWEEN 10/23/1983 AND 11/21/1983 INDICATING THE DATE THIS PATIENT'S SERVICE IN GRENADA BEGAN.
+0.3226,GRENADA TO DATE,D,DATE/TIME,.322;6,,True,True,3040614,TYPE A DATE BETWEEN 10/23/1983 AND 11/21/1983 INDICATING THE DATE THE PATIENT'S SERVICE IN GRENADA ENDED.
+0.3227,PANAMA SERVICE INDICATED?,S,SET OF CODES,.322;7,,True,True,3040614,"Did this patient serve in the conflict in Panama?  Answer YES, NO, or UNKNOWN."
+0.3228,PANAMA FROM DATE,D,DATE/TIME,.322;8,,True,True,3040722,TYPE A DATE BETWEEN 12/20/1989 AND 1/31/1990 INDICATING THE DATE THIS PATIENT BEGAN SERVICE IN PANAMA.
+0.3229,PANAMA TO DATE,D,DATE/TIME,.322;9,,True,True,3040614,TYPE A DATE BETWEEN 12/20/1989 AND 1/31/1990 INDICATING THE DATE THIS PATIENT'S SERVICE IN PANAMA ENDED.
+0.323,PERIOD OF SERVICE,P,POINTER,.32;3,21.0,True,True,3060802,Select from the available listing the period of service which best classifies this patient.
+0.324,SERVICE DISCHARGE TYPE [LAST],P,POINTER,.32;4,25.0,True,True,3040610,Select from the listing the discharge type from this patient's last episode of military service.
+0.325,SERVICE BRANCH [LAST],P,POINTER,.32;5,23.0,True,True,3051104,Select from the listing the branch in which this patient served during his last episode of military service.
+0.326,SERVICE ENTRY DATE [LAST],D,DATE/TIME,.32;6,,True,True,3040722,Enter the date the patient entered his last episode of military service.
+0.327,SERVICE SEPARATION DATE [LAST],D,DATE/TIME,.32;7,,True,True,3090623,Enter the date on which this patient was separated from his last episode of military service.
+0.328,SERVICE NUMBER [LAST],F,FREE TEXT,.32;8,,True,True,3040610,Enter the service number assigned to this patient during his last episode of military service or 'SS' if it's the same a
+0.3285,SERVICE SECOND EPISODE?,S,SET OF CODES,.32;19,,True,True,3040407,Enter YES if this patient has more than one episode of military service otherwise enter NO.
+0.329,SERVICE DISCHARGE TYPE [NTL],P,POINTER,.32;9,25.0,True,True,3040610,Enter the type of discharge given this patient from his next-to-last episode of military service.
+0.3291,SERVICE BRANCH [NTL],P,POINTER,.32;10,23.0,True,True,3060718,Enter the branch of service in which the patient served in his next-to-last episode of military service.
+0.32911,SERVICE COMPONENT [LAST],S,SET OF CODES,.3291;1,,True,True,3050919,Enter the military service component of the patient for the most recent military service episode.
+0.32912,SERVICE COMPONENT [NTL],S,SET OF CODES,.3291;2,,True,True,3050919,Enter the military service component of the patient for the next to last military service episode.
+0.32913,SERVICE COMPONENT [NNTL],S,SET OF CODES,.3291;3,,True,True,3050919,Enter the military service component of the patient for the third most recent military service episode.
+0.3292,SERVICE ENTRY DATE [NTL],D,DATE/TIME,.32;11,,True,True,3040722,Enter the date this patient commenced his next-to-last episode of military service.
+0.3293,SERVICE SEPARATION DATE [NTL],D,DATE/TIME,.32;12,,True,True,3040610,Enter the date this patient ended his next-to-last episode of military service.
+0.3294,SERVICE NUMBER [NTL],F,FREE TEXT,.32;13,,True,True,3040610,Enter the service number assigned to this patient during his next-to-last episode of military service or 'SS' if it's th
+0.32945,SERVICE THIRD EPISODE?,S,SET OF CODES,.32;20,,True,True,3040407,Enter YES if this patient served more than two episodes of military service otherwise enter NO.
+0.3295,SERVICE DISCHARGE TYPE [NNTL],P,POINTER,.32;14,25.0,True,True,3040610,For this third episode of military service enter the discharge type given this patient.
+0.3296,SERVICE BRANCH [NNTL],P,POINTER,.32;15,23.0,True,True,3060104,For this third episode of military service enter the branch in which this patient served.
+0.3297,SERVICE ENTRY DATE [NNTL],D,DATE/TIME,.32;16,,True,True,3040722,For this third episode of military service enter the date on which the patient commenced serving.
+0.3298,SERVICE SEPARATION DATE [NNTL],D,DATE/TIME,.32;17,,True,True,3040610,For this third episode of military service enter the date on which the service terminated.
+0.3299,SERVICE NUMBER [NNTL],F,FREE TEXT,.32;18,,True,True,3040610,For this third episode of military service enter the service number assigned or 'SS' if it's the same as the SSN.
+0.33011,E-WORK PHONE NUMBER,F,FREE TEXT,.33;11,,True,True,3100528,Enter the work phone number for the emergency contact.  Answer must be 4-20 characters in length.
+0.33012,E-CONTACT CHANGE DATE/TIME,D,DATE/TIME,.332;1,,True,True,3100526,
+0.3305,E-EMER. CONTACT SAME AS NOK?,S,SET OF CODES,.33;10,,True,True,2861007,"Enter YES if the emergency contact and next-of-kin are the same person, otherwise enter NO."
+0.3306,E-COUNTRY,P,POINTER,.33;12,779.004,True,True,3191203,Enter the country where the primary emergency contact address is located.  If entering an Army/Air Force Post Office (AP
+0.3307,E-PROVINCE,F,FREE TEXT,.33;13,,True,True,3191203,Answer must be 1-20 characters in length.
+0.3308,E-POSTAL CODE,F,FREE TEXT,.33;14,,True,True,3191203,Answer must be 1-10 characters in length.
+0.3309,E-RELATIONSHIP TYPE,P,POINTER,.33;15,12.11,True,True,3220105,Enter the relationship of the emergency contact to the patient.
+0.331,E-NAME,F,FREE TEXT,.33;1,,True,True,3190821,"Enter name in 'LAST,FIRST MIDDLE SUFFIX' format, must be 3-35 characters in length."
+0.331011,E2-WORK PHONE NUMBER,F,FREE TEXT,.331;11,,True,True,3100528,Enter the work phone number for the secondary emergency contact.  Answer must be 4-20 characters in length.
+0.331012,E2-COUNTRY,P,POINTER,.331;12,779.004,True,True,3191203,Enter the country where the secondary emergency contact address is located.  If entering an Army/Air Force Post Office (
+0.331013,E2-PROVINCE,F,FREE TEXT,.331;13,,True,True,3191203,Answer must be 1-20 characters in length.
+0.331014,E2-POSTAL CODE,F,FREE TEXT,.331;14,,True,True,3191203,Answer must be 1-10 characters in length.
+0.331015,E2-RELATIONSHIP TYPE,P,POINTER,.331;15,12.11,True,True,3220105,Enter the relationship of the secondary emergency contact to the patient.
+0.3311,E2-NAME OF SECONDARY CONTACT,F,FREE TEXT,.331;1,,True,True,3190821,"Enter name in 'LAST,FIRST MIDDLE SUFFIX' format, must be 3-35 characters in length."
+0.33112,E2-CONTACT CHANGE DATE/TIME,D,DATE/TIME,.332;2,,True,True,3100526,
+0.3312,E2-RELATIONSHIP TO PATIENT,F,FREE TEXT,.331;2,,True,True,3220626,Enter any notes related to the relationship of the secondary emergency contact to the patient [2-30 characters].
+0.3313,E2-STREET ADDRESS [LINE 1],F,FREE TEXT,.331;3,,True,True,2890115,Enter the first line of the secondary emergency contacts address [3-30 characters].
+0.3314,E2-STREET ADDRESS [LINE 2],F,FREE TEXT,.331;4,,True,True,2890115,Enter the second line of the secondary emergency contacts address [3-30 characters].
+0.3315,E2-STREET ADDRESS [LINE 3],F,FREE TEXT,.331;5,,True,True,2861002,Enter the third line of the secondary emergency contacts address [3-30 characters].
+0.3316,E2-CITY,F,FREE TEXT,.331;6,,True,True,2861002,Enter the city in which the secondary emergency contact resides [3-30 characters].
+0.3317,E2-STATE,P,POINTER,.331;7,5.0,True,True,2861002,Select from the listing the state in which the secondary emergency contact resides.
+0.3318,E2-ZIP CODE,F,FREE TEXT,.331;8,,True,True,2930603,Enter the zip code as five numerics where the secondary emergency contact resides.
+0.3319,E2-PHONE NUMBER,F,FREE TEXT,.331;9,,True,True,3190821,Enter the phone number of the secondary emergency contact [3-20 characters].
+0.332,E-RELATIONSHIP TO PATIENT,F,FREE TEXT,.33;2,,True,True,3220626,Enter any notes related to the relationship of the emergency contact to the patient [3-35 characters].
+0.333,E-STREET ADDRESS [LINE 1],F,FREE TEXT,.33;3,,True,True,2890115,Enter the first line of the emergency contacts street address [3-30 characters].
+0.334,E-STREET ADDRESS [LINE 2],F,FREE TEXT,.33;4,,True,True,2890115,Enter the second line of the emergency contacts street address [3-30 characters].
+0.335,E-STREET ADDRESS [LINE 3],F,FREE TEXT,.33;5,,True,True,2861002,Enter the third line of the emergency contacts address [3-30 characters].
+0.336,E-CITY,F,FREE TEXT,.33;6,,True,True,2861002,Enter the city in which the emergency contact resides [3-30 characters].
+0.337,E-STATE,P,POINTER,.33;7,5.0,True,True,2861002,Select from the listing the state in whcih the emergency contact resides.
+0.338,E-ZIP CODE,F,FREE TEXT,.33;8,,True,True,2930603,Enter the zip code as five numerics of the emergency contact.
+0.339,E-PHONE NUMBER,F,FREE TEXT,.33;9,,True,True,3190821,Enter the phone number of the emergency contact [3-20 characters].
+0.34011,D-WORK PHONE NUMBER,F,FREE TEXT,.34;11,,True,True,3100528,Enter the designee's work phone number.  Answer must be 4-20 characters in length.
+0.34012,D-COUNTRY,P,POINTER,.34;12,779.004,True,True,3191203,Enter the country where the designee address is located.  If entering an Army/Air Force Post Office (APO) or a Fleet Pos
+0.34013,D-PROVINCE,F,FREE TEXT,.34;13,,True,True,3191203,Answer must be 1-20 characters in length.
+0.34014,D-POSTAL CODE,F,FREE TEXT,.34;14,,True,True,3191203,Answer must be 1-10 characters in length.
+0.34015,D-RELATIONSHIP TYPE,P,POINTER,.34;15,12.11,True,True,3220105,Enter the relationship of the designee to the patient.
+0.3405,D-DESIGNEE SAME AS NOK?,S,SET OF CODES,.34;10,,True,True,2861007,If the designee and the person specififed as the next-of-kin are one in the same enter YES otherwise enter NO.
+0.341,D-NAME OF DESIGNEE,F,FREE TEXT,.34;1,,True,True,3190821,"Enter name in 'LAST,FIRST MIDDLE SUFFIX' format, must be 3-35 characters in length."
+0.3412,DESIGNEE CHANGE DATE/TIME,D,DATE/TIME,.332;3,,True,True,3100526,
+0.342,D-RELATIONSHIP TO PATIENT,F,FREE TEXT,.34;2,,True,True,3220626,Enter any notes related to the relationship of the designee to the patient [3-30 characters].
+0.343,D-STREET ADDRESS [LINE 1],F,FREE TEXT,.34;3,,True,True,2920113,Enter the first line of the designee's address [3-30 characters].
+0.344,D-STREET ADDRESS [LINE 2],F,FREE TEXT,.34;4,,True,True,2890115,Enter the second line of the designee's address [3-30 characters].
+0.345,D-STREET ADDRESS [LINE 3],F,FREE TEXT,.34;5,,True,True,2861002,Enter the third line of the designee's address [3-30 characters].
+0.346,D-CITY,F,FREE TEXT,.34;6,,True,True,2861002,Enter the city in which the designee resides [1-30 characters].
+0.347,D-STATE,P,POINTER,.34;7,5.0,True,True,2861002,Select from the listing the state in which the designee resides.
+0.348,D-ZIP CODE,F,FREE TEXT,.34;8,,True,True,2930603,Enter the zip code as five numerics of the designee's address.
+0.349,D-PHONE NUMBER,F,FREE TEXT,.34;9,,True,True,3190821,Enter the phone number of the designee [3-20 characters].
+0.351,DATE OF DEATH,D,DATE/TIME,.35;1,,True,True,3170424,"Enter the patient's DATE OF DEATH, which cannot be before the patient's Date of Birth or a future date."
+0.352,DEATH ENTERED BY,P,POINTER,.35;2,200.0,True,True,3151023,The name of the person who entered the date of death.
+0.353,SOURCE OF NOTIFICATION,P,POINTER,.35;3,47.76,True,True,3160622,Select the appropriate SOURCE OF NOTIFICATION from the list that specifies who first notified the VA of the patient's de
+0.354,DATE OF DEATH LAST UPDATED,D,DATE/TIME,.35;4,,True,True,3141222,Enter the date that the DATE OF DEATH for this patient was last updated.
+0.355,LAST EDITED BY,P,POINTER,.35;5,200.0,True,True,3141222,The name of the person who last edited the DATE OF DEATH.
+0.357,SUPPORTING DOCUMENT TYPE,P,POINTER,.35;7,47.75,True,True,3170801,Select the appropriate SUPPORTING DOCUMENT TYPE from the list that identifies the current document used to inform of a p
+0.358,DATE OF DEATH OPTION USED,S,SET OF CODES,.35;8,,True,True,3160708,Select the code that specifies the option used when modifying a patient's DATE OF DEATH.
+0.3601,COLLATERAL SPONSOR'S NAME,P,POINTER,.36;11,2.0,True,True,2870505,
+0.3602,MILITARY DISABILITY RETIREMENT,S,SET OF CODES,.36;12,,False,True,3050829,Answer Yes if the Veteran receives disability pay in lieu of VA Compensation.
+0.3603,DISCHARGE DUE TO DISABILITY,S,SET OF CODES,.36;13,,False,True,3050816,Was the Veteran discharged due to a disability incurred in the Line of Duty?
+0.361,PRIMARY ELIGIBILITY CODE,P,POINTER,.36;1,8.0,True,True,3220622,Select from the available list the eligibility code which best defines this applicant's primary entitlement to care.  Fo
+0.3611,ELIGIBILITY STATUS,S,SET OF CODES,.361;1,,True,True,2880925,Select the status of this patient's eligibility.
+0.3612,ELIGIBILITY STATUS DATE,D,DATE/TIME,.361;2,,True,True,3010107,Enter the date the current eligibility status was determined.
+0.3613,ELIGIBILITY VERIF. SOURCE,S,SET OF CODES,.361;3,,True,True,3001115,The entity verifying the eligibility of the patient.
+0.3614,ELIGIBILITY INTERIM RESPONSE,D,DATE/TIME,.361;4,,True,True,2900418,Enter the response concerning this aplicant's eligibility status.
+0.3615,ELIGIBILITY VERIF. METHOD,F,FREE TEXT,.361;5,,True,True,3010107,Enter the method by which this patient's eligibility was verified [2-50 characters].
+0.3616,ELIGIBILITY STATUS ENTERED BY,P,POINTER,.361;6,200.0,True,True,2901006,The name of the user who certified this patient's current eligibility status.
+0.3617,USER ENROLLEE VALID THROUGH,D,DATE/TIME,.361;7,,True,True,3030313,Enter valid Fiscal Year
+0.3618,USER ENROLLEE SITE,P,POINTER,.361;8,4.0,True,True,3030225,Enter Valid Site
+0.362,DISABILITY RET. FROM MILITARY?,S,SET OF CODES,.36;2,,False,True,3040420,Was this patient retired from the U.S. Armed forces due to an disability incurred while serving?
+0.36205,RECEIVING A&A BENEFITS?,S,SET OF CODES,.362;12,,True,True,2970715,Is this applicant receiving Aid and Attendance benefits?
+0.3621,AMOUNT OF AID & ATTENDANCE,N,NUMERIC,.362;1,,True,True,2880923,If this applicant is in receipt of A&A benefits enter the dollar amount received per year.
+0.36215,RECEIVING HOUSEBOUND BENEFITS?,S,SET OF CODES,.362;13,,True,True,2970715,Is this applicant in receipt of housebound benefits?
+0.3622,AMOUNT OF HOUSEBOUND,N,NUMERIC,.362;2,,True,True,2880923,If this applicant is in receipt of housebound benefits enter the dollars amount received per year.
+0.36225,RECEIVING SOCIAL SECURITY?,S,SET OF CODES,.362;15,,True,True,2860806,Is this patient in receipt of Social Security benefits?
+0.3623,*AMOUNT OF SOCIAL SECURITY,N,NUMERIC,.362;3,,True,True,2930609,If this applicant is in receipt of Social Security benefits enter the dollar amount received per year.
+0.36235,RECEIVING A VA PENSION?,S,SET OF CODES,.362;14,,True,True,3110818,Is this patient receiving a VA pension?
+0.3624,AMOUNT OF VA PENSION,N,NUMERIC,.362;4,,True,True,2880923,If this applicant is receiving a VA pension enter the dollar amount received per year.
+0.3625,*AMOUNT OF MILITARY RETIREMENT,N,NUMERIC,.362;5,,True,True,2880923,If this applicant is receiving military retirement enter the dollar amount received per year.
+0.36255,RECEIVING MILITARY RETIREMENT?,S,SET OF CODES,.362;16,,True,True,2860806,Is this patient receiving military retirement?
+0.3626,AMOUNT OF GI INSURANCE,N,NUMERIC,.362;6,,True,True,2880923,If this applicant does have GI Insurance enter the amount for which insured.
+0.36265,GI INSURANCE POLICY?,S,SET OF CODES,.362;17,,True,True,2860806,Does this applicant have a GI Insurance policy?
+0.3627,AMOUNT OF SSI,N,NUMERIC,.362;7,,True,True,2880923,If this applicant is receiving Supplemental Security Income (SSI) enter the dollar amount received per year.
+0.36275,RECEIVING SUP. SECURITY (SSI)?,S,SET OF CODES,.362;19,,True,True,2880601,Does this patient receive Supplemental Security Income (SSI)?
+0.3628,AMOUNT OF OTHER RETIREMENT,N,NUMERIC,.362;8,,True,True,2880923,If this patient receives retirment from another source enter the dollar amount received per year.
+0.36285,TYPE OF OTHER RETIREMENT,S,SET OF CODES,.362;18,,True,True,2860728,If this patient receives retirement from another source choose from the available listing the source of that retirement.
+0.3629,AMOUNT OF OTHER INCOME,N,NUMERIC,.362;9,,True,True,2880923,"If applicable, enter the dollar amount of other income received per year."
+0.36295,TOTAL ANNUAL VA CHECK AMOUNT,N,NUMERIC,.362;20,,True,True,3251104,"Enter the total annual VA Check amount for A&A, Housebound, Pension, and Disability."
+0.363,PRIMARY LONG ID,F,FREE TEXT,.36;3,,True,True,2960603,Answer must be 1-15 characters in length.
+0.364,PRIMARY SHORT ID,F,FREE TEXT,.36;4,,True,True,2911004,Answer must be 1-7 characters in length.
+0.368,SERVICE DENTAL INJURY?,S,SET OF CODES,.36;8,,True,True,,Did this patient incur a dental injury while serving in the military?
+0.369,SERVICE TEETH EXTRACTED?,S,SET OF CODES,.36;9,,True,True,,Did this patient have teeth extracted while in military service?
+0.37,DATE OF DENTAL TREATMENT,D,DATE/TIME,.37;0,,True,False,,If this patient had a dental injury or teeth extracted while in service enter the date(s) of treatment.
+0.3721,RATED DISABILITIES (VA),P,POINTER,.372;0,,True,False,,Choose from the available listing those disabilities fro which this patient has been rated by the VA.
+0.3731,SERVICE CONNECTED CONDITIONS,A,ADDRESS,.373;0,,True,False,,Enter those conditions [1-30 characters] for which patient claims service connection.
+0.381,ELIGIBLE FOR MEDICAID?,S,SET OF CODES,.38;1,,True,True,2970715,Is this patient eligible to receive medicaid coverage?
+0.382,DATE MEDICAID LAST ASKED,D,DATE/TIME,.38;2,,True,True,2941208,Type a date indicating the date the 'ELIGIBLE FOR MEDICAID' question was last asked of this patient.
+0.383,MEDICAID NUMBER,F,FREE TEXT,.38;3,,True,True,2990921,"Enter the patient's assigned MEDICAID Number, must be 3-30 characters in length."
+0.3851,PENSION AWARD EFFECTIVE DATE,D,DATE/TIME,.385;1,,True,True,3110517,Enter the Original Effective Date that Pension Entitlement was awarded to the Veteran by VBA.
+0.3852,PENSION AWARD REASON,P,POINTER,.385;2,27.18,True,True,3110918,Select the Pension Award Reason.
+0.3853,PENSION TERMINATED DATE,D,DATE/TIME,.385;3,,True,True,3110419,When was the Pension Terminated?
+0.3854,PENSION TERMINATED REASON 1,P,POINTER,.385;4,27.18,True,True,3110510,What is the first Pension Terminated Reason?
+0.3855,PENSION TERMINATED REASON 2,P,POINTER,.385;5,27.18,True,True,3110510,What is the second Pension Terminated Reason?
+0.3856,PENSION TERMINATED REASON 3,P,POINTER,.385;6,27.18,True,True,3110510,What is the third Pension Terminated Reason?
+0.3857,PENSION TERMINATED REASON 4,P,POINTER,.385;7,27.18,True,True,3110510,What is the fourth Pension Terminated Reason?
+0.3858,CLASS II DENTAL INDICATOR,S,SET OF CODES,.385;8,,True,True,3110419,Enter the Class II Dental Indicator as described in the VBA Military Service data.
+0.3859,DENTAL APPL DUE BEFORE DATE,D,DATE/TIME,.385;9,,True,True,3110419,Enter the Dental Application Due Before date as described in the VBA Military Service data.
+0.386,PENSION INDICATOR LOCK,S,SET OF CODES,.385;10,,True,True,3110505,Is the Pension Indicator field locked by ESR?
+0.3861,PENSION AWARD LOCK,S,SET OF CODES,.385;11,,True,True,3110505,Are the Pension Award fields locked by ESR?
+0.39,VETERAN CATASTROPHICALLY DISABLED?,S,SET OF CODES,.39;6,,True,True,3110302,Enter a Yes or No for whether the patient is Catastrophically Disabled.
+0.391,DECIDED BY,F,FREE TEXT,.39;1,,True,True,2970520,Enter the name of the VA staff physician who made the decision that the patient was catastrophically disabled.
+0.392,DATE OF DECISION,D,DATE/TIME,.39;2,,True,True,2970820,Enter the date the decision was made.
+0.393,FACILITY MAKING DETERMINATION,P,POINTER,.39;3,4.0,True,True,2970520,Enter the VAMC that made the catastrophic disability determination.
+0.394,REVIEW DATE,D,DATE/TIME,.39;4,,True,True,2970520,Enter the date the catastrophic disability determination was made.
+0.395,METHOD OF DETERMINATION,S,SET OF CODES,.39;5,,True,True,2990629,Enter Method of Determination that patient is Catastrophically Disabled.
+0.3951,DATE VETERAN REQUESTED CD EVAL,D,DATE/TIME,.39;7,,True,True,3050930,Enter date veteran requested Catastrophically Disabled evaluation. 
+0.3952,DATE FACILITY INITIATED REVIEW,D,DATE/TIME,.39;8,,True,True,3140912,Enter the date the VA facility initiated the Catastrophically Disabled review.
+0.3953,DATE VETERAN WAS NOTIFIED,D,DATE/TIME,.39;9,,True,True,3140912,Enter the date the veteran was notified of the Catastrophically Disabled decision.
+0.396,CD STATUS DIAGNOSES,P,POINTER,.396;0,,True,False,,
+0.397,CD STATUS PROCEDURES,P,POINTER,.397;0,,True,False,,
+0.398,CD STATUS CONDITIONS,P,POINTER,.398;0,,True,False,,
+0.399,CD HISTORY DATE,D,DATE/TIME,.399;0,,True,False,,
+0.401,CD DESCRIPTORS,P,POINTER,.401;0,,True,False,3141001,
+0.525,POW STATUS INDICATED?,S,SET OF CODES,.52;5,,True,True,3060222,Was this patient a Prisoner of War?
+0.526,POW CONFINEMENT LOCATION,P,POINTER,.52;6,22.0,True,True,3040614,For this former POW enter the war in which confined.
+0.527,POW FROM DATE,D,DATE/TIME,.52;7,,True,True,3040722,For this former POW enter the date confinement commenced.
+0.528,POW TO DATE,D,DATE/TIME,.52;8,,True,True,3040614,For this former POW enter the date confinement ended.
+0.529,POW STATUS VERIFIED,D,DATE/TIME,.52;9,,True,True,3060222,
+0.5291,COMBAT SERVICE INDICATED?,S,SET OF CODES,.52;11,,True,True,3061023,Did this patient serve in combat?
+0.5292,COMBAT SERVICE LOCATION,P,POINTER,.52;12,22.0,True,True,3040610,For this combat veteran enter the war in which combat service was incurred.
+0.5293,COMBAT FROM DATE,D,DATE/TIME,.52;13,,True,True,3040722,For this combat veteran enter the date combat service commenced.
+0.5294,COMBAT TO DATE,D,DATE/TIME,.52;14,,True,True,3061023,For this combat veteran enter the date combat service ended.
+0.5295,COMBAT VETERAN END DATE,D,DATE/TIME,.52;15,,True,True,3040708,
+0.5296,CV DATE EDITED,D,DATE/TIME,.52;16,,True,True,3030711,
+0.531,CURRENT PH INDICATOR,S,SET OF CODES,.53;1,,True,True,3000926,Enter 'Yes' if patient is a Purple Heart Recipient and is a veteran.
+0.532,CURRENT PURPLE HEART STATUS,S,SET OF CODES,.53;2,,True,True,3001122,
+0.533,CURRENT PURPLE HEART REMARKS,S,SET OF CODES,.53;3,,True,True,3001215,
+0.535,PH DIVISION,P,POINTER,.53;4,4.0,True,True,3010209,
+0.541,CURRENT MOH INDICATOR,S,SET OF CODES,.54;1,,True,True,3190416,"If the patient is a Veteran, enter 'Y' if Medal of Honor has been awarded, 'N' if Medal of Honor was revoked or set in e"
+0.542,MOH AWARD DATE,D,DATE/TIME,.54;2,,True,True,3190718,"If the patient is a Veteran, enter the date the Medal of Honor was awarded. The date cannot be in the future."
+0.543,MOH STATUS DATE,D,DATE/TIME,.54;3,,True,True,3190718,"If the patient is a Veteran, enter the date the MOH Indicator or the MOH Award Date was last modified. The date cannot b"
+0.544,MOH COPAYMENT EXEMPTION DATE,D,DATE/TIME,.54;4,,True,True,3190718,"If the patient is a Veteran, enter the date the Veteran is eligible for exemption from payments for healthcare, prescrip"
+0.5501,EXPANDED MH CARE TYPE,S,SET OF CODES,.55;1,,True,True,3200124,Enter the expanded mental health care type justifying the EXPANDED MH CARE eligibility selection.
+0.5502,AUTOMATIC CHANGE DATE,D,DATE/TIME,.55;2,,True,True,3200527,Enter date/time of automatic change of MH care type.
+0.5601,PRESUMPTIVE PSYCHOSIS CATEGORY,S,SET OF CODES,.56;1,,True,True,3230120,Please select the Presumptive Psychosis category
+0.571,INDIAN SELF IDENTIFICATION,S,SET OF CODES,.57;1,,True,True,3230819,"Enter YES or NO, as answered by the Applicant on the 1010EZ or 1010EZR in response to the Are you an Indian question."
+0.572,INDIAN START DATE,D,DATE/TIME,.57;2,,True,True,3211005,Enter the first date on which the Enrolled Veteran may not be billed for VHA services.
+0.573,INDIAN ATTESTATION DATE,D,DATE/TIME,.57;3,,True,True,3230819,"Enter the Stamp Date from the hard copy 1010EZ or 1010EZR. If no Stamp Date was indicated, enter today's date. The date "
+0.574,INDIAN END DATE,D,DATE/TIME,.57;4,,True,True,3211005,Enter the date that the INDIAN SELF IDENTIFICATION was changed from YES to NO.
+0.575,INDIAN SELF IDENT CHANGE DT/TM,D,DATE/TIME,.57;5,,True,True,3211102,Enter the Date and Time the INDIAN SELF IDENTIFICATION field was updated.
+0.576,INDIAN SELF IDENT CHANGE USER,P,POINTER,.57;6,200.0,True,True,3211004,Enter the name of the user that edited the INDIAN SELF IDENTIFICATION field.
+0.6,TEST PATIENT INDICATOR,S,SET OF CODES,0;21,,True,True,2951026,THIS FIELD IS USED TO INDENTIFY TEST PATIENTS
+1.0,ALIAS,2,2,.01;0,,True,False,,If this patient is known by another name enter that name.
+1.01,NAME COMPONENTS,P,POINTER,NAME;1,20.0,False,True,3020419,This field contains a pointer to the NAME COMPONENTS record associated with field #.01.
+1.02,K-NAME COMPONENTS,P,POINTER,NAME;2,20.0,False,True,3020419,This field contains a pointer to the NAME COMPONENTS record associated with field #.211.
+1.03,K2-NAME COMPONENTS,P,POINTER,NAME;3,20.0,False,True,3020419,This field contains a pointer to the NAME COMPONENTS record associated with field #.2191.
+1.04,FATHER'S NAME COMPONENTS,P,POINTER,NAME;4,20.0,False,True,3020419,This field contains a pointer to the NAME COMPONENTS record associated with field #.2401.
+1.05,MOTHER'S NAME COMPONENTS,P,POINTER,NAME;5,20.0,False,True,3020725,This field contains a pointer to the NAME COMPONENTS record associated with field #.2402.
+1.06,MOTHERS MAIDEN NAME COMPONENTS,P,POINTER,NAME;6,20.0,False,True,3020419,This field contains a pointer to the NAME COMPONENTS record associated with field #.2403.
+1.07,E-NAME COMPONENTS,P,POINTER,NAME;7,20.0,False,True,3020419,This field contains a pointer to the NAME COMPONENTS record associated with field #.331.
+1.08,E2-NAME COMPONENTS,P,POINTER,NAME;8,20.0,False,True,3020725,This field contains a pointer to the NAME COMPONENTS record associated with field #.3311.
+1.09,D-NAME COMPONENTS,P,POINTER,NAME;9,20.0,False,True,3020725,This field contains a pointer to the NAME COMPONENTS record associated with field #.341.
+2.0,RACE INFORMATION,P,POINTER,.02;0,,False,False,,
+3.0,ENROLLMENT CLINIC,P,POINTER,DE;0,,True,False,,
+6.0,ETHNICITY INFORMATION,P,POINTER,.06;0,,False,False,,
+7.0,LANGUAGE DATE/TIME,D,DATE/TIME,.207;0,,True,False,3160330,
+25.01,CURRENT HEALTH BENEFIT PLAN,P,POINTER,HBP;0,,True,False,,
+25.02,HISTORY HEALTH BENEFIT PLAN,D,DATE/TIME,HBP1;0,,True,False,,
+27.01,CURRENT ENROLLMENT,P,POINTER,ENR;1,27.11,True,True,3060624,Enter the patient's current enrollment.
+27.02,PREFERRED FACILITY,P,POINTER,ENR;2,4.0,True,True,3060930,Enter the facility that the patient chooses to designate as his primary location for care.
+27.03,SOURCE DESIGNATION,S,SET OF CODES,ENR;3,,True,True,3101202,
+27.04,PT APPLIED FOR ENROLLMENT?,S,SET OF CODES,ENR;4,,True,True,3200902,Select Y or YES if the patient wants to apply for enrollment for VHA Healthcare benefits. Select N or NO if the patient 
+53.0,*REACTIONS,S,SET OF CODES,PI;1,,False,True,,
+57.1,*HEIGHT(cm),N,NUMERIC,57;1,,False,True,,TYPE A WHOLE NUMBER BETWEEN 100 AND 300
+57.2,*WEIGHT(kg),N,NUMERIC,57;2,,False,True,,TYPE A WHOLE NUMBER BETWEEN 40 AND 150
+57.4,SPINAL CORD INJURY,S,SET OF CODES,57;4,,True,True,2880816,Enter the appropriate code.
+63.0,LABORATORY REFERENCE,P,POINTER,LR;1,63.0,True,True,2831205,Any changes to this entry must be made from the lab data entry routines. This is the patient's record number in the lab 
+67.0,LAB REFERRAL REF,P,POINTER,LRT;1,67.0,True,True,2970622,
+148.0,CNH CURRENT,S,SET OF CODES,NHC;1,,True,True,2920430,"Answer yes if the patient is in a contract nursing home now.  Otherwise, answer no."
+220.0,DENTAL CLASSIFICATION,P,POINTER,DENT;1,220.2,True,True,2850731,
+220.1,DENTAL ELIGIBILITY EXPIRATION,D,DATE/TIME,DENT;2,,True,True,2850731,
+361.0,PATIENT ELIGIBILITIES,P,POINTER,E;0,,True,False,,Choose from the available listing those eligibilities to which this patient might be entitled which are not his primary 
+391.0,TYPE,P,POINTER,TYPE;1,391.0,True,True,2970825,Choose from the available listing the PATIENT TYPE which best classifies this patient.
+401.3,CONDITION,S,SET OF CODES,DAC;1,,True,True,2910117,Enter 'S' if this patient is seriouslly ill or '@' to delete.  Enter nothing if the patient is not seriously ill.
+401.4,DATE ENTERED ON SI LIST,D,DATE/TIME,DAC;2,,True,True,2900313,For this seriouslly ill patient enter the date placed on the seriouslly ill roster.
+404.01,*CURRENT PC PRACTITIONER,P,POINTER,PC;1,200.0,True,True,2980812,This is the patient's Primary Care Practitioner.
+404.02,*CURRENT PC TEAM,P,POINTER,PC;2,404.51,True,True,2980812,This is the patient's Primary Care Team.
+534.0,PH DATE/TIME UPDATED,D,DATE/TIME,PH;0,,False,False,,
+991.01,INTEGRATION CONTROL NUMBER,N,NUMERIC,MPI;1,,True,True,3070508,This field can only be edited by CIRN !
+991.02,ICN CHECKSUM,F,FREE TEXT,MPI;2,,True,True,3010215,Answer must be 6 characters in length.
+991.03,COORDINATING MASTER OF RECORD,P,POINTER,MPI;3,4.0,True,True,3010713,Enter the coordinating site for the patient.
+991.04,LOCALLY ASSIGNED ICN,S,SET OF CODES,MPI;4,,True,True,3060919,This field will be 1 or YES if a LOCAL ICN has been assigned.
+991.05,SUBSCRIPTION CONTROL NUMBER,P,POINTER,MPI;5,774.0,True,True,3060919,Enter the patient's Subscription Control Number.
+991.06,CMOR ACTIVITY SCORE,N,NUMERIC,MPI;6,,True,True,3060919,"Type a number between 0 and 9999999, 0 Decimal Digits"
+991.07,SCORE CALCULATION DATE,D,DATE/TIME,MPI;7,,True,True,2970730,This is the last date that the CMOR Activity Score was calculated at this site.
+991.08,TEMPORARY ID NUMBER,F,FREE TEXT,MPI;8,,True,True,3111206,Enter the patient's Department of Defense 9-digit Temporary ID Number.
+991.09,FOREIGN ID NUMBER,F,FREE TEXT,MPI;9,,True,True,3111206,Enter the patient's Department of Defense 9-digit Foreign ID Number.
+991.1,FULL ICN,F,FREE TEXT,MPI;10,,True,True,3141008,Enter the local or national Integration Control Number (ICN) assigned to the patient.
+991.11,INDIVIDUAL TAX ID,N,NUMERIC,MPI;11,,True,True,3210624,Enter the Individual Tax Identification Number (900000000-999999999) for the patient.
+991.91,FULL ICN HISTORY,A,ADDRESS,MPIFICNHIS;0,,True,False,,
+992.0,ICN HISTORY,A,ADDRESS,MPIFHIS;0,,False,False,,
+993.0,CMOR HISTORY,A,ADDRESS,MPICMOR;0,,False,False,,
+994.0,MULTIPLE BIRTH INDICATOR,S,SET OF CODES,MPIMB;1,,True,True,3060919,Is the patient part of a multiple birth?
+999.0,ABSENCE DIVISION,C,COMPUTED, ; ,,True,True,2850718,
+999.1,INPATIENT WARD,C,COMPUTED, ; ,,True,True,2850808,
+999.2,LAST MEANS TEST,C,COMPUTED, ; ,,False,True,2930423,
+1000.0,DISPOSITION LOG-IN DATE/TIME,D,DATE/TIME,DIS;0,,True,False,,Enter the date/time this patient was registered for care.
+1010.15,RECEIVED VA CARE PREVIOUSLY?,S,SET OF CODES,1010.15;5,,True,True,2870120,Has this patient received care in a VA previously.
+1010.151,MOST RECENT DATE OF CARE,D,DATE/TIME,1010.15;1,,True,True,2900418,Enter the most recent date of care in a VA facility.
+1010.1511,APPOINTMENT REQUEST DATE,D,DATE/TIME,1010.15;11,,True,True,3191106,Enter date VA was notified the enrolling patient is requesting an appointment.
+1010.1512,ORIGINAL APPOINTMENT REQUEST,S,SET OF CODES,1010.15;12,,True,True,3190402,Enter 'Y' if the veteran applicant has requested an appointment with a VA doctor/provider on the patient's initial 1010E
+1010.1513,ORIGINAL APPT REQUEST DATE,D,DATE/TIME,1010.15;13,,True,True,3190305,Enter the first date the VA was notified that the enrolling patient requested an appointment.
+1010.1514,ORIG APPT REQUEST CHG DT/TM,D,DATE/TIME,1010.15;14,,True,True,3190311,Enter the date and time the APPOINTMENT REQUEST ON 1010EZ field was modified. It is used to verify that the most recent 
+1010.1515,APPT REQUEST 1010EZ CHG DT/TM,D,DATE/TIME,1010.15;15,,True,True,3190311,Enter the date and time the APPOINTMENT REQUEST ON 1010EZ field was modified. It is used to verify that the most recent 
+1010.152,MOST RECENT LOCATION OF CARE,P,POINTER,1010.15;2,4.0,True,True,2840313,Enter the VA in which care was received most recently.
+1010.153,2ND MOST RECENT DATE OF CARE,D,DATE/TIME,1010.15;3,,True,True,2900418,Enter the date of care this patient received care in another VA facility.
+1010.154,2ND MOST RECENT LOCATION,P,POINTER,1010.15;4,4.0,True,True,2840313,Enter the location of care (VA facility) this patient received other care.
+1010.156,MOST RECENT 1010EZ,P,POINTER,1010.15;6,712.0,True,True,3040420,
+1010.157,COMBAT INDICATED ON 1010EZ,S,SET OF CODES,1010.15;7,,True,True,3040416,
+1010.158,DISABILITY DISCHARGE ON 1010EZ,S,SET OF CODES,1010.15;8,,True,True,3040416,
+1010.159,APPOINTMENT REQUEST ON 1010EZ,S,SET OF CODES,1010.15;9,,True,True,3191105,Enter 'Y' if the Veteran applicant has requested an appointment with a VA doctor/provider.
+1010.161,APPOINTMENT REQUEST STATUS,S,SET OF CODES,1010.16;1,,True,True,3210201,Enter status of appointment request.
+1010.162,DATE STATUS LAST EDITED,D,DATE/TIME,1010.16;2,,True,True,3080317,
+1010.163,APPOINTMENT REQUEST COMMENT,F,FREE TEXT,1010.16;3,,True,True,3080331,Answer must be 2-200 characters in length.
+1010.164,DATE COMMENT LAST EDITED,D,DATE/TIME,1010.16;4,,True,True,3080317,
+1100.01,FUGITIVE FELON FLAG,S,SET OF CODES,FFP;1,,True,True,3021113,Respond 'YES' if a Fugitive Felon warrent has been received for this patient
+1100.02,FFF ENTERED BY,P,POINTER,FFP;2,200.0,True,True,3021112,Select the user who is setting the current Fugitive Felon Flag
+1100.03,FFF DATE ENTERED,D,DATE/TIME,FFP;3,,True,True,3021205,(No range limit on date)
+1100.04,FFF REMOVED BY,P,POINTER,FFP;4,200.0,True,True,3021112,Select the user who removed the Fugitive Felon Flag
+1100.05,FFF DATE REMOVED,D,DATE/TIME,FFP;5,,True,True,3021112,Enter the date and time the Fugitive Felon Flag is removed
+1100.09,FFF REMOVAL REMARKS,F,FREE TEXT,FFP;9,,True,True,3021204,Answer must be 2-80 characters in length.  This is a short comment about clearing this flag.
+1900.0,APPOINTMENT,P,POINTER,S;0,,True,False,,
+1901.0,VETERAN (Y/N)?,S,SET OF CODES,VET;1,,True,True,3060802,Is this patient requesting care as a veteran of the U.S. Armed Forces?
+1903.0,ARCHIVED DATA,S,SET OF CODES,ARCH;0,,True,False,,
+1910.0,COMMUNITY CARE PROGRAM,D,DATE/TIME,5;0,,True,False,,
+2001.0,DATE LAST EICD RUN,D,DATE/TIME,INS;1,,True,True,3180607,Enter the date the last EICD Identification inquiry was run for this patient.
+3000.0,VTS PATIENT FLAG,S,SET OF CODES,3000;1,,True,True,3120502,Does this patient want to be in the Veteran Transportation Service (VTS) program?
+9000.0,DISCHARGED TO CERNER,D,DATE/TIME,CERNER;1,,True,True,3240717,Enter date/time patient was discharged when converted to Cerner.
+11500.01,INITIAL ODS TREATMENT RECEIVED,D,DATE/TIME,ODS;1,,True,True,2910112,Enter the date/time this patient was initially seen for an ODS related treatment.
+11500.02,RECALLED TO ACTIVE DUTY,S,SET OF CODES,ODS;2,,True,True,2910118,Was this ODS patient recalled to active duty?
+11500.03,RANK,P,POINTER,ODS;3,25002.1,True,True,2910117,Enter the grade/rank of this ODS patient
+500001.0,IS PATIENT DIABETIC?,S,SET OF CODES,500001;1,,False,True,2881116,
+537025.0,NETWORK IDENTIFIER,F,FREE TEXT,537025;1,,True,True,2951215,Answer must be 1-33 characters in length.
+537026.0,MHV SOCIALIZATION,D,DATE/TIME,1;0,,True,False,3140912,
+537027.0,MHV REGISTERED,S,SET OF CODES,2;1,,True,True,3160719,"Enter YES if the patient is registered in My HealtheVet, otherwise enter NO."
+537028.0,MHV AUTHENTICATED,S,SET OF CODES,2;2,,True,True,3150424,"Enter YES if the patient's My HealtheVet registration has been authenticated, otherwise enter NO."
+537029.0,MHV SECURE MESSAGING,S,SET OF CODES,2;3,,True,True,3160307,"If the patient has opted to use secure messaging with their My HealtheVet account, enter YES. Otherwise enter NO."
+537030.0,MHVREG UPDATE DATE/TIME,D,DATE/TIME,2;4,,True,True,3160720,Enter the date/time My HealtheVet registration was confirmed.
+537031.0,MHVAUTH UPDATE DATE/TIME,D,DATE/TIME,2;5,,True,True,3150424,Enter the date/time My HealtheVet registration was authenticated.
+537032.0,MHVSM UPDATE DATE/TIME,D,DATE/TIME,2;6,,True,True,3150424,Enter the date/time the patient opted to use secure messaging with their My HealtheVet account.
+537033.0,MHV REGISTER DECLINED TEXT,F,FREE TEXT,2.1;1,,True,True,3160720,Enter 2 to 250 characters free text reason the patient declined to register in My HealtheVet.
+537034.0,MHV AUTH DECLINED TEXT,F,FREE TEXT,2.2;1,,True,True,3160307,Enter 2 to 250 characters free text reason the patient declined to authenticate their My HealtheVet registration.
+537035.0,MHV MSG DECLINED TEXT,F,FREE TEXT,2.3;1,,True,True,3160307,Enter 2 to 250 characters free text reason the patient declined to use secure messaging with their My HealtheVet account
+537036.0,MHV REGISTER DECLINED REASON,P,POINTER,2;7,390.03,True,True,3160719,Enter the reason the patient declined to register in My HealtheVet.
+537037.0,MHV AUTH DECLINED REASON,P,POINTER,2;8,390.03,True,True,3160328,Enter the reason the patient declined to authenticate their My HealtheVet registration.
+537038.0,MHV MSG DECLINED REASON,P,POINTER,2;9,390.03,True,True,3150424,Enter the reason the patient declined to use secure messaging with their My HealtheVet account.
+537041.0,MHV MSG ACTIONS,P,POINTER,3;0,,True,False,,
+537042.0,MHV AUTH ACTIONS,P,POINTER,4;0,,True,False,,

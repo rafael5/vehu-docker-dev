@@ -1,0 +1,7796 @@
+[
+  {
+    "rule": "label_type_conflict",
+    "label": "NAME",
+    "occurrences": 1055,
+    "types": {
+      "F": 921,
+      "P": 93,
+      "": 20,
+      "X": 3,
+      "C": 1,
+      "N": 7,
+      "V": 7,
+      "S": 3
+    },
+    "recommended_type": "F",
+    "priority": 1055
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 200.0,
+    "label": "NEW PERSON",
+    "source_files": 561,
+    "priority": 561
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DESCRIPTION",
+    "occurrences": 374,
+    "types": {
+      "M": 148,
+      "F": 216,
+      "A": 4,
+      "D": 5,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 374
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 2.0,
+    "label": "PATIENT",
+    "source_files": 314,
+    "priority": 314
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CODE",
+    "occurrences": 311,
+    "types": {
+      "F": 249,
+      "N": 51,
+      "P": 5,
+      "A": 4,
+      "S": 1,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 311
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STATUS",
+    "occurrences": 246,
+    "types": {
+      "S": 180,
+      "F": 17,
+      "D": 3,
+      "P": 40,
+      "C": 4,
+      "N": 2
+    },
+    "recommended_type": "S",
+    "priority": 246
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "NUMBER",
+    "occurrences": 214,
+    "types": {
+      "N": 204,
+      "F": 9,
+      "P": 1
+    },
+    "recommended_type": "N",
+    "priority": 214
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PATIENT",
+    "occurrences": 214,
+    "types": {
+      "C": 3,
+      "P": 204,
+      "F": 6,
+      "V": 1
+    },
+    "recommended_type": "P",
+    "priority": 214
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 4.0,
+    "label": "INSTITUTION",
+    "source_files": 209,
+    "priority": 209
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TYPE",
+    "occurrences": 177,
+    "types": {
+      "S": 131,
+      "P": 19,
+      "F": 25,
+      "A": 2
+    },
+    "recommended_type": "S",
+    "priority": 177
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 44.0,
+    "label": "HOSPITAL LOCATION",
+    "source_files": 115,
+    "priority": 115
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ABBREVIATION",
+    "occurrences": 111,
+    "types": {
+      "F": 110,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 111
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PLACEHOLDER",
+    "occurrences": 99,
+    "types": {
+      "F": 92,
+      "P": 4,
+      "N": 2,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 99
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DIVISION",
+    "occurrences": 90,
+    "types": {
+      "C": 1,
+      "P": 80,
+      "A": 1,
+      "F": 8
+    },
+    "recommended_type": "P",
+    "priority": 90
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SYNONYM",
+    "occurrences": 90,
+    "types": {
+      "F": 33,
+      "M": 44,
+      "A": 12,
+      "N": 1
+    },
+    "recommended_type": "M",
+    "priority": 90
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "USER",
+    "occurrences": 83,
+    "types": {
+      "P": 80,
+      "F": 3
+    },
+    "recommended_type": "P",
+    "priority": 83
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 5.0,
+    "label": "STATE",
+    "source_files": 81,
+    "priority": 81
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COMMENTS",
+    "occurrences": 77,
+    "types": {
+      "M": 41,
+      "F": 33,
+      "D": 2,
+      "A": 1
+    },
+    "recommended_type": "M",
+    "priority": 77
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATE",
+    "occurrences": 71,
+    "types": {
+      "D": 69,
+      "C": 1,
+      "F": 1
+    },
+    "recommended_type": "D",
+    "priority": 71
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STATE",
+    "occurrences": 71,
+    "types": {
+      "P": 51,
+      "C": 4,
+      "F": 16
+    },
+    "recommended_type": "P",
+    "priority": 71
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INACTIVE",
+    "occurrences": 69,
+    "types": {
+      "S": 64,
+      "D": 4,
+      "C": 1
+    },
+    "recommended_type": "S",
+    "priority": 69
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PATIENT NAME",
+    "occurrences": 68,
+    "types": {
+      "P": 52,
+      "F": 14,
+      "V": 2
+    },
+    "recommended_type": "P",
+    "priority": 68
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ACTIVE",
+    "occurrences": 60,
+    "types": {
+      "S": 59,
+      "C": 1
+    },
+    "recommended_type": "S",
+    "priority": 60
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LOCATION",
+    "occurrences": 57,
+    "types": {
+      "C": 2,
+      "F": 22,
+      "V": 1,
+      "P": 32
+    },
+    "recommended_type": "P",
+    "priority": 57
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CITY",
+    "occurrences": 55,
+    "types": {
+      "F": 53,
+      "C": 2
+    },
+    "recommended_type": "F",
+    "priority": 55
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 40.8,
+    "label": "MEDICAL CENTER DIVISION",
+    "source_files": 53,
+    "priority": 53
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PROVIDER",
+    "occurrences": 50,
+    "types": {
+      "P": 37,
+      "F": 11,
+      "S": 1,
+      "D": 1
+    },
+    "recommended_type": "P",
+    "priority": 50
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 3.5,
+    "label": "DEVICE",
+    "source_files": 49,
+    "priority": 49
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SSN",
+    "occurrences": 48,
+    "types": {
+      "C": 7,
+      "F": 40,
+      "N": 1
+    },
+    "recommended_type": "F",
+    "priority": 48
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SERVICE",
+    "occurrences": 47,
+    "types": {
+      "S": 7,
+      "P": 33,
+      "C": 1,
+      "F": 6
+    },
+    "recommended_type": "P",
+    "priority": 47
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ENTERED BY",
+    "occurrences": 47,
+    "types": {
+      "P": 43,
+      "S": 2,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 47
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "EFFECTIVE DATE",
+    "occurrences": 47,
+    "types": {
+      "D": 46,
+      "S": 1
+    },
+    "recommended_type": "D",
+    "priority": 47
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COMMENT",
+    "occurrences": 46,
+    "types": {
+      "M": 18,
+      "F": 27,
+      "D": 1
+    },
+    "recommended_type": "F",
+    "priority": 46
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ID",
+    "occurrences": 45,
+    "types": {
+      "N": 8,
+      "F": 36,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 45
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "VERSION",
+    "occurrences": 43,
+    "types": {
+      "C": 3,
+      "F": 18,
+      "9": 1,
+      "N": 9,
+      "M": 1,
+      "P": 10,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 43
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SEX",
+    "occurrences": 43,
+    "types": {
+      "S": 35,
+      "D": 2,
+      "C": 4,
+      "F": 1,
+      "M": 1
+    },
+    "recommended_type": "S",
+    "priority": 43
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ZIP CODE",
+    "occurrences": 43,
+    "types": {
+      "F": 38,
+      "C": 2,
+      "P": 1,
+      "N": 1,
+      "A": 1
+    },
+    "recommended_type": "F",
+    "priority": 43
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FACILITY",
+    "occurrences": 43,
+    "types": {
+      "P": 22,
+      "N": 1,
+      "C": 1,
+      "F": 19
+    },
+    "recommended_type": "P",
+    "priority": 43
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 3.8,
+    "label": "MAIL GROUP",
+    "source_files": 43,
+    "priority": 43
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INSTITUTION",
+    "occurrences": 42,
+    "types": {
+      "P": 37,
+      "F": 3,
+      "M": 1,
+      "V": 1
+    },
+    "recommended_type": "P",
+    "priority": 42
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATE/TIME",
+    "occurrences": 41,
+    "types": {
+      "D": 37,
+      "M": 3,
+      "F": 1
+    },
+    "recommended_type": "D",
+    "priority": 41
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 9000010.0,
+    "label": "VISIT",
+    "source_files": 41,
+    "priority": 41
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 1.0,
+    "label": "FILE",
+    "source_files": 40,
+    "priority": 40
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SEQUENCE NUMBER",
+    "occurrences": 39,
+    "types": {
+      "N": 32,
+      "F": 6,
+      "S": 1
+    },
+    "recommended_type": "N",
+    "priority": 39
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TEXT",
+    "occurrences": 38,
+    "types": {
+      "M": 20,
+      "A": 3,
+      "F": 14,
+      "S": 1
+    },
+    "recommended_type": "M",
+    "priority": 38
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 100.0,
+    "label": "ORDER",
+    "source_files": 38,
+    "priority": 38
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 49.0,
+    "label": "SERVICE/SECTION",
+    "source_files": 37,
+    "priority": 37
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INACTIVE DATE",
+    "occurrences": 36,
+    "types": {
+      "D": 35,
+      "F": 1
+    },
+    "recommended_type": "D",
+    "priority": 36
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CLASS",
+    "occurrences": 36,
+    "types": {
+      "S": 29,
+      "P": 5,
+      "F": 2
+    },
+    "recommended_type": "S",
+    "priority": 36
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STATION NUMBER",
+    "occurrences": 35,
+    "types": {
+      "F": 26,
+      "C": 1,
+      "P": 5,
+      "N": 3
+    },
+    "recommended_type": "F",
+    "priority": 35
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 80.0,
+    "label": "ICD DIAGNOSIS",
+    "source_files": 35,
+    "priority": 35
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 81.0,
+    "label": "CPT",
+    "source_files": 35,
+    "priority": 35
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PRIORITY",
+    "occurrences": 34,
+    "types": {
+      "S": 17,
+      "N": 15,
+      "F": 2
+    },
+    "recommended_type": "S",
+    "priority": 34
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CATEGORY",
+    "occurrences": 34,
+    "types": {
+      "S": 10,
+      "P": 13,
+      "F": 10,
+      "N": 1
+    },
+    "recommended_type": "P",
+    "priority": 34
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PACKAGE",
+    "occurrences": 34,
+    "types": {
+      "P": 24,
+      "S": 3,
+      "F": 7
+    },
+    "recommended_type": "P",
+    "priority": 34
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATE OF BIRTH",
+    "occurrences": 33,
+    "types": {
+      "D": 13,
+      "DC": 4,
+      "F": 15,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 33
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REMARKS",
+    "occurrences": 33,
+    "types": {
+      "F": 17,
+      "M": 14,
+      "S": 1,
+      "A": 1
+    },
+    "recommended_type": "F",
+    "priority": 33
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 9.4,
+    "label": "PACKAGE",
+    "source_files": 33,
+    "priority": 33
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MESSAGE",
+    "occurrences": 32,
+    "types": {
+      "P": 4,
+      "A": 3,
+      "M": 8,
+      "F": 12,
+      "D": 2,
+      "N": 2,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 32
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STATION",
+    "occurrences": 32,
+    "types": {
+      "F": 5,
+      "P": 27
+    },
+    "recommended_type": "P",
+    "priority": 32
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "WARD",
+    "occurrences": 32,
+    "types": {
+      "P": 24,
+      "F": 5,
+      "C": 3
+    },
+    "recommended_type": "P",
+    "priority": 32
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SOURCE",
+    "occurrences": 32,
+    "types": {
+      "F": 15,
+      "P": 4,
+      "S": 11,
+      "M": 1,
+      "D": 1
+    },
+    "recommended_type": "F",
+    "priority": 32
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CLINIC",
+    "occurrences": 32,
+    "types": {
+      "P": 29,
+      "C": 1,
+      "S": 1,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 32
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 405.0,
+    "label": "PATIENT MOVEMENT",
+    "source_files": 32,
+    "priority": 32
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TREATING SPECIALTY",
+    "occurrences": 31,
+    "types": {
+      "P": 16,
+      "F": 14,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 31
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PROCEDURE",
+    "occurrences": 31,
+    "types": {
+      "F": 8,
+      "P": 20,
+      "C": 1,
+      "V": 2
+    },
+    "recommended_type": "P",
+    "priority": 31
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SITE",
+    "occurrences": 30,
+    "types": {
+      "P": 19,
+      "N": 3,
+      "F": 6,
+      "S": 2
+    },
+    "recommended_type": "P",
+    "priority": 30
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "VENDOR",
+    "occurrences": 30,
+    "types": {
+      "F": 6,
+      "P": 23,
+      "V": 1
+    },
+    "recommended_type": "P",
+    "priority": 30
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 50.0,
+    "label": "DRUG",
+    "source_files": 30,
+    "priority": 30
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "IDENTIFIER",
+    "occurrences": 29,
+    "types": {
+      "A": 1,
+      "F": 22,
+      "N": 2,
+      "S": 3,
+      "6": 1
+    },
+    "recommended_type": "F",
+    "priority": 29
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SHORT DESCRIPTION",
+    "occurrences": 28,
+    "types": {
+      "F": 27,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 28
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATE ENTERED",
+    "occurrences": 28,
+    "types": {
+      "N": 1,
+      "D": 27
+    },
+    "recommended_type": "D",
+    "priority": 28
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PRINT NAME",
+    "occurrences": 28,
+    "types": {
+      "F": 27,
+      "X": 1
+    },
+    "recommended_type": "F",
+    "priority": 28
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "QUANTITY",
+    "occurrences": 28,
+    "types": {
+      "N": 27,
+      "F": 1
+    },
+    "recommended_type": "N",
+    "priority": 28
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ROUTINE",
+    "occurrences": 27,
+    "types": {
+      "C": 1,
+      "F": 23,
+      "M": 3
+    },
+    "recommended_type": "F",
+    "priority": 27
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATE/TIME ENTERED",
+    "occurrences": 27,
+    "types": {
+      "D": 26,
+      "P": 1
+    },
+    "recommended_type": "D",
+    "priority": 27
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 4.2,
+    "label": "DOMAIN",
+    "source_files": 27,
+    "priority": 27
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TIMESTAMP",
+    "occurrences": 26,
+    "types": {
+      "F": 12,
+      "D": 14
+    },
+    "recommended_type": "D",
+    "priority": 26
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REASON",
+    "occurrences": 26,
+    "types": {
+      "F": 20,
+      "P": 1,
+      "S": 4,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 26
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LAST EDITED BY",
+    "occurrences": 25,
+    "types": {
+      "P": 24,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 25
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DIAGNOSIS",
+    "occurrences": 25,
+    "types": {
+      "P": 11,
+      "M": 4,
+      "D": 1,
+      "F": 6,
+      "A": 2,
+      "V": 1
+    },
+    "recommended_type": "P",
+    "priority": 25
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TRANSACTION NUMBER",
+    "occurrences": 25,
+    "types": {
+      "N": 8,
+      "P": 2,
+      "F": 15
+    },
+    "recommended_type": "F",
+    "priority": 25
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ITEM",
+    "occurrences": 24,
+    "types": {
+      "M": 4,
+      "P": 14,
+      "D": 1,
+      "A": 3,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 24
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ACTION",
+    "occurrences": 24,
+    "types": {
+      "F": 7,
+      "S": 13,
+      "P": 3,
+      "A": 1
+    },
+    "recommended_type": "S",
+    "priority": 24
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DAY",
+    "occurrences": 24,
+    "types": {
+      "M": 2,
+      "F": 21,
+      "N": 1
+    },
+    "recommended_type": "F",
+    "priority": 24
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 36.0,
+    "label": "INSURANCE COMPANY",
+    "source_files": 24,
+    "priority": 24
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 42.0,
+    "label": "WARD LOCATION",
+    "source_files": 24,
+    "priority": 24
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATE/TIME CREATED",
+    "occurrences": 23,
+    "types": {
+      "F": 1,
+      "M": 1,
+      "D": 21
+    },
+    "recommended_type": "D",
+    "priority": 23
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "BRIEF DESCRIPTION",
+    "occurrences": 23,
+    "types": {
+      "M": 1,
+      "F": 22
+    },
+    "recommended_type": "F",
+    "priority": 23
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TITLE",
+    "occurrences": 22,
+    "types": {
+      "F": 20,
+      "P": 2
+    },
+    "recommended_type": "F",
+    "priority": 22
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ELIGIBILITY",
+    "occurrences": 22,
+    "types": {
+      "P": 4,
+      "S": 7,
+      "C": 1,
+      "F": 10
+    },
+    "recommended_type": "F",
+    "priority": 22
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 727.0,
+    "label": "?",
+    "source_files": 22,
+    "priority": 22
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FILE",
+    "occurrences": 21,
+    "types": {
+      "P": 10,
+      "N": 7,
+      "A": 1,
+      "F": 3
+    },
+    "recommended_type": "P",
+    "priority": 21
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COST CENTER",
+    "occurrences": 21,
+    "types": {
+      "F": 15,
+      "N": 1,
+      "P": 3,
+      "4": 1,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 21
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PATIENT NO. - DFN",
+    "occurrences": 21,
+    "types": {
+      "P": 20,
+      "N": 1
+    },
+    "recommended_type": "P",
+    "priority": 21
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SCREEN",
+    "occurrences": 20,
+    "types": {
+      "K": 10,
+      "S": 3,
+      "F": 4,
+      "P": 3
+    },
+    "recommended_type": "K",
+    "priority": 20
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "IMAGE",
+    "occurrences": 20,
+    "types": {
+      "P": 19,
+      "M": 1
+    },
+    "recommended_type": "P",
+    "priority": 20
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CODING SYSTEM",
+    "occurrences": 20,
+    "types": {
+      "M": 10,
+      "P": 4,
+      "S": 1,
+      "A": 2,
+      "F": 3
+    },
+    "recommended_type": "M",
+    "priority": 20
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "OBSERVATION PATIENT INDICATOR",
+    "occurrences": 20,
+    "types": {
+      "S": 16,
+      "F": 4
+    },
+    "recommended_type": "S",
+    "priority": 20
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 3.9,
+    "label": "MESSAGE",
+    "source_files": 20,
+    "priority": 20
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 45.7,
+    "label": "FACILITY TREATING SPECIALTY",
+    "source_files": 20,
+    "priority": 20
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 40.7,
+    "label": "CLINIC STOP",
+    "source_files": 20,
+    "priority": 20
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 59.0,
+    "label": "OUTPATIENT SITE",
+    "source_files": 20,
+    "priority": 20
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 440.0,
+    "label": "VENDOR",
+    "source_files": 20,
+    "priority": 20
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 123.0,
+    "label": "REQUEST/CONSULTATION",
+    "source_files": 20,
+    "priority": 20
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COUNTY",
+    "occurrences": 19,
+    "types": {
+      "N": 2,
+      "5": 1,
+      "P": 3,
+      "F": 10,
+      "C": 3
+    },
+    "recommended_type": "F",
+    "priority": 19
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "APPLICATION",
+    "occurrences": 19,
+    "types": {
+      "P": 14,
+      "5": 1,
+      "F": 3,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 19
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DRUG",
+    "occurrences": 19,
+    "types": {
+      "P": 17,
+      "C": 2
+    },
+    "recommended_type": "P",
+    "priority": 19
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SEQUENCE",
+    "occurrences": 19,
+    "types": {
+      "N": 16,
+      "M": 1,
+      "F": 1,
+      "8": 1
+    },
+    "recommended_type": "N",
+    "priority": 19
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COST",
+    "occurrences": 19,
+    "types": {
+      "A": 1,
+      "N": 16,
+      "C": 2
+    },
+    "recommended_type": "N",
+    "priority": 19
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INSTRUMENT",
+    "occurrences": 19,
+    "types": {
+      "F": 5,
+      "P": 12,
+      "C": 1,
+      "A": 1
+    },
+    "recommended_type": "P",
+    "priority": 19
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TRANSACTION DATE",
+    "occurrences": 19,
+    "types": {
+      "D": 13,
+      "F": 6
+    },
+    "recommended_type": "D",
+    "priority": 19
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PERIOD OF SERVICE",
+    "occurrences": 18,
+    "types": {
+      "P": 3,
+      "F": 13,
+      "C": 1,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 18
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SHORT NAME",
+    "occurrences": 18,
+    "types": {
+      "F": 16,
+      "C": 2
+    },
+    "recommended_type": "F",
+    "priority": 18
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "START DATE",
+    "occurrences": 18,
+    "types": {
+      "D": 17,
+      "F": 1
+    },
+    "recommended_type": "D",
+    "priority": 18
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "BATCH NUMBER",
+    "occurrences": 18,
+    "types": {
+      "N": 3,
+      "P": 5,
+      "M": 1,
+      "F": 9
+    },
+    "recommended_type": "F",
+    "priority": 18
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "VETERAN",
+    "occurrences": 18,
+    "types": {
+      "P": 8,
+      "S": 10
+    },
+    "recommended_type": "S",
+    "priority": 18
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PATIENT TYPE",
+    "occurrences": 18,
+    "types": {
+      "S": 14,
+      "F": 3,
+      "C": 1
+    },
+    "recommended_type": "S",
+    "priority": 18
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "IN OUT PATIENT INDICATOR",
+    "occurrences": 18,
+    "types": {
+      "S": 13,
+      "F": 4,
+      "P": 1
+    },
+    "recommended_type": "S",
+    "priority": 18
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DOM,PRRTP AND SAARTP INDICATOR",
+    "occurrences": 18,
+    "types": {
+      "F": 5,
+      "S": 13
+    },
+    "recommended_type": "S",
+    "priority": 18
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 8925.0,
+    "label": "TIU DOCUMENT",
+    "source_files": 18,
+    "priority": 18
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 52.0,
+    "label": "PRESCRIPTION",
+    "source_files": 18,
+    "priority": 18
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ENTRY NUMBER",
+    "occurrences": 17,
+    "types": {
+      "N": 11,
+      "A": 1,
+      "F": 5
+    },
+    "recommended_type": "N",
+    "priority": 17
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ADMISSION DATE",
+    "occurrences": 17,
+    "types": {
+      "D": 5,
+      "DC": 1,
+      "F": 11
+    },
+    "recommended_type": "F",
+    "priority": 17
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MANUFACTURER",
+    "occurrences": 17,
+    "types": {
+      "P": 8,
+      "F": 7,
+      "M": 2
+    },
+    "recommended_type": "P",
+    "priority": 17
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TRANSACTION TYPE",
+    "occurrences": 17,
+    "types": {
+      "S": 12,
+      "P": 3,
+      "F": 2
+    },
+    "recommended_type": "S",
+    "priority": 17
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 445.0,
+    "label": "GENERIC INVENTORY",
+    "source_files": 17,
+    "priority": 17
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 399.0,
+    "label": "BILL/CLAIMS",
+    "source_files": 17,
+    "priority": 17
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 9000001.0,
+    "label": "PATIENT/IHS",
+    "source_files": 17,
+    "priority": 17
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FILE NUMBER",
+    "occurrences": 16,
+    "types": {
+      "F": 4,
+      "N": 11,
+      "S": 1
+    },
+    "recommended_type": "N",
+    "priority": 16
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ENROLLMENT PRIORITY",
+    "occurrences": 16,
+    "types": {
+      "S": 3,
+      "F": 13
+    },
+    "recommended_type": "F",
+    "priority": 16
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CPT CODE",
+    "occurrences": 16,
+    "types": {
+      "P": 11,
+      "F": 5
+    },
+    "recommended_type": "P",
+    "priority": 16
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TRANSMISSION STATUS",
+    "occurrences": 16,
+    "types": {
+      "S": 14,
+      "P": 2
+    },
+    "recommended_type": "S",
+    "priority": 16
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DISPLAY TEXT",
+    "occurrences": 16,
+    "types": {
+      "F": 15,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 16
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ORDERING PROVIDER",
+    "occurrences": 16,
+    "types": {
+      "F": 5,
+      "P": 11
+    },
+    "recommended_type": "P",
+    "priority": 16
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SUMMARY",
+    "occurrences": 16,
+    "types": {
+      "S": 15,
+      "M": 1
+    },
+    "recommended_type": "S",
+    "priority": 16
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 420.1999,
+    "label": "PRCD SD STATUS",
+    "source_files": 16,
+    "priority": 16
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 690.0,
+    "label": "MEDICAL PATIENT",
+    "source_files": 16,
+    "priority": 16
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ATTENDING PHYSICIAN",
+    "occurrences": 15,
+    "types": {
+      "P": 11,
+      "F": 4
+    },
+    "recommended_type": "P",
+    "priority": 15
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SITE NAME",
+    "occurrences": 15,
+    "types": {
+      "F": 9,
+      "P": 6
+    },
+    "recommended_type": "F",
+    "priority": 15
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DISCHARGE DATE",
+    "occurrences": 15,
+    "types": {
+      "D": 11,
+      "F": 4
+    },
+    "recommended_type": "D",
+    "priority": 15
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "BLOCK",
+    "occurrences": 15,
+    "types": {
+      "F": 1,
+      "A": 2,
+      "P": 12
+    },
+    "recommended_type": "P",
+    "priority": 15
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ORDER",
+    "occurrences": 15,
+    "types": {
+      "P": 9,
+      "N": 5,
+      "7": 1
+    },
+    "recommended_type": "P",
+    "priority": 15
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TIME",
+    "occurrences": 15,
+    "types": {
+      "F": 12,
+      "D": 2,
+      "9": 1
+    },
+    "recommended_type": "F",
+    "priority": 15
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DEFINITION",
+    "occurrences": 15,
+    "types": {
+      "F": 10,
+      "M": 5
+    },
+    "recommended_type": "F",
+    "priority": 15
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATA SOURCE",
+    "occurrences": 15,
+    "types": {
+      "M": 1,
+      "P": 14
+    },
+    "recommended_type": "P",
+    "priority": 15
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SPONSOR",
+    "occurrences": 15,
+    "types": {
+      "V": 1,
+      "P": 14
+    },
+    "recommended_type": "P",
+    "priority": 15
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TRANSACTION CODE",
+    "occurrences": 15,
+    "types": {
+      "F": 13,
+      "P": 1,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 15
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 704.101,
+    "label": "TERM",
+    "source_files": 15,
+    "priority": 15
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PARAMETER",
+    "occurrences": 14,
+    "types": {
+      "A": 1,
+      "4": 1,
+      "P": 10,
+      "M": 1,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MESSAGE TYPE",
+    "occurrences": 14,
+    "types": {
+      "F": 6,
+      "S": 4,
+      "P": 4
+    },
+    "recommended_type": "F",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATE LAST UPDATED",
+    "occurrences": 14,
+    "types": {
+      "C": 1,
+      "D": 13
+    },
+    "recommended_type": "D",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ENROLLMENT STATUS",
+    "occurrences": 14,
+    "types": {
+      "P": 7,
+      "F": 7
+    },
+    "recommended_type": "P",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ENROLLMENT CATEGORY",
+    "occurrences": 14,
+    "types": {
+      "S": 3,
+      "F": 11
+    },
+    "recommended_type": "F",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "NDC",
+    "occurrences": 14,
+    "types": {
+      "F": 12,
+      "P": 2
+    },
+    "recommended_type": "F",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FACILITY NAME",
+    "occurrences": 14,
+    "types": {
+      "F": 11,
+      "P": 3
+    },
+    "recommended_type": "F",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DISPOSITION",
+    "occurrences": 14,
+    "types": {
+      "S": 5,
+      "F": 2,
+      "P": 6,
+      "M": 1
+    },
+    "recommended_type": "P",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STATUS DATE",
+    "occurrences": 14,
+    "types": {
+      "D": 11,
+      "C": 3
+    },
+    "recommended_type": "D",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "VALUE",
+    "occurrences": 14,
+    "types": {
+      "S": 2,
+      "N": 5,
+      "F": 6,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "BILL NUMBER",
+    "occurrences": 14,
+    "types": {
+      "P": 10,
+      "F": 4
+    },
+    "recommended_type": "P",
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ERI",
+    "occurrences": 14,
+    "types": {
+      "F": 12,
+      "S": 2
+    },
+    "recommended_type": "F",
+    "priority": 14
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 19.0,
+    "label": "OPTION",
+    "source_files": 14,
+    "priority": 14
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 442.0,
+    "label": "PROCUREMENT & ACCOUNTING TRANSACTIONS",
+    "source_files": 14,
+    "priority": 14
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 839.7,
+    "label": "PCE DATA SOURCE",
+    "source_files": 14,
+    "priority": 14
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ERROR CODE",
+    "occurrences": 13,
+    "types": {
+      "N": 2,
+      "F": 8,
+      "A": 1,
+      "P": 2
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SOCIAL SECURITY NUMBER",
+    "occurrences": 13,
+    "types": {
+      "F": 9,
+      "C": 2,
+      "N": 2
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RESERVED",
+    "occurrences": 13,
+    "types": {
+      "F": 9,
+      "S": 4
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REGION",
+    "occurrences": 13,
+    "types": {
+      "N": 9,
+      "P": 2,
+      "F": 2
+    },
+    "recommended_type": "N",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PHONE",
+    "occurrences": 13,
+    "types": {
+      "F": 12,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TAG",
+    "occurrences": 13,
+    "types": {
+      "M": 1,
+      "N": 1,
+      "F": 9,
+      "A": 2
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ERROR MESSAGE",
+    "occurrences": 13,
+    "types": {
+      "F": 10,
+      "M": 2,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LONG DESCRIPTION",
+    "occurrences": 13,
+    "types": {
+      "M": 8,
+      "F": 5
+    },
+    "recommended_type": "M",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MESSAGE ID",
+    "occurrences": 13,
+    "types": {
+      "F": 12,
+      "N": 1
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FACILITY NUMBER",
+    "occurrences": 13,
+    "types": {
+      "F": 12,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FISCAL YEAR",
+    "occurrences": 13,
+    "types": {
+      "D": 2,
+      "N": 2,
+      "M": 1,
+      "F": 6,
+      "A": 1,
+      "4": 1
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "HOSPITAL LOCATION",
+    "occurrences": 13,
+    "types": {
+      "P": 11,
+      "F": 1,
+      "C": 1
+    },
+    "recommended_type": "P",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COUNTRY CODE",
+    "occurrences": 13,
+    "types": {
+      "F": 12,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PATIENT ID",
+    "occurrences": 13,
+    "types": {
+      "P": 3,
+      "F": 9,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CASE NUMBER",
+    "occurrences": 13,
+    "types": {
+      "N": 5,
+      "F": 8
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MODALITY",
+    "occurrences": 13,
+    "types": {
+      "P": 3,
+      "S": 1,
+      "F": 8,
+      "A": 1
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "AGENT ORANGE LOCATION",
+    "occurrences": 13,
+    "types": {
+      "F": 9,
+      "S": 4
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "AUDIT TRAIL",
+    "occurrences": 13,
+    "types": {
+      "D": 1,
+      "F": 12
+    },
+    "recommended_type": "F",
+    "priority": 13
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 8925.1,
+    "label": "TIU DOCUMENT DEFINITION",
+    "source_files": 13,
+    "priority": 13
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "AGE",
+    "occurrences": 12,
+    "types": {
+      "C": 8,
+      "N": 4
+    },
+    "recommended_type": "C",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DEVICE",
+    "occurrences": 12,
+    "types": {
+      "P": 10,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FIELD",
+    "occurrences": 12,
+    "types": {
+      "N": 4,
+      "F": 4,
+      "1": 2,
+      "6": 1,
+      "A": 1
+    },
+    "recommended_type": "N",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SPECIALTY",
+    "occurrences": 12,
+    "types": {
+      "P": 8,
+      "F": 4
+    },
+    "recommended_type": "P",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ORDER NUMBER",
+    "occurrences": 12,
+    "types": {
+      "N": 2,
+      "A": 1,
+      "F": 4,
+      "P": 5
+    },
+    "recommended_type": "P",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "START TIME",
+    "occurrences": 12,
+    "types": {
+      "N": 1,
+      "F": 3,
+      "D": 8
+    },
+    "recommended_type": "D",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PATIENT DIVISION",
+    "occurrences": 12,
+    "types": {
+      "P": 1,
+      "F": 11
+    },
+    "recommended_type": "F",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PROTOCOL",
+    "occurrences": 12,
+    "types": {
+      "P": 5,
+      "S": 2,
+      "F": 5
+    },
+    "recommended_type": "P",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ACCESSION NUMBER",
+    "occurrences": 12,
+    "types": {
+      "F": 11,
+      "A": 1
+    },
+    "recommended_type": "F",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "GROUP",
+    "occurrences": 12,
+    "types": {
+      "S": 2,
+      "N": 1,
+      "P": 6,
+      "F": 3
+    },
+    "recommended_type": "P",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PLACEHOLD PRIMARY CARE TEAM",
+    "occurrences": 12,
+    "types": {
+      "F": 9,
+      "P": 3
+    },
+    "recommended_type": "F",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "USER ENROLLEE",
+    "occurrences": 12,
+    "types": {
+      "S": 10,
+      "F": 2
+    },
+    "recommended_type": "S",
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CV STATUS ELIGIBILITY",
+    "occurrences": 12,
+    "types": {
+      "S": 11,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 12
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 63.0,
+    "label": "LAB DATA",
+    "source_files": 12,
+    "priority": 12
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 42.4,
+    "label": "SPECIALTY",
+    "source_files": 12,
+    "priority": 12
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 101.0,
+    "label": "PROTOCOL",
+    "source_files": 12,
+    "priority": 12
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 410.0,
+    "label": "CONTROL POINT ACTIVITY",
+    "source_files": 12,
+    "priority": 12
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 79.2,
+    "label": "IMAGING TYPE",
+    "source_files": 12,
+    "priority": 12
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 757.01,
+    "label": "EXPRESSIONS",
+    "source_files": 12,
+    "priority": 12
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 811.6,
+    "label": "REMINDER SPONSOR",
+    "source_files": 12,
+    "priority": 12
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ERROR",
+    "occurrences": 11,
+    "types": {
+      "P": 3,
+      "F": 6,
+      "N": 2
+    },
+    "recommended_type": "F",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RESULT",
+    "occurrences": 11,
+    "types": {
+      "S": 6,
+      "V": 1,
+      "F": 1,
+      "N": 1,
+      "C": 2
+    },
+    "recommended_type": "S",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MNEMONIC",
+    "occurrences": 11,
+    "types": {
+      "M": 1,
+      "F": 10
+    },
+    "recommended_type": "F",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DOMAIN",
+    "occurrences": 11,
+    "types": {
+      "P": 7,
+      "F": 4
+    },
+    "recommended_type": "P",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SENDER",
+    "occurrences": 11,
+    "types": {
+      "F": 4,
+      "P": 7
+    },
+    "recommended_type": "P",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ZIP",
+    "occurrences": 11,
+    "types": {
+      "F": 10,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "NOTES",
+    "occurrences": 11,
+    "types": {
+      "M": 7,
+      "F": 3,
+      "D": 1
+    },
+    "recommended_type": "M",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TASK NUMBER",
+    "occurrences": 11,
+    "types": {
+      "F": 1,
+      "N": 10
+    },
+    "recommended_type": "N",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PORT",
+    "occurrences": 11,
+    "types": {
+      "N": 10,
+      "M": 1
+    },
+    "recommended_type": "N",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SERVICE CONNECTED",
+    "occurrences": 11,
+    "types": {
+      "S": 10,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "UNITS",
+    "occurrences": 11,
+    "types": {
+      "P": 5,
+      "S": 1,
+      "N": 2,
+      "F": 3
+    },
+    "recommended_type": "P",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "VOLUME",
+    "occurrences": 11,
+    "types": {
+      "F": 1,
+      "N": 10
+    },
+    "recommended_type": "N",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REQUESTOR",
+    "occurrences": 11,
+    "types": {
+      "P": 9,
+      "F": 1,
+      "C": 1
+    },
+    "recommended_type": "P",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "AMOUNT",
+    "occurrences": 11,
+    "types": {
+      "N": 8,
+      "F": 1,
+      "A": 2
+    },
+    "recommended_type": "N",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FUND",
+    "occurrences": 11,
+    "types": {
+      "F": 8,
+      "P": 3
+    },
+    "recommended_type": "F",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INSURANCE COMPANY",
+    "occurrences": 11,
+    "types": {
+      "P": 10,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "EMPLOYEE",
+    "occurrences": 11,
+    "types": {
+      "P": 10,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "HCPCS",
+    "occurrences": 11,
+    "types": {
+      "P": 3,
+      "F": 8
+    },
+    "recommended_type": "F",
+    "priority": 11
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 404.51,
+    "label": "TEAM",
+    "source_files": 11,
+    "priority": 11
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 2005.0,
+    "label": "IMAGE",
+    "source_files": 11,
+    "priority": 11
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 61.0,
+    "label": "TOPOGRAPHY FIELD",
+    "source_files": 11,
+    "priority": 11
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 601.71,
+    "label": "MH TESTS AND SURVEYS",
+    "source_files": 11,
+    "priority": 11
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FIELD NUMBER",
+    "occurrences": 10,
+    "types": {
+      "F": 4,
+      "N": 6
+    },
+    "recommended_type": "N",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RACE",
+    "occurrences": 10,
+    "types": {
+      "P": 3,
+      "F": 3,
+      "S": 2,
+      "C": 2
+    },
+    "recommended_type": "P",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ZIP+4",
+    "occurrences": 10,
+    "types": {
+      "F": 9,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DOMAIN NAME",
+    "occurrences": 10,
+    "types": {
+      "P": 5,
+      "F": 5
+    },
+    "recommended_type": "P",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ONE",
+    "occurrences": 10,
+    "types": {
+      "N": 8,
+      "F": 2
+    },
+    "recommended_type": "N",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "EVENT",
+    "occurrences": 10,
+    "types": {
+      "P": 3,
+      "S": 2,
+      "D": 2,
+      "F": 3
+    },
+    "recommended_type": "P",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SEGMENT",
+    "occurrences": 10,
+    "types": {
+      "S": 2,
+      "F": 3,
+      "P": 2,
+      "N": 3
+    },
+    "recommended_type": "F",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RECORD STATUS",
+    "occurrences": 10,
+    "types": {
+      "S": 9,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RX #",
+    "occurrences": 10,
+    "types": {
+      "P": 5,
+      "F": 5
+    },
+    "recommended_type": "P",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SECTION",
+    "occurrences": 10,
+    "types": {
+      "P": 4,
+      "F": 5,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "EVENT TYPE",
+    "occurrences": 10,
+    "types": {
+      "F": 2,
+      "S": 4,
+      "P": 4
+    },
+    "recommended_type": "S",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SNOMED CODE",
+    "occurrences": 10,
+    "types": {
+      "F": 9,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SYNONYMS",
+    "occurrences": 10,
+    "types": {
+      "A": 9,
+      "M": 1
+    },
+    "recommended_type": "A",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COMPONENT",
+    "occurrences": 10,
+    "types": {
+      "P": 4,
+      "F": 4,
+      "S": 1,
+      "A": 1
+    },
+    "recommended_type": "P",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STREET ADDRESS",
+    "occurrences": 10,
+    "types": {
+      "F": 9,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PROBLEM",
+    "occurrences": 10,
+    "types": {
+      "P": 6,
+      "F": 3,
+      "M": 1
+    },
+    "recommended_type": "P",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ID NUMBER",
+    "occurrences": 10,
+    "types": {
+      "F": 3,
+      "N": 7
+    },
+    "recommended_type": "N",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DOCUMENT TYPE",
+    "occurrences": 10,
+    "types": {
+      "S": 3,
+      "P": 4,
+      "F": 3
+    },
+    "recommended_type": "P",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SUPERSEDED DATE",
+    "occurrences": 10,
+    "types": {
+      "D": 2,
+      "F": 8
+    },
+    "recommended_type": "F",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PLACEHOLD DSS IP #",
+    "occurrences": 10,
+    "types": {
+      "N": 9,
+      "F": 1
+    },
+    "recommended_type": "N",
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "NATIONAL PATIENT RECORD FLAG",
+    "occurrences": 10,
+    "types": {
+      "S": 9,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 10
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 50.7,
+    "label": "PHARMACY ORDERABLE ITEM",
+    "source_files": 10,
+    "priority": 10
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 60.0,
+    "label": "LABORATORY TEST",
+    "source_files": 10,
+    "priority": 10
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 64.061,
+    "label": "LAB ELECTRONIC CODES",
+    "source_files": 10,
+    "priority": 10
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 450.0,
+    "label": "PAID EMPLOYEE",
+    "source_files": 10,
+    "priority": 10
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 409.68,
+    "label": "OUTPATIENT ENCOUNTER",
+    "source_files": 10,
+    "priority": 10
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 411.0,
+    "label": "ADMIN. ACTIVITY SITE PARAMETER",
+    "source_files": 10,
+    "priority": 10
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 757.5,
+    "label": "UCUM CODES",
+    "source_files": 10,
+    "priority": 10
+  },
+  {
+    "rule": "hub_file_reference",
+    "file": 2006.1,
+    "label": "IMAGING SITE PARAMETERS",
+    "source_files": 10,
+    "priority": 10
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATA",
+    "occurrences": 9,
+    "types": {
+      "M": 7,
+      "N": 1,
+      "P": 1
+    },
+    "recommended_type": "M",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DISABLE",
+    "occurrences": 9,
+    "types": {
+      "S": 6,
+      "F": 3
+    },
+    "recommended_type": "S",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "OCCUPATION",
+    "occurrences": 9,
+    "types": {
+      "F": 7,
+      "A": 1,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CONDITION",
+    "occurrences": 9,
+    "types": {
+      "S": 5,
+      "P": 2,
+      "F": 1,
+      "A": 1
+    },
+    "recommended_type": "S",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ERROR TEXT",
+    "occurrences": 9,
+    "types": {
+      "F": 8,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "OWNER",
+    "occurrences": 9,
+    "types": {
+      "P": 7,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RECIPIENT",
+    "occurrences": 9,
+    "types": {
+      "A": 1,
+      "M": 1,
+      "P": 4,
+      "F": 2,
+      "D": 1
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MESSAGE NUMBER",
+    "occurrences": 9,
+    "types": {
+      "N": 5,
+      "P": 2,
+      "M": 1,
+      "F": 1
+    },
+    "recommended_type": "N",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CURRENT STATUS",
+    "occurrences": 9,
+    "types": {
+      "S": 4,
+      "P": 3,
+      "C": 2
+    },
+    "recommended_type": "S",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TRANSMISSION DATE",
+    "occurrences": 9,
+    "types": {
+      "DC": 1,
+      "D": 8
+    },
+    "recommended_type": "D",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PATIENT STATUS",
+    "occurrences": 9,
+    "types": {
+      "P": 4,
+      "S": 4,
+      "C": 1
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TEAM",
+    "occurrences": 9,
+    "types": {
+      "F": 3,
+      "M": 1,
+      "P": 5
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RECORD NUMBER",
+    "occurrences": 9,
+    "types": {
+      "N": 7,
+      "M": 1,
+      "F": 1
+    },
+    "recommended_type": "N",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INSTRUMENT NAME",
+    "occurrences": 9,
+    "types": {
+      "F": 7,
+      "P": 2
+    },
+    "recommended_type": "F",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MESSAGE TEXT",
+    "occurrences": 9,
+    "types": {
+      "P": 1,
+      "F": 3,
+      "M": 5
+    },
+    "recommended_type": "M",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SPECIMEN",
+    "occurrences": 9,
+    "types": {
+      "P": 7,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DOB",
+    "occurrences": 9,
+    "types": {
+      "D": 6,
+      "C": 1,
+      "DC": 1,
+      "F": 1
+    },
+    "recommended_type": "D",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TYPE OF IMAGING",
+    "occurrences": 9,
+    "types": {
+      "P": 8,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "WEIGHT",
+    "occurrences": 9,
+    "types": {
+      "N": 6,
+      "F": 2,
+      "C": 1
+    },
+    "recommended_type": "N",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SYSTEM",
+    "occurrences": 9,
+    "types": {
+      "P": 5,
+      "F": 3,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COMPLETED BY",
+    "occurrences": 9,
+    "types": {
+      "P": 8,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LAST UPDATE",
+    "occurrences": 9,
+    "types": {
+      "F": 2,
+      "D": 7
+    },
+    "recommended_type": "D",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TRANSACTION ID",
+    "occurrences": 9,
+    "types": {
+      "N": 2,
+      "F": 7
+    },
+    "recommended_type": "F",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LAST MESSAGE NUMBER",
+    "occurrences": 9,
+    "types": {
+      "N": 1,
+      "P": 8
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DELETED BY",
+    "occurrences": 9,
+    "types": {
+      "P": 8,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "VALIDATION CODE",
+    "occurrences": 9,
+    "types": {
+      "F": 7,
+      "N": 2
+    },
+    "recommended_type": "F",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "JOB NUMBER",
+    "occurrences": 9,
+    "types": {
+      "F": 5,
+      "N": 4
+    },
+    "recommended_type": "F",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "UNIT OF ISSUE",
+    "occurrences": 9,
+    "types": {
+      "P": 6,
+      "F": 2,
+      "N": 1
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "POW LOCATION",
+    "occurrences": 9,
+    "types": {
+      "P": 7,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ENCOUNTER CV",
+    "occurrences": 9,
+    "types": {
+      "S": 8,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "UCUM CODE",
+    "occurrences": 9,
+    "types": {
+      "F": 1,
+      "P": 8
+    },
+    "recommended_type": "P",
+    "priority": 9
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MARITAL STATUS",
+    "occurrences": 8,
+    "types": {
+      "P": 5,
+      "C": 1,
+      "F": 1,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATE OF DEATH",
+    "occurrences": 8,
+    "types": {
+      "D": 6,
+      "F": 2
+    },
+    "recommended_type": "D",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "HEADER",
+    "occurrences": 8,
+    "types": {
+      "F": 5,
+      "K": 2,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CLASSIFICATION",
+    "occurrences": 8,
+    "types": {
+      "S": 3,
+      "F": 3,
+      "P": 2
+    },
+    "recommended_type": "S",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "START DATE/TIME",
+    "occurrences": 8,
+    "types": {
+      "D": 7,
+      "M": 1
+    },
+    "recommended_type": "D",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REVIEWED BY",
+    "occurrences": 8,
+    "types": {
+      "F": 1,
+      "P": 7
+    },
+    "recommended_type": "P",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "AVAILABILITY",
+    "occurrences": 8,
+    "types": {
+      "D": 1,
+      "S": 7
+    },
+    "recommended_type": "S",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATA TYPE",
+    "occurrences": 8,
+    "types": {
+      "S": 4,
+      "C": 1,
+      "F": 2,
+      "P": 1
+    },
+    "recommended_type": "S",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ENTRY DATE/TIME",
+    "occurrences": 8,
+    "types": {
+      "D": 7,
+      "F": 1
+    },
+    "recommended_type": "D",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DAYS SUPPLY",
+    "occurrences": 8,
+    "types": {
+      "N": 7,
+      "C": 1
+    },
+    "recommended_type": "N",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SORT ORDER",
+    "occurrences": 8,
+    "types": {
+      "S": 3,
+      "F": 1,
+      "N": 4
+    },
+    "recommended_type": "N",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATE OF SERVICE",
+    "occurrences": 8,
+    "types": {
+      "D": 5,
+      "F": 3
+    },
+    "recommended_type": "D",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "JUSTIFICATION",
+    "occurrences": 8,
+    "types": {
+      "F": 4,
+      "M": 4
+    },
+    "recommended_type": "F",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PARENT FILE",
+    "occurrences": 8,
+    "types": {
+      "P": 6,
+      "C": 1,
+      "N": 1
+    },
+    "recommended_type": "P",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REPORT",
+    "occurrences": 8,
+    "types": {
+      "P": 7,
+      "A": 1
+    },
+    "recommended_type": "P",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REQUEST STATUS",
+    "occurrences": 8,
+    "types": {
+      "S": 4,
+      "P": 4
+    },
+    "recommended_type": "S",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COLUMNS",
+    "occurrences": 8,
+    "types": {
+      "N": 3,
+      "S": 1,
+      "M": 2,
+      "F": 1,
+      "P": 1
+    },
+    "recommended_type": "N",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PATIENT CATEGORY",
+    "occurrences": 8,
+    "types": {
+      "S": 5,
+      "P": 3
+    },
+    "recommended_type": "S",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SOURCE CODE",
+    "occurrences": 8,
+    "types": {
+      "F": 2,
+      "S": 1,
+      "P": 5
+    },
+    "recommended_type": "P",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "GROUP NUMBER",
+    "occurrences": 8,
+    "types": {
+      "F": 6,
+      "N": 1,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CPT MODIFIER",
+    "occurrences": 8,
+    "types": {
+      "M": 2,
+      "P": 3,
+      "F": 2,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STATION NAME",
+    "occurrences": 8,
+    "types": {
+      "F": 3,
+      "P": 5
+    },
+    "recommended_type": "P",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ADDRESS",
+    "occurrences": 8,
+    "types": {
+      "F": 7,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PAY PLAN",
+    "occurrences": 8,
+    "types": {
+      "F": 7,
+      "4": 1
+    },
+    "recommended_type": "F",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "HCPCS ITEM",
+    "occurrences": 8,
+    "types": {
+      "N": 7,
+      "F": 1
+    },
+    "recommended_type": "N",
+    "priority": 8
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "OLD VALUE",
+    "occurrences": 7,
+    "types": {
+      "C": 1,
+      "F": 6
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "NEW VALUE",
+    "occurrences": 7,
+    "types": {
+      "C": 1,
+      "F": 6
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "YEAR",
+    "occurrences": 7,
+    "types": {
+      "M": 1,
+      "N": 3,
+      "D": 2,
+      "F": 1
+    },
+    "recommended_type": "N",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "WARD LOCATION",
+    "occurrences": 7,
+    "types": {
+      "F": 1,
+      "P": 6
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ERROR TYPE",
+    "occurrences": 7,
+    "types": {
+      "S": 3,
+      "F": 1,
+      "P": 3
+    },
+    "recommended_type": "S",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FREQUENCY",
+    "occurrences": 7,
+    "types": {
+      "N": 3,
+      "F": 2,
+      "P": 1,
+      "S": 1
+    },
+    "recommended_type": "N",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SUBTYPE",
+    "occurrences": 7,
+    "types": {
+      "P": 4,
+      "F": 3
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ENTRY",
+    "occurrences": 7,
+    "types": {
+      "P": 1,
+      "N": 2,
+      "C": 1,
+      "F": 1,
+      "V": 2
+    },
+    "recommended_type": "N",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FROM",
+    "occurrences": 7,
+    "types": {
+      "F": 4,
+      "P": 2,
+      "D": 1
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PREFIX",
+    "occurrences": 7,
+    "types": {
+      "F": 6,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LOCK",
+    "occurrences": 7,
+    "types": {
+      "F": 4,
+      "S": 3
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "APPROVED BY",
+    "occurrences": 7,
+    "types": {
+      "P": 5,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REQUEST DATE/TIME",
+    "occurrences": 7,
+    "types": {
+      "D": 6,
+      "F": 1
+    },
+    "recommended_type": "D",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REQUESTED BY",
+    "occurrences": 7,
+    "types": {
+      "F": 2,
+      "P": 4,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "HL7 MESSAGE ID",
+    "occurrences": 7,
+    "types": {
+      "F": 5,
+      "N": 1,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TYPE OF CARE",
+    "occurrences": 7,
+    "types": {
+      "S": 6,
+      "P": 1
+    },
+    "recommended_type": "S",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TELEPHONE",
+    "occurrences": 7,
+    "types": {
+      "F": 6,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RELEASE DATE",
+    "occurrences": 7,
+    "types": {
+      "DC": 1,
+      "D": 6
+    },
+    "recommended_type": "D",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INTERPRETATION",
+    "occurrences": 7,
+    "types": {
+      "F": 3,
+      "P": 1,
+      "M": 2,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REQUEST TYPE",
+    "occurrences": 7,
+    "types": {
+      "S": 6,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TYPE CODE",
+    "occurrences": 7,
+    "types": {
+      "F": 3,
+      "S": 2,
+      "P": 2
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SCHEDULE",
+    "occurrences": 7,
+    "types": {
+      "F": 5,
+      "D": 1,
+      "N": 1
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SEVERITY",
+    "occurrences": 7,
+    "types": {
+      "F": 3,
+      "S": 4
+    },
+    "recommended_type": "S",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PHYSICIAN",
+    "occurrences": 7,
+    "types": {
+      "P": 5,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STOP DATE",
+    "occurrences": 7,
+    "types": {
+      "D": 6,
+      "F": 1
+    },
+    "recommended_type": "D",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "METHOD",
+    "occurrences": 7,
+    "types": {
+      "F": 5,
+      "1": 1,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STREET ADDRESS 2",
+    "occurrences": 7,
+    "types": {
+      "F": 5,
+      "C": 2
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REFERENCE NUMBER",
+    "occurrences": 7,
+    "types": {
+      "N": 4,
+      "F": 3
+    },
+    "recommended_type": "N",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CLINIC STOP CODE",
+    "occurrences": 7,
+    "types": {
+      "P": 4,
+      "F": 2,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TYPE OF DATA",
+    "occurrences": 7,
+    "types": {
+      "S": 1,
+      "P": 6
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PROCEDURE TYPE",
+    "occurrences": 7,
+    "types": {
+      "S": 5,
+      "P": 1,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COUNT",
+    "occurrences": 7,
+    "types": {
+      "N": 4,
+      "S": 1,
+      "C": 1,
+      "F": 1
+    },
+    "recommended_type": "N",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "GRADE",
+    "occurrences": 7,
+    "types": {
+      "M": 1,
+      "F": 6
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "EXPLANATION",
+    "occurrences": 7,
+    "types": {
+      "F": 6,
+      "D": 1
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FORM TYPE",
+    "occurrences": 7,
+    "types": {
+      "S": 3,
+      "P": 3,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ROLE",
+    "occurrences": 7,
+    "types": {
+      "S": 1,
+      "F": 3,
+      "P": 3
+    },
+    "recommended_type": "F",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RECEIPT #",
+    "occurrences": 7,
+    "types": {
+      "F": 2,
+      "P": 5
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CORRECTIVE ACTION",
+    "occurrences": 7,
+    "types": {
+      "M": 2,
+      "P": 2,
+      "F": 1,
+      "S": 2
+    },
+    "recommended_type": "M",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INVENTORY POINT",
+    "occurrences": 7,
+    "types": {
+      "F": 1,
+      "P": 6
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SUPERVISOR",
+    "occurrences": 7,
+    "types": {
+      "P": 6,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RISK FACTOR",
+    "occurrences": 7,
+    "types": {
+      "P": 6,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 7
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SORT BY",
+    "occurrences": 6,
+    "types": {
+      "F": 3,
+      "S": 3
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CPU",
+    "occurrences": 6,
+    "types": {
+      "F": 5,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "USER NAME",
+    "occurrences": 6,
+    "types": {
+      "C": 1,
+      "P": 4,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LAST NAME",
+    "occurrences": 6,
+    "types": {
+      "F": 5,
+      "C": 1
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SENDING APPLICATION",
+    "occurrences": 6,
+    "types": {
+      "P": 4,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PRIMARY DIAGNOSIS",
+    "occurrences": 6,
+    "types": {
+      "P": 5,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DEA, SPECIAL HDLG",
+    "occurrences": 6,
+    "types": {
+      "F": 2,
+      "S": 4
+    },
+    "recommended_type": "S",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PRICE PER DISPENSE UNIT",
+    "occurrences": 6,
+    "types": {
+      "N": 5,
+      "P": 1
+    },
+    "recommended_type": "N",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "QUESTION",
+    "occurrences": 6,
+    "types": {
+      "A": 2,
+      "P": 2,
+      "F": 1,
+      "7": 1
+    },
+    "recommended_type": "A",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PATIENT LOCATION",
+    "occurrences": 6,
+    "types": {
+      "P": 4,
+      "F": 1,
+      "V": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PATIENT SSN",
+    "occurrences": 6,
+    "types": {
+      "F": 4,
+      "C": 2
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PRESCRIPTION NUMBER",
+    "occurrences": 6,
+    "types": {
+      "P": 5,
+      "M": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PERSON",
+    "occurrences": 6,
+    "types": {
+      "P": 5,
+      "V": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INTERVENTION",
+    "occurrences": 6,
+    "types": {
+      "P": 5,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PURCHASE ORDER NUMBER",
+    "occurrences": 6,
+    "types": {
+      "P": 2,
+      "F": 4
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ACTIVITY",
+    "occurrences": 6,
+    "types": {
+      "D": 3,
+      "S": 1,
+      "F": 1,
+      "N": 1
+    },
+    "recommended_type": "D",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "HL7 CODE",
+    "occurrences": 6,
+    "types": {
+      "F": 5,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PROGRAM",
+    "occurrences": 6,
+    "types": {
+      "F": 3,
+      "S": 2,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LRDFN",
+    "occurrences": 6,
+    "types": {
+      "F": 1,
+      "N": 4,
+      "P": 1
+    },
+    "recommended_type": "N",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LAB TEST",
+    "occurrences": 6,
+    "types": {
+      "P": 5,
+      "M": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATE ORDERED",
+    "occurrences": 6,
+    "types": {
+      "D": 5,
+      "F": 1
+    },
+    "recommended_type": "D",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RESULTS",
+    "occurrences": 6,
+    "types": {
+      "M": 1,
+      "6": 1,
+      "P": 1,
+      "S": 3
+    },
+    "recommended_type": "S",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "AREA",
+    "occurrences": 6,
+    "types": {
+      "F": 1,
+      "P": 5
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "IMAGING LOCATION",
+    "occurrences": 6,
+    "types": {
+      "P": 4,
+      "C": 1,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MODIFIER",
+    "occurrences": 6,
+    "types": {
+      "F": 2,
+      "A": 1,
+      "S": 2,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ADMISSION",
+    "occurrences": 6,
+    "types": {
+      "P": 5,
+      "D": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TYPE OF EVENT",
+    "occurrences": 6,
+    "types": {
+      "S": 5,
+      "P": 1
+    },
+    "recommended_type": "S",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ITEMS",
+    "occurrences": 6,
+    "types": {
+      "A": 2,
+      "P": 2,
+      "V": 1,
+      "M": 1
+    },
+    "recommended_type": "A",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PARAMETERS",
+    "occurrences": 6,
+    "types": {
+      "M": 4,
+      "F": 1,
+      "A": 1
+    },
+    "recommended_type": "M",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ORIENTATION",
+    "occurrences": 6,
+    "types": {
+      "F": 1,
+      "S": 5
+    },
+    "recommended_type": "S",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SIZE",
+    "occurrences": 6,
+    "types": {
+      "F": 4,
+      "S": 1,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SURGICAL SPECIALTY",
+    "occurrences": 6,
+    "types": {
+      "P": 5,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REASON CODE",
+    "occurrences": 6,
+    "types": {
+      "P": 1,
+      "F": 2,
+      "N": 1,
+      "S": 2
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CANCELLATION REASON",
+    "occurrences": 6,
+    "types": {
+      "F": 1,
+      "P": 4,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "NOTE",
+    "occurrences": 6,
+    "types": {
+      "M": 4,
+      "P": 1,
+      "F": 1
+    },
+    "recommended_type": "M",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DEBTOR",
+    "occurrences": 6,
+    "types": {
+      "V": 1,
+      "P": 4,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "AUDIT",
+    "occurrences": 6,
+    "types": {
+      "D": 4,
+      "P": 2
+    },
+    "recommended_type": "D",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TRANSACTION",
+    "occurrences": 6,
+    "types": {
+      "A": 2,
+      "D": 1,
+      "P": 2,
+      "F": 1
+    },
+    "recommended_type": "A",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CHECKSUM",
+    "occurrences": 6,
+    "types": {
+      "N": 4,
+      "F": 2
+    },
+    "recommended_type": "N",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "BATCH TYPE",
+    "occurrences": 6,
+    "types": {
+      "S": 2,
+      "P": 4
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "EVENT DATE",
+    "occurrences": 6,
+    "types": {
+      "D": 5,
+      "F": 1
+    },
+    "recommended_type": "D",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "KEY",
+    "occurrences": 6,
+    "types": {
+      "F": 3,
+      "P": 2,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CLAIM",
+    "occurrences": 6,
+    "types": {
+      "P": 5,
+      "D": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PLAN",
+    "occurrences": 6,
+    "types": {
+      "P": 2,
+      "M": 4
+    },
+    "recommended_type": "M",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TRACKING ID",
+    "occurrences": 6,
+    "types": {
+      "P": 2,
+      "F": 4
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FORM",
+    "occurrences": 6,
+    "types": {
+      "P": 5,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DATA ELEMENT",
+    "occurrences": 6,
+    "types": {
+      "P": 4,
+      "M": 1,
+      "7": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COUNTY CODE",
+    "occurrences": 6,
+    "types": {
+      "F": 4,
+      "N": 2
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REQUEST DATE",
+    "occurrences": 6,
+    "types": {
+      "M": 1,
+      "D": 5
+    },
+    "recommended_type": "D",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SYSTEM IDENTIFIER",
+    "occurrences": 6,
+    "types": {
+      "S": 3,
+      "F": 3
+    },
+    "recommended_type": "S",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PAY PERIOD",
+    "occurrences": 6,
+    "types": {
+      "F": 4,
+      "P": 1,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CPT",
+    "occurrences": 6,
+    "types": {
+      "P": 5,
+      "A": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PLACEHOLD MEANS TEST",
+    "occurrences": 6,
+    "types": {
+      "S": 4,
+      "F": 2
+    },
+    "recommended_type": "S",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "EXPRESSION",
+    "occurrences": 6,
+    "types": {
+      "P": 4,
+      "N": 1,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STUDY UID",
+    "occurrences": 6,
+    "types": {
+      "F": 5,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MACHINE ID",
+    "occurrences": 6,
+    "types": {
+      "F": 5,
+      "N": 1
+    },
+    "recommended_type": "F",
+    "priority": 6
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FIELD NAME",
+    "occurrences": 5,
+    "types": {
+      "C": 1,
+      "A": 1,
+      "F": 3
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COUNTRY",
+    "occurrences": 5,
+    "types": {
+      "P": 4,
+      "M": 1
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ROOM-BED",
+    "occurrences": 5,
+    "types": {
+      "F": 3,
+      "P": 2
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "EMPLOYMENT STATUS",
+    "occurrences": 5,
+    "types": {
+      "S": 4,
+      "C": 1
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ALIAS",
+    "occurrences": 5,
+    "types": {
+      "M": 2,
+      "C": 1,
+      "F": 2
+    },
+    "recommended_type": "M",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FACILITY TYPE",
+    "occurrences": 5,
+    "types": {
+      "P": 3,
+      "S": 1,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "AGENCY CODE",
+    "occurrences": 5,
+    "types": {
+      "S": 3,
+      "F": 2
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ASSIGNING AUTHORITY",
+    "occurrences": 5,
+    "types": {
+      "F": 3,
+      "S": 2
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "MESSAGES",
+    "occurrences": 5,
+    "types": {
+      "N": 1,
+      "M": 1,
+      "D": 1,
+      "P": 2
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DIRECTION",
+    "occurrences": 5,
+    "types": {
+      "S": 4,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STATUS CODE",
+    "occurrences": 5,
+    "types": {
+      "F": 4,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "BOX-VOLUME PAIR",
+    "occurrences": 5,
+    "types": {
+      "F": 2,
+      "P": 3
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TO",
+    "occurrences": 5,
+    "types": {
+      "F": 4,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "OPTION",
+    "occurrences": 5,
+    "types": {
+      "P": 1,
+      "F": 4
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "HELP TEXT",
+    "occurrences": 5,
+    "types": {
+      "M": 3,
+      "F": 2
+    },
+    "recommended_type": "M",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LINE NUMBER",
+    "occurrences": 5,
+    "types": {
+      "M": 1,
+      "N": 2,
+      "F": 2
+    },
+    "recommended_type": "N",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "CENSUS DATE",
+    "occurrences": 5,
+    "types": {
+      "D": 3,
+      "P": 2
+    },
+    "recommended_type": "D",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ADMITTING DIAGNOSIS",
+    "occurrences": 5,
+    "types": {
+      "F": 3,
+      "P": 2
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SURGERY",
+    "occurrences": 5,
+    "types": {
+      "S": 3,
+      "P": 1,
+      "M": 1
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SPECIAL INSTRUCTIONS",
+    "occurrences": 5,
+    "types": {
+      "A": 1,
+      "F": 1,
+      "M": 3
+    },
+    "recommended_type": "M",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DRG",
+    "occurrences": 5,
+    "types": {
+      "C": 1,
+      "P": 4
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DISCHARGE STATUS",
+    "occurrences": 5,
+    "types": {
+      "S": 4,
+      "P": 1
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "UNIT",
+    "occurrences": 5,
+    "types": {
+      "P": 1,
+      "F": 3,
+      "N": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "NARRATIVE",
+    "occurrences": 5,
+    "types": {
+      "M": 1,
+      "F": 4
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TYPE OF REQUEST",
+    "occurrences": 5,
+    "types": {
+      "F": 2,
+      "S": 2,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "COMPLETION STATUS",
+    "occurrences": 5,
+    "types": {
+      "P": 1,
+      "F": 2,
+      "S": 2
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ACCESSION AREA",
+    "occurrences": 5,
+    "types": {
+      "P": 4,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TIME ASPECT",
+    "occurrences": 5,
+    "types": {
+      "P": 4,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "WKLD CODE",
+    "occurrences": 5,
+    "types": {
+      "P": 3,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "EVENT CODE",
+    "occurrences": 5,
+    "types": {
+      "P": 2,
+      "F": 2,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DFN",
+    "occurrences": 5,
+    "types": {
+      "N": 2,
+      "P": 3
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ATTRIBUTE",
+    "occurrences": 5,
+    "types": {
+      "F": 1,
+      "A": 2,
+      "P": 2
+    },
+    "recommended_type": "A",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STREET ADDRESS 3",
+    "occurrences": 5,
+    "types": {
+      "F": 3,
+      "C": 2
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REPORT STATUS",
+    "occurrences": 5,
+    "types": {
+      "S": 4,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REQUESTING PHYSICIAN",
+    "occurrences": 5,
+    "types": {
+      "C": 1,
+      "P": 2,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FINDINGS",
+    "occurrences": 5,
+    "types": {
+      "F": 2,
+      "P": 1,
+      "V": 2
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INDICATION",
+    "occurrences": 5,
+    "types": {
+      "F": 2,
+      "P": 2,
+      "M": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STOP CODE",
+    "occurrences": 5,
+    "types": {
+      "P": 2,
+      "N": 1,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ACTION TYPE",
+    "occurrences": 5,
+    "types": {
+      "F": 1,
+      "P": 2,
+      "S": 2
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TERM",
+    "occurrences": 5,
+    "types": {
+      "F": 3,
+      "P": 1,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "LOT NUMBER",
+    "occurrences": 5,
+    "types": {
+      "F": 3,
+      "P": 2
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PROVIDER TYPE",
+    "occurrences": 5,
+    "types": {
+      "S": 3,
+      "F": 2
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TOTAL AMOUNT PAID",
+    "occurrences": 5,
+    "types": {
+      "N": 4,
+      "C": 1
+    },
+    "recommended_type": "N",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PROMPT PAY TYPE",
+    "occurrences": 5,
+    "types": {
+      "S": 4,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "INVOICE NUMBER",
+    "occurrences": 5,
+    "types": {
+      "F": 3,
+      "N": 1,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "OTHER",
+    "occurrences": 5,
+    "types": {
+      "M": 1,
+      "F": 3,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "DELETE REASON",
+    "occurrences": 5,
+    "types": {
+      "F": 3,
+      "P": 1,
+      "S": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PAYER NAME",
+    "occurrences": 5,
+    "types": {
+      "F": 4,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "SEQUENCE #",
+    "occurrences": 5,
+    "types": {
+      "A": 1,
+      "N": 4
+    },
+    "recommended_type": "N",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REMOTE DOMAIN",
+    "occurrences": 5,
+    "types": {
+      "P": 3,
+      "F": 2
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TRANSACTION STATUS",
+    "occurrences": 5,
+    "types": {
+      "S": 4,
+      "F": 1
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "APPOINTMENT TYPE",
+    "occurrences": 5,
+    "types": {
+      "P": 4,
+      "S": 1
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PLAN ID",
+    "occurrences": 5,
+    "types": {
+      "P": 2,
+      "F": 2,
+      "C": 1
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "REVENUE CODE",
+    "occurrences": 5,
+    "types": {
+      "P": 4,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "POLICY NUMBER",
+    "occurrences": 5,
+    "types": {
+      "F": 1,
+      "N": 4
+    },
+    "recommended_type": "N",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "TEAM POSITION",
+    "occurrences": 5,
+    "types": {
+      "P": 4,
+      "F": 1
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "BUDGET OBJECT CODE",
+    "occurrences": 5,
+    "types": {
+      "F": 3,
+      "N": 1,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "FCP",
+    "occurrences": 5,
+    "types": {
+      "F": 4,
+      "A": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STATE CODE",
+    "occurrences": 5,
+    "types": {
+      "P": 2,
+      "F": 3
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "WORK ORDER NUMBER",
+    "occurrences": 5,
+    "types": {
+      "P": 2,
+      "F": 3
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "VIEW_ID",
+    "occurrences": 5,
+    "types": {
+      "F": 1,
+      "P": 4
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ENCOUNTER SWAC",
+    "occurrences": 5,
+    "types": {
+      "F": 1,
+      "S": 4
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "ENC HEAD/NECK CA",
+    "occurrences": 5,
+    "types": {
+      "F": 1,
+      "S": 4
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "RADIATION ENCOUNTER INDICATOR",
+    "occurrences": 5,
+    "types": {
+      "F": 1,
+      "S": 4
+    },
+    "recommended_type": "S",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "QUEUE",
+    "occurrences": 5,
+    "types": {
+      "F": 2,
+      "N": 2,
+      "P": 1
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "STUDY DATE",
+    "occurrences": 5,
+    "types": {
+      "D": 2,
+      "F": 3
+    },
+    "recommended_type": "F",
+    "priority": 5
+  },
+  {
+    "rule": "label_type_conflict",
+    "label": "PROVIDER NARRATIVE",
+    "occurrences": 5,
+    "types": {
+      "F": 1,
+      "P": 4
+    },
+    "recommended_type": "P",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 3.075,
+    "file_label": "ERROR LOG",
+    "field": 0.01,
+    "field_label": "$H DATE",
+    "package": "KERNEL",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 3.084,
+    "file_label": "FAILED SIGNON ATTEMPTS",
+    "field": 3.0,
+    "field_label": "HOROLOG OF LAST UPDATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 4.001,
+    "file_label": "MASTER FILE PARAMETERS",
+    "field": 0.04,
+    "field_label": "PRE-UPDATE ROUTINE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 4.001,
+    "file_label": "MASTER FILE PARAMETERS",
+    "field": 0.05,
+    "field_label": "POST-UPDATE ROUTINE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 4.001,
+    "file_label": "MASTER FILE PARAMETERS",
+    "field": 4.16,
+    "field_label": "MFE PRE-UPDATE ROUTINE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 4.001,
+    "file_label": "MASTER FILE PARAMETERS",
+    "field": 4.17,
+    "field_label": "MFE POST-UPDATE ROUTINE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 6.666,
+    "file_label": "KERNEL PKI LOGS",
+    "field": 0.01,
+    "field_label": "DATE/TIME CREATED",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 14.4,
+    "file_label": "TASKS",
+    "field": 16.0,
+    "field_label": "Original Create date ($H)",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 14.4,
+    "file_label": "TASKS",
+    "field": 52.0,
+    "field_label": "Last Update $H",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 15.1,
+    "file_label": "DUPLICATE RESOLUTION",
+    "field": 0.09,
+    "field_label": "CANDIDATE COLLECTION ROUTINE",
+    "package": "KERNEL",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 52.0,
+    "file_label": "PRESCRIPTION",
+    "field": 120.02,
+    "field_label": "DATE OF DEATH HISTORY",
+    "package": "PHARMACY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 62.49,
+    "file_label": "LA7 MESSAGE QUEUE",
+    "field": 106.0,
+    "field_label": "DATE/TIME OF MESSAGE",
+    "package": "LAB MESSAGING",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 62.49,
+    "file_label": "LA7 MESSAGE QUEUE",
+    "field": 156.0,
+    "field_label": "INVERSE DATE",
+    "package": "LAB MESSAGING",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 69.9,
+    "file_label": "LABORATORY SITE",
+    "field": 520.0,
+    "field_label": "DATE ROLLOVER LAST RUN",
+    "package": "AUTOMATED LAB INSTRUMENTS",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 101.44,
+    "file_label": "ORDER QUICK VIEW",
+    "field": 6.0,
+    "field_label": "LAST UPDATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 103.0,
+    "file_label": "ORAM FLOWSHEET",
+    "field": 4.0,
+    "field_label": "START DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 103.0,
+    "file_label": "ORAM FLOWSHEET",
+    "field": 5.0,
+    "field_label": "STOP DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 123.0,
+    "file_label": "REQUEST/CONSULTATION",
+    "field": 512.0,
+    "field_label": "PERFORMED DATE/TIME",
+    "package": "SUPPLY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 342.0,
+    "field_label": "DATE OF DEATH",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 364.1,
+    "field_label": "ESTIMATE OF MORTALITY, DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 418.0,
+    "field_label": "HOSPITAL ADMISSION DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 419.0,
+    "field_label": "HOSPITAL DISCHARGE DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 420.0,
+    "field_label": "ADMISSION/TRANSFER DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 421.0,
+    "field_label": "DISCHARGE/TRANSFER DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 452.0,
+    "field_label": "OBSERVATION ADMISSION DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 453.0,
+    "field_label": "OBSERVATION DISCHARGE DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 457.1,
+    "field_label": "HDL, DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 458.1,
+    "field_label": "SERUM TRIGLYCERIDE, DATE (CAR)",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 459.1,
+    "field_label": "SERUM POTASSIUM, DATE(CARDIAC)",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 460.1,
+    "field_label": "SERUM BILIRUBIN, DATE (CARD)",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 461.1,
+    "field_label": "LDL, DATE (CARDIAC)",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 462.1,
+    "field_label": "TOTAL CHOLESTEROL, DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 504.1,
+    "field_label": "HEMOGLOBIN A1C, DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 507.1,
+    "field_label": "BNP DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 130.0,
+    "file_label": "SURGERY",
+    "field": 513.0,
+    "field_label": "SURGERY CONSULT DATE",
+    "package": "SURGERY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 139.5,
+    "file_label": "SURGERY TRANSPLANT ASSESSMENTS",
+    "field": 133.0,
+    "field_label": "GRAFT FAILURE DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 139.5,
+    "file_label": "SURGERY TRANSPLANT ASSESSMENTS",
+    "field": 170.0,
+    "field_label": "DATE OF DEATH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 139.5,
+    "file_label": "SURGERY TRANSPLANT ASSESSMENTS",
+    "field": 187.0,
+    "field_label": "DATE STARTED DIALYSIS",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 96.0,
+    "field_label": "PSA DATE",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 156.0,
+    "field_label": "DRE DATE",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 171.0,
+    "field_label": "DATE OF FIRST SYMPTOMS",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 172.0,
+    "field_label": "DATE START OF WORKUP ORDERED",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 173.0,
+    "field_label": "DATE WORKUP STARTED",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 174.1,
+    "field_label": "DATE OF BLOOD IN SPUTUM PER PT",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 175.1,
+    "field_label": "DATE OF CHEST X-RAY",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 176.1,
+    "field_label": "DATE OF CT SCAN",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 177.1,
+    "field_label": "DATE OF BRONCHOSCOPY",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 178.1,
+    "field_label": "DATE OF MEDIASTINOSCOPY",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 179.1,
+    "field_label": "DATE OF PET SCAN",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 180.1,
+    "field_label": "DATE OF CHANGE IN BOWEL HABITS",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 181.1,
+    "field_label": "DATE OF FOBT",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 182.1,
+    "field_label": "DATE OF BARIUM ENEMA",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 183.1,
+    "field_label": "DATE OF SIGMOIDOSCOPY",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 184.1,
+    "field_label": "DATE OF CT OF ABDOMEN/PELVIS",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 185.1,
+    "field_label": "DATE OF COLONOSCOPY",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 186.1,
+    "field_label": "DATE OF DYSPNEA",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 187.1,
+    "field_label": "DATE OF INCREASED COUGH",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 188.1,
+    "field_label": "DATE OF FEVER",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 189.1,
+    "field_label": "DATE OF NIGHT SWEATS",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 193.0,
+    "field_label": "DATE OF CONCLUSIVE DX",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 165.5,
+    "file_label": "ONCOLOGY PRIMARY",
+    "field": 195.0,
+    "field_label": "DATE OF MULTIPLE TUMORS",
+    "package": "ONCOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 200.0,
+    "file_label": "NEW PERSON",
+    "field": 11.2,
+    "field_label": "DATE VERIFY CODE LAST CHANGED",
+    "package": "SOCIAL WORK",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 200.0,
+    "file_label": "NEW PERSON",
+    "field": 20.1,
+    "field_label": "DATE E-SIG LAST CHANGED",
+    "package": "SOCIAL WORK",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 213.4,
+    "file_label": "NURS AMIS 1106 MANHOURS",
+    "field": 0.01,
+    "field_label": "DATE/SHIFT/WARD",
+    "package": "NURSING ADMINISTRATION",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 213.9,
+    "file_label": "NURS PARAMETERS",
+    "field": 10.4,
+    "field_label": "DEFAULT EVALUATION DATE",
+    "package": "NURSING SERVICE",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 213.9,
+    "file_label": "NURS PARAMETERS",
+    "field": 10.5,
+    "field_label": "DEFAULT TARGET DATE",
+    "package": "NURSING SERVICE",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 231.9,
+    "file_label": "TRACKING AREA",
+    "field": 6.0,
+    "field_label": "WAITING TEXT UPDATES",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 231.9,
+    "file_label": "TRACKING AREA",
+    "field": 230.1,
+    "field_label": "TRACKING UPDATED",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 231.9,
+    "file_label": "TRACKING AREA",
+    "field": 231.1,
+    "field_label": "CHOICES UPDATED",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 344.5,
+    "file_label": "AR EDI LOCKBOX MESSAGES",
+    "field": 0.05,
+    "field_label": "UPDATE TASK",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 349.0,
+    "file_label": "AR TRANSMISSION RECORDS",
+    "field": 0.09,
+    "field_label": "STATEMENT DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 349.0,
+    "file_label": "AR TRANSMISSION RECORDS",
+    "field": 0.1,
+    "field_label": "PROCESS DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 351.0,
+    "file_label": "MEANS TEST BILLING CLOCK",
+    "field": 15.0,
+    "field_label": "UPDATE REASON",
+    "package": "INTEGRATED BILLING",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 351.9,
+    "file_label": "CLAIMSMANAGER BILLS",
+    "field": 3.07,
+    "field_label": "ENTRY DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 356.22,
+    "file_label": "HCS REVIEW TRANSMISSION",
+    "field": 0.07,
+    "field_label": "EVENT DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 365.0,
+    "file_label": "IIV RESPONSE",
+    "field": 12.07,
+    "field_label": "DATE TIME PERIOD",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 368.0,
+    "file_label": "HEALTH CARE CLAIM RFAI (277)",
+    "field": 0.02,
+    "field_label": "REQUEST DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 368.0,
+    "file_label": "HEALTH CARE CLAIM RFAI (277)",
+    "field": 0.03,
+    "field_label": "TRANSACTION DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 368.0,
+    "file_label": "HEALTH CARE CLAIM RFAI (277)",
+    "field": 12.01,
+    "field_label": "RESPONSE DUE DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 368.0,
+    "file_label": "HEALTH CARE CLAIM RFAI (277)",
+    "field": 14.03,
+    "field_label": "CLAIM SERVICE START DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 368.0,
+    "file_label": "HEALTH CARE CLAIM RFAI (277)",
+    "field": 14.04,
+    "field_label": "CLAIM SERVICE END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 396.0,
+    "file_label": "FORM 7131",
+    "field": 18.0,
+    "field_label": "OPT TREATMENT RPT (DATE RANGE)",
+    "package": "AUTOMATED MED INFO EXCHANGE",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 396.9,
+    "file_label": "FORM 28-8861",
+    "field": 10.0,
+    "field_label": "PREFERRED SCHED DATE REASON",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 423.0,
+    "file_label": "CALM/LOG CODE SHEET",
+    "field": 4.0,
+    "field_label": "TRANSACTION DATE",
+    "package": "IFCAP",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 423.0,
+    "file_label": "CALM/LOG CODE SHEET",
+    "field": 9.0,
+    "field_label": "DATE",
+    "package": "IFCAP",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 423.0,
+    "file_label": "CALM/LOG CODE SHEET",
+    "field": 62.0,
+    "field_label": "DELIVERY DATE - 920",
+    "package": "IFCAP",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 440.5,
+    "file_label": "PURCHASE CARD INFORMATION",
+    "field": 54.0,
+    "field_label": "E VALID DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 440.5,
+    "file_label": "PURCHASE CARD INFORMATION",
+    "field": 59.0,
+    "field_label": "E EXPIRATION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 30.0,
+    "field_label": "PRINT DATE 1",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 31.0,
+    "field_label": "PRINT DATE 2",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 32.0,
+    "field_label": "PRINT DATE 3",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 33.0,
+    "field_label": "PRINT DATE 4",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 34.0,
+    "field_label": "PRINT DATE 5",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 35.0,
+    "field_label": "PRINT DATE 6",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 36.0,
+    "field_label": "PRINT DATE 7",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 37.0,
+    "field_label": "PRINT DATE 8",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 38.0,
+    "field_label": "PRINT DATE 9",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 39.0,
+    "field_label": "PRINT DATE 10",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 40.0,
+    "field_label": "PRINT DATE 11",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 41.0,
+    "field_label": "PRINT DATE 12",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 42.0,
+    "field_label": "PRINT DATE 13",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 458.0,
+    "file_label": "TIME & ATTENDANCE RECORDS",
+    "field": 43.0,
+    "field_label": "PRINT DATE 14",
+    "package": "PAID",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 550.1,
+    "file_label": "CMOP RX QUEUE",
+    "field": 2.0,
+    "field_label": "QUEUED DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 550.1,
+    "file_label": "CMOP RX QUEUE",
+    "field": 5.0,
+    "field_label": "TRANSMITTED DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 550.1,
+    "file_label": "CMOP RX QUEUE",
+    "field": 6.0,
+    "field_label": "RECEIVED DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 604.0,
+    "file_label": "ADDICTION SEVERITY INDEX",
+    "field": 0.033,
+    "field_label": "RESOLVED ADM DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 605.1,
+    "file_label": "MH DASHBOARD WIDGET",
+    "field": 1.0,
+    "field_label": "INACTIVE DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 634.1,
+    "file_label": "HBHC EVALUATION/ADMISSION ERROR(S)",
+    "field": 2.0,
+    "field_label": "FIELDS TO UPDATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 634.2,
+    "file_label": "HBHC VISIT ERROR(S)",
+    "field": 2.0,
+    "field_label": "FIELDS TO UPDATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 634.7,
+    "file_label": "HBHC MEDICAL FOSTER HOME ERROR(S)",
+    "field": 1.0,
+    "field_label": "FIELDS TO UPDATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 661.1,
+    "file_label": "PROSTHETIC HCPCS",
+    "field": 1.2,
+    "field_label": "LAST UPDATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 691.1,
+    "file_label": "CARDIAC CATHETERIZATION",
+    "field": 1513.0,
+    "field_label": "SUPERSEDED DATE",
+    "package": "MEDICINE/CARDIOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 691.5,
+    "file_label": "ELECTROCARDIOGRAM (EKG)",
+    "field": 1513.0,
+    "field_label": "SUPERSEDED DATE",
+    "package": "MEDICINE/CARDIOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 691.6,
+    "file_label": "HOLTER",
+    "field": 1513.0,
+    "field_label": "SUPERSEDED DATE",
+    "package": "MEDICINE/CARDIOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 691.7,
+    "file_label": "EXERCISE TOLERANCE TEST",
+    "field": 1513.0,
+    "field_label": "SUPERSEDED DATE",
+    "package": "MEDICINE/CARDIOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 691.8,
+    "file_label": "ELECTROPHYSIOLOGY (EP)",
+    "field": 1513.0,
+    "field_label": "SUPERSEDED DATE",
+    "package": "MEDICINE/CARDIOLOGY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 694.0,
+    "file_label": "HEMATOLOGY",
+    "field": 1513.0,
+    "field_label": "SUPERSEDED DATE",
+    "package": "MEDICINE",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 699.0,
+    "file_label": "ENDOSCOPY/CONSULT",
+    "field": 1513.0,
+    "field_label": "SUPERSEDED DATE",
+    "package": "MEDICINE",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 700.0,
+    "file_label": "PULMONARY FUNCTION TESTS",
+    "field": 1513.0,
+    "field_label": "SUPERSEDED DATE",
+    "package": "MEDICINE",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.802,
+    "file_label": "ADMISSION EXTRACT",
+    "field": 11.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.802,
+    "file_label": "ADMISSION EXTRACT",
+    "field": 70.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.802,
+    "file_label": "ADMISSION EXTRACT",
+    "field": 83.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.804,
+    "file_label": "CLINIC NOSHOW EXTRACT",
+    "field": 13.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.805,
+    "file_label": "NURSING EXTRACT",
+    "field": 16.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.808,
+    "file_label": "PHYSICAL MOVEMENT EXTRACT",
+    "field": 10.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.808,
+    "file_label": "PHYSICAL MOVEMENT EXTRACT",
+    "field": 11.0,
+    "field_label": "DISCHARGE DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.809,
+    "file_label": "UNIT DOSE LOCAL EXTRACT",
+    "field": 20.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.809,
+    "file_label": "UNIT DOSE LOCAL EXTRACT",
+    "field": 31.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.809,
+    "file_label": "UNIT DOSE LOCAL EXTRACT",
+    "field": 57.0,
+    "field_label": "ORDERING DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.809,
+    "file_label": "UNIT DOSE LOCAL EXTRACT",
+    "field": 72.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.809,
+    "file_label": "UNIT DOSE LOCAL EXTRACT",
+    "field": 78.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.81,
+    "file_label": "PRESCRIPTION EXTRACT",
+    "field": 23.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.81,
+    "file_label": "PRESCRIPTION EXTRACT",
+    "field": 66.0,
+    "field_label": "ORDERING DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.81,
+    "file_label": "PRESCRIPTION EXTRACT",
+    "field": 78.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.81,
+    "file_label": "PRESCRIPTION EXTRACT",
+    "field": 93.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.811,
+    "file_label": "SURGERY EXTRACT",
+    "field": 36.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.811,
+    "file_label": "SURGERY EXTRACT",
+    "field": 67.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.811,
+    "file_label": "SURGERY EXTRACT",
+    "field": 81.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.811,
+    "file_label": "SURGERY EXTRACT",
+    "field": 121.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.812,
+    "file_label": "MENTAL HEALTH EXTRACT",
+    "field": 10.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.812,
+    "file_label": "MENTAL HEALTH EXTRACT",
+    "field": 11.0,
+    "field_label": "DISCHARGE DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.812,
+    "file_label": "MENTAL HEALTH EXTRACT",
+    "field": 44.0,
+    "field_label": "PATIENT BIRTH DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.812,
+    "file_label": "MENTAL HEALTH EXTRACT",
+    "field": 56.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.813,
+    "file_label": "LABORATORY EXTRACT",
+    "field": 34.0,
+    "field_label": "ORDERING DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.814,
+    "file_label": "RADIOLOGY EXTRACT",
+    "field": 35.0,
+    "field_label": "ORDERING DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.814,
+    "file_label": "RADIOLOGY EXTRACT",
+    "field": 53.0,
+    "field_label": "RAD VERIFY DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.815,
+    "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+    "field": 55.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.815,
+    "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+    "field": 65.0,
+    "field_label": "CONTRACT START DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.815,
+    "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+    "field": 66.0,
+    "field_label": "CONTRACT END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.815,
+    "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+    "field": 80.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.815,
+    "file_label": "EVENT CAPTURE LOCAL EXTRACT",
+    "field": 91.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.817,
+    "file_label": "TREATING SPECIALTY CHANGE EXTRACT",
+    "field": 10.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.817,
+    "file_label": "TREATING SPECIALTY CHANGE EXTRACT",
+    "field": 11.0,
+    "field_label": "DISCHARGE DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.819,
+    "file_label": "IV DETAIL EXTRACT",
+    "field": 24.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.819,
+    "file_label": "IV DETAIL EXTRACT",
+    "field": 39.0,
+    "field_label": "ORDERING DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.819,
+    "file_label": "IV DETAIL EXTRACT",
+    "field": 44.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.819,
+    "file_label": "IV DETAIL EXTRACT",
+    "field": 77.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.819,
+    "file_label": "IV DETAIL EXTRACT",
+    "field": 83.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.823,
+    "file_label": "PAI EXTRACT",
+    "field": 9.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.823,
+    "file_label": "PAI EXTRACT",
+    "field": 11.0,
+    "field_label": "TRANSFER/ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.824,
+    "file_label": "LAB RESULTS EXTRACT",
+    "field": 13.0,
+    "field_label": "DATE ORDERED",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.824,
+    "file_label": "LAB RESULTS EXTRACT",
+    "field": 15.0,
+    "field_label": "DATE RESULTS READY",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.825,
+    "file_label": "QUASAR EXTRACT",
+    "field": 55.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.825,
+    "file_label": "QUASAR EXTRACT",
+    "field": 65.0,
+    "field_label": "CONTRACT START DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.825,
+    "file_label": "QUASAR EXTRACT",
+    "field": 66.0,
+    "field_label": "CONTRACT END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.825,
+    "file_label": "QUASAR EXTRACT",
+    "field": 80.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.825,
+    "file_label": "QUASAR EXTRACT",
+    "field": 91.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.826,
+    "file_label": "PROSTHETICS EXTRACT",
+    "field": 8.0,
+    "field_label": "DATE OF SERVICE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.826,
+    "file_label": "PROSTHETICS EXTRACT",
+    "field": 34.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.826,
+    "file_label": "PROSTHETICS EXTRACT",
+    "field": 72.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.826,
+    "file_label": "PROSTHETICS EXTRACT",
+    "field": 82.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.826,
+    "file_label": "PROSTHETICS EXTRACT",
+    "field": 84.0,
+    "field_label": "NPPD ENTRY DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.827,
+    "file_label": "CLINIC EXTRACT",
+    "field": 32.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.827,
+    "file_label": "CLINIC EXTRACT",
+    "field": 81.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.827,
+    "file_label": "CLINIC EXTRACT",
+    "field": 89.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.827,
+    "file_label": "CLINIC EXTRACT",
+    "field": 161.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.829,
+    "file_label": "BLOOD BANK EXTRACT",
+    "field": 9.0,
+    "field_label": "DATE OF TRANSFUSION",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.832,
+    "file_label": "NUTRITION EXTRACT",
+    "field": 17.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.832,
+    "file_label": "NUTRITION EXTRACT",
+    "field": 58.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.832,
+    "file_label": "NUTRITION EXTRACT",
+    "field": 60.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.833,
+    "file_label": "BCMA EXTRACT",
+    "field": 9.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.833,
+    "file_label": "BCMA EXTRACT",
+    "field": 36.0,
+    "field_label": "SCHEDULED ADMINISTRATION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.833,
+    "file_label": "BCMA EXTRACT",
+    "field": 73.0,
+    "field_label": "CV ELIGIBILITY END DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 727.833,
+    "file_label": "BCMA EXTRACT",
+    "field": 79.0,
+    "field_label": "OEF/OIF RETURN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 757.06,
+    "file_label": "UNRESOLVED NARRATIVES",
+    "field": 1.0,
+    "field_label": "DATE-TIME",
+    "package": "CLINICAL LEXICON UTILITY",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 790.08,
+    "file_label": "WV LAB TESTS",
+    "field": 2.19,
+    "field_label": "LAB INVERSE DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 790.1,
+    "file_label": "WV PROCEDURE",
+    "field": 2.19,
+    "field_label": "LAB INVERSE DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 790.404,
+    "file_label": "WV NOTIFICATION PURPOSE",
+    "field": 0.08,
+    "field_label": "BR TX DUE DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 790.404,
+    "file_label": "WV NOTIFICATION PURPOSE",
+    "field": 0.1,
+    "field_label": "CX TX DUE DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 798.1,
+    "file_label": "ROR REGISTRY PARAMETERS",
+    "field": 6.1,
+    "field_label": "BEFORE UPDATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 798.1,
+    "file_label": "ROR REGISTRY PARAMETERS",
+    "field": 6.2,
+    "field_label": "AFTER UPDATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 810.4,
+    "file_label": "REMINDER LIST RULE",
+    "field": 2.0,
+    "field_label": "LIST RULE BEGINNING DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 810.4,
+    "file_label": "REMINDER LIST RULE",
+    "field": 3.0,
+    "field_label": "LIST RULE ENDING DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 811.9,
+    "file_label": "REMINDER DEFINITION",
+    "field": 45.0,
+    "field_label": "CUSTOM DATE DUE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 811.9,
+    "file_label": "REMINDER DEFINITION",
+    "field": 46.0,
+    "field_label": "CUSTOM DATE DUE FUNCTION",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 987.5,
+    "file_label": "WII ADMISSIONS DISCHARGES",
+    "field": 5.0,
+    "field_label": "ADMISSION DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 987.5,
+    "file_label": "WII ADMISSIONS DISCHARGES",
+    "field": 6.0,
+    "field_label": "DISCHARGE DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 987.5,
+    "file_label": "WII ADMISSIONS DISCHARGES",
+    "field": 14.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2006.5714,
+    "file_label": "DICOM INCOMPLETE OBJECT",
+    "field": 0.01,
+    "field_label": "DATE/TIME ADDED ($H)",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2006.573,
+    "file_label": "GE PACS QUERY/RETRIEVE",
+    "field": 2.0,
+    "field_label": "STUDY DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2006.575,
+    "file_label": "DICOM FAILED IMAGES",
+    "field": 23.0,
+    "field_label": "DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2006.5751,
+    "file_label": "DICOM OBJECTS TO BE IMPORTED",
+    "field": 11.0,
+    "field_label": "STUDY DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2006.5752,
+    "file_label": "IMPORTABLE DICOM OBJECTS",
+    "field": 11.0,
+    "field_label": "STUDY DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2006.634,
+    "file_label": "MAGJ ZLIST SEARCH",
+    "field": 7.0,
+    "field_label": "IMAGE DATE/TIME",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2006.634,
+    "file_label": "MAGJ ZLIST SEARCH",
+    "field": 14.0,
+    "field_label": "IMAGE DATE/TIME-SORTABLE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2100.0,
+    "file_label": "GENERIC CODE SHEET",
+    "field": 234.0,
+    "field_label": "DATE OF APPOINTMENT",
+    "package": "GENERIC CODE SHEET",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2100.0,
+    "file_label": "GENERIC CODE SHEET",
+    "field": 462.34,
+    "field_label": "ENDING DATE DESC",
+    "package": "GENERIC CODE SHEET",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2100.0,
+    "file_label": "GENERIC CODE SHEET",
+    "field": 1600.0,
+    "field_label": "FEE TRANSACTION DATE",
+    "package": "GENERIC CODE SHEET",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2260.0,
+    "file_label": "ASISTS ACCIDENT REPORTING",
+    "field": 101.0,
+    "field_label": "GRADE/LEVEL DATE OF INJURY",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2260.0,
+    "file_label": "ASISTS ACCIDENT REPORTING",
+    "field": 102.0,
+    "field_label": "STEP AS OF DATE OF INJURY",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 2260.0,
+    "file_label": "ASISTS ACCIDENT REPORTING",
+    "field": 202.0,
+    "field_label": "STEP AS OF DATE OF ILL.",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 6000.0,
+    "file_label": "VBECS SITE PARAMETERS",
+    "field": 1.0,
+    "field_label": "WORKLOAD RUN DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 6002.01,
+    "file_label": "VBECS WORKLOAD CAPTURE",
+    "field": 21.0,
+    "field_label": "UPDATE ERROR TEXT",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 6915.2,
+    "file_label": "FA DOCUMENT LOG",
+    "field": 11.0,
+    "field_label": "TRANSACTION DATE",
+    "package": "ENXI",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 6915.3,
+    "file_label": "FB DOCUMENT LOG",
+    "field": 11.0,
+    "field_label": "TRANSACTION DATE",
+    "package": "ENXI",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 6915.4,
+    "file_label": "FC DOCUMENT LOG",
+    "field": 11.0,
+    "field_label": "TRANSACTION DATE",
+    "package": "ENXI",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 6915.5,
+    "file_label": "FD DOCUMENT LOG",
+    "field": 11.0,
+    "field_label": "TRANSACTION DATE",
+    "package": "ENXI",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 6915.6,
+    "file_label": "FR DOCUMENT LOG",
+    "field": 11.0,
+    "field_label": "TRANSACTION DATE",
+    "package": "ENXI",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 19620.871,
+    "file_label": "DSIR SAVED AD HOC REPORTS",
+    "field": 4.01,
+    "field_label": "REPORT DATE RANGE FIELD 1",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 19620.871,
+    "file_label": "DSIR SAVED AD HOC REPORTS",
+    "field": 5.01,
+    "field_label": "REPORT DATE RANGE FIELD 2",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 509850.9,
+    "file_label": "AUDIOMETRIC EXAM DATA",
+    "field": 791000.05,
+    "field_label": "BIRTH DATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 580950.1,
+    "file_label": "*AJK1UB SITE PARAMETERS",
+    "field": 0.16,
+    "field_label": "UPDATE DOW",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 800000.0,
+    "file_label": "HMP SUBSCRIPTION",
+    "field": 0.02,
+    "field_label": "LASTUPDATE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 9002313.02,
+    "file_label": "BPS CLAIMS",
+    "field": 304.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 9002313.02,
+    "file_label": "BPS CLAIMS",
+    "field": 401.0,
+    "field_label": "DATE OF SERVICE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 9002313.03,
+    "file_label": "BPS RESPONSES",
+    "field": 304.0,
+    "field_label": "DATE OF BIRTH",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "date_as_free_text",
+    "file": 9002313.03,
+    "file_label": "BPS RESPONSES",
+    "field": 401.0,
+    "field_label": "DATE OF SERVICE",
+    "package": "(unpackaged)",
+    "priority": 5
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.11,
+    "file_label": "ARCHIVAL ACTIVITY",
+    "field": 2.0,
+    "field_label": "SEARCH TEMPLATE",
+    "target_file": 0.401,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.11,
+    "file_label": "ARCHIVAL ACTIVITY",
+    "field": 3.0,
+    "field_label": "PRINT TEMPLATE",
+    "target_file": 0.4,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.12,
+    "file_label": "FILEGRAM HISTORY",
+    "field": 0.07,
+    "field_label": "FILEGRAM",
+    "target_file": 0.4,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5211,
+    "file_label": "SQLI_DATA_TYPE",
+    "field": 3.0,
+    "field_label": "D_OUTPUT_FORMAT",
+    "target_file": 1.5214,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5212,
+    "file_label": "SQLI_DOMAIN",
+    "field": 1.0,
+    "field_label": "DM_DATA_TYPE",
+    "target_file": 1.5211,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5212,
+    "file_label": "SQLI_DOMAIN",
+    "field": 3.0,
+    "field_label": "DM_TABLE",
+    "target_file": 1.5215,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5212,
+    "file_label": "SQLI_DOMAIN",
+    "field": 6.0,
+    "field_label": "DM_OUTPUT_FORMAT",
+    "target_file": 1.5214,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5213,
+    "file_label": "SQLI_KEY_FORMAT",
+    "field": 1.0,
+    "field_label": "KF_DATA_TYPE",
+    "target_file": 1.5211,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5214,
+    "file_label": "SQLI_OUTPUT_FORMAT",
+    "field": 1.0,
+    "field_label": "OF_DATA_TYPE",
+    "target_file": 1.5211,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5215,
+    "file_label": "SQLI_TABLE",
+    "field": 1.0,
+    "field_label": "T_SCHEMA",
+    "target_file": 1.521,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5215,
+    "file_label": "SQLI_TABLE",
+    "field": 3.0,
+    "field_label": "T_MASTER_TABLE",
+    "target_file": 1.5215,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5216,
+    "file_label": "SQLI_TABLE_ELEMENT",
+    "field": 1.0,
+    "field_label": "E_DOMAIN",
+    "target_file": 1.5212,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5216,
+    "file_label": "SQLI_TABLE_ELEMENT",
+    "field": 2.0,
+    "field_label": "E_TABLE",
+    "target_file": 1.5215,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5217,
+    "file_label": "SQLI_COLUMN",
+    "field": 0.01,
+    "field_label": "C_TABLE_ELEMENT",
+    "target_file": 1.5216,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5217,
+    "file_label": "SQLI_COLUMN",
+    "field": 8.0,
+    "field_label": "C_PARENT",
+    "target_file": 1.5217,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5217,
+    "file_label": "SQLI_COLUMN",
+    "field": 16.0,
+    "field_label": "C_OUTPUT_FORMAT",
+    "target_file": 1.5214,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5218,
+    "file_label": "SQLI_PRIMARY_KEY",
+    "field": 0.01,
+    "field_label": "P_TBL_ELEMENT",
+    "target_file": 1.5216,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5218,
+    "file_label": "SQLI_PRIMARY_KEY",
+    "field": 1.0,
+    "field_label": "P_COLUMN",
+    "target_file": 1.5217,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5218,
+    "file_label": "SQLI_PRIMARY_KEY",
+    "field": 7.0,
+    "field_label": "P_KEY_FORMAT",
+    "target_file": 1.5213,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5219,
+    "file_label": "SQLI_FOREIGN_KEY",
+    "field": 0.01,
+    "field_label": "F_TBL_ELEMENT",
+    "target_file": 1.5216,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5219,
+    "file_label": "SQLI_FOREIGN_KEY",
+    "field": 1.0,
+    "field_label": "F_PK_ELEMENT",
+    "target_file": 1.5218,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.5219,
+    "file_label": "SQLI_FOREIGN_KEY",
+    "field": 2.0,
+    "field_label": "F_CLM_ELEMENT",
+    "target_file": 1.5217,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.52192,
+    "file_label": "SQLI_ERROR_LOG",
+    "field": 2.0,
+    "field_label": "ERROR",
+    "target_file": 1.52191,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 1.52192,
+    "file_label": "SQLI_ERROR_LOG",
+    "field": 4.0,
+    "field_label": "FILEMAN_ERROR",
+    "target_file": 0.84,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 43.0,
+    "file_label": "MAS PARAMETERS",
+    "field": 70.0,
+    "field_label": "REGISTRATION TEMPLATE (LOCAL)",
+    "target_file": 0.402,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 43.7,
+    "file_label": "ADT TEMPLATE",
+    "field": 5.0,
+    "field_label": "EDIT TEMPLATE NAME",
+    "target_file": 0.402,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 43.7,
+    "file_label": "ADT TEMPLATE",
+    "field": 6.0,
+    "field_label": "PRINT TEMPLATE NAME",
+    "target_file": 0.4,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 43.7,
+    "file_label": "ADT TEMPLATE",
+    "field": 7.0,
+    "field_label": "SORT TEMPLATE NAME",
+    "target_file": 0.401,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 45.62,
+    "file_label": "PTF ARCHIVE/PURGE HISTORY FILE",
+    "field": 0.08,
+    "field_label": "SEARCH TEMPLATE",
+    "target_file": 0.401,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 46.0,
+    "file_label": "INPATIENT CPT CODE",
+    "field": 0.02,
+    "field_label": "CPT MODIFIER 1",
+    "target_file": 81.3,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 46.0,
+    "file_label": "INPATIENT CPT CODE",
+    "field": 0.03,
+    "field_label": "CPT MODIFIER 2",
+    "target_file": 81.3,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 81.0,
+    "file_label": "CPT",
+    "field": 3.0,
+    "field_label": "CPT CATEGORY",
+    "target_file": 81.1,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 81.1,
+    "file_label": "CPT CATEGORY",
+    "field": 3.0,
+    "field_label": "MAJOR CATEGORY",
+    "target_file": 81.1,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 95.11,
+    "file_label": "LAB ARCHIVAL ACTIVITY",
+    "field": 2.0,
+    "field_label": "SEARCH TEMPLATE",
+    "target_file": 0.401,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 95.11,
+    "file_label": "LAB ARCHIVAL ACTIVITY",
+    "field": 3.0,
+    "field_label": "PRINT TEMPLATE",
+    "target_file": 0.4,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 200.0,
+    "file_label": "NEW PERSON",
+    "field": 200.07,
+    "field_label": "LANGUAGE",
+    "target_file": 0.85,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 363.2,
+    "file_label": "CHARGE ITEM",
+    "field": 0.07,
+    "field_label": "CPT MODIFIER",
+    "target_file": 81.3,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 618.0,
+    "file_label": "MENTAL HEALTH CENSUS",
+    "field": 2.8,
+    "field_label": "DEFAULT TEAM",
+    "target_file": 618.2,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 618.0,
+    "file_label": "MENTAL HEALTH CENSUS",
+    "field": 3.0,
+    "field_label": "TEAM ROTATION 1",
+    "target_file": 618.2,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 618.0,
+    "file_label": "MENTAL HEALTH CENSUS",
+    "field": 3.1,
+    "field_label": "TEAM ROTATION 2",
+    "target_file": 618.2,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 618.0,
+    "file_label": "MENTAL HEALTH CENSUS",
+    "field": 3.2,
+    "field_label": "TEAM ROTATION 3",
+    "target_file": 618.2,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 618.0,
+    "file_label": "MENTAL HEALTH CENSUS",
+    "field": 3.3,
+    "field_label": "TEAM ROTATION 4",
+    "target_file": 618.2,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 618.0,
+    "file_label": "MENTAL HEALTH CENSUS",
+    "field": 3.4,
+    "field_label": "TEAM ROTATION 5",
+    "target_file": 618.2,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 618.4,
+    "file_label": "MENTAL HEALTH INPT",
+    "field": 3.0,
+    "field_label": "TEAM",
+    "target_file": 618.2,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 618.4,
+    "file_label": "MENTAL HEALTH INPT",
+    "field": 23.0,
+    "field_label": "CURRENT TEAM",
+    "target_file": 618.2,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 920.0,
+    "file_label": "VACCINE INFORMATION STATEMENT",
+    "field": 0.04,
+    "field_label": "LANGUAGE",
+    "target_file": 0.85,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 2006.1,
+    "file_label": "IMAGING SITE PARAMETERS",
+    "field": 304.0,
+    "field_label": "RAD CPT MODIFIERS",
+    "target_file": 81.3,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 2006.563,
+    "file_label": "DICOM GATEWAY PARAMETER",
+    "field": 133.0,
+    "field_label": "IMPORTER CPT MOD",
+    "target_file": 81.3,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 8989.3,
+    "file_label": "KERNEL SYSTEM PARAMETERS",
+    "field": 12.0,
+    "field_label": "USER CHARACTERISTICS TEMPLATE",
+    "target_file": 0.402,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 8989.3,
+    "file_label": "KERNEL SYSTEM PARAMETERS",
+    "field": 207.0,
+    "field_label": "DEFAULT LANGUAGE",
+    "target_file": 0.85,
+    "priority": 3
+  },
+  {
+    "rule": "pointer_to_empty_file",
+    "file": 509850.5,
+    "file_label": "A&SP PROCEDURE MODIFIER",
+    "field": 0.01,
+    "field_label": "MODIFIER",
+    "target_file": 81.3,
+    "priority": 3
+  }
+]

@@ -1,0 +1,2622 @@
+{
+  "0": [
+    {
+      "field": 0.01,
+      "label": "NAME"
+    },
+    {
+      "field": 0.02,
+      "label": "SEX"
+    },
+    {
+      "field": 0.03,
+      "label": "DATE OF BIRTH"
+    },
+    {
+      "field": 0.05,
+      "label": "MARITAL STATUS"
+    },
+    {
+      "field": 0.06,
+      "label": "RACE"
+    },
+    {
+      "field": 0.07,
+      "label": "OCCUPATION"
+    },
+    {
+      "field": 0.08,
+      "label": "RELIGIOUS PREFERENCE"
+    },
+    {
+      "field": 0.081,
+      "label": "DUPLICATE STATUS"
+    },
+    {
+      "field": 0.082,
+      "label": "PATIENT MERGED TO"
+    },
+    {
+      "field": 0.083,
+      "label": "CHECK FOR DUPLICATE"
+    },
+    {
+      "field": 0.09,
+      "label": "SOCIAL SECURITY NUMBER"
+    },
+    {
+      "field": 0.091,
+      "label": "REMARKS"
+    },
+    {
+      "field": 0.092,
+      "label": "PLACE OF BIRTH [CITY]"
+    },
+    {
+      "field": 0.093,
+      "label": "PLACE OF BIRTH [STATE]"
+    },
+    {
+      "field": 0.096,
+      "label": "WHO ENTERED PATIENT"
+    },
+    {
+      "field": 0.097,
+      "label": "DATE ENTERED INTO FILE"
+    },
+    {
+      "field": 0.098,
+      "label": "HOW WAS PATIENT ENTERED?"
+    },
+    {
+      "field": 0.14,
+      "label": "CURRENT MEANS TEST STATUS"
+    },
+    {
+      "field": 0.6,
+      "label": "TEST PATIENT INDICATOR"
+    }
+  ],
+  ".24": [
+    {
+      "field": 0.024,
+      "label": "SELF IDENTIFIED GENDER"
+    },
+    {
+      "field": 0.0931,
+      "label": "PLACE OF BIRTH COUNTRY"
+    },
+    {
+      "field": 0.0932,
+      "label": "PLACE OF BIRTH PROVINCE"
+    },
+    {
+      "field": 0.2401,
+      "label": "FATHER'S NAME"
+    },
+    {
+      "field": 0.2402,
+      "label": "MOTHER'S NAME"
+    },
+    {
+      "field": 0.2403,
+      "label": "MOTHER'S MAIDEN NAME"
+    },
+    {
+      "field": 0.2405,
+      "label": "PREFERRED NAME"
+    }
+  ],
+  ".025": [
+    {
+      "field": 0.025,
+      "label": "SEXUAL ORIENTATION"
+    }
+  ],
+  ".241": [
+    {
+      "field": 0.0251,
+      "label": "SEXUAL ORIENTATION FREE TEXT"
+    },
+    {
+      "field": 0.24061,
+      "label": "PRONOUN DESCRIPTION"
+    }
+  ],
+  " ": [
+    {
+      "field": 0.033,
+      "label": "AGE"
+    },
+    {
+      "field": 0.0901,
+      "label": "TERMINAL DIGIT OF SSN"
+    },
+    {
+      "field": 0.0905,
+      "label": "1U4N"
+    },
+    {
+      "field": 0.19,
+      "label": "DIVISION"
+    },
+    {
+      "field": 999.0,
+      "label": "ABSENCE DIVISION"
+    },
+    {
+      "field": 999.1,
+      "label": "INPATIENT WARD"
+    },
+    {
+      "field": 999.2,
+      "label": "LAST MEANS TEST"
+    }
+  ],
+  "SSN": [
+    {
+      "field": 0.0906,
+      "label": "PSEUDO SSN REASON"
+    },
+    {
+      "field": 0.0907,
+      "label": "SSN VERIFICATION STATUS"
+    }
+  ],
+  ".1": [
+    {
+      "field": 0.1,
+      "label": "WARD LOCATION"
+    }
+  ],
+  ".101": [
+    {
+      "field": 0.101,
+      "label": "ROOM-BED"
+    }
+  ],
+  ".102": [
+    {
+      "field": 0.102,
+      "label": "CURRENT MOVEMENT"
+    }
+  ],
+  ".103": [
+    {
+      "field": 0.103,
+      "label": "TREATING SPECIALTY"
+    }
+  ],
+  ".104": [
+    {
+      "field": 0.104,
+      "label": "PROVIDER"
+    }
+  ],
+  ".1041": [
+    {
+      "field": 0.1041,
+      "label": "ATTENDING PHYSICIAN"
+    }
+  ],
+  ".105": [
+    {
+      "field": 0.105,
+      "label": "CURRENT ADMISSION"
+    }
+  ],
+  ".106": [
+    {
+      "field": 0.106,
+      "label": "LAST DMMS EPISODE NUMBER"
+    }
+  ],
+  ".107": [
+    {
+      "field": 0.107,
+      "label": "LODGER WARD LOCATION"
+    }
+  ],
+  ".108": [
+    {
+      "field": 0.108,
+      "label": "CURRENT ROOM"
+    }
+  ],
+  ".109": [
+    {
+      "field": 0.109,
+      "label": "EXCLUDE FROM FACILITY DIR"
+    }
+  ],
+  ".11": [
+    {
+      "field": 0.111,
+      "label": "STREET ADDRESS [LINE 1]"
+    },
+    {
+      "field": 0.1112,
+      "label": "ZIP+4"
+    },
+    {
+      "field": 0.1118,
+      "label": "STREET ADDRESS CASS IND"
+    },
+    {
+      "field": 0.1119,
+      "label": "MAILING ADDR OVERRIDE IND"
+    },
+    {
+      "field": 0.112,
+      "label": "STREET ADDRESS [LINE 2]"
+    },
+    {
+      "field": 0.113,
+      "label": "STREET ADDRESS [LINE 3]"
+    },
+    {
+      "field": 0.114,
+      "label": "CITY"
+    },
+    {
+      "field": 0.115,
+      "label": "STATE"
+    },
+    {
+      "field": 0.116,
+      "label": "ZIP CODE"
+    },
+    {
+      "field": 0.117,
+      "label": "COUNTY"
+    },
+    {
+      "field": 0.1171,
+      "label": "PROVINCE"
+    },
+    {
+      "field": 0.1172,
+      "label": "POSTAL CODE"
+    },
+    {
+      "field": 0.1173,
+      "label": "COUNTRY"
+    },
+    {
+      "field": 0.118,
+      "label": "ADDRESS CHANGE DT/TM"
+    },
+    {
+      "field": 0.119,
+      "label": "ADDRESS CHANGE SOURCE"
+    },
+    {
+      "field": 0.12,
+      "label": "ADDRESS CHANGE SITE"
+    },
+    {
+      "field": 0.121,
+      "label": "BAD ADDRESS INDICATOR"
+    },
+    {
+      "field": 0.122,
+      "label": "ADDRESS CHANGE USER"
+    }
+  ],
+  ".115": [
+    {
+      "field": 0.1151,
+      "label": "RESIDENTIAL ADDRESS [LINE 1]"
+    },
+    {
+      "field": 0.1152,
+      "label": "RESIDENTIAL ADDRESS [LINE 2]"
+    },
+    {
+      "field": 0.1153,
+      "label": "RESIDENTIAL ADDRESS [LINE 3]"
+    },
+    {
+      "field": 0.1154,
+      "label": "RESIDENTIAL CITY"
+    },
+    {
+      "field": 0.1155,
+      "label": "RESIDENTIAL STATE"
+    },
+    {
+      "field": 0.1156,
+      "label": "RESIDENTIAL ZIP+4"
+    },
+    {
+      "field": 0.1157,
+      "label": "RESIDENTIAL COUNTY"
+    },
+    {
+      "field": 0.11571,
+      "label": "RESIDENTIAL PROVINCE"
+    },
+    {
+      "field": 0.11572,
+      "label": "RESIDENTIAL POSTAL CODE"
+    },
+    {
+      "field": 0.11573,
+      "label": "RESIDENTIAL COUNTRY"
+    },
+    {
+      "field": 0.1158,
+      "label": "RESIDENTIAL ADDR CHANGE DT/TM"
+    },
+    {
+      "field": 0.11581,
+      "label": "RESIDENTIAL ADDR CHANGE SITE"
+    },
+    {
+      "field": 0.11582,
+      "label": "RESIDENTIAL ADDR CHANGE SOURCE"
+    },
+    {
+      "field": 0.11583,
+      "label": "RESIDENTIAL ADDR CHANGE USER"
+    },
+    {
+      "field": 0.1159,
+      "label": "RESIDENTIAL ADDR CASS IND"
+    },
+    {
+      "field": 0.11591,
+      "label": "RESIDENTIAL ADDR OVERRIDE IND"
+    }
+  ],
+  ".121": [
+    {
+      "field": 0.12105,
+      "label": "TEMPORARY ADDRESS ACTIVE?"
+    },
+    {
+      "field": 0.1211,
+      "label": "TEMPORARY STREET [LINE 1]"
+    },
+    {
+      "field": 0.12111,
+      "label": "TEMPORARY ADDRESS COUNTY"
+    },
+    {
+      "field": 0.12112,
+      "label": "TEMPORARY ZIP+4"
+    },
+    {
+      "field": 0.12113,
+      "label": "TEMPORARY ADDRESS CHANGE DT/TM"
+    },
+    {
+      "field": 0.12114,
+      "label": "TEMPORARY ADDRESS CHANGE SITE"
+    },
+    {
+      "field": 0.12115,
+      "label": "TEMPORARY ADDR CASS IND"
+    },
+    {
+      "field": 0.12116,
+      "label": "TEMPORARY COUNTRY CODE"
+    },
+    {
+      "field": 0.12117,
+      "label": "TEMPORARY EXTENSION"
+    },
+    {
+      "field": 0.1212,
+      "label": "TEMPORARY STREET [LINE 2]"
+    },
+    {
+      "field": 0.1213,
+      "label": "TEMPORARY STREET [LINE 3]"
+    },
+    {
+      "field": 0.1214,
+      "label": "TEMPORARY CITY"
+    },
+    {
+      "field": 0.1215,
+      "label": "TEMPORARY STATE"
+    },
+    {
+      "field": 0.1216,
+      "label": "TEMPORARY ZIP CODE"
+    },
+    {
+      "field": 0.1217,
+      "label": "TEMPORARY ADDRESS START DATE"
+    },
+    {
+      "field": 0.1218,
+      "label": "TEMPORARY ADDRESS END DATE"
+    },
+    {
+      "field": 0.1219,
+      "label": "TEMPORARY PHONE NUMBER"
+    }
+  ],
+  ".122": [
+    {
+      "field": 0.1221,
+      "label": "TEMPORARY ADDRESS PROVINCE"
+    },
+    {
+      "field": 0.1222,
+      "label": "TEMPORARY ADDRESS POSTAL CODE"
+    },
+    {
+      "field": 0.1223,
+      "label": "TEMPORARY ADDRESS COUNTRY"
+    }
+  ],
+  ".13": [
+    {
+      "field": 0.131,
+      "label": "PHONE NUMBER [RESIDENCE]"
+    },
+    {
+      "field": 0.1311,
+      "label": "CELLULAR NUMBER CHANGE SOURCE"
+    },
+    {
+      "field": 0.13111,
+      "label": "CELLULAR NUMBER CHANGE SITE"
+    },
+    {
+      "field": 0.1312,
+      "label": "PAGER NUMBER CHANGE DT/TM"
+    },
+    {
+      "field": 0.1313,
+      "label": "PAGER NUMBER CHANGE SOURCE"
+    },
+    {
+      "field": 0.1314,
+      "label": "PAGER NUMBER CHANGE SITE"
+    },
+    {
+      "field": 0.1315,
+      "label": "CONFIDENTIAL PHONE NUMBER"
+    },
+    {
+      "field": 0.1316,
+      "label": "EMAIL ADDRESS INDICATOR"
+    },
+    {
+      "field": 0.1317,
+      "label": "EMAIL ADDRESS INDICATOR DT/TM"
+    },
+    {
+      "field": 0.1318,
+      "label": "EMAIL ADDRESS CHANGE USER"
+    },
+    {
+      "field": 0.1319,
+      "label": "CELLULAR NUMBER CHANGE USER"
+    },
+    {
+      "field": 0.132,
+      "label": "PHONE NUMBER [WORK]"
+    },
+    {
+      "field": 0.133,
+      "label": "EMAIL ADDRESS"
+    },
+    {
+      "field": 0.134,
+      "label": "PHONE NUMBER [CELLULAR]"
+    },
+    {
+      "field": 0.135,
+      "label": "PAGER NUMBER"
+    },
+    {
+      "field": 0.136,
+      "label": "EMAIL ADDRESS CHANGE DT/TM"
+    },
+    {
+      "field": 0.137,
+      "label": "EMAIL ADDRESS CHANGE SOURCE"
+    },
+    {
+      "field": 0.138,
+      "label": "EMAIL ADDRESS CHANGE SITE"
+    },
+    {
+      "field": 0.139,
+      "label": "CELLULAR NUMBER CHANGE DT/TM"
+    }
+  ],
+  ".132": [
+    {
+      "field": 0.13201,
+      "label": "CONFIDENTIAL COUNTRY CODE"
+    },
+    {
+      "field": 0.1321,
+      "label": "RESIDENCE NUMBER CHANGE DT/TM"
+    },
+    {
+      "field": 0.13211,
+      "label": "EXTENSION [RESIDENCE]"
+    },
+    {
+      "field": 0.13212,
+      "label": "EXTENSION [CELLULAR]"
+    },
+    {
+      "field": 0.13213,
+      "label": "EXTENSION [WORK]"
+    },
+    {
+      "field": 0.13214,
+      "label": "CONFIDENTIAL EXTENSION"
+    },
+    {
+      "field": 0.1322,
+      "label": "RESIDENCE NUMBER CHANGE SOURCE"
+    },
+    {
+      "field": 0.1323,
+      "label": "RESIDENCE NUMBER CHANGE SITE"
+    },
+    {
+      "field": 0.1324,
+      "label": "RESIDENCE NUMBER CHANGE USER"
+    },
+    {
+      "field": 0.1325,
+      "label": "PHONE [WORK] CHANGE USER"
+    },
+    {
+      "field": 0.1326,
+      "label": "PHONE [WORK] CHANGE DT/TM"
+    },
+    {
+      "field": 0.1327,
+      "label": "COUNTRY CODE [RESIDENCE]"
+    },
+    {
+      "field": 0.1328,
+      "label": "COUNTRY CODE [CELLULAR]"
+    },
+    {
+      "field": 0.1329,
+      "label": "COUNTRY CODE [WORK]"
+    }
+  ],
+  ".14": [
+    {
+      "field": 0.141,
+      "label": "CONFIDENTIAL ADDRESS CATEGORY"
+    }
+  ],
+  ".141": [
+    {
+      "field": 0.14105,
+      "label": "CONFIDENTIAL ADDRESS ACTIVE?"
+    },
+    {
+      "field": 0.1411,
+      "label": "CONFIDENTIAL STREET [LINE 1]"
+    },
+    {
+      "field": 0.14111,
+      "label": "CONFIDENTIAL ADDRESS COUNTY"
+    },
+    {
+      "field": 0.14112,
+      "label": "CONFIDENTIAL ADDR CHANGE DT/TM"
+    },
+    {
+      "field": 0.14113,
+      "label": "CONFIDENTIAL ADDR CHANGE SITE"
+    },
+    {
+      "field": 0.14114,
+      "label": "CONFIDENTIAL ADDR PROVINCE"
+    },
+    {
+      "field": 0.14115,
+      "label": "CONFIDENTIAL ADDR POSTAL CODE"
+    },
+    {
+      "field": 0.14116,
+      "label": "CONFIDENTIAL ADDR COUNTRY"
+    },
+    {
+      "field": 0.14117,
+      "label": "CONFIDENTIAL ADDR CASS IND"
+    },
+    {
+      "field": 0.14118,
+      "label": "CONFIDENTIAL ADDR CHANGE USER"
+    },
+    {
+      "field": 0.14119,
+      "label": "CONFIDENTIAL PHONE CHANGE USER"
+    },
+    {
+      "field": 0.1412,
+      "label": "CONFIDENTIAL STREET [LINE 2]"
+    },
+    {
+      "field": 0.141201,
+      "label": "CONFIDENTIAL ADDR OVERRIDE IND"
+    },
+    {
+      "field": 0.14121,
+      "label": "CONFIDENTIAL PHONE CHG DT/TM"
+    },
+    {
+      "field": 0.14122,
+      "label": "CONFIDENTIAL PHONE CHG SOURCE"
+    },
+    {
+      "field": 0.14123,
+      "label": "CONFIDENTIAL PHONE CHG SITE"
+    },
+    {
+      "field": 0.1413,
+      "label": "CONFIDENTIAL STREET [LINE 3]"
+    },
+    {
+      "field": 0.1414,
+      "label": "CONFIDENTIAL ADDRESS CITY"
+    },
+    {
+      "field": 0.1415,
+      "label": "CONFIDENTIAL ADDRESS STATE"
+    },
+    {
+      "field": 0.1416,
+      "label": "CONFIDENTIAL ADDRESS ZIP CODE"
+    },
+    {
+      "field": 0.1417,
+      "label": "CONFIDENTIAL START DATE"
+    },
+    {
+      "field": 0.1418,
+      "label": "CONFIDENTIAL END DATE"
+    }
+  ],
+  ".15": [
+    {
+      "field": 0.152,
+      "label": "INELIGIBLE DATE"
+    },
+    {
+      "field": 0.153,
+      "label": "MISSING PERSON DATE"
+    }
+  ],
+  ".16": [
+    {
+      "field": 0.16,
+      "label": "MISSING OR INELIGIBLE"
+    }
+  ],
+  "INE": [
+    {
+      "field": 0.1651,
+      "label": "INELIGIBLE TWX SOURCE"
+    },
+    {
+      "field": 0.1653,
+      "label": "INELIGIBLE TWX CITY"
+    },
+    {
+      "field": 0.1654,
+      "label": "INELIGIBLE TWX STATE"
+    },
+    {
+      "field": 0.1656,
+      "label": "INELIGIBLE VARO DECISION"
+    },
+    {
+      "field": 0.1657,
+      "label": "MISSING PERSON TWX SOURCE"
+    },
+    {
+      "field": 0.1658,
+      "label": "MISSING PERSON TWX CITY"
+    },
+    {
+      "field": 0.1659,
+      "label": "MISSING PERSON TWX STATE"
+    }
+  ],
+  ".17": [
+    {
+      "field": 0.172,
+      "label": "FEE HOSPITAL I.D."
+    }
+  ],
+  ".18": [
+    {
+      "field": 0.181,
+      "label": "EMERGENCY RESPONSE INDICATOR"
+    }
+  ],
+  "KATR": [
+    {
+      "field": 0.182,
+      "label": "HISTORIC KATRINA ERI"
+    }
+  ],
+  ".211": [
+    {
+      "field": 0.2101,
+      "label": "K2-COUNTRY"
+    },
+    {
+      "field": 0.2102,
+      "label": "K2-PROVINCE"
+    },
+    {
+      "field": 0.2103,
+      "label": "K2-POSTAL CODE"
+    },
+    {
+      "field": 0.2104,
+      "label": "K2-RELATIONSHIP TYPE"
+    },
+    {
+      "field": 0.211011,
+      "label": "K2-WORK PHONE NUMBER"
+    },
+    {
+      "field": 0.2191,
+      "label": "K2-NAME OF SECONDARY NOK"
+    },
+    {
+      "field": 0.2192,
+      "label": "K2-RELATIONSHIP TO PATIENT"
+    },
+    {
+      "field": 0.21925,
+      "label": "K2-ADDRESS SAME AS PATIENT'S?"
+    },
+    {
+      "field": 0.2193,
+      "label": "K2-STREET ADDRESS [LINE 1]"
+    },
+    {
+      "field": 0.2194,
+      "label": "K2-STREET ADDRESS [LINE 2]"
+    },
+    {
+      "field": 0.2195,
+      "label": "K2-STREET ADDRESS [LINE 3]"
+    },
+    {
+      "field": 0.2196,
+      "label": "K2-CITY"
+    },
+    {
+      "field": 0.2197,
+      "label": "K2-STATE"
+    },
+    {
+      "field": 0.2198,
+      "label": "K2-ZIP CODE"
+    },
+    {
+      "field": 0.2199,
+      "label": "K2-PHONE NUMBER"
+    }
+  ],
+  ".21": [
+    {
+      "field": 0.21011,
+      "label": "K-WORK PHONE NUMBER"
+    },
+    {
+      "field": 0.211,
+      "label": "K-NAME OF PRIMARY NOK"
+    },
+    {
+      "field": 0.212,
+      "label": "K-RELATIONSHIP TO PATIENT"
+    },
+    {
+      "field": 0.2125,
+      "label": "K-ADDRESS SAME AS PATIENT'S?"
+    },
+    {
+      "field": 0.213,
+      "label": "K-STREET ADDRESS [LINE 1]"
+    },
+    {
+      "field": 0.214,
+      "label": "K-STREET ADDRESS [LINE 2]"
+    },
+    {
+      "field": 0.215,
+      "label": "K-STREET ADDRESS [LINE 3]"
+    },
+    {
+      "field": 0.216,
+      "label": "K-CITY"
+    },
+    {
+      "field": 0.217,
+      "label": "K-STATE"
+    },
+    {
+      "field": 0.218,
+      "label": "K-ZIP CODE"
+    },
+    {
+      "field": 0.219,
+      "label": "K-PHONE NUMBER"
+    },
+    {
+      "field": 0.221,
+      "label": "K-COUNTRY"
+    },
+    {
+      "field": 0.222,
+      "label": "K-PROVINCE"
+    },
+    {
+      "field": 0.223,
+      "label": "K-POSTAL CODE"
+    },
+    {
+      "field": 0.224,
+      "label": "K-RELATIONSHIP TYPE"
+    }
+  ],
+  ".212": [
+    {
+      "field": 0.21012,
+      "label": "PRIMARY NOK CHANGE DATE/TIME"
+    },
+    {
+      "field": 0.211012,
+      "label": "SECONDARY NOK CHANGE DATE/TIME"
+    }
+  ],
+  ".22": [
+    {
+      "field": 0.2201,
+      "label": "E-ZIP+4"
+    },
+    {
+      "field": 0.2202,
+      "label": "D-ZIP+4"
+    },
+    {
+      "field": 0.2203,
+      "label": "K2-ZIP+4"
+    },
+    {
+      "field": 0.2204,
+      "label": "E2-ZIP+4"
+    },
+    {
+      "field": 0.2205,
+      "label": "EMPLOYER ZIP+4"
+    },
+    {
+      "field": 0.2206,
+      "label": "SPOUSE'S EMP ZIP+4"
+    },
+    {
+      "field": 0.2207,
+      "label": "K-ZIP+4"
+    }
+  ],
+  ".2406": [
+    {
+      "field": 0.2406,
+      "label": "PRONOUN"
+    }
+  ],
+  ".25": [
+    {
+      "field": 0.251,
+      "label": "SPOUSE'S EMPLOYER NAME"
+    },
+    {
+      "field": 0.2514,
+      "label": "SPOUSE'S OCCUPATION"
+    },
+    {
+      "field": 0.2515,
+      "label": "SPOUSE'S EMPLOYMENT STATUS"
+    },
+    {
+      "field": 0.2516,
+      "label": "SPOUSE'S RETIREMENT DATE"
+    },
+    {
+      "field": 0.252,
+      "label": "SPOUSE'S EMP STREET [LINE 1]"
+    },
+    {
+      "field": 0.253,
+      "label": "SPOUSE'S EMP STREET [LINE 2]"
+    },
+    {
+      "field": 0.254,
+      "label": "SPOUSE'S EMP STREET [LINE 3]"
+    },
+    {
+      "field": 0.255,
+      "label": "SPOUSE'S EMPLOYER'S CITY"
+    },
+    {
+      "field": 0.256,
+      "label": "SPOUSE'S EMPLOYER'S STATE"
+    },
+    {
+      "field": 0.257,
+      "label": "SPOUSE'S EMP ZIP CODE"
+    },
+    {
+      "field": 0.258,
+      "label": "SPOUSE'S EMP PHONE NUMBER"
+    }
+  ],
+  ".291": [
+    {
+      "field": 0.290012,
+      "label": "ZIP+4 (CIVIL)"
+    },
+    {
+      "field": 0.2921,
+      "label": "INSTITUTION (CIVIL)"
+    },
+    {
+      "field": 0.2922,
+      "label": "GUARDIAN (CIVIL)"
+    },
+    {
+      "field": 0.2923,
+      "label": "RELATIONSHIP (CIVIL)"
+    },
+    {
+      "field": 0.2924,
+      "label": "STREET ADDRESS 1 (CIVIL)"
+    },
+    {
+      "field": 0.2925,
+      "label": "STREET ADDRESS 2 (CIVIL)"
+    },
+    {
+      "field": 0.2926,
+      "label": "CITY (CIVIL)"
+    },
+    {
+      "field": 0.2927,
+      "label": "STATE (CIVIL)"
+    },
+    {
+      "field": 0.2928,
+      "label": "ZIP (CIVIL)"
+    },
+    {
+      "field": 0.2929,
+      "label": "PHONE (CIVIL)"
+    }
+  ],
+  ".29": [
+    {
+      "field": 0.29013,
+      "label": "ZIP+4 (VA)"
+    },
+    {
+      "field": 0.291,
+      "label": "DATE RULED INCOMPETENT (VA)"
+    },
+    {
+      "field": 0.2911,
+      "label": "INSTITUTION (VA)"
+    },
+    {
+      "field": 0.2912,
+      "label": "GUARDIAN (VA)"
+    },
+    {
+      "field": 0.2913,
+      "label": "RELATIONSHIP (VA)"
+    },
+    {
+      "field": 0.2914,
+      "label": "STREET ADDRESS 1 (VA)"
+    },
+    {
+      "field": 0.2915,
+      "label": "STREET ADDRESS 2 (VA)"
+    },
+    {
+      "field": 0.2916,
+      "label": "CITY (VA)"
+    },
+    {
+      "field": 0.2917,
+      "label": "STATE (VA)"
+    },
+    {
+      "field": 0.2918,
+      "label": "ZIP (VA)"
+    },
+    {
+      "field": 0.2919,
+      "label": "PHONE (VA)"
+    },
+    {
+      "field": 0.292,
+      "label": "DATE RULED INCOMPETENT (CIVIL)"
+    },
+    {
+      "field": 0.293,
+      "label": "RATED INCOMPETENT?"
+    }
+  ],
+  ".3": [
+    {
+      "field": 0.301,
+      "label": "SERVICE CONNECTED?"
+    },
+    {
+      "field": 0.3012,
+      "label": "SC AWARD DATE"
+    },
+    {
+      "field": 0.3013,
+      "label": "P&T EFFECTIVE DATE"
+    },
+    {
+      "field": 0.3014,
+      "label": "EFF. DATE COMBINED SC% EVAL."
+    },
+    {
+      "field": 0.302,
+      "label": "SERVICE CONNECTED PERCENTAGE"
+    },
+    {
+      "field": 0.3025,
+      "label": "RECEIVING VA DISABILITY?"
+    },
+    {
+      "field": 0.303,
+      "label": "AMOUNT OF VA DISABILITY"
+    },
+    {
+      "field": 0.304,
+      "label": "P&T"
+    },
+    {
+      "field": 0.305,
+      "label": "UNEMPLOYABLE"
+    },
+    {
+      "field": 0.306,
+      "label": "MONETARY BEN. VERIFY DATE"
+    },
+    {
+      "field": 0.307,
+      "label": "INELIGIBLE REASON"
+    },
+    {
+      "field": 0.308,
+      "label": "*NON-VET CLASSIFICATION"
+    },
+    {
+      "field": 0.309,
+      "label": "AGENCY/ALLIED COUNTRY"
+    },
+    {
+      "field": 0.31,
+      "label": "*CATEGORY OF BENEFICIARY"
+    }
+  ],
+  ".311": [
+    {
+      "field": 0.3111,
+      "label": "EMPLOYER NAME"
+    },
+    {
+      "field": 0.31115,
+      "label": "EMPLOYMENT STATUS"
+    },
+    {
+      "field": 0.31116,
+      "label": "DATE OF RETIREMENT"
+    },
+    {
+      "field": 0.3112,
+      "label": "GOVERNMENT AGENCY"
+    },
+    {
+      "field": 0.3113,
+      "label": "EMPLOYER STREET [LINE 1]"
+    },
+    {
+      "field": 0.3114,
+      "label": "EMPLOYER STREET [LINE 2]"
+    },
+    {
+      "field": 0.3115,
+      "label": "EMPLOYER STREET [LINE 3]"
+    },
+    {
+      "field": 0.3116,
+      "label": "EMPLOYER CITY"
+    },
+    {
+      "field": 0.3117,
+      "label": "EMPLOYER STATE"
+    },
+    {
+      "field": 0.3118,
+      "label": "EMPLOYER ZIP CODE"
+    },
+    {
+      "field": 0.3119,
+      "label": "EMPLOYER PHONE NUMBER"
+    }
+  ],
+  ".31": [
+    {
+      "field": 0.312,
+      "label": "*CLAIM FOLDER LOCATION"
+    },
+    {
+      "field": 0.313,
+      "label": "CLAIM NUMBER"
+    },
+    {
+      "field": 0.314,
+      "label": "CLAIM FOLDER LOCATION"
+    },
+    {
+      "field": 0.3192,
+      "label": "COVERED BY HEALTH INSURANCE?"
+    }
+  ],
+  ".312": [
+    {
+      "field": 0.3121,
+      "label": "INSURANCE TYPE"
+    }
+  ],
+  ".321": [
+    {
+      "field": 0.32101,
+      "label": "VIETNAM SERVICE INDICATED?"
+    },
+    {
+      "field": 0.32102,
+      "label": "AGENT ORANGE EXPOS. INDICATED?"
+    },
+    {
+      "field": 0.32103,
+      "label": "RADIATION EXPOSURE INDICATED?"
+    },
+    {
+      "field": 0.32104,
+      "label": "VIETNAM FROM DATE"
+    },
+    {
+      "field": 0.32105,
+      "label": "VIETNAM TO DATE"
+    },
+    {
+      "field": 0.32107,
+      "label": "AGENT ORANGE REGISTRATION DATE"
+    },
+    {
+      "field": 0.32108,
+      "label": "AGENT ORANGE REPORTED TO C.O."
+    },
+    {
+      "field": 0.32109,
+      "label": "AGENT ORANGE EXAM DATE"
+    },
+    {
+      "field": 0.3211,
+      "label": "AGENT ORANGE REGISTRATION #"
+    },
+    {
+      "field": 0.32111,
+      "label": "RADIATION REGISTRATION DATE"
+    },
+    {
+      "field": 0.32115,
+      "label": "PROJ 112/SHAD"
+    },
+    {
+      "field": 0.32116,
+      "label": "TOXIC EXPOSURE RISK ACTIVITY"
+    },
+    {
+      "field": 0.32117,
+      "label": "PERSIAN GULF INDICATOR"
+    },
+    {
+      "field": 0.32118,
+      "label": "PERSIAN GULF LAST CHANGE DATE"
+    },
+    {
+      "field": 0.3212,
+      "label": "RADIATION EXPOSURE METHOD"
+    },
+    {
+      "field": 0.3213,
+      "label": "AGENT ORANGE EXPOSURE LOCATION"
+    },
+    {
+      "field": 0.3214,
+      "label": "FILIPINO VETERAN PROOF"
+    }
+  ],
+  ".3215": [
+    {
+      "field": 0.3215,
+      "label": "SERVICE [OEF OR OIF]"
+    }
+  ],
+  ".3216": [
+    {
+      "field": 0.3216,
+      "label": "MILITARY SERVICE EPISODE"
+    }
+  ],
+  ".3217": [
+    {
+      "field": 0.321701,
+      "label": "CAMP LEJEUNE"
+    },
+    {
+      "field": 0.321702,
+      "label": "CAMP LEJEUNE DATE"
+    },
+    {
+      "field": 0.321703,
+      "label": "CAMP LEJEUNE CHANGE SITE"
+    },
+    {
+      "field": 0.321704,
+      "label": "CAMP LEJEUNE SOURCE"
+    }
+  ],
+  ".32171": [
+    {
+      "field": 0.32171,
+      "label": "CAMP LEJEUNE DATA ENTRY LOCKED"
+    }
+  ],
+  ".32": [
+    {
+      "field": 0.322,
+      "label": "SERVICE VERIFICATION DATE"
+    },
+    {
+      "field": 0.323,
+      "label": "PERIOD OF SERVICE"
+    },
+    {
+      "field": 0.324,
+      "label": "SERVICE DISCHARGE TYPE [LAST]"
+    },
+    {
+      "field": 0.325,
+      "label": "SERVICE BRANCH [LAST]"
+    },
+    {
+      "field": 0.326,
+      "label": "SERVICE ENTRY DATE [LAST]"
+    },
+    {
+      "field": 0.327,
+      "label": "SERVICE SEPARATION DATE [LAST]"
+    },
+    {
+      "field": 0.328,
+      "label": "SERVICE NUMBER [LAST]"
+    },
+    {
+      "field": 0.3285,
+      "label": "SERVICE SECOND EPISODE?"
+    },
+    {
+      "field": 0.329,
+      "label": "SERVICE DISCHARGE TYPE [NTL]"
+    },
+    {
+      "field": 0.3291,
+      "label": "SERVICE BRANCH [NTL]"
+    },
+    {
+      "field": 0.3292,
+      "label": "SERVICE ENTRY DATE [NTL]"
+    },
+    {
+      "field": 0.3293,
+      "label": "SERVICE SEPARATION DATE [NTL]"
+    },
+    {
+      "field": 0.3294,
+      "label": "SERVICE NUMBER [NTL]"
+    },
+    {
+      "field": 0.32945,
+      "label": "SERVICE THIRD EPISODE?"
+    },
+    {
+      "field": 0.3295,
+      "label": "SERVICE DISCHARGE TYPE [NNTL]"
+    },
+    {
+      "field": 0.3296,
+      "label": "SERVICE BRANCH [NNTL]"
+    },
+    {
+      "field": 0.3297,
+      "label": "SERVICE ENTRY DATE [NNTL]"
+    },
+    {
+      "field": 0.3298,
+      "label": "SERVICE SEPARATION DATE [NNTL]"
+    },
+    {
+      "field": 0.3299,
+      "label": "SERVICE NUMBER [NNTL]"
+    }
+  ],
+  ".322": [
+    {
+      "field": 0.32201,
+      "label": "PERSIAN GULF SERVICE?"
+    },
+    {
+      "field": 0.322011,
+      "label": "PERSIAN GULF FROM DATE"
+    },
+    {
+      "field": 0.322012,
+      "label": "PERSIAN GULF TO DATE"
+    },
+    {
+      "field": 0.322013,
+      "label": "SOUTHWEST ASIA CONDITIONS?"
+    },
+    {
+      "field": 0.322014,
+      "label": "SW ASIA COND REGISTRATION DATE"
+    },
+    {
+      "field": 0.322015,
+      "label": "SW ASIA COND EXAM DATE"
+    },
+    {
+      "field": 0.322016,
+      "label": "SOMALIA SERVICE INDICATED?"
+    },
+    {
+      "field": 0.322017,
+      "label": "SOMALIA FROM DATE"
+    },
+    {
+      "field": 0.322018,
+      "label": "SOMALIA TO DATE"
+    },
+    {
+      "field": 0.322019,
+      "label": "YUGOSLAVIA SERVICE INDICATED?"
+    },
+    {
+      "field": 0.32202,
+      "label": "YUGOSLAVIA FROM DATE"
+    },
+    {
+      "field": 0.322021,
+      "label": "YUGOSLAVIA TO DATE"
+    },
+    {
+      "field": 0.3221,
+      "label": "LEBANON SERVICE INDICATED?"
+    },
+    {
+      "field": 0.3222,
+      "label": "LEBANON FROM DATE"
+    },
+    {
+      "field": 0.3223,
+      "label": "LEBANON TO DATE"
+    },
+    {
+      "field": 0.3224,
+      "label": "GRENADA SERVICE INDICATED?"
+    },
+    {
+      "field": 0.3225,
+      "label": "GRENADA FROM DATE"
+    },
+    {
+      "field": 0.3226,
+      "label": "GRENADA TO DATE"
+    },
+    {
+      "field": 0.3227,
+      "label": "PANAMA SERVICE INDICATED?"
+    },
+    {
+      "field": 0.3228,
+      "label": "PANAMA FROM DATE"
+    },
+    {
+      "field": 0.3229,
+      "label": "PANAMA TO DATE"
+    }
+  ],
+  ".3291": [
+    {
+      "field": 0.32911,
+      "label": "SERVICE COMPONENT [LAST]"
+    },
+    {
+      "field": 0.32912,
+      "label": "SERVICE COMPONENT [NTL]"
+    },
+    {
+      "field": 0.32913,
+      "label": "SERVICE COMPONENT [NNTL]"
+    }
+  ],
+  ".33": [
+    {
+      "field": 0.33011,
+      "label": "E-WORK PHONE NUMBER"
+    },
+    {
+      "field": 0.3305,
+      "label": "E-EMER. CONTACT SAME AS NOK?"
+    },
+    {
+      "field": 0.3306,
+      "label": "E-COUNTRY"
+    },
+    {
+      "field": 0.3307,
+      "label": "E-PROVINCE"
+    },
+    {
+      "field": 0.3308,
+      "label": "E-POSTAL CODE"
+    },
+    {
+      "field": 0.3309,
+      "label": "E-RELATIONSHIP TYPE"
+    },
+    {
+      "field": 0.331,
+      "label": "E-NAME"
+    },
+    {
+      "field": 0.332,
+      "label": "E-RELATIONSHIP TO PATIENT"
+    },
+    {
+      "field": 0.333,
+      "label": "E-STREET ADDRESS [LINE 1]"
+    },
+    {
+      "field": 0.334,
+      "label": "E-STREET ADDRESS [LINE 2]"
+    },
+    {
+      "field": 0.335,
+      "label": "E-STREET ADDRESS [LINE 3]"
+    },
+    {
+      "field": 0.336,
+      "label": "E-CITY"
+    },
+    {
+      "field": 0.337,
+      "label": "E-STATE"
+    },
+    {
+      "field": 0.338,
+      "label": "E-ZIP CODE"
+    },
+    {
+      "field": 0.339,
+      "label": "E-PHONE NUMBER"
+    }
+  ],
+  ".332": [
+    {
+      "field": 0.33012,
+      "label": "E-CONTACT CHANGE DATE/TIME"
+    },
+    {
+      "field": 0.33112,
+      "label": "E2-CONTACT CHANGE DATE/TIME"
+    },
+    {
+      "field": 0.3412,
+      "label": "DESIGNEE CHANGE DATE/TIME"
+    }
+  ],
+  ".331": [
+    {
+      "field": 0.331011,
+      "label": "E2-WORK PHONE NUMBER"
+    },
+    {
+      "field": 0.331012,
+      "label": "E2-COUNTRY"
+    },
+    {
+      "field": 0.331013,
+      "label": "E2-PROVINCE"
+    },
+    {
+      "field": 0.331014,
+      "label": "E2-POSTAL CODE"
+    },
+    {
+      "field": 0.331015,
+      "label": "E2-RELATIONSHIP TYPE"
+    },
+    {
+      "field": 0.3311,
+      "label": "E2-NAME OF SECONDARY CONTACT"
+    },
+    {
+      "field": 0.3312,
+      "label": "E2-RELATIONSHIP TO PATIENT"
+    },
+    {
+      "field": 0.3313,
+      "label": "E2-STREET ADDRESS [LINE 1]"
+    },
+    {
+      "field": 0.3314,
+      "label": "E2-STREET ADDRESS [LINE 2]"
+    },
+    {
+      "field": 0.3315,
+      "label": "E2-STREET ADDRESS [LINE 3]"
+    },
+    {
+      "field": 0.3316,
+      "label": "E2-CITY"
+    },
+    {
+      "field": 0.3317,
+      "label": "E2-STATE"
+    },
+    {
+      "field": 0.3318,
+      "label": "E2-ZIP CODE"
+    },
+    {
+      "field": 0.3319,
+      "label": "E2-PHONE NUMBER"
+    }
+  ],
+  ".34": [
+    {
+      "field": 0.34011,
+      "label": "D-WORK PHONE NUMBER"
+    },
+    {
+      "field": 0.34012,
+      "label": "D-COUNTRY"
+    },
+    {
+      "field": 0.34013,
+      "label": "D-PROVINCE"
+    },
+    {
+      "field": 0.34014,
+      "label": "D-POSTAL CODE"
+    },
+    {
+      "field": 0.34015,
+      "label": "D-RELATIONSHIP TYPE"
+    },
+    {
+      "field": 0.3405,
+      "label": "D-DESIGNEE SAME AS NOK?"
+    },
+    {
+      "field": 0.341,
+      "label": "D-NAME OF DESIGNEE"
+    },
+    {
+      "field": 0.342,
+      "label": "D-RELATIONSHIP TO PATIENT"
+    },
+    {
+      "field": 0.343,
+      "label": "D-STREET ADDRESS [LINE 1]"
+    },
+    {
+      "field": 0.344,
+      "label": "D-STREET ADDRESS [LINE 2]"
+    },
+    {
+      "field": 0.345,
+      "label": "D-STREET ADDRESS [LINE 3]"
+    },
+    {
+      "field": 0.346,
+      "label": "D-CITY"
+    },
+    {
+      "field": 0.347,
+      "label": "D-STATE"
+    },
+    {
+      "field": 0.348,
+      "label": "D-ZIP CODE"
+    },
+    {
+      "field": 0.349,
+      "label": "D-PHONE NUMBER"
+    }
+  ],
+  ".35": [
+    {
+      "field": 0.351,
+      "label": "DATE OF DEATH"
+    },
+    {
+      "field": 0.352,
+      "label": "DEATH ENTERED BY"
+    },
+    {
+      "field": 0.353,
+      "label": "SOURCE OF NOTIFICATION"
+    },
+    {
+      "field": 0.354,
+      "label": "DATE OF DEATH LAST UPDATED"
+    },
+    {
+      "field": 0.355,
+      "label": "LAST EDITED BY"
+    },
+    {
+      "field": 0.357,
+      "label": "SUPPORTING DOCUMENT TYPE"
+    },
+    {
+      "field": 0.358,
+      "label": "DATE OF DEATH OPTION USED"
+    }
+  ],
+  ".36": [
+    {
+      "field": 0.3601,
+      "label": "COLLATERAL SPONSOR'S NAME"
+    },
+    {
+      "field": 0.3602,
+      "label": "MILITARY DISABILITY RETIREMENT"
+    },
+    {
+      "field": 0.3603,
+      "label": "DISCHARGE DUE TO DISABILITY"
+    },
+    {
+      "field": 0.361,
+      "label": "PRIMARY ELIGIBILITY CODE"
+    },
+    {
+      "field": 0.362,
+      "label": "DISABILITY RET. FROM MILITARY?"
+    },
+    {
+      "field": 0.363,
+      "label": "PRIMARY LONG ID"
+    },
+    {
+      "field": 0.364,
+      "label": "PRIMARY SHORT ID"
+    },
+    {
+      "field": 0.368,
+      "label": "SERVICE DENTAL INJURY?"
+    },
+    {
+      "field": 0.369,
+      "label": "SERVICE TEETH EXTRACTED?"
+    }
+  ],
+  ".361": [
+    {
+      "field": 0.3611,
+      "label": "ELIGIBILITY STATUS"
+    },
+    {
+      "field": 0.3612,
+      "label": "ELIGIBILITY STATUS DATE"
+    },
+    {
+      "field": 0.3613,
+      "label": "ELIGIBILITY VERIF. SOURCE"
+    },
+    {
+      "field": 0.3614,
+      "label": "ELIGIBILITY INTERIM RESPONSE"
+    },
+    {
+      "field": 0.3615,
+      "label": "ELIGIBILITY VERIF. METHOD"
+    },
+    {
+      "field": 0.3616,
+      "label": "ELIGIBILITY STATUS ENTERED BY"
+    },
+    {
+      "field": 0.3617,
+      "label": "USER ENROLLEE VALID THROUGH"
+    },
+    {
+      "field": 0.3618,
+      "label": "USER ENROLLEE SITE"
+    }
+  ],
+  ".362": [
+    {
+      "field": 0.36205,
+      "label": "RECEIVING A&A BENEFITS?"
+    },
+    {
+      "field": 0.3621,
+      "label": "AMOUNT OF AID & ATTENDANCE"
+    },
+    {
+      "field": 0.36215,
+      "label": "RECEIVING HOUSEBOUND BENEFITS?"
+    },
+    {
+      "field": 0.3622,
+      "label": "AMOUNT OF HOUSEBOUND"
+    },
+    {
+      "field": 0.36225,
+      "label": "RECEIVING SOCIAL SECURITY?"
+    },
+    {
+      "field": 0.3623,
+      "label": "*AMOUNT OF SOCIAL SECURITY"
+    },
+    {
+      "field": 0.36235,
+      "label": "RECEIVING A VA PENSION?"
+    },
+    {
+      "field": 0.3624,
+      "label": "AMOUNT OF VA PENSION"
+    },
+    {
+      "field": 0.3625,
+      "label": "*AMOUNT OF MILITARY RETIREMENT"
+    },
+    {
+      "field": 0.36255,
+      "label": "RECEIVING MILITARY RETIREMENT?"
+    },
+    {
+      "field": 0.3626,
+      "label": "AMOUNT OF GI INSURANCE"
+    },
+    {
+      "field": 0.36265,
+      "label": "GI INSURANCE POLICY?"
+    },
+    {
+      "field": 0.3627,
+      "label": "AMOUNT OF SSI"
+    },
+    {
+      "field": 0.36275,
+      "label": "RECEIVING SUP. SECURITY (SSI)?"
+    },
+    {
+      "field": 0.3628,
+      "label": "AMOUNT OF OTHER RETIREMENT"
+    },
+    {
+      "field": 0.36285,
+      "label": "TYPE OF OTHER RETIREMENT"
+    },
+    {
+      "field": 0.3629,
+      "label": "AMOUNT OF OTHER INCOME"
+    },
+    {
+      "field": 0.36295,
+      "label": "TOTAL ANNUAL VA CHECK AMOUNT"
+    }
+  ],
+  ".37": [
+    {
+      "field": 0.37,
+      "label": "DATE OF DENTAL TREATMENT"
+    }
+  ],
+  ".372": [
+    {
+      "field": 0.3721,
+      "label": "RATED DISABILITIES (VA)"
+    }
+  ],
+  ".373": [
+    {
+      "field": 0.3731,
+      "label": "SERVICE CONNECTED CONDITIONS"
+    }
+  ],
+  ".38": [
+    {
+      "field": 0.381,
+      "label": "ELIGIBLE FOR MEDICAID?"
+    },
+    {
+      "field": 0.382,
+      "label": "DATE MEDICAID LAST ASKED"
+    },
+    {
+      "field": 0.383,
+      "label": "MEDICAID NUMBER"
+    }
+  ],
+  ".385": [
+    {
+      "field": 0.3851,
+      "label": "PENSION AWARD EFFECTIVE DATE"
+    },
+    {
+      "field": 0.3852,
+      "label": "PENSION AWARD REASON"
+    },
+    {
+      "field": 0.3853,
+      "label": "PENSION TERMINATED DATE"
+    },
+    {
+      "field": 0.3854,
+      "label": "PENSION TERMINATED REASON 1"
+    },
+    {
+      "field": 0.3855,
+      "label": "PENSION TERMINATED REASON 2"
+    },
+    {
+      "field": 0.3856,
+      "label": "PENSION TERMINATED REASON 3"
+    },
+    {
+      "field": 0.3857,
+      "label": "PENSION TERMINATED REASON 4"
+    },
+    {
+      "field": 0.3858,
+      "label": "CLASS II DENTAL INDICATOR"
+    },
+    {
+      "field": 0.3859,
+      "label": "DENTAL APPL DUE BEFORE DATE"
+    },
+    {
+      "field": 0.386,
+      "label": "PENSION INDICATOR LOCK"
+    },
+    {
+      "field": 0.3861,
+      "label": "PENSION AWARD LOCK"
+    }
+  ],
+  ".39": [
+    {
+      "field": 0.39,
+      "label": "VETERAN CATASTROPHICALLY DISABLED?"
+    },
+    {
+      "field": 0.391,
+      "label": "DECIDED BY"
+    },
+    {
+      "field": 0.392,
+      "label": "DATE OF DECISION"
+    },
+    {
+      "field": 0.393,
+      "label": "FACILITY MAKING DETERMINATION"
+    },
+    {
+      "field": 0.394,
+      "label": "REVIEW DATE"
+    },
+    {
+      "field": 0.395,
+      "label": "METHOD OF DETERMINATION"
+    },
+    {
+      "field": 0.3951,
+      "label": "DATE VETERAN REQUESTED CD EVAL"
+    },
+    {
+      "field": 0.3952,
+      "label": "DATE FACILITY INITIATED REVIEW"
+    },
+    {
+      "field": 0.3953,
+      "label": "DATE VETERAN WAS NOTIFIED"
+    }
+  ],
+  ".396": [
+    {
+      "field": 0.396,
+      "label": "CD STATUS DIAGNOSES"
+    }
+  ],
+  ".397": [
+    {
+      "field": 0.397,
+      "label": "CD STATUS PROCEDURES"
+    }
+  ],
+  ".398": [
+    {
+      "field": 0.398,
+      "label": "CD STATUS CONDITIONS"
+    }
+  ],
+  ".399": [
+    {
+      "field": 0.399,
+      "label": "CD HISTORY DATE"
+    }
+  ],
+  ".401": [
+    {
+      "field": 0.401,
+      "label": "CD DESCRIPTORS"
+    }
+  ],
+  ".52": [
+    {
+      "field": 0.525,
+      "label": "POW STATUS INDICATED?"
+    },
+    {
+      "field": 0.526,
+      "label": "POW CONFINEMENT LOCATION"
+    },
+    {
+      "field": 0.527,
+      "label": "POW FROM DATE"
+    },
+    {
+      "field": 0.528,
+      "label": "POW TO DATE"
+    },
+    {
+      "field": 0.529,
+      "label": "POW STATUS VERIFIED"
+    },
+    {
+      "field": 0.5291,
+      "label": "COMBAT SERVICE INDICATED?"
+    },
+    {
+      "field": 0.5292,
+      "label": "COMBAT SERVICE LOCATION"
+    },
+    {
+      "field": 0.5293,
+      "label": "COMBAT FROM DATE"
+    },
+    {
+      "field": 0.5294,
+      "label": "COMBAT TO DATE"
+    },
+    {
+      "field": 0.5295,
+      "label": "COMBAT VETERAN END DATE"
+    },
+    {
+      "field": 0.5296,
+      "label": "CV DATE EDITED"
+    }
+  ],
+  ".53": [
+    {
+      "field": 0.531,
+      "label": "CURRENT PH INDICATOR"
+    },
+    {
+      "field": 0.532,
+      "label": "CURRENT PURPLE HEART STATUS"
+    },
+    {
+      "field": 0.533,
+      "label": "CURRENT PURPLE HEART REMARKS"
+    },
+    {
+      "field": 0.535,
+      "label": "PH DIVISION"
+    }
+  ],
+  ".54": [
+    {
+      "field": 0.541,
+      "label": "CURRENT MOH INDICATOR"
+    },
+    {
+      "field": 0.542,
+      "label": "MOH AWARD DATE"
+    },
+    {
+      "field": 0.543,
+      "label": "MOH STATUS DATE"
+    },
+    {
+      "field": 0.544,
+      "label": "MOH COPAYMENT EXEMPTION DATE"
+    }
+  ],
+  ".55": [
+    {
+      "field": 0.5501,
+      "label": "EXPANDED MH CARE TYPE"
+    },
+    {
+      "field": 0.5502,
+      "label": "AUTOMATIC CHANGE DATE"
+    }
+  ],
+  ".56": [
+    {
+      "field": 0.5601,
+      "label": "PRESUMPTIVE PSYCHOSIS CATEGORY"
+    }
+  ],
+  ".57": [
+    {
+      "field": 0.571,
+      "label": "INDIAN SELF IDENTIFICATION"
+    },
+    {
+      "field": 0.572,
+      "label": "INDIAN START DATE"
+    },
+    {
+      "field": 0.573,
+      "label": "INDIAN ATTESTATION DATE"
+    },
+    {
+      "field": 0.574,
+      "label": "INDIAN END DATE"
+    },
+    {
+      "field": 0.575,
+      "label": "INDIAN SELF IDENT CHANGE DT/TM"
+    },
+    {
+      "field": 0.576,
+      "label": "INDIAN SELF IDENT CHANGE USER"
+    }
+  ],
+  ".01": [
+    {
+      "field": 1.0,
+      "label": "ALIAS"
+    }
+  ],
+  "NAME": [
+    {
+      "field": 1.01,
+      "label": "NAME COMPONENTS"
+    },
+    {
+      "field": 1.02,
+      "label": "K-NAME COMPONENTS"
+    },
+    {
+      "field": 1.03,
+      "label": "K2-NAME COMPONENTS"
+    },
+    {
+      "field": 1.04,
+      "label": "FATHER'S NAME COMPONENTS"
+    },
+    {
+      "field": 1.05,
+      "label": "MOTHER'S NAME COMPONENTS"
+    },
+    {
+      "field": 1.06,
+      "label": "MOTHERS MAIDEN NAME COMPONENTS"
+    },
+    {
+      "field": 1.07,
+      "label": "E-NAME COMPONENTS"
+    },
+    {
+      "field": 1.08,
+      "label": "E2-NAME COMPONENTS"
+    },
+    {
+      "field": 1.09,
+      "label": "D-NAME COMPONENTS"
+    }
+  ],
+  ".02": [
+    {
+      "field": 2.0,
+      "label": "RACE INFORMATION"
+    }
+  ],
+  "DE": [
+    {
+      "field": 3.0,
+      "label": "ENROLLMENT CLINIC"
+    }
+  ],
+  ".06": [
+    {
+      "field": 6.0,
+      "label": "ETHNICITY INFORMATION"
+    }
+  ],
+  ".207": [
+    {
+      "field": 7.0,
+      "label": "LANGUAGE DATE/TIME"
+    }
+  ],
+  "HBP": [
+    {
+      "field": 25.01,
+      "label": "CURRENT HEALTH BENEFIT PLAN"
+    }
+  ],
+  "HBP1": [
+    {
+      "field": 25.02,
+      "label": "HISTORY HEALTH BENEFIT PLAN"
+    }
+  ],
+  "ENR": [
+    {
+      "field": 27.01,
+      "label": "CURRENT ENROLLMENT"
+    },
+    {
+      "field": 27.02,
+      "label": "PREFERRED FACILITY"
+    },
+    {
+      "field": 27.03,
+      "label": "SOURCE DESIGNATION"
+    },
+    {
+      "field": 27.04,
+      "label": "PT APPLIED FOR ENROLLMENT?"
+    }
+  ],
+  "PI": [
+    {
+      "field": 53.0,
+      "label": "*REACTIONS"
+    }
+  ],
+  "57": [
+    {
+      "field": 57.1,
+      "label": "*HEIGHT(cm)"
+    },
+    {
+      "field": 57.2,
+      "label": "*WEIGHT(kg)"
+    },
+    {
+      "field": 57.4,
+      "label": "SPINAL CORD INJURY"
+    }
+  ],
+  "LR": [
+    {
+      "field": 63.0,
+      "label": "LABORATORY REFERENCE"
+    }
+  ],
+  "LRT": [
+    {
+      "field": 67.0,
+      "label": "LAB REFERRAL REF"
+    }
+  ],
+  "NHC": [
+    {
+      "field": 148.0,
+      "label": "CNH CURRENT"
+    }
+  ],
+  "DENT": [
+    {
+      "field": 220.0,
+      "label": "DENTAL CLASSIFICATION"
+    },
+    {
+      "field": 220.1,
+      "label": "DENTAL ELIGIBILITY EXPIRATION"
+    }
+  ],
+  "E": [
+    {
+      "field": 361.0,
+      "label": "PATIENT ELIGIBILITIES"
+    }
+  ],
+  "TYPE": [
+    {
+      "field": 391.0,
+      "label": "TYPE"
+    }
+  ],
+  "DAC": [
+    {
+      "field": 401.3,
+      "label": "CONDITION"
+    },
+    {
+      "field": 401.4,
+      "label": "DATE ENTERED ON SI LIST"
+    }
+  ],
+  "PC": [
+    {
+      "field": 404.01,
+      "label": "*CURRENT PC PRACTITIONER"
+    },
+    {
+      "field": 404.02,
+      "label": "*CURRENT PC TEAM"
+    }
+  ],
+  "PH": [
+    {
+      "field": 534.0,
+      "label": "PH DATE/TIME UPDATED"
+    }
+  ],
+  "MPI": [
+    {
+      "field": 991.01,
+      "label": "INTEGRATION CONTROL NUMBER"
+    },
+    {
+      "field": 991.02,
+      "label": "ICN CHECKSUM"
+    },
+    {
+      "field": 991.03,
+      "label": "COORDINATING MASTER OF RECORD"
+    },
+    {
+      "field": 991.04,
+      "label": "LOCALLY ASSIGNED ICN"
+    },
+    {
+      "field": 991.05,
+      "label": "SUBSCRIPTION CONTROL NUMBER"
+    },
+    {
+      "field": 991.06,
+      "label": "CMOR ACTIVITY SCORE"
+    },
+    {
+      "field": 991.07,
+      "label": "SCORE CALCULATION DATE"
+    },
+    {
+      "field": 991.08,
+      "label": "TEMPORARY ID NUMBER"
+    },
+    {
+      "field": 991.09,
+      "label": "FOREIGN ID NUMBER"
+    },
+    {
+      "field": 991.1,
+      "label": "FULL ICN"
+    },
+    {
+      "field": 991.11,
+      "label": "INDIVIDUAL TAX ID"
+    }
+  ],
+  "MPIFICNHIS": [
+    {
+      "field": 991.91,
+      "label": "FULL ICN HISTORY"
+    }
+  ],
+  "MPIFHIS": [
+    {
+      "field": 992.0,
+      "label": "ICN HISTORY"
+    }
+  ],
+  "MPICMOR": [
+    {
+      "field": 993.0,
+      "label": "CMOR HISTORY"
+    }
+  ],
+  "MPIMB": [
+    {
+      "field": 994.0,
+      "label": "MULTIPLE BIRTH INDICATOR"
+    }
+  ],
+  "DIS": [
+    {
+      "field": 1000.0,
+      "label": "DISPOSITION LOG-IN DATE/TIME"
+    }
+  ],
+  "1010.15": [
+    {
+      "field": 1010.15,
+      "label": "RECEIVED VA CARE PREVIOUSLY?"
+    },
+    {
+      "field": 1010.151,
+      "label": "MOST RECENT DATE OF CARE"
+    },
+    {
+      "field": 1010.1511,
+      "label": "APPOINTMENT REQUEST DATE"
+    },
+    {
+      "field": 1010.1512,
+      "label": "ORIGINAL APPOINTMENT REQUEST"
+    },
+    {
+      "field": 1010.1513,
+      "label": "ORIGINAL APPT REQUEST DATE"
+    },
+    {
+      "field": 1010.1514,
+      "label": "ORIG APPT REQUEST CHG DT/TM"
+    },
+    {
+      "field": 1010.1515,
+      "label": "APPT REQUEST 1010EZ CHG DT/TM"
+    },
+    {
+      "field": 1010.152,
+      "label": "MOST RECENT LOCATION OF CARE"
+    },
+    {
+      "field": 1010.153,
+      "label": "2ND MOST RECENT DATE OF CARE"
+    },
+    {
+      "field": 1010.154,
+      "label": "2ND MOST RECENT LOCATION"
+    },
+    {
+      "field": 1010.156,
+      "label": "MOST RECENT 1010EZ"
+    },
+    {
+      "field": 1010.157,
+      "label": "COMBAT INDICATED ON 1010EZ"
+    },
+    {
+      "field": 1010.158,
+      "label": "DISABILITY DISCHARGE ON 1010EZ"
+    },
+    {
+      "field": 1010.159,
+      "label": "APPOINTMENT REQUEST ON 1010EZ"
+    }
+  ],
+  "1010.16": [
+    {
+      "field": 1010.161,
+      "label": "APPOINTMENT REQUEST STATUS"
+    },
+    {
+      "field": 1010.162,
+      "label": "DATE STATUS LAST EDITED"
+    },
+    {
+      "field": 1010.163,
+      "label": "APPOINTMENT REQUEST COMMENT"
+    },
+    {
+      "field": 1010.164,
+      "label": "DATE COMMENT LAST EDITED"
+    }
+  ],
+  "FFP": [
+    {
+      "field": 1100.01,
+      "label": "FUGITIVE FELON FLAG"
+    },
+    {
+      "field": 1100.02,
+      "label": "FFF ENTERED BY"
+    },
+    {
+      "field": 1100.03,
+      "label": "FFF DATE ENTERED"
+    },
+    {
+      "field": 1100.04,
+      "label": "FFF REMOVED BY"
+    },
+    {
+      "field": 1100.05,
+      "label": "FFF DATE REMOVED"
+    },
+    {
+      "field": 1100.09,
+      "label": "FFF REMOVAL REMARKS"
+    }
+  ],
+  "S": [
+    {
+      "field": 1900.0,
+      "label": "APPOINTMENT"
+    }
+  ],
+  "VET": [
+    {
+      "field": 1901.0,
+      "label": "VETERAN (Y/N)?"
+    }
+  ],
+  "ARCH": [
+    {
+      "field": 1903.0,
+      "label": "ARCHIVED DATA"
+    }
+  ],
+  "5": [
+    {
+      "field": 1910.0,
+      "label": "COMMUNITY CARE PROGRAM"
+    }
+  ],
+  "INS": [
+    {
+      "field": 2001.0,
+      "label": "DATE LAST EICD RUN"
+    }
+  ],
+  "3000": [
+    {
+      "field": 3000.0,
+      "label": "VTS PATIENT FLAG"
+    }
+  ],
+  "CERNER": [
+    {
+      "field": 9000.0,
+      "label": "DISCHARGED TO CERNER"
+    }
+  ],
+  "ODS": [
+    {
+      "field": 11500.01,
+      "label": "INITIAL ODS TREATMENT RECEIVED"
+    },
+    {
+      "field": 11500.02,
+      "label": "RECALLED TO ACTIVE DUTY"
+    },
+    {
+      "field": 11500.03,
+      "label": "RANK"
+    }
+  ],
+  "500001": [
+    {
+      "field": 500001.0,
+      "label": "IS PATIENT DIABETIC?"
+    }
+  ],
+  "537025": [
+    {
+      "field": 537025.0,
+      "label": "NETWORK IDENTIFIER"
+    }
+  ],
+  "1": [
+    {
+      "field": 537026.0,
+      "label": "MHV SOCIALIZATION"
+    }
+  ],
+  "2": [
+    {
+      "field": 537027.0,
+      "label": "MHV REGISTERED"
+    },
+    {
+      "field": 537028.0,
+      "label": "MHV AUTHENTICATED"
+    },
+    {
+      "field": 537029.0,
+      "label": "MHV SECURE MESSAGING"
+    },
+    {
+      "field": 537030.0,
+      "label": "MHVREG UPDATE DATE/TIME"
+    },
+    {
+      "field": 537031.0,
+      "label": "MHVAUTH UPDATE DATE/TIME"
+    },
+    {
+      "field": 537032.0,
+      "label": "MHVSM UPDATE DATE/TIME"
+    },
+    {
+      "field": 537036.0,
+      "label": "MHV REGISTER DECLINED REASON"
+    },
+    {
+      "field": 537037.0,
+      "label": "MHV AUTH DECLINED REASON"
+    },
+    {
+      "field": 537038.0,
+      "label": "MHV MSG DECLINED REASON"
+    }
+  ],
+  "2.1": [
+    {
+      "field": 537033.0,
+      "label": "MHV REGISTER DECLINED TEXT"
+    }
+  ],
+  "2.2": [
+    {
+      "field": 537034.0,
+      "label": "MHV AUTH DECLINED TEXT"
+    }
+  ],
+  "2.3": [
+    {
+      "field": 537035.0,
+      "label": "MHV MSG DECLINED TEXT"
+    }
+  ],
+  "3": [
+    {
+      "field": 537041.0,
+      "label": "MHV MSG ACTIONS"
+    }
+  ],
+  "4": [
+    {
+      "field": 537042.0,
+      "label": "MHV AUTH ACTIONS"
+    }
+  ]
+}
