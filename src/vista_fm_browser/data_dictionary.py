@@ -431,13 +431,13 @@ class DataDictionary:
         Returns the first caret-piece of the zero-node (the .01 value),
         or the raw IEN string if the entry cannot be found.
         """
+        from .file_reader import _strip_root
+
         file_def = self.get_file(pointer_file)
         if file_def is None:
             return ien
-        # Normalise global root: "DPT(" → "^DPT", "^DPT(" → "^DPT"
-        raw_root = file_def.global_root.split("(")[0]
-        global_name = raw_root if raw_root.startswith("^") else f"^{raw_root}"
-        zero = self._conn.get(global_name, [ien, "0"])
+        global_name, prefix = _strip_root(file_def.global_root)
+        zero = self._conn.get(global_name, [*prefix, ien, "0"])
         if not zero:
             return ien
         return zero.split("^")[0]

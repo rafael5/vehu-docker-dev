@@ -82,7 +82,9 @@ Ordered by priority. Mirror of phase-1 critical-path approach.
 | **3** | Surface 139 residuals as `"(unattributed)"` bucket per rule 3 | Code | 2 | **DONE** (iter 2) |
 | **4** | Add per-package volume totals (uses merged attribution) | Code | 2 | **DONE** (iter 2) |
 | **5** | Regenerate phase-2 outputs and re-render report | Container run | 1-4 | **DONE** (iter 2) |
-| **6** | Assumptions audit for phase 2 | Documentation | 5 | TODO |
+| **6** | Assumptions audit for phase 2 | Documentation | 5 | **DONE** (iter 3) — BUG B3 found |
+| **7** | Fix `_strip_root` bug (B3) affecting 95 files | Code (TDD) | 6 | **DONE** (iter 4) |
+| **8** | Re-run phase 2 after B3 fix and update totals | Container run | 7 | **DONE** (iter 4) |
 
 ### Task 1 — trivial OUTPUT_DIR fix
 Same fix as phase 1 iter 1.5. Use `Path(__file__).resolve().parents[2] / "output" / "phase2"`.
@@ -170,6 +172,90 @@ file choices, provenance merge correctness, residual handling.
 
 ---
 
+## Iteration 4 — 2026-04-15 (B3 fix + re-run, tasks 7-8 complete)
+
+### What changed in the code
+
+- **`_strip_root`** now returns `(global_name, subscript_prefix)` instead
+  of a bare global name. `"^DIC(4,"` → `("^DIC", ["4"])`,
+  `"^PS(50,"` → `("^PS", ["50"])`, `"^DPT("` → `("^DPT", [])`.
+- **Callers updated** in `file_reader.py`: `iter_entries`, `get_entry`,
+  `count_entries`, `_read_entry` now walk
+  `conn.subscripts(global_name, [*prefix, ""])` and read via
+  `[*prefix, ien, node]`.
+- **`data_dictionary._resolve_pointer`** (same bug pattern, inline) now
+  uses `_strip_root` via lazy import. Fixes pointer resolution for any
+  file nested under a shared global.
+- **New tests** lock the fix:
+  - `_strip_root` unit tests assert the tuple return for flat + nested
+    + decimal-file cases.
+  - `fake_nested_global_conn` fixture simulates `^DIC(4, ...)` layout;
+    `test_count_entries_nested_global`, `test_iter_entries_nested_global`,
+    `test_get_entry_nested_global` exercise the full read path.
+- **300 tests pass** (only pre-existing host-only
+  `test_connect_raises_outside_container` is excluded when running in
+  the container).
+
+### Bonus fix
+
+- `scripts/analysis/phase2-viz.py` was still pointing at
+  `~/data/vista-fm-browser/phase2/` — moved to the repo-local
+  `Path(__file__).resolve().parents[2] / "output" / "phase2"` per the
+  phase-1 convention. PNG now lands in `output/phase2/phase2_volume.png`.
+
+### Re-run results (live VEHU, post-fix)
+
+| Metric                       | Iter 2 (buggy) | Iter 4 (fixed)    | Δ                |
+|------------------------------|---------------:|------------------:|:-----------------|
+| total_entries_all_files      |        717,902 |    **14,671,305** | **+13.95M** (≈20×) |
+| files_with_data              |          2,858 |             2,809 | −49 (now empty)  |
+| files_empty                  |             57 |               106 | +49              |
+| massive tier (≥100K)         |              0 |            **16** | **+16 revealed** |
+| large tier (10K–99K)         |              7 |                36 | +29              |
+| medium tier (1K–9,999)       |            117 |               141 | +24              |
+
+### Key findings
+
+- **F4.1. The corpus is ~20× larger than iter-2 reported.** The bug was
+  bidirectional: 95 files were inflated to 2,916 each (+277K total),
+  but many more files were *deflated* because their nested global roots
+  were walking an unrelated parent — missing all their real entries.
+- **F4.2. VEHU has a true "massive" tier of 16 files, all clinical
+  reference data.** Top 5: EXPRESSIONS (2.58M), RXNORM RELATED CONCEPTS
+  (1.48M), DRG PDX EXCLUSION GROUPS (1.13M), RXNORM SIMPLE CONCEPT AND
+  ATOM ATTRIBUTES (1.05M), SEMANTIC MAP (962K). These are
+  packages **CLINICAL LEXICON UTILITY** and **ENTERPRISE TERMINOLOGY
+  SERVICE** — the authoritative terminology spine of VistA.
+- **F4.3. ICD DIAGNOSIS / PROCEDURE drop from top-2 to lower in the
+  massive tier.** They were correctly counted before (91K each); many
+  other files simply outrank them now. DRG GROUPER still dominates by
+  aggregate entry total via DRG PDX EXCLUSION GROUPS.
+- **F4.4. Phase-3 hub-by-volume analysis is now viable.** Iter-2's
+  conclusion ("weight by inbound-pointer count, not entry volume")
+  was based on a bogus volume distribution; with real numbers the
+  clinical-terminology tier is a legitimate volume-hub candidate.
+- **F4.5. 49 additional files reclassify from medium → empty.** These
+  are the 95 `^DIC(X,...)` files that were reporting 2,916; ~49 of
+  them are actually empty in VEHU. The other 46 had real (non-zero)
+  counts that were inflated. This is a *data quality* signal for
+  VEHU itself — many FileMan configuration files ship empty.
+
+### Audit status
+
+- `ASSUMPTIONS-AUDIT.md` claim B3 → **RESOLVED** (fixed in iter 4).
+  Claims B4, B5, B10 (previously "partially invalidated" by B3) now
+  re-validated against the new numbers: tier classification and
+  top-N rankings are trustworthy.
+
+### Next actions
+
+- Update `ASSUMPTIONS-AUDIT.md` header and B3/B4/B5/B10 entries to
+  reflect the resolution.
+- Phase 3 can proceed — `output/phase2/summary.json` is now the
+  trustworthy input for volume-weighted topology.
+
+---
+
 ## Iteration log
 
 | Date | Iteration | Summary |
@@ -177,3 +263,5 @@ file choices, provenance merge correctness, residual handling.
 | 2026-04-14 | 1 | Initial phase-2 run with pre-phase-1-fixes script. Baseline captured. |
 | 2026-04-15 | 1.1 (planning) | Planning guide created. Tasks 1-6 sequenced. |
 | 2026-04-15 | 2 (tasks 1-5) | Script updated (OUTPUT_DIR, attribution merge, unattributed bucket, per-package totals). Ran in container. 717,902 total entries. Provenance sums to 2,915. Unattributed = 139 files / 61,025 entries / 8.5%. |
+| 2026-04-15 | 3 (audit) | ASSUMPTIONS-AUDIT.md published. 6 claims VERIFIED, 1 BUG FOUND: B3 `_strip_root` drops subscript for `^DIC(X,...)` files, miscounting 95 files as 2,916 each. Total entry count inflated; phase-3 topology will pick up false signal until fixed. Tasks 7+8 queued. |
+| 2026-04-15 | 4 (tasks 7-8) | B3 fix landed (TDD: `_strip_root` returns tuple; all 4 callers + `_resolve_pointer` updated; 6 new tests; 300 total pass). Re-ran phase 2 and viz in container. Corpus total 717,902 → **14,671,305** (≈20× — bug was bidirectional). Massive tier revealed: 16 files led by EXPRESSIONS 2.58M, RXNORM RELATED CONCEPTS 1.48M. Phase 3 unblocked. |

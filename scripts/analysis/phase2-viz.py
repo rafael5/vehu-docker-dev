@@ -4,7 +4,7 @@ Phase 2 — Volume Survey (Visualization)
 Consumes data files produced by phase2-volume.py and renders static PNG
 visualizations. No database connection required.
 
-Inputs (from ~/data/vista-fm-browser/phase2/):
+Inputs (from <repo>/output/phase2/):
     summary.json               — tier counts + top-50 files (primary input)
     file_volume.csv            — (fallback: recomputes top-50 if summary missing)
 
@@ -30,7 +30,7 @@ from rich.console import Console
 log = logging.getLogger(__name__)
 console = Console()
 
-DATA_DIR = Path("~/data/vista-fm-browser/phase2/").expanduser()
+DATA_DIR = Path(__file__).resolve().parents[2] / "output" / "phase2"
 
 TIER_COLORS = {
     "massive": "#d62728",

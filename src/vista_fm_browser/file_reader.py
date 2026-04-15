@@ -76,16 +76,18 @@ class FileReader:
         if file_def is None:
             log.warning("File %s not found in data dictionary", file_number)
             return
-        global_root = _strip_root(file_def.global_root)
+        global_name, prefix = _strip_root(file_def.global_root)
         count = 0
-        for ien in self._conn.subscripts(global_root, [""]):
+        for ien in self._conn.subscripts(global_name, [*prefix, ""]):
             if ien.startswith('"'):
                 continue  # skip cross-reference nodes like "B", "D"
             try:
                 float(ien)
             except ValueError:
                 continue
-            entry = self._read_entry(global_root, ien, file_number, file_def)
+            entry = self._read_entry(
+                global_name, prefix, ien, file_number, file_def
+            )
             yield entry
             count += 1
             if limit is not None and count >= limit:
@@ -96,21 +98,21 @@ class FileReader:
         file_def = self._dd.get_file(file_number)
         if file_def is None:
             return None
-        global_root = _strip_root(file_def.global_root)
-        if not self._conn.node_exists(global_root, [ien]):
+        global_name, prefix = _strip_root(file_def.global_root)
+        if not self._conn.node_exists(global_name, [*prefix, ien]):
             return None
-        return self._read_entry(global_root, ien, file_number, file_def)
+        return self._read_entry(global_name, prefix, ien, file_number, file_def)
 
     def count_entries(self, file_number: float) -> int:
         """Count entries in a file without loading them."""
         file_def = self._dd.get_file(file_number)
         if file_def is None:
             return 0
-        global_root = _strip_root(file_def.global_root)
-        if not global_root or global_root == "^":
+        global_name, prefix = _strip_root(file_def.global_root)
+        if not global_name or global_name == "^":
             return 0  # file has no data global (e.g. subfile or alias)
         count = 0
-        for ien in self._conn.subscripts(global_root, [""]):
+        for ien in self._conn.subscripts(global_name, [*prefix, ""]):
             if ien.startswith('"'):
                 continue
             try:
@@ -126,7 +128,8 @@ class FileReader:
 
     def _read_entry(
         self,
-        global_root: str,
+        global_name: str,
+        prefix: list[str],
         ien: str,
         file_number: float,
         file_def: FileDef,
@@ -136,7 +139,7 @@ class FileReader:
 
         # Read nodes 0 through 9 (covers the vast majority of fields)
         for node in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]:
-            val = self._conn.get(global_root, [ien, node])
+            val = self._conn.get(global_name, [*prefix, ien, node])
             if val:
                 raw_nodes[node] = val
 
@@ -158,12 +161,31 @@ class FileReader:
         return entry
 
 
-def _strip_root(global_root: str) -> str:
-    """Convert FileMan global root to a bare caret-name for yottadb calls.
+def _strip_root(global_root: str) -> tuple[str, list[str]]:
+    """Parse a FileMan global root into (global_name, subscript_prefix).
 
-    e.g. "^DPT(" → "^DPT"   "^PS(50," → "^PS"   "DPT" → "^DPT"
+    The ``global_root`` from ``^DIC(file,0,"GL")`` points at the subtree
+    where the file's entries live — which may be nested several levels
+    deep inside a larger global. Examples::
+
+        "^DPT("      → ("^DPT", [])            # flat file
+        "^PS(50,"    → ("^PS",  ["50"])         # DRUG — nested under ^PS
+        "^DIC(4,"    → ("^DIC", ["4"])          # INSTITUTION — nested in ^DIC
+        "^DIC(4.005,"→ ("^DIC", ["4.005"])
+        "DPT("       → ("^DPT", [])             # caret inferred
+        "^DPT"       → ("^DPT", [])             # already clean
+
+    Callers should iterate entries via
+    ``conn.subscripts(global_name, [*prefix, ""])`` and read nodes via
+    ``conn.get(global_name, [*prefix, ien, ...])``.
     """
-    root = global_root.split("(")[0]
-    if not root.startswith("^"):
-        root = "^" + root
-    return root
+    if "(" in global_root:
+        name, rest = global_root.split("(", 1)
+        rest = rest.rstrip(",").strip()
+        prefix = [p.strip() for p in rest.split(",") if p.strip()] if rest else []
+    else:
+        name = global_root
+        prefix = []
+    if name and not name.startswith("^"):
+        name = "^" + name
+    return name, prefix

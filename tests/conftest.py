@@ -120,6 +120,39 @@ def fake_patient_conn() -> YdbFake:
 
 
 @pytest.fixture
+def fake_nested_global_conn() -> YdbFake:
+    """YdbFake simulating INSTITUTION (file 4) nested inside ^DIC(4,...).
+
+    ^DIC holds a per-file registry with numeric subscripts for every file.
+    File 4's data lives under ^DIC(4, ien, 0) — exposing the `_strip_root`
+    bug: naive stripping returns "^DIC" and walks the file registry
+    instead of the file's own data subtree.
+    """
+    data: dict = {
+        "^DIC": {
+            # File 4 header (registry metadata — NOT entry data)
+            ("4", "0"): "INSTITUTION^4I",
+            ("4", "0", "GL"): "^DIC(4,",
+            # One unrelated file in the registry — creates top-level
+            # subscripts "1" and "4" which a naive walker would count.
+            ("1", "0"): "FILE^1I",
+            ("1", "0", "GL"): "^DIC(1,",
+            # File 4 actual entries live under ^DIC(4, ien, ...)
+            ("4", "1", "0"): "WASHINGTON DC VAMC^WAS^688",
+            ("4", "2", "0"): "PALO ALTO VAMC^PAL^640",
+            ("4", "3", "0"): "BOSTON VAMC^BOS^523",
+            ("4", "4", "0"): "PORTLAND VAMC^POR^648",
+            ("4", "5", "0"): "CHICAGO VAMC^CHI^537",
+        },
+        "^DD": {
+            ("4", "0"): "FIELD^NL^3160101^3",
+            ("4", ".01", "0"): "NAME^F^^0;1^",
+        },
+    }
+    return YdbFake(data)
+
+
+@pytest.fixture
 def fake_cross_ref_conn() -> YdbFake:
     """YdbFake with DD + one patient entry and a B cross-reference node.
 

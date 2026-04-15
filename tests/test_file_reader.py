@@ -11,19 +11,30 @@ from vista_fm_browser.file_reader import FileReader, _strip_root
 
 
 def test_strip_root_standard():
-    assert _strip_root("^DPT(") == "^DPT"
+    assert _strip_root("^DPT(") == ("^DPT", [])
 
 
 def test_strip_root_subfile():
-    assert _strip_root("^PS(50,") == "^PS"
+    # ^PS(50, — file 50 DRUG — data lives under ^PS(50, ien, ...)
+    assert _strip_root("^PS(50,") == ("^PS", ["50"])
 
 
 def test_strip_root_no_caret():
-    assert _strip_root("DPT(") == "^DPT"
+    assert _strip_root("DPT(") == ("^DPT", [])
 
 
 def test_strip_root_already_clean():
-    assert _strip_root("^DPT") == "^DPT"
+    assert _strip_root("^DPT") == ("^DPT", [])
+
+
+def test_strip_root_nested_dic_file4():
+    # File 4 INSTITUTION — data lives under ^DIC(4, ien, ...)
+    assert _strip_root("^DIC(4,") == ("^DIC", ["4"])
+
+
+def test_strip_root_nested_decimal_file():
+    # File 4.005 — data lives under ^DIC(4.005, ien, ...)
+    assert _strip_root("^DIC(4.005,") == ("^DIC", ["4.005"])
 
 
 # ------------------------------------------------------------------
@@ -150,3 +161,42 @@ def test_count_entries_skips_cross_ref_iens(fake_cross_ref_conn):
     dd = DataDictionary(fake_cross_ref_conn)
     reader = FileReader(fake_cross_ref_conn, dd)
     assert reader.count_entries(2) == 1
+
+
+# ------------------------------------------------------------------
+# Nested globals — regression guard for B3 (_strip_root bug).
+# File 4 INSTITUTION lives at ^DIC(4, ien, 0); naive _strip_root would
+# walk the ^DIC file registry and report the wrong count.
+# ------------------------------------------------------------------
+
+
+def test_count_entries_nested_global(fake_nested_global_conn):
+    """File 4 has 5 real entries (IENs 1-5) plus the 0 header → 6.
+
+    A naive _strip_root would walk ^DIC top-level and count file-registry
+    subscripts ("1" and "4" → 2). The correct walk is ^DIC(4, ...).
+    """
+    dd = DataDictionary(fake_nested_global_conn)
+    reader = FileReader(fake_nested_global_conn, dd)
+    assert reader.count_entries(4) == 6
+
+
+def test_iter_entries_nested_global(fake_nested_global_conn):
+    """Iteration under a nested global yields the file's own IENs."""
+    dd = DataDictionary(fake_nested_global_conn)
+    reader = FileReader(fake_nested_global_conn, dd)
+    entries = list(reader.iter_entries(4))
+    iens = {e.ien for e in entries}
+    assert iens == {"0", "1", "2", "3", "4", "5"}
+    # Zero nodes must be the file-4 entry data, not the registry metadata.
+    entry1 = next(e for e in entries if e.ien == "1")
+    assert entry1.raw_nodes["0"].startswith("WASHINGTON DC VAMC")
+
+
+def test_get_entry_nested_global(fake_nested_global_conn):
+    """get_entry resolves against the nested subtree, not the registry."""
+    dd = DataDictionary(fake_nested_global_conn)
+    reader = FileReader(fake_nested_global_conn, dd)
+    entry = reader.get_entry(4, "3")
+    assert entry is not None
+    assert entry.raw_nodes["0"].startswith("BOSTON VAMC")
