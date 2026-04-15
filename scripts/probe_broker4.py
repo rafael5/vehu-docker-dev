@@ -19,6 +19,16 @@ For TCPConnect (connect packet):
   chunk5 params  = IP, port, app, UCI  (each literal: \x00 + "009..." + "f")
   terminated by \x04 as next TY inside PRS5
 
+Status (run against VEHU):
+  ✓ Connect  — server responds b'\x00\x00accept\x04'
+  ✓ SIGNON SETUP — returns system info (vehu\\nROU\\nVAH\\n...)
+  ✗ XUS AV CODE — YDB-E-LVUNDEF at VALIDAV+14^XUSRB (AVCODE undefined)
+      The RPC dispatcher reaches VALIDAV^XUSRB but AVCODE is not set.
+      Root cause is VEHU-specific (auth flow / encrypted-credential format).
+      Plain "access;verify" does NOT pass DECRYP^XUSRB1 without encryption.
+      Further investigation needed — likely requires a pre-auth token from
+      SIGNON SETUP or XOR-encrypted credentials.
+
 Run inside the container:
     python3 /opt/vista-fm-browser/scripts/probe_broker4.py
 """
