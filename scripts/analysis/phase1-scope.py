@@ -35,6 +35,7 @@ from vista_fm_browser.connection import YdbConnection
 from vista_fm_browser.data_dictionary import DataDictionary
 from vista_fm_browser.file_reader import FileReader
 from vista_fm_browser.inventory import FileInventory
+from vista_fm_browser.type_codes import decompose as decompose_type
 
 log = logging.getLogger(__name__)
 console = Console()
@@ -47,33 +48,61 @@ OUTPUT_DIR = Path("~/data/vista-fm-browser/phase1/").expanduser()
 # ---------------------------------------------------------------------------
 
 
-def inspect_file_registry(conn: YdbConnection) -> dict:
-    """Inspect File #1 — the FileMan file registry itself."""
+def inspect_file_registry(conn: YdbConnection, total_files: int) -> dict:
+    """Inspect File #1 — the FileMan file registry itself.
+
+    File #1 is a special case: its "entries" are the registered files
+    themselves, stored as top-level numeric subscripts of ^DIC rather
+    than under a ^DIC(1,ien,...) subtree. Generic count_entries(1) walks
+    ^DIC(1,...) and returns 0; the semantically correct count is
+    total_files (the ^DIC top-level walk done by FileInventory).
+    """
     dd = DataDictionary(conn)
     fd1 = dd.get_file(1)
     if fd1 is None:
         console.print("[red]File #1 not found[/red]")
-        return {"file_1_label": None, "file_1_fields": 0, "file_1_entries": 0}
+        return {
+            "file_1_label": None,
+            "file_1_fields": 0,
+            "file_1_entries": 0,
+            "file_1_entries_source": "not-found",
+        }
     reader = FileReader(conn, dd)
-    entries = reader.count_entries(1)
+    subtree_count = reader.count_entries(1)
+    # The registry's real entry count = top-level ^DIC walk = total_files.
+    entries = total_files
     console.print(
         f"\n[bold]File #1:[/bold] {fd1.label}  global=^DIC  "
-        f"fields={fd1.field_count}  entries={entries}"
+        f"fields={fd1.field_count}  entries={entries:,} "
+        f"(^DIC top-level; subtree count ^DIC(1,...) = {subtree_count})"
     )
     return {
         "file_1_label": fd1.label,
         "file_1_fields": fd1.field_count,
         "file_1_entries": entries,
+        "file_1_entries_source": "dic_top_level",
+        "file_1_subtree_entries": subtree_count,
     }
 
 
 def collect_type_distribution(
     conn: YdbConnection,
-) -> tuple[dict[str, int], dict[str, str], int]:
-    """Walk ^DD and count field datatypes. Returns (counts, names, total_fields)."""
+) -> tuple[dict[str, int], dict[str, str], int, dict[str, int], dict[str, int]]:
+    """Walk ^DD and count field datatypes plus modifier/required stats.
+
+    Returns
+    -------
+    type_counts : base-type code → count (already collapsed by the DD parser)
+    type_names  : base code → human-readable name
+    total_fields: total field count across all files
+    modifier_counts : modifier letter → count (X, O, J, etc.)
+    flag_counts : {"required": n, "audited": n, "multiple": n}
+    """
     dd = DataDictionary(conn)
     type_counts: dict[str, int] = collections.Counter()
     type_names: dict[str, str] = {}
+    modifier_counts: dict[str, int] = collections.Counter()
+    flag_counts: dict[str, int] = collections.Counter()
     total_fields = 0
     for file_num, _label in dd.list_files():
         fd = dd.get_file(file_num)
@@ -83,7 +112,22 @@ def collect_type_distribution(
         for fld in fd.fields.values():
             type_counts[fld.datatype_code] += 1
             type_names.setdefault(fld.datatype_code, fld.datatype_name)
-    return dict(type_counts), type_names, total_fields
+            ts = decompose_type(fld.raw_type)
+            for m in ts.modifiers:
+                modifier_counts[m] += 1
+            if ts.required:
+                flag_counts["required"] += 1
+            if ts.audited:
+                flag_counts["audited"] += 1
+            if ts.is_multiple:
+                flag_counts["multiple"] += 1
+    return (
+        dict(type_counts),
+        type_names,
+        total_fields,
+        dict(modifier_counts),
+        dict(flag_counts),
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -131,6 +175,19 @@ def write_type_distribution_csv(
 
 def write_summary_json(summary: dict, path: Path) -> None:
     path.write_text(json.dumps(summary, indent=2, default=str))
+
+
+def write_modifier_csv(
+    modifier_counts: dict[str, int], flag_counts: dict[str, int], path: Path
+) -> None:
+    """Emit modifier letters + R/*/M flag totals as a single CSV."""
+    with path.open("w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["kind", "key", "count"])
+        for mod, count in sorted(modifier_counts.items(), key=lambda x: -x[1]):
+            w.writerow(["modifier", mod, count])
+        for flag, count in sorted(flag_counts.items(), key=lambda x: -x[1]):
+            w.writerow(["flag", flag, count])
 
 
 # ---------------------------------------------------------------------------
@@ -189,6 +246,24 @@ def write_report(summary: dict, path: Path) -> None:
             f"| {row['code']} | {row['name']} | {row['count']:,} | {pct:.1f}% |"
         )
 
+    mods = summary.get("modifier_distribution") or []
+    flags = summary.get("flag_distribution") or {}
+    if mods or flags:
+        lines += [
+            "",
+            "## Type Modifiers & Flags",
+            "",
+            "Derived from structured decomposition of raw type strings "
+            "(see `type_modifiers.csv`).",
+            "",
+            "| Kind | Key | Count |",
+            "|:-----|:----|------:|",
+        ]
+        for row in mods:
+            lines.append(f"| modifier | `{row['modifier']}` | {row['count']:,} |")
+        for flag, count in sorted(flags.items(), key=lambda x: -x[1]):
+            lines.append(f"| flag | {flag} | {count:,} |")
+
     lines += [
         "",
         "## Output Files",
@@ -197,7 +272,8 @@ def write_report(summary: dict, path: Path) -> None:
         "- `summary.json` — key stats (consumed by report + viz)",
         "- `files.csv` — flat file list",
         "- `packages.csv` — package list with file counts",
-        "- `type_distribution.csv` — datatype frequency",
+        "- `type_distribution.csv` — base datatype frequency",
+        "- `type_modifiers.csv` — modifier letters + required/audit/multiple flag totals",
         "- `phase1_scope.png` — visualization (generated by phase1-viz.py)",
         "",
     ]
@@ -232,13 +308,19 @@ def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     with YdbConnection.connect() as conn:
-        file_1_info = inspect_file_registry(conn)
-
         fi = FileInventory(conn)
         fi.load()
         inv_summary = fi.summary()
 
-        type_counts, type_names, total_fields = collect_type_distribution(conn)
+        file_1_info = inspect_file_registry(conn, inv_summary["total_files"])
+
+        (
+            type_counts,
+            type_names,
+            total_fields,
+            modifier_counts,
+            flag_counts,
+        ) = collect_type_distribution(conn)
         render_type_table(type_counts, type_names)
 
     # Combined summary used by report + viz
@@ -255,6 +337,11 @@ def main() -> None:
             {"code": c, "name": type_names.get(c, ""), "count": n}
             for c, n in sorted(type_counts.items(), key=lambda x: -x[1])[:30]
         ],
+        "modifier_distribution": [
+            {"modifier": m, "count": n}
+            for m, n in sorted(modifier_counts.items(), key=lambda x: -x[1])
+        ],
+        "flag_distribution": flag_counts,
     }
 
     # Data files
@@ -263,6 +350,7 @@ def main() -> None:
     write_files_csv(fi, OUTPUT_DIR / "files.csv")
     write_packages_csv(fi, OUTPUT_DIR / "packages.csv")
     write_type_distribution_csv(type_counts, type_names, OUTPUT_DIR / "type_distribution.csv")
+    write_modifier_csv(modifier_counts, flag_counts, OUTPUT_DIR / "type_modifiers.csv")
 
     # Executive report
     write_report(summary, OUTPUT_DIR / "phase1-scope-report.md")
@@ -270,7 +358,7 @@ def main() -> None:
     console.print()
     for name in [
         "inventory.json", "summary.json", "files.csv", "packages.csv",
-        "type_distribution.csv", "phase1-scope-report.md",
+        "type_distribution.csv", "type_modifiers.csv", "phase1-scope-report.md",
     ]:
         console.print(f"  [green]wrote[/green] {OUTPUT_DIR / name}")
     console.rule("[bold green]Phase 1 analysis complete")

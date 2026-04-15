@@ -48,6 +48,7 @@ from dataclasses import dataclass, field
 
 from .connection import YdbConnection
 from .fm_datetime import fm_date_display
+from .type_codes import decompose as _decompose_type
 
 log = logging.getLogger(__name__)
 
@@ -83,6 +84,7 @@ class FieldDef:
         default_factory=dict
     )  # code → label (for S type)
     pointer_file: float | None = None  # for P type
+    raw_type: str = ""  # original piece-2 string before decomposition
 
 
 @dataclass
@@ -174,76 +176,17 @@ def _parse_set_values(context_piece: str) -> dict[str, str]:
 def _extract_type_code(raw: str) -> tuple[str, float | None]:
     """Parse a raw FileMan type string into (canonical_code, pointer_file).
 
-    FileMan type strings have a structured format:
-        [R][*]<BASE><modifiers>
+    Thin wrapper around :func:`vista_fm_browser.type_codes.decompose`.
+    Preserves the legacy (base, pointer_file) return shape so existing
+    callers stay untouched; for richer output (modifiers, numeric
+    width/decimals, multiple flag) call ``decompose`` directly.
 
-    Where:
-        R   — required flag (prefix)
-        *   — audited flag (prefix)
-        <BASE>   — single letter from _BASE_TYPE_CODES (or "DC" for computed date)
-        <modifiers> — type-specific suffixes:
-            P<file#>  — pointer target file number; optional trailing flags
-                        like ' (required), O, X, I, U, a
-            NJ<w>,<d> — numeric justification (width, decimals)
-            FX, RF, etc. — free-text with transform, required free-text
-
-    Examples:
-        "F"        → ("F", None)
-        "FX"       → ("F", None)
-        "RF"       → ("F", None)
-        "*P356.8'" → ("P", 356.8)
-        "NJ3,0"    → ("N", None)
-        "DC"       → ("DC", None)
-        "P50.68"   → ("P", 50.68)
-        "MP920'"   → ("P", 920)    # multiple-pointer: treat target file as pointer
-        "V"        → ("V", None)
+    Legacy quirk preserved: bare-decimal multiples return ``("M", None)``
+    rather than the resolved multiple_file; the decomposer exposes the
+    file number via ``TypeSpec.multiple_file``.
     """
-    if not raw:
-        return "", None
-
-    # Strip prefix flags (R, *) in any order.
-    s = raw
-    while s and s[0] in _PREFIX_FLAGS:
-        s = s[1:]
-    if not s:
-        return "", None
-
-    # "DC" is a two-character base code (computed date).
-    if s.startswith("DC"):
-        return "DC", None
-
-    # A bare decimal number (e.g. "1.001", "9999999.64") is a MULTIPLE field
-    # referencing a sub-file by that file number. FileMan uses this form
-    # instead of an "M" prefix for most sub-file references.
-    if s and s[0].isdigit():
-        try:
-            return "M", float(s)
-        except ValueError:
-            pass  # fall through to base-letter scan
-
-    # Find the first canonical base-type letter.
-    idx = next((i for i, c in enumerate(s) if c in _BASE_TYPE_CODES), -1)
-    if idx < 0:
-        return s[:1], None
-    base = s[idx]
-
-    # Pointer types carry a target file number in the trailing characters.
-    # "P50.68" → pointer_file=50.68; "P200'" → pointer_file=200 (strip flags).
-    # This also covers compound prefixes like "MP920" (multiple-pointer).
-    if base == "P":
-        tail = s[idx + 1:]
-        num_str = ""
-        for c in tail:
-            if c.isdigit() or c == ".":
-                num_str += c
-            else:
-                break
-        try:
-            return "P", float(num_str) if num_str else None
-        except ValueError:
-            return "P", None
-
-    return base, None
+    ts = _decompose_type(raw)
+    return ts.base, ts.pointer_file
 
 
 class DataDictionary:
@@ -583,4 +526,5 @@ def _parse_field_zero(
         title=title,
         pointer_file=pointer_file,
         set_values=set_values,
+        raw_type=raw_type,
     )

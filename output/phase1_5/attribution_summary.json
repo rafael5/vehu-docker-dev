@@ -1,0 +1,100 @@
+{
+  "input_total": 1683,
+  "attributed": 1544,
+  "unattributed": 139,
+  "attributed_pct": 91.74093879976233,
+  "by_method": {
+    "range_canonical": 32,
+    "prefix": 1511,
+    "": 139,
+    "range_empirical": 1
+  },
+  "by_confidence": {
+    "low": 32,
+    "med": 874,
+    "high": 638,
+    "": 139
+  },
+  "top_attributed_packages": [
+    [
+      "IMAGING",
+      165
+    ],
+    [
+      "INTEGRATED BILLING",
+      159
+    ],
+    [
+      "VA FILEMAN",
+      69
+    ],
+    [
+      "REGISTRATION",
+      64
+    ],
+    [
+      "SCHEDULING",
+      57
+    ],
+    [
+      "PHARMACY",
+      54
+    ],
+    [
+      "E CLAIMS MGMT ENGINE",
+      44
+    ],
+    [
+      "CLINICAL PROCEDURES",
+      43
+    ],
+    [
+      "ONCOLOGY",
+      40
+    ],
+    [
+      "DSS EXTRACTS",
+      37
+    ],
+    [
+      "TEXT INTEGRATION UTILITIES",
+      34
+    ],
+    [
+      "ASISTS",
+      32
+    ],
+    [
+      "ORDER ENTRY/RESULTS REPORTING",
+      31
+    ],
+    [
+      "IFCAP",
+      31
+    ],
+    [
+      "PSYCHODIAGNOSTICS",
+      30
+    ],
+    [
+      "CLINICAL REMINDERS",
+      29
+    ],
+    [
+      "RELEASE OF INFORMATION - DSSI",
+      28
+    ],
+    [
+      "AUTOMATED LAB INSTRUMENTS",
+      25
+    ],
+    [
+      "WOMEN'S HEALTH",
+      25
+    ],
+    [
+      "DRG GROUPER",
+      22
+    ]
+  ]
+}
