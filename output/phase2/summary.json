@@ -2,7 +2,7 @@
   "total_files": 2915,
   "files_with_data": 2858,
   "files_empty": 57,
-  "total_entries_all_files": 717892,
+  "total_entries_all_files": 717902,
   "tier_counts": {
     "massive": 0,
     "large": 7,
@@ -19,356 +19,792 @@
     "tiny": "1 \u2013 99",
     "empty": "0"
   },
+  "provenance_totals": {
+    "direct": 1232,
+    "prefix": 1511,
+    "unattributed": 139,
+    "range_canonical": 32,
+    "range_empirical": 1
+  },
   "top_50_files": [
     {
       "file_number": 80.0,
       "label": "ICD DIAGNOSIS",
       "entry_count": 91279,
       "tier": "large",
-      "package": "DRG GROUPER"
+      "package": "DRG GROUPER",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 80.1,
       "label": "ICD OPERATION/PROCEDURE",
       "entry_count": 86813,
       "tier": "large",
-      "package": "DRG GROUPER"
+      "package": "DRG GROUPER",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 996.2,
       "label": "EXTENSIBLE EDITOR SPELLCHECKER",
       "entry_count": 37324,
       "tier": "large",
-      "package": ""
+      "package": "EXTENSIBLE EDITOR",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 64.0,
       "label": "WKLD CODE",
       "entry_count": 25227,
       "tier": "large",
-      "package": "LAB SERVICE"
+      "package": "LAB SERVICE",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 409.68,
       "label": "OUTPATIENT ENCOUNTER",
       "entry_count": 14352,
       "tier": "large",
-      "package": ""
+      "package": "(unattributed)",
+      "package_provenance": "unattributed",
+      "package_confidence": ""
     },
     {
       "file_number": 9000010.0,
       "label": "VISIT",
       "entry_count": 14125,
       "tier": "large",
-      "package": ""
+      "package": "(unattributed)",
+      "package_provenance": "unattributed",
+      "package_confidence": ""
     },
     {
       "file_number": 112.0,
       "label": "FOOD NUTRIENTS",
       "entry_count": 12398,
       "tier": "large",
-      "package": "DIETETICS"
+      "package": "DIETETICS",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 9000010.18,
       "label": "V CPT",
       "entry_count": 7299,
       "tier": "medium",
-      "package": ""
+      "package": "(unattributed)",
+      "package_provenance": "unattributed",
+      "package_confidence": ""
     },
     {
       "file_number": 9000010.06,
       "label": "V PROVIDER",
       "entry_count": 6283,
       "tier": "medium",
-      "package": ""
+      "package": "(unattributed)",
+      "package_provenance": "unattributed",
+      "package_confidence": ""
     },
     {
       "file_number": 52.0,
       "label": "PRESCRIPTION",
       "entry_count": 6153,
       "tier": "medium",
-      "package": "PHARMACY"
+      "package": "PHARMACY",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 9999999.64,
       "label": "HEALTH FACTORS",
       "entry_count": 5936,
       "tier": "medium",
-      "package": ""
+      "package": "(unattributed)",
+      "package_provenance": "unattributed",
+      "package_confidence": ""
     },
     {
       "file_number": 9999999.06,
       "label": "LOCATION",
       "entry_count": 5033,
       "tier": "medium",
-      "package": ""
+      "package": "(unattributed)",
+      "package_provenance": "unattributed",
+      "package_confidence": ""
     },
     {
       "file_number": 405.0,
       "label": "PATIENT MOVEMENT",
       "entry_count": 4807,
       "tier": "medium",
-      "package": "REGISTRATION"
+      "package": "REGISTRATION",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 50.0,
       "label": "DRUG",
       "entry_count": 3929,
       "tier": "medium",
-      "package": "CONTROLLED SUBSTANCES"
+      "package": "CONTROLLED SUBSTANCES",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 1.0,
       "label": "FILE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 3.1,
       "label": "TITLE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "KERNEL"
+      "package": "KERNEL",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 3.4,
       "label": "COMMUNICATIONS PROTOCOL",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "MAILMAN"
+      "package": "MAILMAN",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 4.0,
       "label": "INSTITUTION",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "KERNEL"
+      "package": "KERNEL",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 4.001,
       "label": "MASTER FILE PARAMETERS",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 4.005,
       "label": "MD5 Signature",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 4.009,
       "label": "STANDARD TERMINOLOGY VERSION FILE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 4.05,
       "label": "INSTITUTION ASSOCIATION TYPES",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 4.1,
       "label": "FACILITY TYPE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "KERNEL"
+      "package": "KERNEL",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 4.11,
       "label": "AGENCY",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "KERNEL"
+      "package": "KERNEL",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 4.2,
       "label": "DOMAIN",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "MAILMAN"
+      "package": "MAILMAN",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 4.2996,
       "label": "INTERNET SUFFIX",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "MAILMAN"
+      "package": "MAILMAN",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 5.0,
       "label": "STATE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "PATIENT FILE"
+      "package": "PATIENT FILE",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 7.0,
       "label": "PROVIDER CLASS",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 7.1,
       "label": "SPECIALITY",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 8.0,
       "label": "ELIGIBILITY CODE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "REGISTRATION"
+      "package": "REGISTRATION",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 8.1,
       "label": "MAS ELIGIBILITY CODE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "REGISTRATION"
+      "package": "REGISTRATION",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 8.2,
       "label": "IDENTIFICATION FORMAT",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "REGISTRATION"
+      "package": "REGISTRATION",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 9.2,
       "label": "HELP FRAME",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "KERNEL"
+      "package": "KERNEL",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 9.4,
       "label": "PACKAGE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "KERNEL"
+      "package": "KERNEL",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 9.8,
       "label": "ROUTINE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "KERNEL"
+      "package": "KERNEL",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 10.0,
       "label": "RACE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "REGISTRATION"
+      "package": "REGISTRATION",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 10.2,
       "label": "ETHNICITY",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 10.3,
       "label": "RACE AND ETHNICITY COLLECTION METHOD",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 11.0,
       "label": "MARITAL STATUS",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "REGISTRATION"
+      "package": "REGISTRATION",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 12.0,
       "label": "OCCUPATION",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 13.0,
       "label": "RELIGION",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "REGISTRATION"
+      "package": "REGISTRATION",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 19.0,
       "label": "OPTION",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "MENU DRIVER"
+      "package": "MENU DRIVER",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 19.1,
       "label": "SECURITY KEY",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "MENU DRIVER"
+      "package": "MENU DRIVER",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 19.2,
       "label": "OPTION SCHEDULING",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 19.8,
       "label": "MENUMAN QUICK HELP",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 20.11,
       "label": "EDUCATION",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     },
     {
       "file_number": 21.0,
       "label": "PERIOD OF SERVICE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "REGISTRATION"
+      "package": "REGISTRATION",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 22.0,
       "label": "POW PERIOD",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "REGISTRATION"
+      "package": "REGISTRATION",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 23.0,
       "label": "BRANCH OF SERVICE",
       "entry_count": 2916,
       "tier": "medium",
-      "package": "REGISTRATION"
+      "package": "REGISTRATION",
+      "package_provenance": "direct",
+      "package_confidence": "high"
     },
     {
       "file_number": 24.0,
       "label": "NON-VETERAN CLASS",
       "entry_count": 2916,
       "tier": "medium",
-      "package": ""
+      "package": "VA FILEMAN",
+      "package_provenance": "prefix",
+      "package_confidence": "med"
     }
-  ]
+  ],
+  "top_packages_by_entries": [
+    {
+      "package": "DRG GROUPER",
+      "entry_total": 181162,
+      "file_count": 25,
+      "provenance": {
+        "direct": 3,
+        "prefix": 22
+      }
+    },
+    {
+      "package": "REGISTRATION",
+      "entry_total": 105272,
+      "file_count": 153,
+      "provenance": {
+        "direct": 89,
+        "prefix": 64
+      }
+    },
+    {
+      "package": "(unattributed)",
+      "entry_total": 61025,
+      "file_count": 139,
+      "provenance": {
+        "unattributed": 139
+      }
+    },
+    {
+      "package": "VA FILEMAN",
+      "entry_total": 52842,
+      "file_count": 69,
+      "provenance": {
+        "prefix": 49,
+        "range_canonical": 20
+      }
+    },
+    {
+      "package": "EXTENSIBLE EDITOR",
+      "entry_total": 37333,
+      "file_count": 2,
+      "provenance": {
+        "prefix": 2
+      }
+    },
+    {
+      "package": "LAB SERVICE",
+      "entry_total": 30610,
+      "file_count": 56,
+      "provenance": {
+        "direct": 52,
+        "prefix": 4
+      }
+    },
+    {
+      "package": "PHARMACY",
+      "entry_total": 22123,
+      "file_count": 69,
+      "provenance": {
+        "direct": 15,
+        "prefix": 52,
+        "range_canonical": 2
+      }
+    },
+    {
+      "package": "RECORD TRACKING",
+      "entry_total": 21999,
+      "file_count": 13,
+      "provenance": {
+        "direct": 13
+      }
+    },
+    {
+      "package": "INTEGRATED BILLING",
+      "entry_total": 21127,
+      "file_count": 240,
+      "provenance": {
+        "direct": 81,
+        "prefix": 159
+      }
+    },
+    {
+      "package": "KERNEL",
+      "entry_total": 20792,
+      "file_count": 46,
+      "provenance": {
+        "direct": 33,
+        "range_canonical": 8,
+        "prefix": 5
+      }
+    },
+    {
+      "package": "DIETETICS",
+      "entry_total": 15333,
+      "file_count": 47,
+      "provenance": {
+        "direct": 44,
+        "prefix": 3
+      }
+    },
+    {
+      "package": "MENTAL HEALTH",
+      "entry_total": 14884,
+      "file_count": 43,
+      "provenance": {
+        "direct": 25,
+        "prefix": 18
+      }
+    },
+    {
+      "package": "SCHEDULING",
+      "entry_total": 12817,
+      "file_count": 79,
+      "provenance": {
+        "direct": 22,
+        "prefix": 57
+      }
+    },
+    {
+      "package": "ENGINEERING",
+      "entry_total": 12813,
+      "file_count": 44,
+      "provenance": {
+        "direct": 36,
+        "prefix": 8
+      }
+    },
+    {
+      "package": "DENTAL",
+      "entry_total": 9277,
+      "file_count": 26,
+      "provenance": {
+        "direct": 12,
+        "prefix": 14
+      }
+    },
+    {
+      "package": "MAILMAN",
+      "entry_total": 8893,
+      "file_count": 19,
+      "provenance": {
+        "direct": 19
+      }
+    },
+    {
+      "package": "IMAGING",
+      "entry_total": 6262,
+      "file_count": 165,
+      "provenance": {
+        "prefix": 165
+      }
+    },
+    {
+      "package": "MENU DRIVER",
+      "entry_total": 5832,
+      "file_count": 2,
+      "provenance": {
+        "direct": 2
+      }
+    },
+    {
+      "package": "PATIENT FILE",
+      "entry_total": 4798,
+      "file_count": 5,
+      "provenance": {
+        "direct": 5
+      }
+    },
+    {
+      "package": "RADIOLOGY/NUCLEAR MEDICINE",
+      "entry_total": 4747,
+      "file_count": 40,
+      "provenance": {
+        "direct": 24,
+        "prefix": 16
+      }
+    },
+    {
+      "package": "ONCOLOGY",
+      "entry_total": 4229,
+      "file_count": 67,
+      "provenance": {
+        "direct": 27,
+        "prefix": 40
+      }
+    },
+    {
+      "package": "CONTROLLED SUBSTANCES",
+      "entry_total": 4125,
+      "file_count": 15,
+      "provenance": {
+        "direct": 11,
+        "prefix": 4
+      }
+    },
+    {
+      "package": "SURGERY",
+      "entry_total": 3688,
+      "file_count": 40,
+      "provenance": {
+        "direct": 28,
+        "prefix": 12
+      }
+    },
+    {
+      "package": "IFCAP",
+      "entry_total": 3588,
+      "file_count": 121,
+      "provenance": {
+        "direct": 90,
+        "prefix": 31
+      }
+    },
+    {
+      "package": "NURSING SERVICE",
+      "entry_total": 3180,
+      "file_count": 13,
+      "provenance": {
+        "direct": 11,
+        "prefix": 2
+      }
+    },
+    {
+      "package": "OPERATION DESERT SHIELD",
+      "entry_total": 2997,
+      "file_count": 10,
+      "provenance": {
+        "direct": 10
+      }
+    },
+    {
+      "package": "INTERIM MANAGEMENT SUPPORT",
+      "entry_total": 2927,
+      "file_count": 5,
+      "provenance": {
+        "direct": 5
+      }
+    },
+    {
+      "package": "DGYU",
+      "entry_total": 2916,
+      "file_count": 1,
+      "provenance": {
+        "direct": 1
+      }
+    },
+    {
+      "package": "ZPEH",
+      "entry_total": 2916,
+      "file_count": 1,
+      "provenance": {
+        "direct": 1
+      }
+    },
+    {
+      "package": "MEDICINE/CARDIOLOGY",
+      "entry_total": 2736,
+      "file_count": 38,
+      "provenance": {
+        "direct": 35,
+        "prefix": 3
+      }
+    }
+  ],
+  "unattributed_bucket": {
+    "file_count": 139,
+    "entry_total": 61025,
+    "top_10_by_entries": [
+      {
+        "file_number": 409.68,
+        "label": "OUTPATIENT ENCOUNTER",
+        "entry_count": 14352,
+        "global_root": "^SCE("
+      },
+      {
+        "file_number": 9000010.0,
+        "label": "VISIT",
+        "entry_count": 14125,
+        "global_root": "^AUPNVSIT("
+      },
+      {
+        "file_number": 9000010.18,
+        "label": "V CPT",
+        "entry_count": 7299,
+        "global_root": "^AUPNVCPT("
+      },
+      {
+        "file_number": 9000010.06,
+        "label": "V PROVIDER",
+        "entry_count": 6283,
+        "global_root": "^AUPNVPRV("
+      },
+      {
+        "file_number": 9999999.64,
+        "label": "HEALTH FACTORS",
+        "entry_count": 5936,
+        "global_root": "^AUTTHF("
+      },
+      {
+        "file_number": 9999999.06,
+        "label": "LOCATION",
+        "entry_count": 5033,
+        "global_root": "^AUTTLOC("
+      },
+      {
+        "file_number": 9000001.0,
+        "label": "PATIENT/IHS",
+        "entry_count": 1756,
+        "global_root": "^AUPNPAT("
+      },
+      {
+        "file_number": 9000010.11,
+        "label": "V IMMUNIZATION",
+        "entry_count": 1155,
+        "global_root": "^AUPNVIMM("
+      },
+      {
+        "file_number": 9999999.27,
+        "label": "PROVIDER NARRATIVE",
+        "entry_count": 957,
+        "global_root": "^AUTNPOV("
+      },
+      {
+        "file_number": 9000010.07,
+        "label": "V POV",
+        "entry_count": 946,
+        "global_root": "^AUPNVPOV("
+      }
+    ]
+  }
 }

@@ -1,13 +1,13 @@
 # Phase 2 — Volume Survey
 
-_Generated 2026-04-14 20:58 UTC_
+_Generated 2026-04-15 16:34 UTC_
 
 ## Summary
 
 - **Total files scanned:** 2,915
 - **Files with data:** 2,858 (98.0%)
 - **Empty files:** 57
-- **Total entries across all files:** 717,892
+- **Total entries across all files:** 717,902
 
 ## Volume Tiers
 
@@ -20,39 +20,89 @@ _Generated 2026-04-14 20:58 UTC_
 | tiny | 1 – 99 | 2,475 |
 | empty | 0 | 57 |
 
+## Attribution Provenance (DOWNSTREAM-RULES rule 2)
+
+| Provenance | File count |
+|:-----------|-----------:|
+| direct | 1,232 |
+| prefix | 1,511 |
+| range_empirical | 1 |
+| range_canonical | 32 |
+| unattributed | 139 |
+
 ## Top 25 Files by Entry Count
 
-| Rank | File # | Label | Entries | Tier | Package |
-|-----:|-------:|:------|--------:|:-----|:--------|
-| 1 | 80 | ICD DIAGNOSIS | 91,279 | large | DRG GROUPER |
-| 2 | 80.1 | ICD OPERATION/PROCEDURE | 86,813 | large | DRG GROUPER |
-| 3 | 996.2 | EXTENSIBLE EDITOR SPELLCHECKER | 37,324 | large | — |
-| 4 | 64 | WKLD CODE | 25,227 | large | LAB SERVICE |
-| 5 | 409.68 | OUTPATIENT ENCOUNTER | 14,352 | large | — |
-| 6 | 9000010 | VISIT | 14,125 | large | — |
-| 7 | 112 | FOOD NUTRIENTS | 12,398 | large | DIETETICS |
-| 8 | 9000010.18 | V CPT | 7,299 | medium | — |
-| 9 | 9000010.06 | V PROVIDER | 6,283 | medium | — |
-| 10 | 52 | PRESCRIPTION | 6,153 | medium | PHARMACY |
-| 11 | 9999999.64 | HEALTH FACTORS | 5,936 | medium | — |
-| 12 | 9999999.06 | LOCATION | 5,033 | medium | — |
-| 13 | 405 | PATIENT MOVEMENT | 4,807 | medium | REGISTRATION |
-| 14 | 50 | DRUG | 3,929 | medium | CONTROLLED SUBSTANCES |
-| 15 | 1 | FILE | 2,916 | medium | — |
-| 16 | 3.1 | TITLE | 2,916 | medium | KERNEL |
-| 17 | 3.4 | COMMUNICATIONS PROTOCOL | 2,916 | medium | MAILMAN |
-| 18 | 4 | INSTITUTION | 2,916 | medium | KERNEL |
-| 19 | 4.001 | MASTER FILE PARAMETERS | 2,916 | medium | — |
-| 20 | 4.005 | MD5 Signature | 2,916 | medium | — |
-| 21 | 4.009 | STANDARD TERMINOLOGY VERSION FILE | 2,916 | medium | — |
-| 22 | 4.05 | INSTITUTION ASSOCIATION TYPES | 2,916 | medium | — |
-| 23 | 4.1 | FACILITY TYPE | 2,916 | medium | KERNEL |
-| 24 | 4.11 | AGENCY | 2,916 | medium | KERNEL |
-| 25 | 4.2 | DOMAIN | 2,916 | medium | MAILMAN |
+| Rank | File # | Label | Entries | Tier | Package | Provenance | Confidence |
+|-----:|-------:|:------|--------:|:-----|:--------|:-----------|:-----------|
+| 1 | 80 | ICD DIAGNOSIS | 91,279 | large | DRG GROUPER | direct | high |
+| 2 | 80.1 | ICD OPERATION/PROCEDURE | 86,813 | large | DRG GROUPER | direct | high |
+| 3 | 996.2 | EXTENSIBLE EDITOR SPELLCHECKER | 37,324 | large | EXTENSIBLE EDITOR | prefix | med |
+| 4 | 64 | WKLD CODE | 25,227 | large | LAB SERVICE | direct | high |
+| 5 | 409.68 | OUTPATIENT ENCOUNTER | 14,352 | large | (unattributed) | unattributed | — |
+| 6 | 9000010 | VISIT | 14,125 | large | (unattributed) | unattributed | — |
+| 7 | 112 | FOOD NUTRIENTS | 12,398 | large | DIETETICS | direct | high |
+| 8 | 9000010.18 | V CPT | 7,299 | medium | (unattributed) | unattributed | — |
+| 9 | 9000010.06 | V PROVIDER | 6,283 | medium | (unattributed) | unattributed | — |
+| 10 | 52 | PRESCRIPTION | 6,153 | medium | PHARMACY | direct | high |
+| 11 | 9999999.64 | HEALTH FACTORS | 5,936 | medium | (unattributed) | unattributed | — |
+| 12 | 9999999.06 | LOCATION | 5,033 | medium | (unattributed) | unattributed | — |
+| 13 | 405 | PATIENT MOVEMENT | 4,807 | medium | REGISTRATION | direct | high |
+| 14 | 50 | DRUG | 3,929 | medium | CONTROLLED SUBSTANCES | direct | high |
+| 15 | 1 | FILE | 2,916 | medium | VA FILEMAN | prefix | med |
+| 16 | 3.1 | TITLE | 2,916 | medium | KERNEL | direct | high |
+| 17 | 3.4 | COMMUNICATIONS PROTOCOL | 2,916 | medium | MAILMAN | direct | high |
+| 18 | 4 | INSTITUTION | 2,916 | medium | KERNEL | direct | high |
+| 19 | 4.001 | MASTER FILE PARAMETERS | 2,916 | medium | VA FILEMAN | prefix | med |
+| 20 | 4.005 | MD5 Signature | 2,916 | medium | VA FILEMAN | prefix | med |
+| 21 | 4.009 | STANDARD TERMINOLOGY VERSION FILE | 2,916 | medium | VA FILEMAN | prefix | med |
+| 22 | 4.05 | INSTITUTION ASSOCIATION TYPES | 2,916 | medium | VA FILEMAN | prefix | med |
+| 23 | 4.1 | FACILITY TYPE | 2,916 | medium | KERNEL | direct | high |
+| 24 | 4.11 | AGENCY | 2,916 | medium | KERNEL | direct | high |
+| 25 | 4.2 | DOMAIN | 2,916 | medium | MAILMAN | direct | high |
+
+## Top 15 Packages by Total Entries
+
+| Rank | Package | Total Entries | Files | Provenance mix |
+|-----:|:--------|--------------:|------:|:---------------|
+| 1 | DRG GROUPER | 181,162 | 25 | direct=3, prefix=22 |
+| 2 | REGISTRATION | 105,272 | 153 | direct=89, prefix=64 |
+| 3 | (unattributed) | 61,025 | 139 | unattributed=139 |
+| 4 | VA FILEMAN | 52,842 | 69 | prefix=49, range_canonical=20 |
+| 5 | EXTENSIBLE EDITOR | 37,333 | 2 | prefix=2 |
+| 6 | LAB SERVICE | 30,610 | 56 | direct=52, prefix=4 |
+| 7 | PHARMACY | 22,123 | 69 | direct=15, prefix=52, range_canonical=2 |
+| 8 | RECORD TRACKING | 21,999 | 13 | direct=13 |
+| 9 | INTEGRATED BILLING | 21,127 | 240 | direct=81, prefix=159 |
+| 10 | KERNEL | 20,792 | 46 | direct=33, range_canonical=8, prefix=5 |
+| 11 | DIETETICS | 15,333 | 47 | direct=44, prefix=3 |
+| 12 | MENTAL HEALTH | 14,884 | 43 | direct=25, prefix=18 |
+| 13 | SCHEDULING | 12,817 | 79 | direct=22, prefix=57 |
+| 14 | ENGINEERING | 12,813 | 44 | direct=36, prefix=8 |
+| 15 | DENTAL | 9,277 | 26 | direct=12, prefix=14 |
+
+## Unattributed bucket (DOWNSTREAM-RULES rule 3)
+
+- **Files:** 139
+- **Total entries:** 61,025
+
+Top 10 unattributed by volume:
+
+| File # | Label | Entries | Global |
+|-------:|:------|--------:|:-------|
+| 409.68 | OUTPATIENT ENCOUNTER | 14,352 | `^SCE(` |
+| 9000010 | VISIT | 14,125 | `^AUPNVSIT(` |
+| 9000010.18 | V CPT | 7,299 | `^AUPNVCPT(` |
+| 9000010.06 | V PROVIDER | 6,283 | `^AUPNVPRV(` |
+| 9999999.64 | HEALTH FACTORS | 5,936 | `^AUTTHF(` |
+| 9999999.06 | LOCATION | 5,033 | `^AUTTLOC(` |
+| 9000001 | PATIENT/IHS | 1,756 | `^AUPNPAT(` |
+| 9000010.11 | V IMMUNIZATION | 1,155 | `^AUPNVIMM(` |
+| 9999999.27 | PROVIDER NARRATIVE | 957 | `^AUTNPOV(` |
+| 9000010.07 | V POV | 946 | `^AUPNVPOV(` |
 
 ## Output Files
 
-- `file_volume.json` — full per-file volume data
+- `file_volume.json` — full per-file volume data (with provenance)
 - `file_volume.csv` — same data flat
-- `summary.json` — tier counts and top-50 (consumed by report + viz)
+- `summary.json` — tier counts, top files, per-package totals, provenance
 - `phase2_volume.png` — visualization (generated by phase2-viz.py)
