@@ -252,11 +252,21 @@ This is what Task 4 will lock in as the canonical denominator.
   with a modifier, or a parse artifact? Verify during Task 2. — RESOLVED in
   iter 1.2: `'` is a trailing required-in-context flag; `decompose` sets
   `required=True` and strips it from the pointer target.
-- **Q4.** Field-count discrepancy: old 69,328 vs new 46,790. New value comes
-  from iterating `fd.fields.values()` which holds entries parsed from
-  `^DD(file, field, 0)`; old value from raw `^DD` subscript count includes
-  subfile markers. Need to verify which is the correct denominator for
-  "total fields" — resolve at start of phase 2 before volume analysis.
+- **Q4.** Field-count discrepancy: old 69,328 vs new 46,790. — **RESOLVED**
+  iter 1.7: the old value counted subfile fields (`^DD` top-level has 8,261
+  numeric subs covering 2,915 top-level files + 5,346 subfile nodes). The
+  new value (46,790) is the correct "fields on top-level files." Phase 2
+  should use 46,790; compute subfile fields separately if needed.
+- **Q5.** Lowercase type modifiers `a`, `t`, `m`, `p`, `w` observed in VEHU
+  but their semantics are not documented in this codebase. Look up in
+  VA FileMan Programmer Manual before phase 4 variety analysis.
+- **Q6.** Parser bug: compound `M<prefix><base>` (e.g. `MRD` = multiple,
+  required, date) is mis-parsed as base=M with `{R,D}` as modifiers. Fix
+  before phase 4 keys off required/multiple flags.
+- **Q7.** Are the 139 unattributable files truly absent from `^DIC(9.4)`,
+  or dropped by the walk? Add a raw-dump probe if phase 2 is sensitive.
+- **Q8.** `total_packages=470` reported but only 469 numeric IENs in
+  `^DIC(9.4)` (468 with zero-nodes). Off-by-one-or-two. Low priority.
 
 ---
 
@@ -272,6 +282,7 @@ This is what Task 4 will lock in as the canonical denominator.
 | 2026-04-15 | 1.4 (task 4 done) | Canonical denominator locked: 2,915 total / 2,776 attributed / 139 residual. Rules documented for downstream phases. |
 | 2026-04-15 | 1.5 (validation) | Container run: 58/58 tests pass. phase1-scope.py regenerated outputs into `output/phase1/` (fixed OUTPUT_DIR). Phase 1.5 re-ran, same attribution 91.7%. Field count changed 69,328→46,790 (old code counted subfile subscripts; new code via TypeSpec counts proper fields only — will investigate in phase 2). |
 | 2026-04-15 | 1.6 (task 5+6 done) | Task 5: DOWNSTREAM-RULES.md published (6 rules for phases 2–8). Task 6: phase 1.6 freetext-targets script ran on VEHU — 590 FREE TEXT fields across 30 hubs, 105 high-score candidates for phase 7. VEHU has empty `^DD(f,fld,1)` everywhere (dev instance). |
+| 2026-04-15 | 1.7 (audit) | ASSUMPTIONS-AUDIT.md published. 5 of 10 assumptions VERIFIED, 5 PARTIAL/UNVERIFIED. Resolved Q4 (field count 47k is correct for top-level files). Raised Q5/Q6 (lowercase modifiers, M<prefix><base> parser bug), Q7 (139 residuals source probe), Q8 (470-vs-469 package count). No blocker for phase 2. |
 
 ---
 
