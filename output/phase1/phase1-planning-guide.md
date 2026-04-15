@@ -107,8 +107,8 @@ items, then deferred.
 | **2** | Split compound type codes (resolve F3) | Code (TDD) | — | **DONE** (iter 1.2, needs container run) |
 | **3** | Attribute unpackaged files (resolve F2) | Code (new phase 1.5) | 1 | **DONE** (iter 1.3) |
 | **4** | Lock the package denominator | Documentation | 3 | **DONE** (iter 1.3) |
-| **5** | Apply long-tail caveat downstream (F5) | Narrative rule | 4 | TODO |
-| **6** | Free-text audit feed for phase 7 (F4) | Code, needs phase 3 hubs | phase 3 hub_files.csv (exists) | TODO |
+| **5** | Apply long-tail caveat downstream (F5) | Narrative rule | 4 | **DONE** (iter 1.6) — see DOWNSTREAM-RULES.md |
+| **6** | Free-text audit feed for phase 7 (F4) | Code, needs phase 3 hubs | phase 3 hub_files.csv (exists) | **DONE** (iter 1.6) |
 
 **Critical path:** 1 → 3 → 4.
 **Parallel-safe:** 2 runs alongside 1.
@@ -271,6 +271,7 @@ This is what Task 4 will lock in as the canonical denominator.
 | 2026-04-15 | 1.3 (task 3 complete) | Phase 1.5 attribution built + run: 1,544/1,683 attributed (91.7%). 139 residuals are orphan namespaces with missing PACKAGE records. |
 | 2026-04-15 | 1.4 (task 4 done) | Canonical denominator locked: 2,915 total / 2,776 attributed / 139 residual. Rules documented for downstream phases. |
 | 2026-04-15 | 1.5 (validation) | Container run: 58/58 tests pass. phase1-scope.py regenerated outputs into `output/phase1/` (fixed OUTPUT_DIR). Phase 1.5 re-ran, same attribution 91.7%. Field count changed 69,328→46,790 (old code counted subfile subscripts; new code via TypeSpec counts proper fields only — will investigate in phase 2). |
+| 2026-04-15 | 1.6 (task 5+6 done) | Task 5: DOWNSTREAM-RULES.md published (6 rules for phases 2–8). Task 6: phase 1.6 freetext-targets script ran on VEHU — 590 FREE TEXT fields across 30 hubs, 105 high-score candidates for phase 7. VEHU has empty `^DD(f,fld,1)` everywhere (dev instance). |
 
 ---
 

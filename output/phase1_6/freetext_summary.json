@@ -1,0 +1,13 @@
+{
+  "hubs_analyzed": 30,
+  "freetext_total": 590,
+  "high_score": 105,
+  "with_transform": 0,
+  "with_description": 282,
+  "score_distribution": {
+    "0": 138,
+    "1": 177,
+    "2": 170,
+    "3": 105
+  }
+}
