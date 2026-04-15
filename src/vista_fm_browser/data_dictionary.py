@@ -6,8 +6,16 @@ Python objects.  Also reads the INDEX (#.11) file for cross-reference metadata.
 All knowledge of ^DD and ^.11 global layouts is encapsulated here.
 
 ^DD layout (FileMan 22.2):
-    ^DD(file#, 0)                   → "FILE_LABEL^GLOBAL_ROOT^DATE^..."
-    ^DD(file#, field#, 0)           → "LABEL^TYPE^STORAGE_LOC^TITLE"
+    ^DD(file#, 0)                   → "FIELD^NL^{num_fields}^{last_mod}"
+                                      NOTE: constant marker — per-file label
+                                      and global root live in ^DIC, not ^DD.
+    ^DIC(file#, 0)                  → "LABEL^{file#}I[flags]"
+    ^DIC(file#, 0, "GL")            → global root (e.g. "^DPT(")
+    ^DD(file#, field#, 0)           → "LABEL^TYPE^CONTEXT^STORAGE_LOC^INPUT_TRANSFORM"
+                                      CONTEXT is context-sensitive by TYPE:
+                                        S-type → "code:label;code:label;"
+                                        P-type → target global root (redundant)
+                                        other  → typically empty
     ^DD(file#, field#, 1)           → INPUT TRANSFORM (M code)
     ^DD(file#, field#, 3)           → HELP-PROMPT text
     ^DD(file#, field#, 21, n, 0)    → DESCRIPTION (word processing, line n)
@@ -28,9 +36,10 @@ Type codes in the 0-node's second piece:
     W         = WORD PROCESSING
     DC        = COMPUTED DATE
 
-^.11 layout (INDEX file — new-style cross-references, FileMan 22.0+):
-    ^.11(ien, 0)  → "file#^name^type^..."
-    Each IEN is one cross-reference entry.  File# is the FileMan file number.
+INDEX file (#.11) — new-style cross-references (FileMan 22.0+):
+    Global location: ^DD("IX",...)  (from ^DIC(.11,0,"GL") = '^DD("IX",')
+    ^DD("IX", ien, 0)  → "file#^name^type^..."
+    Each IEN is one cross-reference entry. File# is the FileMan file number.
     type is "REGULAR" or "MUMPS".
 """
 
@@ -133,6 +142,110 @@ def _parse_zero_node(zero_node: str) -> list[str]:
     return zero_node.split("^")
 
 
+# Canonical single-letter FileMan data-type codes (in search order).
+# These are the "base" types — real FileMan type strings often have
+# required/audit prefix flags and modifier suffixes wrapped around them.
+_BASE_TYPE_CODES = set("FNDSPCWVKMBA")
+
+# Prefix flags that may appear before the base type code.
+#   R  = required
+#   *  = audit trail enabled
+_PREFIX_FLAGS = set("R*")
+
+
+def _parse_set_values(context_piece: str) -> dict[str, str]:
+    """Parse SET-of-codes values from piece 3 of a field's 0-node.
+
+    Format: "code1:label1;code2:label2;..."
+    Empty or malformed pieces return an empty dict.
+    """
+    if not context_piece:
+        return {}
+    values: dict[str, str] = {}
+    for pair in context_piece.split(";"):
+        pair = pair.strip()
+        if not pair or ":" not in pair:
+            continue
+        code, label = pair.split(":", 1)
+        values[code.strip()] = label.strip()
+    return values
+
+
+def _extract_type_code(raw: str) -> tuple[str, float | None]:
+    """Parse a raw FileMan type string into (canonical_code, pointer_file).
+
+    FileMan type strings have a structured format:
+        [R][*]<BASE><modifiers>
+
+    Where:
+        R   — required flag (prefix)
+        *   — audited flag (prefix)
+        <BASE>   — single letter from _BASE_TYPE_CODES (or "DC" for computed date)
+        <modifiers> — type-specific suffixes:
+            P<file#>  — pointer target file number; optional trailing flags
+                        like ' (required), O, X, I, U, a
+            NJ<w>,<d> — numeric justification (width, decimals)
+            FX, RF, etc. — free-text with transform, required free-text
+
+    Examples:
+        "F"        → ("F", None)
+        "FX"       → ("F", None)
+        "RF"       → ("F", None)
+        "*P356.8'" → ("P", 356.8)
+        "NJ3,0"    → ("N", None)
+        "DC"       → ("DC", None)
+        "P50.68"   → ("P", 50.68)
+        "MP920'"   → ("P", 920)    # multiple-pointer: treat target file as pointer
+        "V"        → ("V", None)
+    """
+    if not raw:
+        return "", None
+
+    # Strip prefix flags (R, *) in any order.
+    s = raw
+    while s and s[0] in _PREFIX_FLAGS:
+        s = s[1:]
+    if not s:
+        return "", None
+
+    # "DC" is a two-character base code (computed date).
+    if s.startswith("DC"):
+        return "DC", None
+
+    # A bare decimal number (e.g. "1.001", "9999999.64") is a MULTIPLE field
+    # referencing a sub-file by that file number. FileMan uses this form
+    # instead of an "M" prefix for most sub-file references.
+    if s and s[0].isdigit():
+        try:
+            return "M", float(s)
+        except ValueError:
+            pass  # fall through to base-letter scan
+
+    # Find the first canonical base-type letter.
+    idx = next((i for i, c in enumerate(s) if c in _BASE_TYPE_CODES), -1)
+    if idx < 0:
+        return s[:1], None
+    base = s[idx]
+
+    # Pointer types carry a target file number in the trailing characters.
+    # "P50.68" → pointer_file=50.68; "P200'" → pointer_file=200 (strip flags).
+    # This also covers compound prefixes like "MP920" (multiple-pointer).
+    if base == "P":
+        tail = s[idx + 1:]
+        num_str = ""
+        for c in tail:
+            if c.isdigit() or c == ".":
+                num_str += c
+            else:
+                break
+        try:
+            return "P", float(num_str) if num_str else None
+        except ValueError:
+            return "P", None
+
+    return base, None
+
+
 class DataDictionary:
     """Reads and caches the FileMan data dictionary from ^DD.
 
@@ -153,17 +266,19 @@ class DataDictionary:
     # ------------------------------------------------------------------
 
     def list_files(self) -> list[tuple[float, str]]:
-        """Return (file_number, label) for every FileMan file in ^DD.
+        """Return (file_number, label) for every FileMan file.
 
-        Sorted ascending by file number.
+        Enumerates ^DIC (the FILE registry) rather than ^DD, since ^DD
+        contains subfile entries that aren't top-level files. Sorted
+        ascending by file number.
         """
         results: list[tuple[float, str]] = []
-        for raw_num in self._conn.subscripts("^DD", [""]):
+        for raw_num in self._conn.subscripts("^DIC", [""]):
             try:
                 file_num = float(raw_num)
             except ValueError:
-                continue  # skip non-numeric nodes like "B"
-            zero = self._conn.get("^DD", [raw_num, 0])
+                continue  # skip "B", "C", etc.
+            zero = self._conn.get("^DIC", [raw_num, "0"])
             if not zero:
                 continue
             label = _parse_zero_node(zero)[0]
@@ -173,18 +288,24 @@ class DataDictionary:
         return results
 
     def get_file(self, file_number: float) -> FileDef | None:
-        """Return full FileDef for the given file number, or None if not found."""
+        """Return full FileDef for the given file number, or None if not found.
+
+        Reads file header (label + global root) from ^DIC; reads fields from ^DD.
+        """
         if file_number in self._file_cache:
             return self._file_cache[file_number]
 
         fn_str = _fmt_file_num(file_number)
-        zero = self._conn.get("^DD", [fn_str, 0])
-        if not zero:
-            return None
 
-        parts = _parse_zero_node(zero)
-        label = parts[0] if len(parts) > 0 else ""
-        global_root = parts[1] if len(parts) > 1 else ""
+        # File header (label, global root) lives in ^DIC — NOT ^DD.
+        dic_zero = self._conn.get("^DIC", [fn_str, "0"])
+        if not dic_zero:
+            return None
+        label = _parse_zero_node(dic_zero)[0]
+        raw_gl = self._conn.get("^DIC", [fn_str, "0", "GL"])
+        global_root = raw_gl if raw_gl.startswith("^") else (
+            f"^{raw_gl}" if raw_gl else ""
+        )
 
         file_def = FileDef(
             file_number=file_number,
@@ -222,24 +343,17 @@ class DataDictionary:
         parts = _parse_zero_node(zero)
         label = parts[0] if parts else ""
         raw_type = parts[1] if len(parts) > 1 else ""
-        global_subscript = parts[2] if len(parts) > 2 else ""
-        title = parts[3] if len(parts) > 3 else ""
+        context_piece = parts[2] if len(parts) > 2 else ""
+        global_subscript = parts[3] if len(parts) > 3 else ""
+        title = parts[4] if len(parts) > 4 else ""
 
-        # Extract pointer file (same logic as _parse_field_zero)
-        pointer_file: float | None = None
-        if raw_type.startswith("P") and len(raw_type) > 1:
-            try:
-                pointer_file = float(raw_type[1:])
-                datatype_code = "P"
-            except ValueError:
-                datatype_code = raw_type
-        else:
-            datatype_code = raw_type
-
+        datatype_code, pointer_file = _extract_type_code(raw_type)
         datatype_name = DATATYPE_NAMES.get(datatype_code, datatype_code or "UNKNOWN")
 
-        # Extended nodes — use fld_str (MUMPS canonical) for all subscript lookups
-        input_transform = self._conn.get("^DD", [fn_str, fld_str, "1"]) or ""
+        # Extended nodes — use fld_str (MUMPS canonical) for all subscript lookups.
+        # Input transform: some FileMan versions store it at ^DD(f,fld,1); VEHU
+        # stores it inline in piece 5 of the 0-node. Prefer the explicit node.
+        input_transform = self._conn.get("^DD", [fn_str, fld_str, "1"]) or title or ""
         help_prompt = self._conn.get("^DD", [fn_str, fld_str, "3"]) or ""
         last_edited = self._conn.get("^DD", [fn_str, fld_str, "DT"]) or ""
 
@@ -250,10 +364,8 @@ class DataDictionary:
             if line:
                 description.append(line)
 
-        # SET-OF-CODES values — _read_set_values uses raw fld_str subscript
-        set_values: dict[str, str] = {}
-        if datatype_code == "S":
-            set_values = self._read_set_values(fn_str, fld_str)
+        # SET-OF-CODES values live in piece 3 of the 0-node ("code:label;...")
+        set_values = _parse_set_values(context_piece) if datatype_code == "S" else {}
 
         return FieldAttributes(
             file_number=file_number,
@@ -329,24 +441,21 @@ class DataDictionary:
     def list_cross_refs(self, file_number: float) -> list[CrossRefInfo]:
         """Return all INDEX (#.11) cross-references defined for a file.
 
-        Reads the ^.11 global, which stores new-style cross-references
-        introduced in FileMan 22.0.  Each entry's 0-node is expected in
-        the format: "file#^name^type^..."
+        The INDEX file (#.11) is stored at ^DD("IX",...) in real VistA
+        (confirmed via ^DIC(.11,0,"GL") = '^DD("IX",'). Each entry's
+        0-node is formatted as "file#^name^type^..."
 
         Traditional (old-style) cross-references defined directly in
         ^DD(file, field, 1) are not returned here.
-
-        Note: The exact ^.11 layout may vary across VistA versions.
-        Verify with integration tests against a live VEHU instance.
         """
         fn_str = _fmt_file_num(file_number)
         results: list[CrossRefInfo] = []
-        for ien in self._conn.subscripts("^.11", [""]):
+        for ien in self._conn.subscripts("^DD", ["IX", ""]):
             try:
                 float(ien)  # skip non-numeric nodes
             except ValueError:
                 continue
-            zero = self._conn.get("^.11", [ien, "0"])
+            zero = self._conn.get("^DD", ["IX", ien, "0"])
             if not zero:
                 continue
             parts = zero.split("^")
@@ -401,8 +510,6 @@ class DataDictionary:
             if not zero:
                 continue
             fld = _parse_field_zero(file_number, fld_num, zero)
-            if fld.datatype_code == "S":
-                fld.set_values = self._read_set_values(fn_str, raw_fld)
             fields[fld_num] = fld
         return fields
 
@@ -461,20 +568,12 @@ def _parse_field_zero(
     parts = _parse_zero_node(zero_node)
     label = parts[0] if len(parts) > 0 else ""
     raw_type = parts[1] if len(parts) > 1 else ""
-    title = parts[3] if len(parts) > 3 else ""
+    context_piece = parts[2] if len(parts) > 2 else ""
+    title = parts[4] if len(parts) > 4 else ""
 
-    # Extract pointer file number from "P<file#>" codes (e.g. "P2", "P50.68")
-    pointer_file: float | None = None
-    if raw_type.startswith("P") and len(raw_type) > 1:
-        try:
-            pointer_file = float(raw_type[1:])
-            datatype_code = "P"
-        except ValueError:
-            datatype_code = raw_type
-    else:
-        datatype_code = raw_type
-
+    datatype_code, pointer_file = _extract_type_code(raw_type)
     datatype_name = DATATYPE_NAMES.get(datatype_code, datatype_code or "UNKNOWN")
+    set_values = _parse_set_values(context_piece) if datatype_code == "S" else {}
     return FieldDef(
         file_number=file_number,
         field_number=field_number,
@@ -483,4 +582,5 @@ def _parse_field_zero(
         datatype_name=datatype_name,
         title=title,
         pointer_file=pointer_file,
+        set_values=set_values,
     )

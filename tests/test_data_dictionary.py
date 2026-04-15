@@ -37,7 +37,8 @@ def test_fmt_file_num_large():
 
 
 def test_parse_field_zero_free_text():
-    fld = _parse_field_zero(2, 0.01, "NAME^F^^PATIENT NAME")
+    # Real 0-node format: LABEL^TYPE^CONTEXT^STORAGE^TITLE-OR-XFORM
+    fld = _parse_field_zero(2, 0.01, "NAME^F^^0;1^PATIENT NAME")
     assert fld.label == "NAME"
     assert fld.datatype_code == "F"
     assert fld.datatype_name == "FREE TEXT"
@@ -45,21 +46,30 @@ def test_parse_field_zero_free_text():
 
 
 def test_parse_field_zero_set_of_codes():
-    fld = _parse_field_zero(2, 0.02, "SEX^S^^")
+    fld = _parse_field_zero(2, 0.02, "SEX^S^M:MALE;F:FEMALE;^0;2^")
     assert fld.datatype_code == "S"
     assert fld.datatype_name == "SET OF CODES"
+    assert fld.set_values == {"M": "MALE", "F": "FEMALE"}
+
+
+def test_parse_field_zero_set_flags_stripped():
+    # R prefix (required) + S (set) — should resolve to "S"
+    fld = _parse_field_zero(2, 0.02, "SEX^RSa^M:MALE;F:FEMALE;^0;2^")
+    assert fld.datatype_code == "S"
+    assert fld.set_values == {"M": "MALE", "F": "FEMALE"}
 
 
 def test_parse_field_zero_date():
-    fld = _parse_field_zero(2, 0.03, "DATE OF BIRTH^D^^")
+    fld = _parse_field_zero(2, 0.03, "DATE OF BIRTH^D^^0;3^")
     assert fld.datatype_code == "D"
     assert fld.datatype_name == "DATE/TIME"
 
 
 def test_parse_field_zero_unknown_type():
-    fld = _parse_field_zero(2, 99, "CUSTOM^X^^")
+    # "X" is not a canonical base — falls through to first-char extraction
+    fld = _parse_field_zero(2, 99, "CUSTOM^X^^^")
     assert fld.datatype_code == "X"
-    assert fld.datatype_name == "X"  # falls back to the raw code
+    assert fld.datatype_name == "X"
 
 
 def test_parse_field_zero_empty():
@@ -107,7 +117,7 @@ def test_get_file_patient(fake_dd_conn):
     fd = dd.get_file(2)
     assert fd is not None
     assert fd.label == "PATIENT"
-    assert fd.global_root == "DPT("
+    assert fd.global_root == "^DPT("
     assert fd.file_number == 2.0
 
 
@@ -183,30 +193,34 @@ def test_search_files_no_match(fake_dd_conn):
 
 FAKE_DD_EXTENDED = {
     "^DD": {
-        # PATIENT file with extended nodes
-        ("2", "0"): "PATIENT^DPT(^3160101^",
-        ("2", ".01", "0"): "NAME^F^0;1^PATIENT NAME",
+        # PATIENT file. Real 0-node: LABEL^TYPE^CONTEXT^STORAGE^XFORM
+        # CONTEXT holds set values for S-type, target global for P-type.
+        ("2", "0"): "FIELD^NL^3160101^4",
+        ("2", ".01", "0"): "NAME^F^^0;1^PATIENT NAME",
         ("2", ".01", "1"): "K:$L(X)>30 X",  # INPUT TRANSFORM
         ("2", ".01", "3"): "ENTER PATIENT NAME",  # HELP PROMPT
         ("2", ".01", "DT"): "3160101",  # DATE LAST EDITED
-        ("2", ".02", "0"): "SEX^S^0;2^",
-        ("2", ".02", "V", "M"): "MALE",
-        ("2", ".02", "V", "F"): "FEMALE",
-        ("2", ".03", "0"): "DATE OF BIRTH^D^0;3^",
-        # DRUG file with pointer field
-        ("50", "0"): "DRUG^PS(50,^3160101^",
-        ("50", ".01", "0"): "GENERIC NAME^F^0;1^",
-        ("50", "2", "0"): "VA PRODUCT NAME ENTRY^P50.68^0;2^",
-    }
+        ("2", ".02", "0"): "SEX^S^M:MALE;F:FEMALE;^0;2^",
+        ("2", ".03", "0"): "DATE OF BIRTH^D^^0;3^",
+        # DRUG file with pointer field (context = target global root)
+        ("50", "0"): "FIELD^NL^3160101^3",
+        ("50", ".01", "0"): "GENERIC NAME^F^^0;1^",
+        ("50", "2", "0"): "VA PRODUCT NAME ENTRY^P50.68^PSNDF(50.68,^0;2^",
+    },
+    "^DIC": {
+        ("2", "0"): "PATIENT^2I",
+        ("2", "0", "GL"): "^DPT(",
+        ("50", "0"): "DRUG^50I",
+        ("50", "0", "GL"): "^PS(50,",
+    },
 }
 
 FAKE_INDEX = {
-    "^.11": {
-        # File 2 cross-references
-        ("1", "0"): "2^B^REGULAR",
-        ("2", "0"): "2^AC^MUMPS",
-        # File 50 cross-references
-        ("3", "0"): "50^B^REGULAR",
+    # Real VistA stores the INDEX file (#.11) at ^DD("IX",...)
+    "^DD": {
+        ("IX", "1", "0"): "2^B^REGULAR",
+        ("IX", "2", "0"): "2^AC^MUMPS",
+        ("IX", "3", "0"): "50^B^REGULAR",
     }
 }
 
@@ -225,9 +239,12 @@ def _make_ext_conn():
 
 
 def _make_ext_with_index():
-    data: dict = {}
-    data.update(FAKE_DD_EXTENDED)
-    data.update(FAKE_INDEX)
+    # FAKE_INDEX stores cross-refs under ^DD("IX",...) so we must merge
+    # its ^DD entries with FAKE_DD_EXTENDED's rather than overwriting.
+    # Copy nested dicts to avoid mutating module-level fixtures.
+    data: dict = {gname: dict(nodes) for gname, nodes in FAKE_DD_EXTENDED.items()}
+    for gname, nodes in FAKE_INDEX.items():
+        data.setdefault(gname, {}).update(nodes)
     return conftest.YdbFake(data)
 
 
@@ -244,21 +261,21 @@ def _make_ext_with_pointer_data():
 
 
 def test_parse_field_zero_pointer_extracts_file_number():
-    fld = _parse_field_zero(50, 2, "VA PRODUCT NAME ENTRY^P50.68^0;2^")
+    fld = _parse_field_zero(50, 2, "VA PRODUCT NAME ENTRY^P50.68^^0;2^")
     assert fld.datatype_code == "P"
     assert fld.datatype_name == "POINTER"
     assert fld.pointer_file == 50.68
 
 
 def test_parse_field_zero_pointer_integer_file():
-    fld = _parse_field_zero(50, 3, "PATIENT^P2^0;3^")
+    fld = _parse_field_zero(50, 3, "PATIENT^P2^^0;3^")
     assert fld.datatype_code == "P"
     assert fld.pointer_file == 2.0
 
 
 def test_parse_field_zero_pointer_normalizes_code_to_P():
     # Raw type "P50.68" should become just "P"
-    fld = _parse_field_zero(50, 2, "SOMETHING^P50.68^^")
+    fld = _parse_field_zero(50, 2, "SOMETHING^P50.68^^^")
     assert fld.datatype_code == "P"
 
 
@@ -388,7 +405,7 @@ class TestFormatExternal:
         # Add a simple target file (pretend file 50.68 global is ^DPT)
         # We'll test pointer resolution for file 2 → pointing back at itself
         # For simplicity: add a pointer field pointing to PATIENT (file 2)
-        data["^DD"][("50", "3", "0")] = "PATIENT POINTER^P2^0;3^"
+        data["^DD"][("50", "3", "0")] = "PATIENT POINTER^P2^^0;3^"
         data["^DPT"] = {
             ("1", "0"): "SMITH,JOHN^M^2450101^",
         }

@@ -65,7 +65,7 @@ class FakeYdbModule:
 
 def test_fake_get_existing_node(fake_dd_conn):
     val = fake_dd_conn.get("^DD", ["2", "0"])
-    assert val == "PATIENT^DPT(^3160101^"
+    assert val == "FIELD^NL^3160101^4"
 
 
 def test_fake_get_missing_node(fake_dd_conn):
@@ -107,7 +107,7 @@ def test_fake_node_exists_false(fake_dd_conn):
 def test_fake_context_manager(fake_dd_conn):
     with fake_dd_conn as conn:
         val = conn.get("^DD", ["2", "0"])
-    assert val == "PATIENT^DPT(^3160101^"
+    assert val == "FIELD^NL^3160101^4"
 
 
 # ------------------------------------------------------------------

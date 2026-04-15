@@ -69,19 +69,26 @@ class YdbFake:
 
 FAKE_DD = {
     "^DD": {
-        # File 2 — PATIENT
-        ("2", "0"): "PATIENT^DPT(^3160101^",
-        ("2", ".01", "0"): "NAME^F^^PATIENT NAME",
-        ("2", ".02", "0"): "SEX^S^^",
-        ("2", ".02", "V", "M"): "MALE",
-        ("2", ".02", "V", "F"): "FEMALE",
-        ("2", ".03", "0"): "DATE OF BIRTH^D^^",
-        ("2", "9999999", "0"): "INTEGRATION CONTROL NUMBER^N^^ICN",
+        # File 2 — PATIENT. Real 0-node: LABEL^TYPE^CONTEXT^STORAGE^XFORM
+        # CONTEXT is "code:label;..." for S-type, target global for P-type,
+        # empty otherwise.
+        ("2", "0"): "FIELD^NL^3160101^4",
+        ("2", ".01", "0"): "NAME^F^^0;1^PATIENT NAME",
+        ("2", ".02", "0"): "SEX^S^M:MALE;F:FEMALE;^0;2^",
+        ("2", ".03", "0"): "DATE OF BIRTH^D^^0;3^",
+        ("2", "9999999", "0"): "INTEGRATION CONTROL NUMBER^N^^0;9^ICN",
         # File 50 — DRUG
-        ("50", "0"): "DRUG^PS(50,^3160101^",
-        ("50", ".01", "0"): "GENERIC NAME^F^^",
-        ("50", "100", "0"): "PSNDF VA PRODUCT NAME ENTRY^P50.68^^",
-    }
+        ("50", "0"): "FIELD^NL^3160101^2",
+        ("50", ".01", "0"): "GENERIC NAME^F^^0;1^",
+        ("50", "100", "0"): "PSNDF VA PRODUCT NAME ENTRY^P50.68^DD(50.68,^100;1^",
+    },
+    # ^DIC holds the per-file header (label + global root at "GL" subnode)
+    "^DIC": {
+        ("2", "0"): "PATIENT^2I",
+        ("2", "0", "GL"): "^DPT(",
+        ("50", "0"): "DRUG^50I",
+        ("50", "0", "GL"): "^PS(50,",
+    },
 }
 
 FAKE_PATIENT_GLOBAL = {

@@ -107,6 +107,8 @@ class FileReader:
         if file_def is None:
             return 0
         global_root = _strip_root(file_def.global_root)
+        if not global_root or global_root == "^":
+            return 0  # file has no data global (e.g. subfile or alias)
         count = 0
         for ien in self._conn.subscripts(global_root, [""]):
             if ien.startswith('"'):

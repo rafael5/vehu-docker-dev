@@ -6,12 +6,13 @@ Unit tests use YdbFake with FAKE_DIC + FAKE_DD fixture data.
 Integration tests run inside the VEHU container against live ^DIC.
 
 ^DIC global layout (FileMan FILE file, #1):
-    ^DIC(file#, 0)                    = "label^global_root^date^..."
+    ^DIC(file#, 0)                    = "label^{file#}I[flags]"
+    ^DIC(file#, 0, "GL")              = global root, e.g. "^DPT("
     ^DIC("B", label, file#)           = B cross-reference
 
 ^DIC(9.4, ...) — PACKAGE file (#9.4):
     ^DIC(9.4, pkg_ien, 0)             = "name^prefix^version^..."
-    ^DIC(9.4, pkg_ien, 11, ien, 0)    = "file_number"   (FILE multiple, field .01)
+    ^DIC(9.4, pkg_ien, 4, ien, 0)     = "file_number"   (FILE multiple, field .01)
 """
 
 import pytest
@@ -25,23 +26,28 @@ from vista_fm_browser.inventory import FileInventory
 FAKE_DIC: dict = {
     "^DIC": {
         # File 2 — PATIENT (DG package, ien 1)
-        ("2", "0"): "PATIENT^DPT(^3160101^",
+        ("2", "0"): "PATIENT^2I",
+        ("2", "0", "GL"): "^DPT(",
         # File 44 — HOSPITAL LOCATION (SDAM scheduling, ien 2)
-        ("44", "0"): "HOSPITAL LOCATION^SC(^3160101^",
+        ("44", "0"): "HOSPITAL LOCATION^44I",
+        ("44", "0", "GL"): "^SC(",
         # File 50 — DRUG (PSS pharmacy, ien 3)
-        ("50", "0"): "DRUG^PS(50,^3160101^",
+        ("50", "0"): "DRUG^50I",
+        ("50", "0", "GL"): "^PS(50,",
         # File 200 — NEW PERSON (XU kernel, ien 4)
-        ("200", "0"): "NEW PERSON^VA(200,^3160101^",
+        ("200", "0"): "NEW PERSON^200I",
+        ("200", "0", "GL"): "^VA(200,",
         # File 9.4 — PACKAGE (meta — the package file itself)
-        ("9.4", "0"): "PACKAGE^DIC(9.4,^3160101^",
+        ("9.4", "0"): "PACKAGE^9.4I",
+        ("9.4", "0", "GL"): "^DIC(9.4,",
         # ---- Package file 9.4 entries ----
         # Package 1: REGISTRATION (DG)
         ("9.4", "1", "0"): "REGISTRATION^DG^22.0^",
-        ("9.4", "1", "11", "1", "0"): "2",  # File 2 belongs to DG
-        ("9.4", "1", "11", "2", "0"): "44",  # File 44 belongs to DG
+        ("9.4", "1", "4", "1", "0"): "2",  # File 2 belongs to DG
+        ("9.4", "1", "4", "2", "0"): "44",  # File 44 belongs to DG
         # Package 2: PHARMACY DATA MANAGEMENT (PSS)
         ("9.4", "2", "0"): "PHARMACY DATA MANAGEMENT^PSS^1.0^",
-        ("9.4", "2", "11", "1", "0"): "50",  # File 50 belongs to PSS
+        ("9.4", "2", "4", "1", "0"): "50",  # File 50 belongs to PSS
         # Package 3: KERNEL (XU) — no FILE multiple entries in this fixture
         ("9.4", "3", "0"): "KERNEL^XU^8.0^",
         # B cross-reference entries (FileMan name index — skip in numeric scan)
@@ -58,13 +64,13 @@ FAKE_DD_FOR_INVENTORY: dict = {
     "^DD": {
         # File 2 — PATIENT: 4 fields
         ("2", "0"): "PATIENT^DPT(^3160101^",
-        ("2", ".01", "0"): "NAME^F^^PATIENT NAME",
+        ("2", ".01", "0"): "NAME^F^^0;1^PATIENT NAME",
         ("2", ".02", "0"): "SEX^S^^",
         ("2", ".03", "0"): "DATE OF BIRTH^D^^",
         ("2", "9999999", "0"): "INTEGRATION CONTROL NUMBER^N^^ICN",
         # File 50 — DRUG: 2 fields
         ("50", "0"): "DRUG^PS(50,^3160101^",
-        ("50", ".01", "0"): "GENERIC NAME^F^^",
+        ("50", ".01", "0"): "GENERIC NAME^F^^0;1^",
         ("50", "100", "0"): "PSNDF VA PRODUCT NAME ENTRY^P50.68^^",
         # File 44 and 200 intentionally have no DD entries
     }

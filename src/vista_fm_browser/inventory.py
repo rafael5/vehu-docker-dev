@@ -7,12 +7,13 @@ organized by package.  This is the starting point for planning any
 systematic analysis of VistA data.
 
 ^DIC global layout:
-    ^DIC(file#, 0)                   = "label^global_root^date^..."
+    ^DIC(file#, 0)                   = "label^{file#}I[flags]"
+    ^DIC(file#, 0, "GL")             = global root (e.g. "^DPT(")
     ^DIC("B", label, file#)          = B cross-reference (name index)
 
 ^DIC(9.4, ...) — PACKAGE file (#9.4):
     ^DIC(9.4, pkg_ien, 0)            = "name^prefix^version^..."
-    ^DIC(9.4, pkg_ien, 11, ien, 0)   = "file_number^..."  (FILE multiple)
+    ^DIC(9.4, pkg_ien, 4, ien, 0)    = "file_number^..."  (FILE multiple, field #4)
 
 Usage::
 
@@ -36,6 +37,33 @@ from .connection import YdbConnection
 log = logging.getLogger(__name__)
 
 UNPACKAGED = "(unpackaged)"
+
+
+def _pick_owning_package(
+    global_root: str, candidates: list["PackageInfo"]
+) -> "PackageInfo | None":
+    """Pick the best-matching package for a file from its candidates.
+
+    The PACKAGE file (#9.4) FILE multiple is a "uses/writes" list — many
+    packages may claim the same file. We prefer the package whose PREFIX
+    matches the start of the file's global root namespace (e.g. file #50
+    with global ^PSDRUG( matches prefix "PS" → PHARMACY). On ties, pick
+    the longest matching prefix; on no match, fall back to lowest-IEN.
+    """
+    if not candidates:
+        return None
+    # Namespace = "PSDRUG" from "^PSDRUG(" (strip leading ^ and trailing paren/subs)
+    ns = global_root.lstrip("^").split("(", 1)[0]
+    best: PackageInfo | None = None
+    best_len = -1
+    for pkg in candidates:
+        p = (pkg.prefix or "").strip()
+        if p and ns.startswith(p) and len(p) > best_len:
+            best, best_len = pkg, len(p)
+    if best is not None:
+        return best
+    # No prefix matched — fall back to lowest-IEN (numeric order) claim.
+    return min(candidates, key=lambda p: int(p.ien) if p.ien.isdigit() else 10**9)
 
 
 # ------------------------------------------------------------------
@@ -98,13 +126,16 @@ class FileInventory:
         log.info("Loading FileMan file inventory from ^DIC ...")
         self._packages = self._read_packages()
 
-        # Build file→package lookup for fast annotation of file records
-        pkg_by_file: dict[float, PackageInfo] = {}
+        # Build file→[packages] lookup. Many packages can list the same
+        # file in their FILE multiple — the multiple is really a "uses/writes"
+        # list, not a sole-ownership marker. We pick the best match per-file
+        # later using the global-root↔prefix heuristic in _pick_owning_package.
+        pkgs_by_file: dict[float, list[PackageInfo]] = {}
         for pkg in self._packages:
             for fn in pkg.file_numbers:
-                pkg_by_file[fn] = pkg
+                pkgs_by_file.setdefault(fn, []).append(pkg)
 
-        self._files = self._read_files(pkg_by_file)
+        self._files = self._read_files(pkgs_by_file)
         log.info(
             "Inventory loaded: %d files in %d packages",
             len(self._files),
@@ -216,10 +247,10 @@ class FileInventory:
         return packages
 
     def _read_package_files(self, pkg_ien: str) -> list[float]:
-        """Read the FILE multiple (node 11) for one package."""
+        """Read the FILE multiple (field #4, node 4) for one package."""
         file_numbers: list[float] = []
-        for entry_ien in self._conn.subscripts("^DIC", ["9.4", pkg_ien, "11", ""]):
-            zero = self._conn.get("^DIC", ["9.4", pkg_ien, "11", entry_ien, "0"])
+        for entry_ien in self._conn.subscripts("^DIC", ["9.4", pkg_ien, "4", ""]):
+            zero = self._conn.get("^DIC", ["9.4", pkg_ien, "4", entry_ien, "0"])
             if not zero:
                 continue
             raw = zero.split("^")[0].strip()
@@ -229,7 +260,9 @@ class FileInventory:
                 log.debug("Non-numeric file entry in package %s: %r", pkg_ien, raw)
         return file_numbers
 
-    def _read_files(self, pkg_by_file: dict[float, PackageInfo]) -> list[FileRecord]:
+    def _read_files(
+        self, pkgs_by_file: dict[float, list[PackageInfo]]
+    ) -> list[FileRecord]:
         """Read all file entries from ^DIC, skipping non-numeric nodes."""
         files: list[FileRecord] = []
         for raw_num in self._conn.subscripts("^DIC", [""]):
@@ -244,13 +277,13 @@ class FileInventory:
 
             parts = zero.split("^")
             label = parts[0] if parts else ""
-            raw_root = parts[1] if len(parts) > 1 else ""
-            # FileMan stores the global root without the leading "^" (e.g. "DPT(").
-            # Normalize to always include "^" so callers can use it directly.
+            # Global root lives at ^DIC(file#,0,"GL"), not at piece 2 of the
+            # zero node (piece 2 is the file number plus flags, e.g. "2I").
+            raw_root = self._conn.get("^DIC", [raw_num, "0", "GL"])
             global_root = raw_root if raw_root.startswith("^") else f"^{raw_root}"
 
             field_count = self._count_fields(raw_num)
-            pkg = pkg_by_file.get(file_num)
+            pkg = _pick_owning_package(global_root, pkgs_by_file.get(file_num, []))
 
             files.append(
                 FileRecord(
