@@ -7,13 +7,14 @@ This script is analysis-only. It reads live VEHU data and writes structured
 data files + an executive report. Visualization is a separate concern handled
 by phase1-viz.py which consumes these data files.
 
-Outputs (all in ~/data/vista-fm-browser/phase1/):
+Outputs (all in <repo>/output/phase1/):
     inventory.json          — full inventory (files + packages, nested)
     summary.json            — scope stats (compact, used by viz + report)
     files.csv               — flat file list (one row per file)
     packages.csv            — flat package list with file counts
     type_distribution.csv   — field datatype counts across all files
-    phase1-scope-report.md        — executive report with summary statistics
+    type_modifiers.csv      — modifier/flag distribution from TypeSpec decomposition
+    phase1-scope-report.md  — executive report with summary statistics
 
 Run inside the VEHU container:
     python scripts/analysis/phase1-scope.py
@@ -40,7 +41,11 @@ from vista_fm_browser.type_codes import decompose as decompose_type
 log = logging.getLogger(__name__)
 console = Console()
 
-OUTPUT_DIR = Path("~/data/vista-fm-browser/phase1/").expanduser()
+# Outputs land in the repo-internal output/ tree so analysis artifacts stay
+# tightly coupled to the code that produced them. Path is relative to this
+# script's location so it works identically on host and inside the container
+# (where the repo is mounted at /opt/vista-fm-browser).
+OUTPUT_DIR = Path(__file__).resolve().parents[2] / "output" / "phase1"
 
 
 # ---------------------------------------------------------------------------

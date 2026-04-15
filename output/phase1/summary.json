@@ -2,12 +2,14 @@
   "total_files": 2915,
   "total_packages": 470,
   "unpackaged_files": 1683,
-  "total_fields": 69328,
-  "avg_fields_per_file": 23.78319039451115,
+  "total_fields": 46790,
+  "avg_fields_per_file": 16.051457975986278,
   "file_1": {
-    "file_1_label": "ATTRIBUTE",
+    "file_1_label": "FILE",
     "file_1_fields": 25,
-    "file_1_entries": 0
+    "file_1_entries": 2915,
+    "file_1_entries_source": "dic_top_level",
+    "file_1_subtree_entries": 2916
   },
   "top_packages_by_file_count": [
     {
@@ -95,152 +97,122 @@
     {
       "code": "F",
       "name": "FREE TEXT",
-      "count": 11962
+      "count": 14075
     },
     {
       "code": "S",
       "name": "SET OF CODES",
-      "count": 9721
+      "count": 9507
     },
     {
-      "code": "D",
-      "name": "DATE/TIME",
-      "count": 3646
-    },
-    {
-      "code": "RF",
-      "name": "RF",
-      "count": 2227
-    },
-    {
-      "code": "FX",
-      "name": "FX",
-      "count": 1563
-    },
-    {
-      "code": "P200'",
-      "name": "P200'",
-      "count": 1281
-    },
-    {
-      "code": "NJ3,0",
-      "name": "NJ3,0",
-      "count": 1095
-    },
-    {
-      "code": "RS",
-      "name": "RS",
-      "count": 1079
-    },
-    {
-      "code": "NJ4,0",
-      "name": "NJ4,0",
-      "count": 898
-    },
-    {
-      "code": "NJ2,0",
-      "name": "NJ2,0",
-      "count": 896
-    },
-    {
-      "code": "W",
-      "name": "WORD PROCESSING",
-      "count": 866
-    },
-    {
-      "code": "FXO",
-      "name": "FXO",
-      "count": 861
-    },
-    {
-      "code": "NJ6,0",
-      "name": "NJ6,0",
-      "count": 753
-    },
-    {
-      "code": "RFX",
-      "name": "RFX",
-      "count": 568
-    },
-    {
-      "code": "RD",
-      "name": "RD",
-      "count": 565
-    },
-    {
-      "code": "DX",
-      "name": "DX",
-      "count": 560
-    },
-    {
-      "code": "FO",
-      "name": "FO",
-      "count": 544
-    },
-    {
-      "code": "NJ5,0",
-      "name": "NJ5,0",
-      "count": 510
-    },
-    {
-      "code": "MF",
-      "name": "MF",
-      "count": 468
-    },
-    {
-      "code": "NJ7,0",
-      "name": "NJ7,0",
-      "count": 462
-    },
-    {
-      "code": "NJ8,2",
-      "name": "NJ8,2",
-      "count": 351
-    },
-    {
-      "code": "NJ9,0",
-      "name": "NJ9,0",
-      "count": 343
-    },
-    {
-      "code": "NJ6,2",
-      "name": "NJ6,2",
-      "count": 307
-    },
-    {
-      "code": "NJ1,0",
-      "name": "NJ1,0",
-      "count": 303
-    },
-    {
-      "code": "WL",
-      "name": "WL",
-      "count": 276
-    },
-    {
-      "code": "SX",
-      "name": "SX",
-      "count": 271
-    },
-    {
-      "code": "K",
-      "name": "MUMPS",
-      "count": 266
-    },
-    {
-      "code": "NJ5,0O",
-      "name": "NJ5,0O",
-      "count": 257
-    },
-    {
-      "code": "NJ10,2",
-      "name": "NJ10,2",
-      "count": 241
+      "code": "N",
+      "name": "NUMERIC",
+      "count": 7451
     },
     {
       "code": "P",
       "name": "POINTER",
-      "count": 234
+      "count": 6632
+    },
+    {
+      "code": "D",
+      "name": "DATE/TIME",
+      "count": 3976
+    },
+    {
+      "code": "M",
+      "name": "MULTIPLE",
+      "count": 3972
+    },
+    {
+      "code": "C",
+      "name": "COMPUTED",
+      "count": 819
+    },
+    {
+      "code": "K",
+      "name": "MUMPS",
+      "count": 231
+    },
+    {
+      "code": "V",
+      "name": "VARIABLE POINTER",
+      "count": 81
+    },
+    {
+      "code": "",
+      "name": "UNKNOWN",
+      "count": 23
+    },
+    {
+      "code": "DC",
+      "name": "COMPUTED DATE",
+      "count": 16
+    },
+    {
+      "code": "X",
+      "name": "X",
+      "count": 4
+    },
+    {
+      "code": "B",
+      "name": "BOOLEAN",
+      "count": 3
     }
-  ]
+  ],
+  "modifier_distribution": [
+    {
+      "modifier": "J",
+      "count": 9317
+    },
+    {
+      "modifier": "X",
+      "count": 4963
+    },
+    {
+      "modifier": "O",
+      "count": 3180
+    },
+    {
+      "modifier": "I",
+      "count": 1359
+    },
+    {
+      "modifier": "a",
+      "count": 694
+    },
+    {
+      "modifier": "t",
+      "count": 120
+    },
+    {
+      "modifier": "D",
+      "count": 23
+    },
+    {
+      "modifier": "R",
+      "count": 16
+    },
+    {
+      "modifier": "p",
+      "count": 7
+    },
+    {
+      "modifier": "m",
+      "count": 7
+    },
+    {
+      "modifier": "C",
+      "count": 3
+    },
+    {
+      "modifier": "w",
+      "count": 1
+    }
+  ],
+  "flag_distribution": {
+    "required": 12140,
+    "multiple": 3966,
+    "audited": 1413
+  }
 }

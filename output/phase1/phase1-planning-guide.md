@@ -249,7 +249,14 @@ This is what Task 4 will lock in as the canonical denominator.
 - **Q2.** Does `^DIC(9.4)` contain explicit file→package mappings not yet picked
   up by `FileInventory`? (Check during Task 1.)
 - **Q3.** Are the `P200'` / `P2'` trailing apostrophe codes pointer-to-file-200
-  with a modifier, or a parse artifact? Verify during Task 2.
+  with a modifier, or a parse artifact? Verify during Task 2. — RESOLVED in
+  iter 1.2: `'` is a trailing required-in-context flag; `decompose` sets
+  `required=True` and strips it from the pointer target.
+- **Q4.** Field-count discrepancy: old 69,328 vs new 46,790. New value comes
+  from iterating `fd.fields.values()` which holds entries parsed from
+  `^DD(file, field, 0)`; old value from raw `^DD` subscript count includes
+  subfile markers. Need to verify which is the correct denominator for
+  "total fields" — resolve at start of phase 2 before volume analysis.
 
 ---
 
@@ -263,6 +270,7 @@ This is what Task 4 will lock in as the canonical denominator.
 | 2026-04-15 | 1.2b (task 2 complete) | `type_codes.decompose` TDD-written, `_extract_type_code` retrofit, phase1 output extended with modifier/flag stats (not yet regenerated). |
 | 2026-04-15 | 1.3 (task 3 complete) | Phase 1.5 attribution built + run: 1,544/1,683 attributed (91.7%). 139 residuals are orphan namespaces with missing PACKAGE records. |
 | 2026-04-15 | 1.4 (task 4 done) | Canonical denominator locked: 2,915 total / 2,776 attributed / 139 residual. Rules documented for downstream phases. |
+| 2026-04-15 | 1.5 (validation) | Container run: 58/58 tests pass. phase1-scope.py regenerated outputs into `output/phase1/` (fixed OUTPUT_DIR). Phase 1.5 re-ran, same attribution 91.7%. Field count changed 69,328→46,790 (old code counted subfile subscripts; new code via TypeSpec counts proper fields only — will investigate in phase 2). |
 
 ---
 
